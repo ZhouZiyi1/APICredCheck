@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — **Yes.** Google Sign-In has official Android integration via Google's Android/Google Play services libraries and Android documentation for adding Google Sign-In to an app.
+
+2. **Service model** — **Relies on Google-hosted services as a standard part of the product.** Google Sign-In is not just an on-device helper; its normal function is authenticating a user with their Google account through Google's identity services.
+
+3. **Integration requirement** — **Yes, developers typically must register/configure OAuth client information.** Standard Android setup for Google Sign-In commonly requires configuring the app in Google's developer/Firebase/Google Cloud setup and supplying a generated `google-services.json` file and/or OAuth 2.0 client ID configuration. That is a vendor-issued identifier used so the app can interact with Google's sign-in service.
+
+4. **Scope** — This credential is part of **Google Sign-In's own documented integration**, not merely another unrelated Google product. While package name and SHA signing certificate are also configured, those alone do not count; the relevant credential is the **OAuth client ID** used for Google Sign-In configuration.

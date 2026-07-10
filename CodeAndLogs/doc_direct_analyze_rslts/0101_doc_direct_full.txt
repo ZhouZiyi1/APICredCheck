@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. ShortcutBadger is an Android library specifically for setting/applying app icon badge counts on supported Android launchers. Its documented integration is as an Android dependency used from Android app code.
+
+2. Service model — The SDK is mostly entirely on-device. It updates badge counts through Android intents/content providers/manufacturer-specific launcher integrations. There is no normal dependence on a Leo Lin hosted backend or remote API as part of standard functionality.
+
+3. Integration requirement — No vendor console registration or console-issued identifier/secret appears to be required for normal Android use. Typical setup is adding the library dependency and calling its badge APIs from the app.
+
+4. Scope — The integration requirement belongs to this product itself, and for ShortcutBadger there is no documented product-specific API key, App ID, client secret, or equivalent config file needed to access vendor-hosted services. Package name/signing constraints of Android apps do not count as an API credential.
+
+Evidence is straightforward and consistent with this being a pure client-side Android utility library, so `false`/`null` is appropriate for API credential fields.

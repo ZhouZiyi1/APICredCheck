@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Amazon provides Android integration for Kinesis through the AWS Mobile/Android SDK, including Kinesis-related client/recorder components used from Android apps.
+
+2. Service model: This SDK is not primarily on-device. Its normal purpose is to send data from the app to Amazon Kinesis services running in AWS, so standard use depends on Amazon-hosted backend APIs.
+
+3. Integration requirement: Yes. To use Kinesis from Android, the app must be configured with AWS authorization details so it can call Kinesis. In documented mobile setups this is commonly done through AWS credentials provisioned via Amazon Cognito, or equivalent AWS access credentials. That is a console-issued configuration requirement, not just a local library drop-in.
+
+4. Scope: The credential is required for this product's normal integration because the Kinesis SDK must authenticate requests to Kinesis service endpoints. While Cognito may be the mechanism used in mobile setups, the need for AWS credentials is directly tied to using Kinesis itself, not merely an unrelated optional product.

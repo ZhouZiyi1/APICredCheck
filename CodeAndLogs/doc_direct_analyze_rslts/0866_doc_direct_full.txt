@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+IMG.LY VideoEditor SDK has official Android support. IMG.LY provides an Android SDK/integration for video editing features in native Android apps.
+
+2. Service model  
+This SDK is primarily an on-device media editing library. Typical video editing, composition, and export happen locally in the app rather than by calling IMG.LY-hosted backend APIs as a core requirement of standard Android use.
+
+3. Integration requirement  
+IMG.LY commonly issues a license file or license key for production use of its editor SDKs, and developers configure that in the app. However, that is a product licensing/activation requirement, not clearly a credential whose standard purpose is to let the app call vendor-hosted services used by the SDK.
+
+4. Scope  
+For this specific product, the documented Android integration is centered on embedding the editor SDK locally. I do not find strong evidence that normal Android integration requires a console-issued API key/App ID for IMG.LY cloud services as part of the product’s standard operation. Where evidence is ambiguous between “license” and “API credential,” the stricter definition here points to false.

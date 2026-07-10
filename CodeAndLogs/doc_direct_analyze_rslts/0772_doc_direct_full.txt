@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. The product is explicitly named **Android Stackblur SDK**, and it is known as an Android library for applying the Stack Blur image effect in Android apps.
+
+2. **Service model** - This is a local, on-device graphics/image-processing utility. Its purpose is to blur bitmaps/views within the Android app runtime. There is no typical vendor-hosted backend or remote API involved in the SDK’s standard operation.
+
+3. **Integration requirement** - No vendor-issued credential appears necessary for normal integration. Typical use of an Android image blur library is adding the dependency and calling its API in app code; that does not require registering the app in a vendor console or configuring an API key, App ID, token, or similar value.
+
+4. **Scope** - Any Android project setup details such as package name, Gradle dependency coordinates, or app signing are not API credentials. There is no indication that this SDK’s documented integration depends on a separate Enrique López Mañas hosted service.

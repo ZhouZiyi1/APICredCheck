@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Hyphenate SDK has an official Android SDK/integration for building chat and messaging features in Android apps.
+
+2. Service model: This SDK is not just an on-device utility library. Its standard use is real-time messaging/chat, which depends on Hyphenate/EaseMob hosted backend services for connection, messaging, groups, presence, and related IM features.
+
+3. Integration requirement: Typical Android setup requires the developer to create an application in Hyphenate/EaseMob's console and configure the issued app identifier in the Android app during SDK initialization. In Hyphenate documentation this is commonly called an `App Key` or `appkey`.
+
+4. Scope: That credential is part of Hyphenate SDK's own documented integration for accessing Hyphenate's messaging platform, not a separate third-party service. Package name or signing settings do not replace it.

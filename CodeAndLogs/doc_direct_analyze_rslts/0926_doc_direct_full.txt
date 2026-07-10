@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. PDFTron SDK has an official Android offering/documented Android integration. It is a PDF/document processing and viewing SDK for Android apps.
+
+2. **Service model** - The core PDFTron Android SDK is primarily an on-device library. Typical use is rendering, viewing, annotating, editing, and processing documents locally within the app rather than calling a vendor-hosted backend as a standard requirement.
+
+3. **Integration requirement** - Usual integration requires a vendor-issued license value to unlock normal SDK use. This is configured in the Android app as part of setup. Although it is not necessarily for ongoing access to a remote cloud API, it is still a vendor-issued application credential required for standard use of this SDK.
+
+4. **Scope** - This credential belongs to PDFTron SDK itself, not merely to a separate optional product. Optional connected services may exist, but the core Android SDK’s documented setup commonly includes its own license key requirement.

@@ -1,0 +1,4 @@
+Lcom/facebook/FacebookSdk;->getApplicationId()Ljava/lang/String;
+Lcom/facebook/FacebookSdk;->getClientToken()Ljava/lang/String;
+Lcom/facebook/appevents/internal/AppEventsLoggerUtility;->getJSONObjectForGraphAPICall(...)Lorg/json/JSONObject;
+Lcom/facebook/FacebookSdk;->publishInstallAndWaitForResponse(Landroid/content/Context;Ljava/lang/String;)V

@@ -1,0 +1,19 @@
+2026-05-17 21:12:49 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0042-doc_direct_analyze.log
+2026-05-17 21:12:49 [INFO] Run start: SDK_ID=0042 SDK=Facebook AppLinks SDK vendor=Meta results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:12:49 [INFO] Querying model='gpt-5.4' SDK='Facebook AppLinks SDK' vendor='Meta'
+2026-05-17 21:12:57 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=239 total_tokens=1217
+2026-05-17 21:12:57 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0042_doc_direct_full.txt
+2026-05-17 21:12:57 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Facebook App Links has documented Android integration and Android libraries/support through Meta/Facebook's Android SDK ecosystem.
+
+2. Service model — App Links is primarily a deep-linking/open-graph linking mechanism used by apps to route users into app content. On Android, much of the handling is client/app-link/deep-link behavior, but Facebook’s platform integration is part of the broader Meta app platform rather than a purely local utility library.
+
+3. Integration requirement — For standard Facebook platform integrations on Android, developers typically register their app with Meta and configure a Facebook App ID in the Android app. App Links integration is tied to that platform setup rather than being a standalone purely local library with no app registration.
+
+4. Scope — The App ID belongs to the Facebook App Links / Facebook platform integration used by this SDK on Android, not merely an unrelated separate product. Given App Links is part of Meta’s app platform tooling, the App ID is the relevant console-issued credential-like identifier.
+2026-05-17 21:12:57 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0042_doc_direct_rslt.txt
+2026-05-17 21:12:57 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "Facebook App ID"}
+2026-05-17 21:12:57 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0042-doc_direct_analyze.log

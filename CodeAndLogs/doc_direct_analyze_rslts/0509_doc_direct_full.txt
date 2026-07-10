@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Yandex MapKit SDK has official Android integration and Android-specific setup/documentation.
+
+2. Service model: This SDK is a map platform SDK, so normal app usage relies on Yandex-hosted map services such as map tiles and related mapping data rather than being purely on-device.
+
+3. Integration requirement: Yes. Standard Android integration requires the developer to obtain and configure a vendor-issued key, typically set in the app during MapKit initialization. The credential type is an API key.
+
+4. Scope: This credential is part of Yandex MapKit SDK’s own documented setup for accessing Yandex mapping services, not merely a package-name/signing constraint and not a separate unrelated Yandex product.

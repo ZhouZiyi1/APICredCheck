@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Zendesk provides an official Android Support SDK / Support provider as part of its mobile SDK offering, with documented Android integration and initialization APIs. So Android support is present.
+
+2. Service model  
+The Zendesk Support SDK is not primarily an on-device utility. Its standard purpose is to connect the app to Zendesk-hosted support services such as Help Center content, requests/tickets, and related support workflows. Normal operation depends on Zendesk's backend.
+
+3. Integration requirement  
+Typical Android setup requires initializing the SDK with vendor-issued configuration values from Zendesk, commonly including an `applicationId` and `oauthClientId` (along with the Zendesk URL/subdomain). These are part of the standard mobile SDK setup so the app can connect to the Zendesk account's hosted services.
+
+4. Scope  
+These values are part of this product's documented mobile Support SDK integration, not merely a separate optional product. The requirement is tied to using Zendesk Support services from the Android app. Evidence can vary slightly by SDK generation/version, but the standard Android integration clearly uses console-issued app credentials.

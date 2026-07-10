@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Umeng provides an official Android Analytics SDK/integration for mobile apps, so this product supports Android.
+
+2. Service model  
+uMeng Analytics is not a purely on-device library. Its standard purpose is to collect app usage/event data and send it to Umeng's hosted analytics backend for aggregation, reporting, and dashboards.
+
+3. Integration requirement  
+Yes. Standard Android integration for Umeng Analytics requires the developer to register the app in Umeng's console and configure an issued app identifier in the Android app. In Umeng documentation/integration materials, this is typically the `Appkey` (often alongside a manually chosen channel value, but the channel is not a vendor-issued credential).
+
+4. Scope  
+This credential is part of the Analytics SDK's own setup, not just another Umeng product. The required `Appkey` identifies the app to Umeng Analytics services so collected data can be attributed to the correct project.

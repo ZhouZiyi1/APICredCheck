@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This is specifically an Android mediation adapter product: a MoPub adapter used to integrate the Vungle Android SDK into MoPub mediation on Android. Official Android integration exists for MoPub mediation adapters and for Vungle’s Android SDK.
+
+2. Service model  
+This product is not a purely on-device helper. Its standard purpose is to let an Android app request and display Vungle ads through MoPub mediation, which depends on remote ad-serving infrastructure.
+
+3. Integration requirement  
+Yes. Typical setup for the MoPub Vungle mediation adapter requires configuring Vungle network credentials so the mediated Vungle SDK can load ads. The standard credential used is the Vungle App ID (and sometimes placement identifiers for ad units, but the app-level required identifier is the App ID).
+
+4. Scope  
+The credential is part of the documented integration for this named product, because the adapter’s normal function is to connect MoPub mediation to Vungle’s hosted ad service. Although the identifier is issued for Vungle rather than MoPub itself, it is still required for standard use of this specific adapter integration on Android.

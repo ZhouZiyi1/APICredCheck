@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Firebase Invites had official Android integration as part of the Firebase/Google Play services Android stack, with Android setup and client APIs for sending and receiving invitations.
+
+2. Service model — This product was not purely on-device. Firebase Invites depended on Firebase/Google infrastructure for invitation delivery, deep-link handling, and associated backend/project configuration. Standard use therefore relied on vendor-hosted services.
+
+3. Integration requirement — Yes. Typical Android setup required registering the app in the Firebase console and adding the Firebase app configuration to the Android app, usually via `google-services.json`. That file supplies console-issued identifiers used by the app to talk to Firebase services, including values such as the Firebase App ID / API key.
+
+4. Scope — This credential is part of this product's documented Firebase integration, not merely some unrelated optional product. Firebase Invites was a Firebase product and used the standard Firebase project/app configuration as part of normal Android setup.

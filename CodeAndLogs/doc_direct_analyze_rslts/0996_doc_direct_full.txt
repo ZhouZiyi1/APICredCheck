@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Evernote published an official Android integration/library for its service APIs (the Evernote Android SDK), with setup documentation for Android apps.
+
+2. Service model: This SDK is not primarily on-device. Its standard purpose is to let an Android app authenticate with Evernote and access Evernote-hosted cloud data and APIs such as notes, notebooks, and related account content.
+
+3. Integration requirement: Yes. Typical integration required registering an Evernote API app and configuring vendor-issued credentials in the Android app. The documented credential type was the app's OAuth/API consumer credentials.
+
+4. Scope: These credentials belong to Evernote's own SDK/API integration, not a separate unrelated product. The consumer key/consumer secret are used so the app can authenticate against Evernote services.

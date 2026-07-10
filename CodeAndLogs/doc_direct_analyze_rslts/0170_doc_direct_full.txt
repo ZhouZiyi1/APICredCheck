@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+RevenueCat has an official Android SDK and documented Android setup for Google Play apps, so Android is supported.
+
+2. Service model  
+RevenueCat is not just an on-device helper. Its normal use relies on RevenueCat-hosted backend services for customer status, entitlement management, receipt/subscription processing, and related subscription infrastructure.
+
+3. Integration requirement  
+Standard Android integration requires the developer to create/configure an app in RevenueCat and initialize the SDK with a RevenueCat-issued key. In Android client setup, this is the public SDK key used when configuring the SDK.
+
+4. Scope  
+This credential is part of RevenueCat’s own documented integration and is used so the SDK can talk to RevenueCat services. It is not merely a Google Play package/signing value or a credential for some separate third-party product.

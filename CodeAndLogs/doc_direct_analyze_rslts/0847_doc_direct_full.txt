@@ -1,0 +1,5 @@
+I’ll verify whether `APAddressBook SDK` has official Android support first, then only check credential requirements if Android support is documented.SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not find reliable evidence that Alterplay’s **APAddressBook SDK** has an official Android SDK, Android package, or Android integration documentation. The product name suggests an address-book/contact helper, but without vendor documentation showing an Android library or Android setup, Android support is not established.
+
+Because step 1 is **no / not established**, I stop here per instructions. Steps 2-4 are **skipped** and treated as N/A on Android.

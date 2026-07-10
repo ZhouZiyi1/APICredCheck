@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Batch provides an official Android SDK for mobile apps. Its product is commonly documented for Android push notifications, in-app messaging, and related engagement features, so Android support is clearly present.
+
+2. Service model  
+Batch is not a purely on-device library. Its standard use depends on Batch-hosted services for push delivery, audience/device registration, campaigns, analytics, and message/inbox content. That means the SDK routinely talks to Batch’s backend as part of normal operation.
+
+3. Integration requirement  
+Typical Android integration requires the developer to create/register the app in Batch’s dashboard and configure a Batch-issued application credential in the Android app. In Batch’s setup materials, this is generally presented as an API key / app key used to initialize the SDK and connect the app instance to the correct Batch project/environment.
+
+4. Scope  
+That credential is part of Batch SDK’s own documented setup, not merely a separate third-party dependency. Platform details like package name or signing may also matter operationally, but those do not replace the core console-issued Batch credential.

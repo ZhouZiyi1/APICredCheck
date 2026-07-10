@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Kakao AdFit has an official Android SDK and documented Android integration for showing ads in Android apps. `supports_android = true`.
+
+2. Service model  
+AdFit is an advertising SDK, so normal operation depends on Kakao-hosted ad serving infrastructure. The SDK is not just an on-device utility; it requests, renders, and tracks ads through the vendor’s backend.
+
+3. Integration requirement  
+Typical AdFit integration requires the developer to obtain and configure an AdFit-issued identifier for ad serving. In practice this is the ad placement/unit identifier used when creating banner/interstitial/native placements in the AdFit console and passing that value into the Android SDK integration.
+
+4. Scope  
+That identifier is part of AdFit’s own product setup for serving ads, not merely another Kakao product’s credential. Package name or signing data alone would not satisfy this requirement.

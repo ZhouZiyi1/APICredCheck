@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Moshi is an official Java/Kotlin JSON serialization library from Square/Block and is commonly documented for Android use. It is distributed as a standard JVM/Android dependency and is used directly in Android apps.
+
+2. Service model  
+Moshi is an on-device client library. Its normal function is parsing and serializing JSON within the app process. It does not depend on Block-hosted services or a vendor backend to provide its core functionality.
+
+3. Integration requirement  
+No. Typical Moshi setup only requires adding the library dependency and, optionally, codegen/reflection adapters. There is no standard requirement to register the app with Block or obtain a console-issued identifier, key, token, or config file.
+
+4. Scope  
+Any API keys an app might use alongside Moshi would belong to the app's own backend or another service being called, not to Moshi itself. Moshi's documented integration does not require a product-specific vendor credential.

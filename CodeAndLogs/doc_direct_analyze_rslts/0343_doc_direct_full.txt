@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Google ML Kit has official Android support. It provides Android SDK integration for features such as text recognition, barcode scanning, face detection, image labeling, translation, and related APIs through Android libraries.
+
+2. Service model  
+ML Kit is primarily an on-device mobile ML SDK. Typical Android integrations use bundled or dynamically downloaded models and run inference on the device. While some features may download models via Google Play services, normal use is not centered on calling a vendor-hosted inference API in the way a cloud SDK would be.
+
+3. Integration requirement  
+Usual ML Kit Android setup does not require the developer to obtain and configure a vendor console-issued API key, App ID, or secret specifically for ML Kit itself. Standard integration is by adding the Android dependencies. Some apps may also use Firebase-related products or Google Cloud services separately, but that is not inherent to core ML Kit Android SDK usage.
+
+4. Scope  
+Any Firebase project configuration or Cloud credential would belong to separate Google/Firebase services, not to the documented baseline integration requirement for ML Kit SDK itself on Android. Package name and signing setup do not count as API credentials.

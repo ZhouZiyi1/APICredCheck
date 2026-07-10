@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Keen IO provided an official Android SDK for event analytics/tracking, with documented Android integration and Android client libraries.
+
+2. **Service model** - This SDK is not primarily on-device. Its normal purpose is to send event data from the app to Keen IO’s hosted analytics platform, where data is collected, stored, and queried. So standard use depends on vendor-hosted backend services.
+
+3. **Integration requirement** - Yes. Typical Keen IO SDK setup requires configuring project-specific credentials so the Android app can send events to Keen IO. The standard integration uses at least a **Project ID** together with write-capable API credentials; for mobile event collection this is commonly the **Write Key**.
+
+4. **Scope** - These credentials are part of Keen IO SDK’s own documented integration with Keen IO’s hosted analytics service, not merely another separate product. They identify the Keen project and authorize sending data to Keen IO.

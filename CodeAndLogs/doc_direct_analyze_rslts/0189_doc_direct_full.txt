@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`myTarget SDK` has official Android integration. It is a mobile advertising SDK from VK/myTarget with Android libraries and Android setup documentation for loading ad formats in Android apps.
+
+2. Service model  
+This SDK is not primarily on-device. Its standard purpose is to request and display ads from myTarget/VK hosted ad infrastructure, so routine use depends on the vendor's remote ad-serving backend.
+
+3. Integration requirement  
+Normal Android use requires a developer-created identifier from the myTarget console for the ad placement being requested. In practice this is typically the `slot ID` used in Android code to load ads. That is a vendor-issued identifier configured in the app so the SDK can request inventory for the correct placement.
+
+4. Scope  
+This credential is part of `myTarget SDK` integration itself, not a separate VK product. Package name or signing are not the credential here; the relevant configured value is the myTarget placement/slot identifier used by the SDK.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Amazon Device Messaging (ADM) has an official client SDK/integration model for Android-based Amazon devices (notably Fire OS / Kindle Fire class devices). It is implemented in Android apps using Android components such as permissions, broadcast receivers, and ADM registration APIs.
+
+2. Service model  
+ADM is not a purely on-device library. Its standard purpose is push messaging via Amazon-hosted infrastructure: the app registers with ADM, and message delivery depends on Amazon’s remote messaging service.
+
+3. Integration requirement  
+For full ADM use, the developer typically creates Amazon-side credentials for the server component that sends push messages, such as a security profile / OAuth client credentials used to obtain an access token for ADM send APIs. However, the usual Android app-side integration does not require embedding a console-issued App ID, API key, or similar credential in the app itself.
+
+4. Scope  
+The relevant credentials are for the server-to-Amazon push API, not an app-embedded credential required by the Android SDK integration itself. Package name and signing requirements do not count as API credentials under the stated definition. Because the credential is not normally configured in the app, this should be classified as no app-side API credential for the Android SDK.

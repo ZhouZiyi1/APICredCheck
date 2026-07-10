@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+OpenTok SDK officially supports Android. TokBox/Vonage provides an Android client SDK for building video, voice, and live streaming features in Android apps.
+
+2. Service model  
+This SDK is not primarily on-device. Standard OpenTok use depends on TokBox/Vonage hosted video infrastructure: clients connect to vendor-managed sessions for real-time audio/video signaling and media services.
+
+3. Integration requirement  
+Normal Android integration requires vendor-issued project credentials. OpenTok apps are set up with an API key from the TokBox/Vonage developer account, and session connection also uses session IDs and tokens derived from that project. The Android app commonly configures the API key directly and uses backend-generated session/token values to connect.
+
+4. Scope  
+These credentials are part of OpenTok’s own documented integration flow, not a separate unrelated product. The API key is specific to using OpenTok/Vonage Video services.

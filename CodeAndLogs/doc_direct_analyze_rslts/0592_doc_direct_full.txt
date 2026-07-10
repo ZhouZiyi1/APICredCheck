@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find evidence that "Nimbuskit SDK" by Jeff Verkoeyen is an official Android SDK or has documented Android integration. NimbusKit is associated with Jeff Verkoeyen's Apple/iOS ecosystem work rather than an Android library. Based on that product identity, Android support appears absent or at least not officially documented.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is therefore N/A on Android.

@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1: Android support
+
+`Harpy SDK` by Arthur Ariel Sabintsev is documented and known as an iOS/macOS/tvOS/watchOS Swift library for checking the Apple App Store for newer app versions and prompting users to update. Its standard integration targets Apple platforms and Apple distribution metadata. I found no official Android library or Android integration documentation for this product.
+
+Because step 1 is no, steps 2-4 are skipped. They are not applicable on Android for this SDK.

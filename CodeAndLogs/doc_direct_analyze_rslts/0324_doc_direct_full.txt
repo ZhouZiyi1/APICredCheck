@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Amazon provides official Android integration for Amazon Cognito through the AWS SDK for Android and related Cognito Android setup documentation.
+
+2. Service model  
+AWS Cognito is not a pure on-device library. Its normal role in an app is to connect the Android client to Amazon-hosted identity services such as Cognito User Pools and/or Cognito Identity Pools for sign-up, sign-in, token handling, and AWS credential federation.
+
+3. Integration requirement  
+Yes. Standard Android setup requires configuring Cognito resource identifiers that are created in AWS, typically via an AWS-supplied configuration file or equivalent app config. Common required values include a Cognito User Pool App Client ID and/or a Cognito Identity Pool ID, depending on which Cognito feature set is used.
+
+4. Scope  
+These identifiers belong to Cognito itself and are part of Cognito’s documented Android integration, not merely another optional AWS product. While end-user login is part of the flow, the app must still be configured with Cognito-issued app/backend identifiers so the SDK can talk to Cognito services.

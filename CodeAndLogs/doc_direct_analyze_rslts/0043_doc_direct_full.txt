@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. ExoPlayer is Google's media player library for Android, with official Android integration/documentation. It is an Android client SDK/library.
+
+2. Service model — ExoPlayer is primarily an on-device media playback library. Its standard role is to play audio/video in the app, handling formats, buffering, rendering, DRM integration hooks, and streaming protocols on the client. It does not, by default, depend on a Google-hosted backend service to function.
+
+3. Integration requirement — Normal ExoPlayer setup does not require registering the app in a Google developer console or configuring a Google-issued API key, App ID, client secret, or similar credential. Developers add the library dependency and use it locally in the app.
+
+4. Scope — While an app using ExoPlayer might separately use other services such as DRM license servers, analytics, CDNs, or Google Cloud resources, those are not credentials required by ExoPlayer itself. Package name/signing are also not an ExoPlayer API credential. Therefore, for this SDK itself, no vendor-issued API credential is required.

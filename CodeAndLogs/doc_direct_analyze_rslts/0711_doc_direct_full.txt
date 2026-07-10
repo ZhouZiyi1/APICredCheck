@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Microsoft Clarity provides an official Android SDK and documented Android integration, typically added through Gradle/Maven and initialized in the app.
+
+2. Service model: Clarity is not primarily an on-device utility. Its standard purpose is session analytics and replay, which depends on sending captured telemetry from the app to Microsoft Clarity’s hosted service for processing and viewing in the Clarity dashboard.
+
+3. Integration requirement: Yes. Typical Clarity mobile setup requires configuring a Clarity project identifier issued from the Clarity dashboard/portal so the SDK knows which Clarity project should receive the app’s data. This is usually documented as a `projectId` or Clarity Project ID during SDK initialization.
+
+4. Scope: This identifier is part of Clarity’s own documented integration flow, not just another Microsoft product layered on top. Package name or signing alone would not satisfy setup; the Clarity-specific project identifier is the relevant configured value.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Braze has an official Android SDK and documented Android integration. The product historically used the Appboy name, and Braze provides Android setup instructions and Android library artifacts for this SDK.
+
+2. Service model  
+This SDK is not primarily an on-device helper library. Its standard use depends on Braze-hosted services for analytics/event ingestion, user profiles, push/in-app messaging, Content Cards, and related engagement features. Normal operation therefore relies on Braze’s remote backend.
+
+3. Integration requirement  
+Typical Android setup requires configuring Braze-issued values in the app, notably an API key and the Braze endpoint. In standard Android integration, developers place these values in Braze configuration resources such as `braze.xml`. That means a vendor-console-issued credential is required for normal use.
+
+4. Scope  
+This credential is part of Braze’s own SDK integration, not just a separate third-party product. The relevant credential is the Braze SDK/API key used by the Android app to connect to Braze services.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. 100ms provides an official Android Live Video SDK and documented Android integration for joining and managing live audio/video rooms.
+
+2. Service model: This SDK is not primarily on-device. Its standard use depends on 100ms-hosted realtime infrastructure for room creation, participant state, media routing, and live video session management.
+
+3. Integration requirement: Yes. Typical Android integration requires supplying a 100ms-issued join credential to the SDK, commonly an `authToken`/room token used in the join configuration. That token is generated from 100ms room/app setup and is required for the client to connect to 100ms services.
+
+4. Scope: This credential is part of the documented integration flow for 100ms Live Video SDK itself, not just a separate optional product. The Android client cannot normally join a 100ms room without the 100ms join token flow. Evidence can vary by naming (`authToken`, room token, user token), but the requirement is consistently that a 100ms-issued access token be configured for connection.

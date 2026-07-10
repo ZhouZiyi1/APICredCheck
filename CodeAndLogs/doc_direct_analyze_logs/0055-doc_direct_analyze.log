@@ -1,0 +1,19 @@
+2026-05-17 21:14:10 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0055-doc_direct_analyze.log
+2026-05-17 21:14:10 [INFO] Run start: SDK_ID=0055 SDK=Admob mediation adapter for AppLovin SDK(deprecated) vendor=AdMob results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:14:10 [INFO] Querying model='gpt-5.4' SDK='Admob mediation adapter for AppLovin SDK(deprecated)' vendor='AdMob'
+2026-05-17 21:14:16 [INFO] LLM token usage: prompt_tokens=997 completion_tokens=276 total_tokens=1273
+2026-05-17 21:14:16 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0055_doc_direct_full.txt
+2026-05-17 21:14:16 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. This product is specifically an AdMob mediation adapter for the AppLovin SDK, and mediation adapters of this type were provided for Android integration with the Google Mobile Ads SDK. Even though it is marked deprecated, it still refers to an Android SDK integration category.
+
+2. Service model — This is an advertising/mediation integration, so normal use depends on remote ad-serving services rather than being purely on-device. The adapter exists to connect AdMob mediation on Android with AppLovin ad demand / SDK behavior.
+
+3. Integration requirement — For normal setup of this adapter, developers typically must configure AppLovin-side identifiers for the mediated network, most notably the AppLovin SDK key. That is a vendor-issued integration value used so the AppLovin SDK can access AppLovin-hosted ad services.
+
+4. Scope — The credential belongs to the mediated AppLovin SDK integration used by this named product (the AdMob mediation adapter for AppLovin SDK), not merely to some unrelated separate product. While AdMob mediation also involves AdMob configuration, the vendor-hosted service relevant to this adapter includes AppLovin’s SDK setup credential.
+2026-05-17 21:14:16 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0055_doc_direct_rslt.txt
+2026-05-17 21:14:16 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "AppLovin SDK Key"}
+2026-05-17 21:14:16 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0055-doc_direct_analyze.log

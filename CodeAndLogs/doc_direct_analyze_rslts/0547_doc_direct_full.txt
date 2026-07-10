@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Adobe Primetime had an official Android offering, commonly documented as the Primetime TVSDK for Android. That is sufficient evidence of official Android integration support.
+
+2. Service model  
+The Android SDK was primarily a client playback SDK for media apps: video playback, DRM handling, ad insertion/workflows, and related media features. While it can interact with remote services during playback, those are typically content-provider/CDN/DRM/ad infrastructure endpoints rather than a mandatory Adobe developer-cloud backend that every integration must register against.
+
+3. Integration requirement  
+Available integration patterns for Adobe Primetime on Android do not indicate a standard requirement to obtain an Adobe console-issued app credential such as an API key, App ID, or client secret just to initialize and use the SDK. Setup is generally library integration plus media/DRM/ad configuration for the customer's own service environment.
+
+4. Scope  
+Some deployments may involve Adobe Primetime-related services or partner systems, but that does not establish a required app credential for the SDK itself. Based on the usual Android SDK integration, there is no clear Adobe-issued API credential tied specifically to "Adobe Primetime SDK" that must be embedded in the app. Evidence is somewhat dated/fragmented, so the conservative result is false.

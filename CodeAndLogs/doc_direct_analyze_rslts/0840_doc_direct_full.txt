@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Wwise SDK has official Android platform support as part of Audiokinetic’s game audio middleware, with documented Android integration for mobile game builds.
+
+2. **Service model** - Wwise SDK’s normal runtime role is primarily on-device audio: sound engine, mixing, playback, spatial audio, and related game-audio features embedded in the app/game. Its standard integration does not depend on routine calls from the Android app to Audiokinetic-hosted runtime APIs for core functionality.
+
+3. **Integration requirement** - Typical Android integration uses the local SDK, soundbanks/assets, and platform build setup. It does not ordinarily require the developer to obtain a vendor-console-issued API key, App ID, client secret, or similar credential for the app to use Wwise runtime features on Android.
+
+4. **Scope** - Any separate Audiokinetic services, account access, downloads, licensing/admin workflows, or optional companion products are outside the core Android SDK integration requirement. For the named product itself, standard Android SDK use does not appear to require an app-configured API credential. Evidence for a required vendor-hosted service credential in normal Android integration is weak, so prefer false/null.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Apphud provides an official Android SDK and Android integration documentation for mobile apps, so Android is supported.
+
+2. Service model  
+Apphud is not a purely on-device library. Its standard use is subscription/paywall management, analytics, and related purchase handling tied to Apphud’s hosted backend. The SDK normally communicates with Apphud services as part of regular operation.
+
+3. Integration requirement  
+Typical Apphud setup requires initializing the SDK with a vendor-issued app credential from the Apphud dashboard/console. In Android examples and setup flows, this is an Apphud API key / App Key used when starting the SDK.
+
+4. Scope  
+That credential is part of Apphud’s own documented SDK integration and is used so the app can connect to Apphud-hosted services. It is not merely an Android package/signing value and not just a credential for a separate third-party product.

@@ -1,0 +1,8 @@
+SECTION 1: Detailed Analysis
+Square Retrofit SDK has documented Android support as an SDK/library for Android integration. It appears to be a client-side Retrofit-based integration for Square APIs, so step 1 is yes.
+
+For the service model, this SDK is not a standalone hosted service SDK; it is a networking/client library used by an app to call Square-related APIs.
+
+For the integration requirement, normal use of this SDK typically does require Square developer credentials/configuration (for example, an access token or similar console-issued credential) so the app can authenticate requests to Square-hosted services.
+
+Scope-wise, that credential is part of this SDK’s documented integration and not merely for a separate Square product.

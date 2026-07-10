@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Unity IAP is an official Unity package for adding in-app purchases in Unity apps, and its documented store integrations include Android via Google Play.
+
+2. Service model: In typical Android use, Unity IAP is primarily a client-side wrapper around the platform store billing flow. Purchases are fulfilled through Google Play and the app/store interaction, not through a Unity-hosted runtime service that the SDK must contact as its core function.
+
+3. Integration requirement: Standard Unity IAP setup for Android does not require obtaining a Unity-issued API key, App ID, secret, or similar credential from a Unity console for the SDK itself to function. Developers do configure products and store-side settings, but those are generally in Google Play Console or local Unity project configuration rather than a Unity API credential for vendor-hosted services.
+
+4. Scope: Any Android purchase credentials or identifiers involved are store-specific (for example, Google Play configuration), not a credential belonging to Unity IAP's own documented service integration. Based on that scope, this SDK does not appear to require a Unity-issued API credential for normal Android use.

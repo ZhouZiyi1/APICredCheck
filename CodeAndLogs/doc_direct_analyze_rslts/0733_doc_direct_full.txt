@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Baidu Cloud Push SDK is an official push-notification/push-messaging SDK with Android integration documentation and Android client libraries.
+
+2. **Service model** - This product is not primarily on-device. Its normal use depends on Baidu-hosted push services: the SDK registers the device/app with Baidu’s push backend and receives/manages push delivery through Baidu’s cloud infrastructure.
+
+3. **Integration requirement** - Yes. Typical integration requires the developer to create/register an app in Baidu’s console and configure console-issued identifiers for the push service in the Android app. For Baidu Cloud Push, the standard credential label is commonly the **API Key** (often paired in docs/accounts with other app identifiers, but the console-issued key is the relevant credential type).
+
+4. **Scope** - This credential is part of the documented integration for **Baidu Cloud Push SDK itself**, not just another Baidu product. The app must identify itself to Baidu’s push service so the SDK can use Baidu-hosted push infrastructure.

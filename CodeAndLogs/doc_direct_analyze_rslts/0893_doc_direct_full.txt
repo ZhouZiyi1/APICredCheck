@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Segment documents an Android destination/plugin for Amplitude in the context of its Android analytics SDK integration, so there is an official Android integration path for the product named “Segment connector for Amplitude SDK.”
+
+2. **Service model** - This connector is not a standalone on-device utility. Its normal purpose is to forward events from Segment’s Android SDK into Amplitude, which is a vendor-hosted analytics service. So standard use involves remote hosted services.
+
+3. **Integration requirement** - Yes. Typical setup for the Amplitude destination requires configuring the Amplitude project credential used to send data to Amplitude. For Amplitude, this is commonly the **API Key**.
+
+4. **Scope** - The credential is tied to this product’s documented integration because the connector specifically exists to route data into Amplitude. The needed value is for the Amplitude side of this connector’s setup, not merely Android package/signing metadata. Evidence can vary by SDK generation, but the standard integration pattern points to an Amplitude API key, so this is strong enough to classify as required.

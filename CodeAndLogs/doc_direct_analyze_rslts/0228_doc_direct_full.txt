@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Tencent Social Ads SDK has official Android integration/documentation as an ad SDK for Android apps.
+
+2. Service model: This is an advertising SDK, so standard use depends on Tencent-hosted ad delivery services. The SDK does not work as a purely on-device library; it routinely requests, renders, and tracks ads through Tencent infrastructure.
+
+3. Integration requirement: Yes. Typical integration requires the developer to register the app in Tencent's ads platform and configure identifiers issued by Tencent. In practice this includes at least an `App ID`, and ad serving also commonly uses placement/ad slot IDs. The `App ID` is the clearest product-level console-issued credential needed for normal SDK use.
+
+4. Scope: This credential belongs to the Tencent Social Ads SDK integration itself, not just to some separate Tencent product. Package name or signing config alone would not satisfy the SDK's normal setup.

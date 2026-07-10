@@ -1,0 +1,5 @@
+I’ll verify whether `MMWormhole SDK` has official Android support first, then only assess credentials if Android is documented.SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear evidence that **MMWormhole SDK** from **Mutual Mobile** has an official Android SDK or documented Android integration. Available references to "Wormhole" in the Mutual Mobile context are associated with cross-platform/app tooling concepts, but not a clearly documented, vendor-supported Android SDK product page or Android installation guide for a product specifically named **MMWormhole SDK**. Because the product identity and Android integration evidence are weak/conflicting, step 1 is treated as **no**.
+
+Steps 2-4 are therefore **skipped** as N/A on Android per the required method.

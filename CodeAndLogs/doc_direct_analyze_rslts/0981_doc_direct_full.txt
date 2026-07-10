@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support - I could not find clear evidence that a product specifically named `Canvas SDK` from `CanvasPod` has an official Android SDK, Android package, or Android integration documentation. The name is also generic enough that it risks confusion with unrelated products from other vendors. Because the required step is to verify official Android support for this exact product/vendor pair, and the evidence is weak, I treat Android support as not established.
+
+Steps 2-4 are skipped because step 1 is not satisfied (N/A on Android).

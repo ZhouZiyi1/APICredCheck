@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AMoAd SDK supports Android. AMoAd is a mobile advertising SDK, and its documented integrations have included Android app setup for serving ads in Android applications.
+
+2. Service model  
+This is an ad network SDK, so standard operation depends on vendor-hosted services. The SDK requests and renders ads from AMoAd's backend rather than working purely on-device.
+
+3. Integration requirement  
+Typical ad SDK setup requires the developer to register inventory and configure identifiers issued by the ad platform so the SDK knows which publisher/app/ad placement is requesting ads. For AMoAd, the standard integration uses placement/publisher-style IDs rather than being credential-free.
+
+4. Scope  
+Those identifiers are part of AMoAd SDK's own ad-serving integration, not merely package-name or signing metadata and not a separate third-party product. Evidence for Android support and ID-based ad setup is strong enough to treat this as requiring an API-style integration credential. The exact label can vary by AMoAd documentation version, but it is effectively an ad placement identifier.

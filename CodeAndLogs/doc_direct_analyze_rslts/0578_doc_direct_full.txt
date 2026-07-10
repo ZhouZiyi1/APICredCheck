@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Digits SDK had an official Android integration as part of Fabric/Twitter's mobile SDK offerings. It was documented for Android apps and initialized through the Android Fabric setup, so Android support is `yes`.
+
+2. Service model  
+Digits was not a purely on-device library. Its core purpose was phone-number authentication/verification, which depended on vendor-hosted services to send and verify codes and complete the login flow. That means normal use routinely relied on the vendor backend.
+
+3. Integration requirement  
+Typical Android setup required registering the app in the Fabric/Twitter console and configuring console-issued credentials in the app. Digits/Twitter integrations commonly used a key/secret pair supplied through Fabric-generated configuration or app resources/manifest values.
+
+4. Scope  
+Those credentials were part of Digits/Fabric's documented integration for this product's hosted authentication service, not merely optional credentials for some unrelated product. Evidence can be a bit dated because Digits was discontinued, but the standard Android integration pattern indicates a required vendor-issued credential.

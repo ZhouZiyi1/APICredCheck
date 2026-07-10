@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Facebook App Links has documented Android integration and Android libraries/support through Meta/Facebook's Android SDK ecosystem.
+
+2. Service model — App Links is primarily a deep-linking/open-graph linking mechanism used by apps to route users into app content. On Android, much of the handling is client/app-link/deep-link behavior, but Facebook’s platform integration is part of the broader Meta app platform rather than a purely local utility library.
+
+3. Integration requirement — For standard Facebook platform integrations on Android, developers typically register their app with Meta and configure a Facebook App ID in the Android app. App Links integration is tied to that platform setup rather than being a standalone purely local library with no app registration.
+
+4. Scope — The App ID belongs to the Facebook App Links / Facebook platform integration used by this SDK on Android, not merely an unrelated separate product. Given App Links is part of Meta’s app platform tooling, the App ID is the relevant console-issued credential-like identifier.

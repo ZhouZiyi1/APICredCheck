@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. ThreatMetrix provides an Android mobile SDK for device profiling / fraud signal collection, so this product supports Android.
+
+2. Service model: This SDK is not just an on-device utility. Its normal purpose is to collect device and behavioral signals and submit profiling data to ThreatMetrix / LexisNexis Risk Solutions services for risk evaluation and transaction decisioning. That means standard use relies on the vendor-hosted backend.
+
+3. Integration requirement: Yes. Typical ThreatMetrix Android integration requires vendor-provided configuration values, most notably an `Org ID` and the ThreatMetrix profiling server / endpoint information. The `Org ID` is the clearest console-issued product identifier used so the SDK can profile against the customer’s ThreatMetrix service configuration.
+
+4. Scope: This credential is part of ThreatMetrix’s own documented mobile profiling integration, not a separate third-party product. Package name or app signing alone would not be sufficient; the SDK is configured with ThreatMetrix account-specific values.

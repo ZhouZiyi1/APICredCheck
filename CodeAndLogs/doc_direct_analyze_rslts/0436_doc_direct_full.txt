@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Facebook Account Kit had an official Android SDK and documented Android integration for phone-number and email-based login flows.
+
+2. Service model  
+This product was not primarily on-device. Its standard use depended on Meta-hosted Account Kit services to send verification codes, validate login, and complete authentication flows. That makes it a backend-dependent SDK rather than a pure local library.
+
+3. Integration requirement  
+Yes. Typical Android setup required registering the app in Meta/Facebook's developer console and configuring console-issued values in the Android app. The standard integration used at least a Facebook `App ID`, and Account Kit setup commonly also required a `Client Token` for the SDK configuration.
+
+4. Scope  
+These credentials were part of the documented integration for Account Kit itself, not just some unrelated Meta product added separately. The SDK's normal Android authentication flow depended on those configured app credentials to talk to Account Kit/Facebook services.

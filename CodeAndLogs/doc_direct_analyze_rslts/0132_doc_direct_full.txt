@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Firebase provides an official Android In-App Messaging SDK (`com.google.firebase:firebase-inappmessaging-display` / related Android setup docs), so this product supports Android.
+
+2. Service model — Firebase In-App Messaging is not a purely on-device library. Its standard use depends on Firebase-hosted backend services: campaigns are created in the Firebase console and delivered/evaluated through Firebase infrastructure for the registered app.
+
+3. Integration requirement — Yes. Normal Android integration requires registering the app in a Firebase project and adding the Firebase config issued from the console, typically via `google-services.json`. That file supplies identifiers used by the app to connect to Firebase services, including values such as the Firebase App ID and API key.
+
+4. Scope — This credential/configuration is part of this product’s documented integration path on Android, not just an unrelated optional Firebase add-on. Firebase In-App Messaging is built to work with the Firebase project/app registration model, and the shipped Firebase config file is a standard requirement for the app to use Firebase-hosted services.

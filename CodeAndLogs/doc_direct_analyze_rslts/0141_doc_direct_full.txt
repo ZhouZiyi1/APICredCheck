@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Amazon Mobile Ads SDK had official Android integration documentation and Android library artifacts for showing ads in Android apps.
+
+2. Service model — This is an ad-serving SDK, so normal operation depends on Amazon-hosted ad services. The SDK requests and renders ads from Amazon’s backend rather than working purely on-device.
+
+3. Integration requirement — Yes. Standard integration required the developer to register the app with Amazon and configure an application identifier used by the SDK for ad requests. In Amazon’s documentation this is typically referred to as an App Key / Application Key.
+
+4. Scope — This credential is part of the Amazon Mobile Ads SDK integration itself, not a separate Amazon product. It is the identifier used so the SDK can serve ads for the registered app.

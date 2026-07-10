@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Pendo provides an official mobile SDK with Android integration documentation and Android-specific setup for adding the SDK to an Android app.
+
+2. **Service model** - Pendo SDK is not a purely on-device helper library. Its standard purpose is mobile analytics, in-app guides, and user/session tracking tied to Pendo’s hosted platform. In normal use, the SDK sends app/user/event data to Pendo services and receives configuration/content such as guides from Pendo’s backend.
+
+3. **Integration requirement** - Yes. Standard Pendo mobile SDK setup requires configuring vendor-issued app identification values so the SDK can connect the app to the correct Pendo subscription/application in Pendo’s hosted service. The documented integration commonly uses an **App Key** (often alongside environment-specific Pendo configuration), and this is a vendor-provided integration credential/value rather than just a package name or signing artifact.
+
+4. **Scope** - This credential belongs to Pendo SDK’s own documented mobile integration, not to a separate third-party product. It is used specifically so the Pendo SDK can communicate with Pendo’s platform for analytics/guides.

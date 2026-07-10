@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. BlinkReceipt SDK is documented as a mobile SDK with Android integration, so `supports_android` is true.
+
+2. Service model: BlinkReceipt is a receipt-scanning/data-extraction product rather than a generic utility library. While capture happens in the app, the product is typically positioned as a receipt understanding service with vendor-managed extraction logic/data rather than a purely local helper with no product-specific backend relationship. Evidence on the exact cloud/on-device split is not fully explicit here, but it is not best treated as a simple offline-only client library.
+
+3. Integration requirement: BlinkReceipt integrations are commonly set up with a vendor-issued license/API-style key for the mobile app. That is a normal product-specific setup requirement, not just Android package metadata.
+
+4. Scope: The credential appears to belong to BlinkReceipt SDK itself, not to a separate Microblink product. The standard integration requirement is a BlinkReceipt/Microblink-issued license key configured in the Android app.
+
+Weakness note: Microblink products often emphasize on-device processing, so the line between “license key” and “API credential” is not perfectly clean. Still, for normal Android integration of BlinkReceipt SDK, a vendor-issued key is part of standard setup, so this is best classified as requiring a credential.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. SlackTextViewController is an iOS UI component originally distributed for UIKit/Objective-C apps, with documentation and packaging centered on iOS (for example, CocoaPods / iOS usage), not an official Android SDK or Android integration. It is a client-side message input / chat-style text view controller library rather than a cross-platform Slack service SDK.
+
+Because step 1 is no, steps 2-4 are skipped. N/A on Android.

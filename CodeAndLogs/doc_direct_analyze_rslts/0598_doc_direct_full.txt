@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1: Android support
+
+The product name is explicitly `ios-ntp SDK`, which indicates an iOS-specific SDK rather than a cross-platform or Android SDK. Based on the provided product name and the absence of any indication of an Android library or Android integration documentation, there is not sufficient evidence that this product officially supports Android.
+
+Because step 1 is `no`, steps 2-4 are skipped as not applicable on Android.

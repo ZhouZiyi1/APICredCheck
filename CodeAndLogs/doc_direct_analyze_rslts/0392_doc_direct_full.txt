@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find evidence that OCPsoft ships PrettyTime as an official Android SDK or provides a documented Android integration flow specific to Android. PrettyTime is primarily known as a general Java library for human-readable relative time formatting, which may be technically usable in Android because Android runs Java-compatible code, but that is not the same as official Android support or an Android integration document from the vendor. Given the requirement to confirm official Android library or documented Android integration, the evidence is too weak to count this as supported.
+
+Steps 2-4 are skipped because Android support is not established (N/A on Android).

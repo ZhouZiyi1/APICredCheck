@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Mintegral provides an official Android ads SDK and documented Android integration for showing ads in Android apps.
+
+2. Service model — This SDK is not primarily on-device. Its standard use is to fetch and render advertising inventory, track events, and handle mediation/ad delivery through Mintegral/Mobvista-hosted services.
+
+3. Integration requirement — Yes. Standard Mintegral Android setup requires developer-console-issued identifiers to be configured in the app. Mintegral’s Android integration commonly requires an `App ID` and `App Key` for SDK initialization, and ad placements then use unit/placement identifiers.
+
+4. Scope — These values are part of Mintegral SDK’s own documented integration for ad serving and SDK initialization, not just another separate product. They identify the publisher app to Mintegral’s ad platform, so this meets the API credential definition here.

@@ -1,0 +1,291 @@
+SDK_ID: 0050
+SDK_NAME: FacebookMessengerShareKitSDK
+DEMO_APK: apks\0050-FacebookMessengerShareKitSDK-demo.apk
+DEMO_PACKAGE: com.cefa.messenger.demo
+
+HOOK_METHOD_SIGNATURES:
+- No hook method signatures identified.
+
+PASSIVE_FRIDA_OBSERVATION_POINTS:
+- No structured observation points were extracted from the LLM response.
+
+HOOK_SELECTION_TRACE:
+- LLM observation points: 0
+- LLM filter counts: legacy=0, observe_only=0, high_risk=0, invalid_action=0
+- LLM selected signatures: 0
+- LLM observation points unavailable; using static auth+network fallback.
+- Static fallback evidence: google_android_headers=0, network_send=80
+- fallback auth-adjacent-network: no low-risk auth-adjacent network methods found.
+- Static fallback selected signatures: 0
+
+STATIC_PROTECTION_EVIDENCE:
+
+[package_name]
+- smali\com\android\installreferrer\api\InstallReferrerClientImpl.smali:91: invoke-virtual {v0, v2, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\android\installreferrer\api\InstallReferrerClientImpl.smali:174: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\android\installreferrer\api\InstallReferrerClientImpl.smali:371: iget-object v7, v7, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+- smali\com\facebook\FacebookSdk.smali:685: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\facebook\FacebookSdk.smali:695: invoke-virtual {v1, p0, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\facebook\FacebookSdk.smali:1394: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\facebook\UserSettingsManager.smali:1091: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\facebook\UserSettingsManager.smali:1198: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\facebook\UserSettingsManager.smali:1310: invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\gps\topics\GpsTopicsManager.smali:348: invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseAutoLogger.smali:23: "packageName",
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseAutoLogger.smali:559: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseAutoLogger.smali:563: const-string v2, "context.packageName"
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseConstants.smali:180: .field public static final PACKAGE_NAME:Ljava/lang/String; = "packageName"
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseEventManager.smali:208: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseLoggerManager.smali:39: "packageName",
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseLoggerManager.smali:255: const-string v1, "packageName"
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseLoggerManager.smali:1069: const-string v0, "packageName"
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseManager.smali:237: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\internal\AppEventsLoggerUtility.smali:255: invoke-virtual {p4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\internal\AppEventUtility.smali:179: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\internal\AppEventUtility.smali:185: invoke-virtual {v1, v0, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes2\com\facebook\appevents\internal\AutomaticAnalyticsLogger.smali:460: const-string v1, "packageName"
+- smali_classes2\com\facebook\appevents\internal\Constants.smali:175: .field public static final GP_IAP_PACKAGE_NAME:Ljava/lang/String; = "packageName"
+- smali_classes2\com\facebook\appevents\internal\HashUtils.smali:340: invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\internal\SourceApplicationInfo$Factory.smali:85: invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\appevents\internal\SourceApplicationInfo$Factory.smali:90: invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\applinks\AppLinkData.smali:724: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\bolts\AppLink$Target.smali:23: "packageName",
+- smali_classes2\com\facebook\bolts\AppLink$Target.smali:33: "getPackageName",
+- smali_classes2\com\facebook\bolts\AppLink$Target.smali:53: .field private final packageName:Ljava/lang/String;
+- smali_classes2\com\facebook\internal\AttributionIdentifiers$Companion.smali:413: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\internal\AttributionIdentifiers$Companion.smali:601: iget-object v7, v7, Landroid/content/pm/ProviderInfo;->packageName:Ljava/lang/String;
+- smali_classes2\com\facebook\internal\AttributionIdentifiers$Companion.smali:603: const-string v8, "contentProviderInfo.packageName"
+- smali_classes2\com\facebook\internal\CustomTab.smali:39: "packageName",
+- smali_classes2\com\facebook\internal\CustomTabUtils.smali:155: iget-object v5, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+- smali_classes2\com\facebook\internal\CustomTabUtils.smali:164: iget-object v0, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+- smali_classes2\com\facebook\internal\CustomTabUtils.smali:212: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:34: "packageName",
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:133: const-string v1, "packageName"
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:183: invoke-virtual {p0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes2\com\facebook\internal\NativeProtocol.smali:165: "packageName",
+- smali_classes2\com\facebook\internal\NativeProtocol.smali:3922: iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+- smali_classes2\com\facebook\internal\NativeProtocol.smali:3924: const-string v2, "resolveInfo.activityInfo.packageName"
+- smali_classes2\com\facebook\internal\Utility.smali:1532: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\internal\Utility.smali:1544: invoke-virtual {v0, v2, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes2\com\facebook\internal\Utility.smali:2607: invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\internal\Validate.smali:599: iget-object v1, v1, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+- smali_classes2\com\facebook\internal\Validate.smali:601: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\internal\WebDialog$Companion.smali:124: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\login\CustomTabLoginMethodHandler.smali:47: "packageName",
+- smali_classes2\com\facebook\login\LoginFragment.smali:244: invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+- smali_classes2\com\facebook\login\LoginLogger.smali:227: invoke-virtual {p1, p2, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes2\com\facebook\login\LoginManager.smali:353: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+[app_metadata]
+- smali\com\facebook\FacebookSdk.smali:1401: invoke-virtual {v0, p0, v1}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali\com\facebook\FacebookSdk.smali:1413: iget-object v0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\facebook\FacebookSdk.smali:1427: iget-object v0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\facebook\UserSettingsManager.smali:1097: invoke-virtual {v2, v0, v3}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali\com\facebook\UserSettingsManager.smali:1106: iget-object v2, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\facebook\UserSettingsManager.smali:1110: iget-object v2, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseManager.smali:244: invoke-virtual {v3, v1, v4}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseManager.smali:253: iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:141: invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:145: iget v2, v2, Landroid/content/pm/ApplicationInfo;->flags:I
+- smali_classes2\com\facebook\internal\NativeProtocol$KatanaAppInfo.smali:62: invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes2\com\facebook\internal\NativeProtocol$KatanaAppInfo.smali:67: iget v0, v0, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
+- smali_classes2\com\facebook\internal\Utility.smali:1475: invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes2\com\facebook\internal\Utility.smali:1480: iget v1, v0, Landroid/content/pm/ApplicationInfo;->labelRes:I
+- smali_classes2\com\facebook\internal\Utility.smali:1485: iget-object p0, v0, Landroid/content/pm/ApplicationInfo;->nonLocalizedLabel:Ljava/lang/CharSequence;
+- smali_classes2\com\facebook\internal\WebDialog$Companion.smali:131: invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali_classes2\com\facebook\internal\WebDialog$Companion.smali:140: iget-object v0, p1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali_classes2\com\facebook\internal\WebDialog$Companion.smali:161: iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali_classes2\com\facebook\messenger\ShareToMessengerParams.smali:31: "metaData",
+- smali_classes2\com\facebook\messenger\ShareToMessengerParams.smali:89: .field private final metaData:Ljava/lang/String;
+- smali_classes2\com\facebook\messenger\ShareToMessengerParams.smali:256: iput-object v2, p0, Lcom/facebook/messenger/ShareToMessengerParams;->metaData:Ljava/lang/String;
+
+[signing_certificate]
+- smali\com\facebook\FacebookSdk.smali:704: iget-object v1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\facebook\FacebookSdk.smali:731: iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:127: const-string v0, "packageInfo.signatures"
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:188: iget-object p1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali_classes2\com\facebook\internal\FacebookSignatureValidator.smali:192: iget-object p1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+
+[sha1_sha256_digest]
+- smali\com\facebook\FacebookSdk.smali:719: const-string v1, "SHA-1"
+- smali\com\facebook\FacebookSdk.smali:722: invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali\com\facebook\FacebookSdk.smali:741: invoke-virtual {v1, p0}, Ljava/security/MessageDigest;->update([B)V
+- smali_classes2\com\facebook\appevents\internal\HashUtils.smali:434: invoke-static {v2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes2\com\facebook\appevents\internal\HashUtils.smali:451: invoke-virtual {v2, p1, v4, v3}, Ljava/security/MessageDigest;->update([BII)V
+- smali_classes2\com\facebook\appevents\internal\HashUtils.smali:461: invoke-virtual {v2}, Ljava/security/MessageDigest;->digest()[B
+- smali_classes2\com\facebook\internal\Utility.smali:173: "Ljava/security/MessageDigest;",
+- smali_classes2\com\facebook\internal\Utility.smali:272: .field private static final HASH_ALGORITHM_SHA1:Ljava/lang/String; = "SHA-1"
+- smali_classes2\com\facebook\internal\Utility.smali:274: .field private static final HASH_ALGORITHM_SHA256:Ljava/lang/String; = "SHA-256"
+- smali_classes2\com\facebook\login\PKCEUtil.smali:183: const-string p1, "SHA-256"
+- smali_classes2\com\facebook\login\PKCEUtil.smali:186: invoke-static {p1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes2\com\facebook\login\PKCEUtil.smali:195: invoke-virtual {p1, p0, v1, v0}, Ljava/security/MessageDigest;->update([BII)V
+
+[network_send]
+- smali\com\facebook\FacebookRequestError$Companion.smali:57: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\FacebookRequestError$Companion.smali:90: .method public final checkResponseAndCreateError(Lorg/json/JSONObject;Ljava/lang/Object;Ljava/net/HttpURLConnection;)Lcom/facebook/FacebookR
+- smali\com\facebook\FacebookRequestError$Companion.smali:429: invoke-direct/range {v0 .. v14}, Lcom/facebook/FacebookRequestError;-><init>(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/
+- smali\com\facebook\FacebookRequestError.smali:26: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\FacebookRequestError.smali:30: "(Ljava/net/HttpURLConnection;Ljava/lang/Exception;)V",
+- smali\com\facebook\FacebookRequestError.smali:54: "(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lorg/json/JSONObject;Ljava/lang/Object;Lja
+- smali\com\facebook\FacebookSdk.smali:1886: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali\com\facebook\FacebookSdk.smali:2439: invoke-interface {p1, p0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali\com\facebook\GraphRequest$Companion.smali:81: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\GraphRequest$Companion.smali:184: "([Lcom/facebook/GraphRequest;)Ljava/net/HttpURLConnection;",
+- smali\com\facebook\GraphRequest$Companion.smali:283: .method private final createConnection(Ljava/net/URL;)Ljava/net/HttpURLConnection;
+- smali\com\facebook\GraphRequest.smali:1347: .method public static final executeConnectionAndWait(Ljava/net/HttpURLConnection;Lcom/facebook/GraphRequestBatch;)Ljava/util/List;
+- smali\com\facebook\GraphRequest.smali:1352: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\GraphRequest.smali:1366: invoke-virtual {v0, p0, p1}, Lcom/facebook/GraphRequest$Companion;->executeConnectionAndWait(Ljava/net/HttpURLConnection;Lcom/facebook/Graph
+- smali\com\facebook\GraphRequestAsyncTask.smali:44: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\GraphRequestAsyncTask.smali:45: "(Ljava/net/HttpURLConnection;[Lcom/facebook/GraphRequest;)V",
+- smali\com\facebook\GraphRequestAsyncTask.smali:46: "(Ljava/net/HttpURLConnection;Ljava/util/Collection;)V",
+- smali\com\facebook\GraphResponse$Companion.smali:41: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\GraphResponse$Companion.smali:89: .method private final createResponseFromObject(Lcom/facebook/GraphRequest;Ljava/net/HttpURLConnection;Ljava/lang/Object;Ljava/lang/Object;)L
+- smali\com\facebook\GraphResponse$Companion.smali:109: invoke-virtual {v0, p3, p4, p2}, Lcom/facebook/FacebookRequestError$Companion;->checkResponseAndCreateError(Lorg/json/JSONObject;Ljava/lang/
+- smali\com\facebook\GraphResponse.smali:24: "Ljava/net/HttpURLConnection;",
+- smali\com\facebook\GraphResponse.smali:29: "(Lcom/facebook/GraphRequest;Ljava/net/HttpURLConnection;Ljava/lang/String;Lorg/json/JSONObject;)V",
+- smali\com\facebook\GraphResponse.smali:32: "(Lcom/facebook/GraphRequest;Ljava/net/HttpURLConnection;Ljava/lang/String;Lorg/json/JSONArray;)V",
+- smali\com\facebook\UserSettingsManager.smali:706: invoke-interface {v0, v3}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\AnalyticsUserIDStore.smali:273: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\AnalyticsUserIDStore.smali:325: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\AppEventQueue.smali:234: invoke-interface {v1, v2}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\AppEventQueue.smali:766: invoke-interface {v1, v2}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\AppEventQueue.smali:1254: invoke-interface {v4, v5}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\AppEventsLoggerImpl$Companion.smali:1515: invoke-virtual {p2, v1}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\UserDataStore.smali:255: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\UserDataStore.smali:1490: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\UserDataStore.smali:1921: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\aam\MetadataIndexer.smali:111: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\cloudbridge\AppEventsConversionsAPITransformerWebRequests.smali:1047: invoke-virtual {v5}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+- smali_classes2\com\facebook\appevents\cloudbridge\AppEventsConversionsAPITransformerWebRequests.smali:1051: const-string v5, "null cannot be cast to non-null type java.net.HttpURLConnection"
+- smali_classes2\com\facebook\appevents\cloudbridge\AppEventsConversionsAPITransformerWebRequests.smali:1055: check-cast p1, Ljava/net/HttpURLConnection;
+- smali_classes2\com\facebook\appevents\codeless\CodelessLoggingEventListener.smali:249: invoke-interface {p1, p2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\codeless\CodelessManager.smali:172: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\codeless\ViewIndexer.smali:481: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\codeless\ViewIndexer.smali:778: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\gps\ara\GpsAraTriggersManager.smali:912: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseActivityLifecycleTracker$initializeIfNotInitialized$2.smali:216: invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseActivityLifecycleTracker$initializeIfNotInitialized$2.smali:294: invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\internal\ActivityLifecycleTracker.smali:460: invoke-interface {p0, v0}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\internal\ActivityLifecycleTracker.smali:547: invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\internal\ActivityLifecycleTracker.smali:865: invoke-interface {v3, v4}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\internal\FileDownloadTask.smali:127: invoke-virtual {p1}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+- smali_classes2\com\facebook\appevents\internal\FileDownloadTask.smali:132: invoke-virtual {v0}, Ljava/net/URLConnection;->getContentLength()I
+- smali_classes2\com\facebook\appevents\ml\ModelManager$TaskHandler$Companion.smali:39: "execute",
+- smali_classes2\com\facebook\appevents\ml\ModelManager$TaskHandler$Companion.smali:60: invoke-static {p0, p1}, Lcom/facebook/appevents/ml/ModelManager$TaskHandler$Companion;->execute$lambda$1(Ljava/util/List;Ljava/io/File;)V
+- smali_classes2\com\facebook\appevents\ml\ModelManager$TaskHandler$Companion.smali:68: invoke-static {p0, p1, p2}, Lcom/facebook/appevents/ml/ModelManager$TaskHandler$Companion;->execute$lambda$1$lambda$0(Lcom/facebook/appevent
+- smali_classes2\com\facebook\appevents\ml\ModelManager.smali:759: invoke-virtual {v2, v1, v0}, Lcom/facebook/appevents/ml/ModelManager$TaskHandler$Companion;->execute(Lcom/facebook/appevents/ml/ModelManager
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\OnDeviceProcessingManager.smali:284: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\OnDeviceProcessingManager.smali:379: invoke-interface {v2, v3}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\appevents\suggestedevents\SuggestedEventsManager.smali:174: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\applinks\AppLinkData.smali:674: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\bolts\AndroidExecutors$UIThreadExecutor.smali:27: "execute",
+- smali_classes2\com\facebook\bolts\AndroidExecutors$UIThreadExecutor.smali:55: .method public execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\bolts\BoltsExecutors$ImmediateExecutor.smali:37: "execute",
+- smali_classes2\com\facebook\bolts\BoltsExecutors$ImmediateExecutor.smali:199: .method public execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\bolts\BoltsExecutors$ImmediateExecutor.smali:229: invoke-interface {v0, p1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\bolts\Task$Companion.smali:280: invoke-interface {p4, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\bolts\Task$Companion.smali:479: invoke-interface {p4, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\bolts\Task$Companion.smali:824: invoke-interface {p2, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\gamingservices\cloudgaming\DaemonReceiver.smali:155: invoke-direct {p1, v0, v1, p0}, Lcom/facebook/GraphResponse;-><init>(Lcom/facebook/GraphRequest;Ljava/net/HttpURLConnection;Lcom/facebook/Fa
+- smali_classes2\com\facebook\gamingservices\cloudgaming\DaemonReceiver.smali:244: invoke-direct {p1, v1, v3, v2, p0}, Lcom/facebook/GraphResponse;-><init>(Lcom/facebook/GraphRequest;Ljava/net/HttpURLConnection;Ljava/lang/S
+- smali_classes2\com\facebook\gamingservices\cloudgaming\DaemonReceiver.smali:272: invoke-direct {p1, v1, v3, v2, p0}, Lcom/facebook/GraphResponse;-><init>(Lcom/facebook/GraphRequest;Ljava/net/HttpURLConnection;Ljava/lang/S
+- smali_classes2\com\facebook\internal\FetchedAppGateKeepersManager.smali:587: invoke-interface {v4, v3}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\internal\FetchedAppSettingsManager.smali:795: invoke-interface {v3, v4}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\internal\FileLruCache.smali:367: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\internal\FileLruCache.smali:815: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes2\com\facebook\internal\ImageDownloader.smali:312: invoke-virtual {v3}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+- smali_classes2\com\facebook\internal\ImageDownloader.smali:316: const-string v4, "null cannot be cast to non-null type java.net.HttpURLConnection"
+- smali_classes2\com\facebook\internal\ImageDownloader.smali:320: check-cast v3, Ljava/net/HttpURLConnection;
+- smali_classes2\com\facebook\internal\ImageResponseCache$BufferedHttpInputStream.smali:26: "Ljava/net/HttpURLConnection;",
+- smali_classes2\com\facebook\internal\ImageResponseCache$BufferedHttpInputStream.smali:27: "(Ljava/io/InputStream;Ljava/net/HttpURLConnection;)V",
+- smali_classes2\com\facebook\internal\ImageResponseCache$BufferedHttpInputStream.smali:29: "()Ljava/net/HttpURLConnection;",
+- smali_classes2\com\facebook\internal\ImageResponseCache.smali:37: "Ljava/net/HttpURLConnection;",
+- smali_classes2\com\facebook\internal\ImageResponseCache.smali:276: .method public static final interceptAndCacheImageStream(Ljava/net/HttpURLConnection;)Ljava/io/InputStream;
+
+[binder_or_gms]
+- smali\com\android\installreferrer\api\InstallReferrerClientImpl$InstallReferrerServiceConnection.smali:61: .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+- smali\com\android\installreferrer\api\InstallReferrerClientImpl$InstallReferrerServiceConnection.smali:74: invoke-static {p2}, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService$Stub;->b(Landroid/os/IBinder;)Lcom/google/android
+- smali\com\facebook\AccessToken$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\AccessToken$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/AccessToken;
+- smali\com\facebook\AccessToken$Companion$CREATOR$1.smali:78: invoke-direct {v0, p1}, Lcom/facebook/AccessToken;-><init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AccessToken.smali:43: "Landroid/os/Parcel;",
+- smali\com\facebook\AccessToken.smali:44: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\AccessToken.smali:255: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AuthenticationToken$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\AuthenticationToken$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/AuthenticationToken;
+- smali\com\facebook\AuthenticationToken$Companion$CREATOR$1.smali:78: invoke-direct {v0, p1}, Lcom/facebook/AuthenticationToken;-><init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AuthenticationToken.smali:32: "Landroid/os/Parcel;",
+- smali\com\facebook\AuthenticationToken.smali:33: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\AuthenticationToken.smali:143: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AuthenticationTokenClaims$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\AuthenticationTokenClaims$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/AuthenticationTokenClaims;
+- smali\com\facebook\AuthenticationTokenClaims$Companion$CREATOR$1.smali:78: invoke-direct {v0, p1}, Lcom/facebook/AuthenticationTokenClaims;-><init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AuthenticationTokenClaims.smali:57: "Landroid/os/Parcel;",
+- smali\com\facebook\AuthenticationTokenClaims.smali:58: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\AuthenticationTokenClaims.smali:271: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AuthenticationTokenHeader$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\AuthenticationTokenHeader$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/AuthenticationTokenHeader;
+- smali\com\facebook\AuthenticationTokenHeader$Companion$CREATOR$1.smali:78: invoke-direct {v0, p1}, Lcom/facebook/AuthenticationTokenHeader;-><init>(Landroid/os/Parcel;)V
+- smali\com\facebook\AuthenticationTokenHeader.smali:31: "Landroid/os/Parcel;",
+- smali\com\facebook\AuthenticationTokenHeader.smali:32: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\AuthenticationTokenHeader.smali:120: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali\com\facebook\FacebookRequestError$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\FacebookRequestError$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/FacebookRequestError;
+- smali\com\facebook\FacebookRequestError$Companion$CREATOR$1.smali:80: invoke-direct {v0, p1, v1}, Lcom/facebook/FacebookRequestError;-><init>(Landroid/os/Parcel;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+- smali\com\facebook\FacebookRequestError.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\FacebookRequestError.smali:39: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\FacebookRequestError.smali:338: .method private constructor <init>(Landroid/os/Parcel;)V
+- smali\com\facebook\GraphRequest$ParcelableResourceWithMimeType$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\GraphRequest$ParcelableResourceWithMimeType$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/GraphRequest$ParcelableResourceWithMimeType;
+- smali\com\facebook\GraphRequest$ParcelableResourceWithMimeType$Companion$CREATOR$1.smali:73: "Landroid/os/Parcel;",
+- smali\com\facebook\GraphRequest$ParcelableResourceWithMimeType.smali:48: "Landroid/os/Parcel;",
+- smali\com\facebook\GraphRequest$ParcelableResourceWithMimeType.smali:49: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\GraphRequest$ParcelableResourceWithMimeType.smali:124: .method private constructor <init>(Landroid/os/Parcel;)V
+- smali\com\facebook\Profile$Companion$CREATOR$1.smali:38: "Landroid/os/Parcel;",
+- smali\com\facebook\Profile$Companion$CREATOR$1.smali:68: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/Profile;
+- smali\com\facebook\Profile$Companion$CREATOR$1.smali:80: invoke-direct {v0, p1, v1}, Lcom/facebook/Profile;-><init>(Landroid/os/Parcel;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+- smali\com\facebook\Profile.smali:37: "Landroid/os/Parcel;",
+- smali\com\facebook\Profile.smali:38: "(Landroid/os/Parcel;)V",
+- smali\com\facebook\Profile.smali:150: .method private constructor <init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseActivityLifecycleTracker$initializeIfNotInitialized$1.smali:31: "Landroid/os/IBinder;",
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseActivityLifecycleTracker$initializeIfNotInitialized$1.smali:57: .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseActivityLifecycleTracker$initializeIfNotInitialized$1.smali:76: invoke-static {p1, p2}, Lcom/facebook/appevents/iap/InAppPurchaseEventManager;->asInterface(Landroid/content/Context;Landroid/os/IBinder;)Lj
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseEventManager.smali:54: "Landroid/os/IBinder;",
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseEventManager.smali:254: .method public static final asInterface(Landroid/content/Context;Landroid/os/IBinder;)Ljava/lang/Object;
+- smali_classes2\com\facebook\appevents\iap\InAppPurchaseEventManager.smali:785: const-class v3, Landroid/os/IBinder;
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\RemoteServiceWrapper$RemoteServiceConnection.smali:28: "Landroid/os/IBinder;",
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\RemoteServiceWrapper$RemoteServiceConnection.smali:52: .field private binder:Landroid/os/IBinder;
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\RemoteServiceWrapper$RemoteServiceConnection.smali:78: .method public final getBinder()Landroid/os/IBinder;
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\RemoteServiceWrapper.smali:397: invoke-virtual {v2}, Lcom/facebook/appevents/ondeviceprocessing/RemoteServiceWrapper$RemoteServiceConnection;->getBinder()Landroid/os/IBinde
+- smali_classes2\com\facebook\appevents\ondeviceprocessing\RemoteServiceWrapper.smali:404: invoke-static {v5}, Lcom/facebook/ppml/receiver/IReceiverService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/facebook/ppml/receiver/IReceiv
+- smali_classes2\com\facebook\gamingservices\Tournament$CREATOR.smali:39: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\Tournament$CREATOR.smali:77: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/gamingservices/Tournament;
+- smali_classes2\com\facebook\gamingservices\Tournament$CREATOR.smali:87: invoke-direct {v0, p1}, Lcom/facebook/gamingservices/Tournament;-><init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\gamingservices\Tournament.smali:35: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\Tournament.smali:36: "(Landroid/os/Parcel;)V",
+- smali_classes2\com\facebook\gamingservices\Tournament.smali:109: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\gamingservices\TournamentConfig$Builder.smali:78: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\TournamentConfig$Builder.smali:270: .method public final readFrom$facebook_gamingservices_release(Landroid/os/Parcel;)Lcom/facebook/gamingservices/TournamentConfig$Builder;
+- smali_classes2\com\facebook\gamingservices\TournamentConfig$Builder.smali:284: invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+- smali_classes2\com\facebook\gamingservices\TournamentConfig$CREATOR.smali:39: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\TournamentConfig$CREATOR.smali:77: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/gamingservices/TournamentConfig;
+- smali_classes2\com\facebook\gamingservices\TournamentConfig$CREATOR.smali:87: invoke-direct {v0, p1}, Lcom/facebook/gamingservices/TournamentConfig;-><init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\gamingservices\TournamentConfig.smali:32: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\TournamentConfig.smali:33: "(Landroid/os/Parcel;)V",
+- smali_classes2\com\facebook\gamingservices\TournamentConfig.smali:109: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent$Builder.smali:62: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent$Builder.smali:164: .method public final readFrom(Landroid/os/Parcel;)Lcom/facebook/gamingservices/model/ContextChooseContent$Builder;
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent$Builder.smali:178: invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent$CREATOR.smali:39: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent$CREATOR.smali:77: .method public createFromParcel(Landroid/os/Parcel;)Lcom/facebook/gamingservices/model/ContextChooseContent;
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent$CREATOR.smali:87: invoke-direct {v0, p1}, Lcom/facebook/gamingservices/model/ContextChooseContent;-><init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent.smali:32: "Landroid/os/Parcel;",
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent.smali:33: "(Landroid/os/Parcel;)V",
+- smali_classes2\com\facebook\gamingservices\model\ContextChooseContent.smali:99: .method public constructor <init>(Landroid/os/Parcel;)V
+- smali_classes2\com\facebook\gamingservices\model\ContextCreateContent$Builder.smali:51: "Landroid/os/Parcel;",
+
+FULL_LLM_AUDIT:
+
+data: {"id":"","object":"chat.completion.chunk","created":0,"model":"gpt-5.4","system_fingerprint":"","choices":[],"usage":{"prompt_tokens":43359,"completion_tokens":0,"total_tokens":43359,"prompt_tokens_details":{"cached_tokens":0,"text_tokens":0,"audio_tokens":0,"image_tokens":0},"completion_tokens_details":{"text_tokens":0,"audio_tokens":0,"image_tokens":0,"reasoning_tokens":0},"input_tokens":0,"output_tokens":0,"input_tokens_details":null,"claude_cache_creation_5_m_tokens":0,"claude_cache_creation_1_h_tokens":0}}
+
+data: [DONE]

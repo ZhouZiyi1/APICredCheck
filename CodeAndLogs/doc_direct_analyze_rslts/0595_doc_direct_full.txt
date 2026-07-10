@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. TUNE provided an official Android mobile app attribution/measurement SDK (historically the TUNE / MobileAppTracking Android SDK) with documented Android integration.
+
+2. Service model: This SDK is not just an on-device utility. Its standard purpose is mobile attribution, analytics, deferred deep linking, and event/reporting tied to TUNE’s hosted measurement backend. Typical use involves the app sending install/session/event data to TUNE services.
+
+3. Integration requirement: Yes. Standard TUNE Android setup requires developer-configured identifiers issued from the TUNE platform, commonly an `Advertiser ID` plus a `Conversion Key`, supplied when initializing the SDK so the app can report to the correct TUNE account/backend.
+
+4. Scope: These values are part of TUNE SDK’s own documented integration model, not merely credentials for a separate third-party product. Package name or signing settings may also matter operationally, but the console-issued app/account identifiers are the relevant API credentials here.

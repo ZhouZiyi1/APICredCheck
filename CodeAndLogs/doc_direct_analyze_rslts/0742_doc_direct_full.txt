@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. "Secure-preferences SDK" by Scott Alexander-Bown is an Android library for storing data in `SharedPreferences` with encryption. It is specifically published and documented for Android use.
+
+2. **Service model** - Mostly on-device. Its purpose is local secure storage of preferences on the device. It does not depend on vendor-hosted APIs or a hosted backend for normal operation.
+
+3. **Integration requirement** - No vendor-issued API credential is typically required. Standard integration is adding the Android library dependency and using it in app code; there is no usual vendor console registration, API key, App ID, or secret needed to access a Scott Alexander-Bown service.
+
+4. **Scope** - Confirmed. Any keys involved in encryption are part of local cryptographic usage within the app/device context, not vendor-issued credentials for this product's remote service. So they do not count as an API credential under the given definition.

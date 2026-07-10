@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tencent Real-Time Communication SDK officially supports Android. Tencent TRTC provides an Android SDK and Android integration documentation for real-time audio/video calling, live streaming, and conferencing.
+
+2. Service model  
+This SDK is not a purely on-device library. Its normal use depends on Tencent’s hosted real-time communication infrastructure for signaling/media connectivity and related cloud-backed RTC functions. Typical app behavior involves connecting to Tencent-operated services.
+
+3. Integration requirement  
+Standard TRTC integration requires registering an application in Tencent’s console and using a console-issued `SDKAppID`. Typical login/join flow also requires a `UserSig`, which is generated using the console-provided secret key on a secure server side. That means normal Android use depends on vendor-issued app credentials tied to this RTC product.
+
+4. Scope  
+This credential requirement belongs to Tencent Real-Time Communication SDK itself, not merely to some separate Tencent product. `SDKAppID` is part of TRTC’s documented setup and is required so the Android client can access Tencent’s RTC service.

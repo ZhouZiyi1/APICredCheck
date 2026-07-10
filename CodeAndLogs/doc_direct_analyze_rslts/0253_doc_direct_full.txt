@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Huawei Ads Kit has official Android support as part of HMS Core, with documented Android integration through the Huawei Ads SDK.
+
+2. Service model  
+This SDK routinely depends on Huawei-hosted ad delivery services. Its standard purpose is to request, load, and display ads from Huawei’s backend rather than operate purely on-device.
+
+3. Integration requirement  
+Normal Android integration requires the developer to register the app in Huawei’s developer/AppGallery Connect ecosystem and configure vendor-issued identifiers in the app. Huawei Ads Kit setup commonly includes the Huawei `App ID`, and actual ad serving also uses Ads Kit ad slot identifiers created in Huawei’s console.
+
+4. Scope  
+The credential is part of this product’s documented integration, not merely another optional Huawei service. Ads Kit’s app/ad-slot identification is used so Huawei’s ad service can recognize the calling app and serve inventory.

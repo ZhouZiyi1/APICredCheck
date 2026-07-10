@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. ORMLite by Gray Watson has an official Android integration/library (`ormlite-android`) and is documented for use with Android SQLite databases.
+
+2. Service model: This is a local object-relational mapping/database helper library. Its standard use is on-device: mapping Java objects to SQLite tables and queries inside the app. It does not depend on Gray Watson-hosted services or a vendor backend for normal operation.
+
+3. Integration requirement: No vendor console registration or console-issued identifier/secret is part of normal Android setup. Typical integration is adding the Android library dependency and configuring local database classes/DAOs only.
+
+4. Scope: Any database connection details used with ORMLite are for the app's own database environment, not credentials for ORMLite vendor-hosted services. Package name/signing and local DB config do not qualify as an API credential under this definition.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No clear official Android SDK or Android integration documentation appears to exist for OW2 ASM as a product intended for Android app integration. OW2 ASM is a general-purpose Java bytecode manipulation and analysis library used in Java tooling, build pipelines, and framework internals, rather than an Android app SDK with documented Android setup. While Java libraries can sometimes be technically usable in Android-related tooling, that is not the same as official Android SDK support for normal in-app integration.
+
+Steps 2-4 are skipped because Android support is not established; N/A on Android.

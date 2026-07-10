@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not identify reliable evidence that the product specifically named **"RippleEffect SDK"** by **Chutaux Robin** has an official Android SDK, Android package, or documented Android integration. The name also reads like it could refer to a visual/UI effect library rather than a vendor-hosted mobile service product, but there is not enough trustworthy product-specific documentation here to confirm an Android offering.
+
+Because step 1 is not established, steps 2-4 are skipped as N/A on Android. Evidence is weak, so I default to `supports_android: false` per the instructions.

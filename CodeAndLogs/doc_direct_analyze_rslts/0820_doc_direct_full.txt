@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Bmob provides an official Android SDK and Android integration documentation for its mobile backend service.
+
+2. **Service model** - Bmob SDK is a backend/cloud platform SDK, not a purely on-device library. Its normal use is to let the Android app talk to Bmob-hosted services such as data storage, user/account features, files, and related backend capabilities.
+
+3. **Integration requirement** - Yes. Standard Bmob Android setup requires initializing the SDK with a console-issued application identifier so the app can connect to the correct Bmob backend project. This is typically the `Application ID` / `App ID` used during SDK initialization.
+
+4. **Scope** - This credential is part of Bmob SDK’s own documented integration, not a separate third-party add-on. The app/project identifier is used specifically so the Android client can access Bmob’s hosted backend services.

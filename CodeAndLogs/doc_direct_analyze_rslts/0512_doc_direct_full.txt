@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No official Android SDK/library or Android app integration is associated with FindBugs itself. FindBugs is a Java bytecode static analysis tool developed at the University of Maryland, typically used during development/build time to analyze compiled Java classes for bug patterns. It is not an Android runtime SDK that developers embed into an app.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android for this product.

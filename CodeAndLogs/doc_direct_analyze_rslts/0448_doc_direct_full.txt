@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Apache Log4j has official documentation for Android usage/integration, so this qualifies as documented Android support.
+
+2. Service model: Log4j is a logging framework/library. In a typical app, it formats and routes log events locally (for example to console, files, or app-defined appenders). It is not built around Apache-hosted backend services that the SDK must contact for normal operation.
+
+3. Integration requirement: There is no usual setup step where the developer must register the app with Apache Software Foundation or obtain a console-issued API key, App ID, client secret, or similar credential to use Log4j on Android.
+
+4. Scope: Any network destination a developer might configure separately would be their own infrastructure or another product’s service, not an Apache Log4j vendor-hosted service. So no product-specific API credential applies here.

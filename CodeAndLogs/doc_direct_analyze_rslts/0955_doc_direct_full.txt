@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Snap's Snap Kit / Login Kit documentation includes Android integration, with Android-specific setup using the Snap Kit Android SDK and Android app configuration.
+
+2. Service model: Login Kit is not a purely on-device library. Its normal function is to authenticate a user with Snapchat, which requires Snap-hosted OAuth/login services as part of the standard sign-in flow.
+
+3. Integration requirement: Yes. Standard Login Kit setup requires registering the app in Snap's developer portal and configuring a console-issued app identifier for the Android app. The key value used in client integration is the OAuth `client_id` / app client identifier, along with related redirect configuration. That identifier is required so Snap can recognize the calling app during login.
+
+4. Scope: This credential belongs to Login Kit's own documented integration, not just some separate Snap product. Android package/signing metadata may also be configured, but those alone are not the API credential. The console-issued client/app identifier is the relevant credential here.

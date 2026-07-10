@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. An AdMob mediation adapter for Flurry is specifically an Android integration component used within Google/AdMob mediation on Android, so this product supports Android.
+
+2. **Service model** - This adapter is not a purely on-device utility. Its normal role is to connect AdMob mediation to Flurry’s ad-serving network, which relies on remote hosted ad services to load and serve ads.
+
+3. **Integration requirement** - Yes. Typical mediation setup for a Flurry adapter requires configuring Flurry network credentials in the mediation setup, most notably a Flurry **API Key** (sometimes alongside ad space identifiers, depending on format/setup). That is a console-issued integration value used so the mediated network can serve ads.
+
+4. **Scope** - The credential belongs to this product’s documented integration path: the AdMob mediation adapter for Flurry is only usable when the developer supplies the Flurry-side network credential for that adapter/mediation configuration. This is not just a generic Android package/signing requirement or an unrelated separate product credential.

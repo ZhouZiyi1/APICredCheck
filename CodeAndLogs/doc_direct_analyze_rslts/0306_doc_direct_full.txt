@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`GeTui SDK` is known as a mobile push-notification / messaging SDK with official Android integration. Its standard setup for Android includes adding the Android SDK and configuring manifest/application values for the GeTui service connection. So Android support is present.
+
+2. Service model  
+This product is not a purely on-device library. Its normal function is to connect the app to GeTui's hosted push messaging infrastructure so devices can register, receive push messages, and interact with the vendor's backend delivery service. Standard use therefore relies on vendor-hosted services.
+
+3. Integration requirement  
+Typical GeTui Android integration requires developer console-issued identifiers/secrets such as `AppId`, `AppKey`, and often `AppSecret`, configured in the Android app. These values identify the application to GeTui's backend and are part of normal SDK setup.
+
+4. Scope  
+These credentials belong to the GeTui push product itself, not merely to some separate optional product. They are standard configuration values for GeTui Android push integration. The vendor name provided here appears atypical for GeTui, but the SDK name itself strongly indicates the well-known GeTui push SDK; based on that, the Android integration does require product-specific credentials.

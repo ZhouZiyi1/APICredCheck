@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No.
+
+Apple’s Reachability SDK/library is historically an Apple-platform networking utility for iOS/macOS environments, based on Apple’s SystemConfiguration reachability APIs. It is not an official Android SDK/product with documented Android integration. Since this product does not have official Android support, steps 2–4 are skipped as not applicable on Android.

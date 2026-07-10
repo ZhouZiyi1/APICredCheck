@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Pusher provides official Android client integration for its realtime service, with Android/Java setup documentation and a maintained Android-compatible library.
+
+2. Service model: This SDK is not primarily on-device. In normal use it connects the app to Pusher’s hosted realtime messaging infrastructure so the client can subscribe to channels and receive events over Pusher-managed connections.
+
+3. Integration requirement: Yes. Standard Android setup requires a vendor-issued identifier from the Pusher dashboard. The usual client configuration includes an `app key` (and commonly cluster/region information) so the SDK can connect to the correct Pusher-hosted app.
+
+4. Scope: The credential is part of this product’s own documented integration, not a separate product. The Pusher client key is specifically used by the Pusher service the SDK is built to talk to.

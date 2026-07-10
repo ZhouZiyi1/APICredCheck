@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. The product is specifically an **ironSource Mediation adapter for Maio SDK**, which is an Android-side mediation integration component used to connect the Maio ad network SDK into ironSource mediation on Android. The naming and typical distribution of ironSource network adapters indicate official Android integration support.
+
+2. **Service model** - This adapter is not a purely on-device utility. Its standard purpose is to let an Android app load and show ads from the Maio network through mediation, which routinely depends on vendor-hosted ad delivery services as part of normal operation.
+
+3. **Integration requirement** - Yes. For normal use, ad network integrations of this type typically require the developer to configure a network/app identifier issued through the network’s publisher console so the mediated SDK can request ads for the correct app/account. For Maio, this is typically an **Application ID / Media ID–style app identifier** used in the Maio SDK setup rather than just package/signing metadata.
+
+4. **Scope** - The credential is part of integrating **this Maio adapter / Maio SDK path** itself, not merely another unrelated ironSource product. The adapter exists to bridge ironSource mediation with Maio’s own ad-serving integration, and the identifying value belongs to the Maio-side setup for this mediated product path.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. The Smaato mediation adapter for the MoPub SDK is an Android integration artifact/ad adapter intended to let a MoPub-based Android app request Smaato ads through mediation.
+
+2. Service model: This product is not a purely on-device library. Its standard purpose is to connect the app, via mediation, to Smaato’s hosted ad-serving infrastructure so ads can be requested and rendered.
+
+3. Integration requirement: Typical Smaato mediated setup requires Smaato account-issued identifiers, commonly a `Publisher ID` and `Adspace ID`, to be configured for the mediated placement. Those values identify the publisher/app inventory when requesting Smaato ads.
+
+4. Scope: These identifiers belong to the Smaato side of the documented mediated integration, not merely to MoPub in general. Even if entered through mediation configuration rather than hardcoded directly in app code, they are still vendor-issued identifiers required for normal use of this adapter with Smaato demand on Android.

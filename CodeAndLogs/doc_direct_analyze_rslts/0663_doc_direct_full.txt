@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Crittercism / Apteligent provided an official Android SDK for crash reporting and mobile app performance monitoring, with documented Android setup and initialization APIs.
+
+2. Service model  
+This SDK is not just an on-device utility. Its standard purpose is to collect crashes, handled exceptions, network/performance data, and send that telemetry to Apteligent/Crittercism hosted services for analysis and dashboards. That means normal use relies on the vendor’s backend.
+
+3. Integration requirement  
+Typical Android integration required initializing the SDK with a vendor-issued application identifier obtained from the Crittercism/Apteligent console. Common documentation for this SDK refers to an `App ID` during initialization. That is a console-issued value configured in the app so data is associated with the correct project in the vendor-hosted service.
+
+4. Scope  
+This credential is part of Crittercism / Apteligent SDK integration itself, not a separate third-party product. Package name or signing alone would not satisfy the setup; the SDK’s normal initialization uses the vendor-issued app identifier.

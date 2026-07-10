@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. This product is an Android mediation adapter with documented Android integration as part of the ironSource/LevelPlay mediation stack.
+
+2. Service model — It is not a pure on-device library. In normal use, it operates within ironSource mediation, which talks to ironSource-hosted mediation services, and it also bridges to Google AdMob demand. So standard operation depends on remote ad/mediation backends.
+
+3. Integration requirement — Yes. Normal Android use of the ironSource mediation adapter requires initializing the ironSource mediation SDK with the ironSource console-issued `App Key`. The AdMob side may also require Google-issued identifiers such as AdMob App ID, but those belong to Google’s product, not ironSource.
+
+4. Scope — The in-scope credential here is the ironSource `App Key`, because it is part of the documented integration needed to use this adapter within ironSource mediation on Android. AdMob credentials are out of scope for this question because they are issued for a separate product/vendor.

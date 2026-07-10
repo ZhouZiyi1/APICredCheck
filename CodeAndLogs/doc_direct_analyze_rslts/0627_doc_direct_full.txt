@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Taboola provides an official Android SDK / Android integration for its content recommendation and feed widgets, so `supports_android` is true.
+
+2. Service model  
+This SDK is not primarily on-device. Its standard purpose is to load Taboola-hosted recommendation/feed/advertising content into the app, which implies routine use of Taboola’s remote backend as part of normal operation.
+
+3. Integration requirement  
+The usual integration requires app/publisher-specific configuration so Taboola can identify the publisher account and serve content correctly. In Taboola integrations, this is typically a publisher/account identifier rather than a generic local-only library setup. Evidence for a specific Android credential label is somewhat weaker than for some other SDKs, but the integration appears to require a vendor-issued publisher identifier.
+
+4. Scope  
+That identifier belongs to Taboola’s own SDK integration and is used so the app can access Taboola’s hosted recommendation/content services. It is not merely package-name/signing metadata and is not only for a separate third-party product.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Requery is an official Java/Android persistence library with documented Android integration (it provides Android-specific support for using SQLite and Android app components). So Android is supported.
+
+2. Service model: This SDK is primarily an on-device ORM / data persistence library. Its normal role is mapping objects to a local database, typically SQLite on Android. Standard usage does not depend on Requery-hosted remote APIs or a vendor cloud backend.
+
+3. Integration requirement: There is no usual setup step requiring the developer to register the app with Requery or obtain a console-issued key, App ID, token, or similar credential. Integration is by adding the library and configuring local database entities/schemas in code.
+
+4. Scope: Any database credentials an app might use for its own backend are outside this SDK's core Android integration. For Requery itself on Android, no vendor-issued API credential appears required.

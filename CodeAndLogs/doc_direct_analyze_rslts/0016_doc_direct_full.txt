@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Meta provides the Facebook Login SDK for Android as part of its Android SDK / Login integration documentation, so this product officially supports Android.
+
+2. Service model — Facebook Login is not purely on-device. Its normal function is authenticating users with Facebook and interacting with Meta-hosted identity/login services. The SDK is built to communicate with Facebook’s backend during login flows.
+
+3. Integration requirement — Yes. Standard Facebook Login integration requires the developer to create/register an app in Meta’s developer console and configure the Facebook App ID in the Android app (commonly via resources/manifest metadata). That console-issued App ID identifies the calling application to Meta’s services.
+
+4. Scope — This credential is specific to Facebook Login / Facebook platform integration itself, not merely another unrelated Meta product. Package name and key hashes may also be configured, but those are app settings rather than the primary credential. The relevant API credential here is the Facebook App ID.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Cauly SDK is an Android mobile advertising SDK with documented Android integration (`com.fsn.cauly:cauly-sdk`) and Android-specific setup guidance.
+
+2. **Service model** - It routinely relies on Futurestream Networks' hosted ad-serving infrastructure. In normal use, the SDK requests and renders ads from the vendor's remote services rather than operating only on-device.
+
+3. **Integration requirement** - Yes. Standard integration requires the developer to configure vendor-issued advertising identifiers in the app, specifically a **Cauly App Code / App ID** and typically ad placement identifiers for requesting inventory.
+
+4. **Scope** - This credential belongs to Cauly SDK itself, not a separate product. The app/ad identifiers are part of Cauly's own ad-serving integration and are used so the SDK can fetch ads for the registered publisher app.

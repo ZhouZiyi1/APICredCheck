@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`OpenIAB SDK` is documented and commonly known as an Android in-app billing abstraction library (`OpenIAB` = Open In-App Billing). Its purpose is to help Android apps integrate with multiple app-store billing providers through an Android library, so Android support is present.
+
+2. Service model  
+This SDK is primarily a client-side wrapper around store billing flows. Its standard role is to broker purchase operations with the target app store billing service already available on the device or through that store's SDK. It is not principally a client for a One Platform-hosted backend that the SDK itself depends on for normal operation.
+
+3. Integration requirement  
+Typical integration for OpenIAB does not require obtaining a console-issued API key, App ID, or vendor secret from One Platform for the SDK itself. Integration usually involves adding the library and, depending on the target store, supplying store-specific configuration such as public licensing keys or store app package mappings. Those values are tied to the underlying store ecosystem, not a One Platform-hosted service credential for OpenIAB itself.
+
+4. Scope  
+Any keys a developer may need for Google Play or another store belong to those separate billing providers, not to `OpenIAB SDK` as a product requiring its own vendor-issued credential. On that basis, this SDK does not appear to require an API credential under the definition given.

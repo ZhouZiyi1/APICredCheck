@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Shimmer for Android SDK is an official Android UI library from Meta/Facebook for adding a shimmer/loading placeholder effect in Android apps.
+
+2. Service model — It is a pure client-side rendering/animation library. Its standard use is on-device UI presentation, not communication with Meta-hosted services or a vendor backend.
+
+3. Integration requirement — Standard integration does not require registering the app in a Meta developer console or configuring any console-issued identifier, key, token, or config file.
+
+4. Scope — Any Meta App ID or other Facebook platform credentials used elsewhere in an app belong to other Meta products, not to Shimmer itself. For Shimmer’s documented integration, no API credential is required.

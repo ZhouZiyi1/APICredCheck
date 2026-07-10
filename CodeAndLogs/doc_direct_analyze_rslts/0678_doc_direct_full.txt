@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Prebid SDK does support Android. Prebid Mobile has an official Android SDK and documented Android integration.
+
+2. Service model  
+Prebid SDK is an in-app header bidding library. In normal use, the Android app works with bidding infrastructure such as Prebid Server and ad-server integrations, but Prebid.org itself is an open-source project rather than a vendor-hosted mobile backend that the SDK is inherently tied to.
+
+3. Integration requirement  
+Typical Android setup uses values such as server host settings, account IDs, stored request / config IDs, and ad unit configuration. These identifiers are part of the publisher's ad stack or whichever Prebid Server deployment/service they use. They are not presented as a required Prebid.org developer-console credential for the SDK itself.
+
+4. Scope  
+The relevant setup values belong to the publisher's chosen ad-serving / Prebid Server environment, not to a Prebid.org-issued API key, App ID, secret, or equivalent for vendor-hosted services of this product. Evidence for any required Prebid.org-issued Android credential is weak, so the result should be false.

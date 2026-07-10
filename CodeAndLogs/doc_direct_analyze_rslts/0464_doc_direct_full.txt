@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Pushwoosh provides an official Android SDK and Android integration documentation for push notifications, in-app messaging, and related engagement features. So Android is supported.
+
+2. Service model  
+This SDK is not primarily an on-device utility. Its normal use depends on Pushwoosh-hosted backend services for device registration, push delivery orchestration, messaging, and analytics/engagement features.
+
+3. Integration requirement  
+Typical Android setup requires registering the app in the Pushwoosh console and configuring the console-issued Pushwoosh application identifier in the Android app. Pushwoosh documentation commonly refers to this as an "App ID" or "Application Code." That value is used so the app can register with and communicate against Pushwoosh services.
+
+4. Scope  
+This credential is part of Pushwoosh SDK integration itself, not only a separate third-party product. Android push setups may also involve Firebase configuration, but the Pushwoosh-issued app identifier is independently part of Pushwoosh's own documented setup.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. greenDAO is an Android ORM/persistence library from greenrobot, documented and used as an Android SDK for working with SQLite databases in Android apps.
+
+2. Service model: It is mostly on-device. greenDAO generates DAO classes and manages local database access within the app. Its standard functionality does not depend on greenrobot-hosted APIs, cloud services, or vendor backend infrastructure.
+
+3. Integration requirement: No vendor-issued API credential is typically required. Usual setup involves adding the library/plugin to the Android project and generating schema/DAO code, not registering the app in a vendor console or configuring an App ID, API key, token, or similar secret.
+
+4. Scope: Any database name, package name, or schema version used in setup is app-local configuration, not a credential for a greenDAO-operated service. There is no indication that greenDAO’s documented Android integration requires a console-issued credential belonging to this product.

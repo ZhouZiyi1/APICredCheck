@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — **No**.
+
+MBProgressHUD is a well-known **iOS** UI component/library by Matej Bukovinski for showing a progress HUD. Its standard distribution and documentation are for Apple platforms (Objective-C/UIKit), not Android. I do not find this product documented as an official Android SDK/library from this vendor.
+
+Because step 1 is no, steps 2–4 are **skipped** per instruction. API credential evaluation is therefore **N/A on Android**.

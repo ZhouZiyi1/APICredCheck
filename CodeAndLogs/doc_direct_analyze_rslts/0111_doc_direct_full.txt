@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. Apple CarPlay is an Apple platform integration for iPhone apps, provided through Apple's iOS developer frameworks and CarPlay app entitlement/process. It is designed for iOS apps running with CarPlay-compatible vehicle head units, not for Android apps, and Apple does not provide an official Android SDK or documented Android integration for CarPlay.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

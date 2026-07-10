@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No clear evidence of an official Android SDK or documented Android integration for `DTFoundation SDK` by Drobnik. `DTFoundation` is known as a Foundation-style support library from the Drobnik ecosystem associated with Apple-platform development, and there is no standard Android package, Gradle dependency, or Android setup documentation tied to this product. Based on that, Android is not supported.
+
+Steps 2-4 are skipped because they are not applicable when there is no Android support.

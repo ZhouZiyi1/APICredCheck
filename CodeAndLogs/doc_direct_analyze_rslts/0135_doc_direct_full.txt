@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No. `SDNetworkActivityIndicator SDK` by Olivier Poitrey is an iOS-specific library for managing the iOS status bar network activity indicator. That UI element is part of iOS, and the library is distributed/documented for Apple platforms rather than Android. There is no official Android SDK or documented Android integration for this product.
+
+Steps 2–4 are skipped because they are not applicable when Android is not supported.

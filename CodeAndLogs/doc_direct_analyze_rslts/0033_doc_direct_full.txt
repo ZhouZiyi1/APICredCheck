@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — I could not verify that **AppAnalytics SDK** by **AppAnalytics.io** has an official Android SDK or documented Android integration. The product/vendor identification is too ambiguous, and there is no clearly attributable official Android documentation or repository I can rely on for this specific named SDK.
+
+Because step 1 is not established, steps 2–4 are **skipped** per the method. On Android, credential evaluation is therefore **N/A**.

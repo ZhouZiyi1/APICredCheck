@@ -1,0 +1,16 @@
+2026-05-17 21:17:51 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0094-doc_direct_analyze.log
+2026-05-17 21:17:51 [INFO] Run start: SDK_ID=0094 SDK=Masonry SDK vendor=SnapKit results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:17:51 [INFO] Querying model='gpt-5.4' SDK='Masonry SDK' vendor='SnapKit'
+2026-05-17 21:17:55 [INFO] LLM token usage: prompt_tokens=989 completion_tokens=121 total_tokens=1110
+2026-05-17 21:17:55 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0094_doc_direct_full.txt
+2026-05-17 21:17:55 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — No.
+Masonry is a well-known Auto Layout DSL for Apple platforms, maintained under the SnapKit organization, and is used for iOS/macOS layout constraints in Objective-C. It is not an Android SDK and does not have an official Android library or Android integration documentation for standard Android app use.
+
+Because step 1 is no, steps 2–4 are skipped. N/A on Android.
+2026-05-17 21:17:55 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0094_doc_direct_rslt.txt
+2026-05-17 21:17:55 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:17:55 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0094-doc_direct_analyze.log

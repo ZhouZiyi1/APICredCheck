@@ -1,0 +1,19 @@
+2026-05-17 20:17:39 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0005-doc_direct_analyze.log
+2026-05-17 20:17:39 [INFO] Run start: SDK_ID=0005 SDK=Admob SDK vendor=AdMob results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 20:17:39 [INFO] Querying model='gpt-5.4' SDK='Admob SDK' vendor='AdMob'
+2026-05-17 20:17:45 [INFO] LLM token usage: prompt_tokens=989 completion_tokens=239 total_tokens=1228
+2026-05-17 20:17:45 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0005_doc_direct_full.txt
+2026-05-17 20:17:45 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AdMob provides official Android integration via the Google Mobile Ads SDK for Android, which is the standard library used to serve AdMob ads in Android apps.
+
+2. Service model — This SDK routinely relies on vendor-hosted services. Ad requests, ad serving, measurement, and related monetization functions depend on Google/AdMob backend systems, so it is not a purely on-device library.
+
+3. Integration requirement — Yes. Standard AdMob Android setup requires the developer to register the app in the AdMob/Google console and configure a console-issued identifier in the app. The required integration value is the AdMob App ID, typically added in AndroidManifest metadata. Ad units also use ad unit IDs, but the primary app-level credential/config value required for SDK initialization is the App ID.
+
+4. Scope — This credential is part of AdMob’s own documented integration for Android ad serving, not merely a separate Google product added independently. Therefore it counts for this SDK.
+2026-05-17 20:17:45 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0005_doc_direct_rslt.txt
+2026-05-17 20:17:45 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "AdMob App ID"}
+2026-05-17 20:17:45 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0005-doc_direct_analyze.log

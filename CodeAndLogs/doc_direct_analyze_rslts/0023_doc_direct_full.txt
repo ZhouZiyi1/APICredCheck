@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google provides an official **Maps SDK for Android** as part of its Google Maps Platform / Android documentation.
+
+2. **Service model** — This SDK is not purely on-device. Its normal use depends on Google-hosted map services for map tiles and related platform-backed functionality. A displayed map in the SDK relies on Google’s remote infrastructure.
+
+3. **Integration requirement** — Yes. Standard Android integration for Google Maps SDK requires the developer to obtain and configure a **Google Maps API key** from Google Cloud / Google Maps Platform setup. This key is typically added in the Android app manifest or equivalent configuration.
+
+4. **Scope** — The credential is part of the documented setup for **Google Maps SDK** itself, not merely another separate Google product. Package name or signing restrictions may be applied to the key, but those restrictions are not themselves the credential; the credential is the API key.

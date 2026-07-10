@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find evidence that Questbeat's `QBImagePicker SDK` is an Android SDK. `QBImagePicker` is known as an iOS image picker library (commonly distributed for Objective-C/iOS via CocoaPods / iOS source usage), and its documented usage is tied to iOS classes and frameworks rather than Android integration. On that basis, there is no official Android library or Android integration documentation for this product.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

@@ -1,0 +1,42 @@
+[*] Log file: apk_analyze_logs\0050-apk_analyze.log
+[*] Started at: 2026-06-09T21:01:41
+
+=== Auditing 0050 FacebookMessengerShareKitSDK ===
+[*] Demo APK: apks\0050-FacebookMessengerShareKitSDK-demo.apk
+[*] Attacker APK: apks\0050-FacebookMessengerShareKitSDK-attacker.apk
+[*] Stage 1/2: static extraction and decompilation
+[*] Reading APK package/activity metadata...
+[+] Package: com.cefa.messenger.demo
+[+] Launch activity: com.facebook.samples.kotlinsampleapp.MainActivity
+[*] Reading APK signing certificate digests...
+[+] Cert SHA-1: E1E849B19182D16A212E66E11C9152BA8AEBA41A
+[+] Cert SHA-256: 9B6D3A65DE5F2E5035AEB5070B6C0E04786F4F178022986B34E45BAAB878B60F
+[*] Scanning APK strings for embedded key material...
+[+] Found 2 candidate key references.
+[*] No decompile directory found at decompiled_apks\0050-FacebookMessengerShareKitSDK-demo; decompiling.
+[*] Decompiling apks\0050-FacebookMessengerShareKitSDK-demo.apk to decompiled_apks\0050-FacebookMessengerShareKitSDK-demo...
+[*] Running apktool jar: D:\Academic\AndroidSec\ApkTool\installer\apktool_2.6.0.jar
+[+] Decompilation successful.
+[*] Scanning decompiled code for authorization-signal collection...
+[*] Scanned 500 decompiled files...
+[*] Scanned 1000 decompiled files...
+[*] Scanned 1500 decompiled files...
+[+] Decompiled scan finished: 1856 files scanned, 6 signal categories matched.
+[*] LLM analysis enabled; preparing focused context...
+[*] Selecting smali/XML files for LLM context...
+[*] Candidate context files: 61
+[+] Prepared LLM context: 2 files, 105645 characters.
+[*] Sending focused smali/XML context to LLM (gpt-5.4); this may take a while...
+[+] LLM response received.
+[+] Extracted 0 LLM observation point(s).
+[+] LLM audit saved to analysis_process.md
+[*] Stage 2/2: writing audit reports
+[+] Wrote apk_analyze_reports\0050_FacebookMessengerShareKitSDK_audit.json
+[+] Wrote apk_analyze_reports\0050_FacebookMessengerShareKitSDK_audit.md
+[+] Wrote apk_analyze_reports\frida_passive_monitor.js
+[!] LLM observation points unavailable or empty after filtering; using static auth+network fallback.
+[+] Selected fallback hook signatures: 0
+[+] Wrote hook method signatures to apk_analyze_rslts\0050_apk_analyze_rslt.txt
+[+] Wrote full APK analysis result to apk_analyze_rslts\0050_apk_analyze_full.txt
+[*] Analysis complete. Run app_hooker.py when you want to install/spawn the attacker app.
+[*] Finished at: 2026-06-09T21:03:08

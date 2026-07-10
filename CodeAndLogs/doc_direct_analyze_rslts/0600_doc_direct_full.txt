@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No official Android library or Android integration appears to exist for JLRoutes SDK. JLRoutes is known as a native iOS/macOS URL routing library written for Apple platforms, with documentation and package distribution centered on CocoaPods/Carthage/Swift Package Manager rather than Android tooling such as Gradle/Maven. Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No official Android library or Android integration appears to exist for the **1Password App Extension SDK**. This product is the older **App Extension** integration used for Apple platform app extensions, primarily iOS, to interact with the 1Password app for filling and saving credentials. The name and documented integration model are specific to Apple's app extension architecture rather than Android. Because there is no official Android SDK/integration for this product, steps 2-4 are skipped as N/A on Android.

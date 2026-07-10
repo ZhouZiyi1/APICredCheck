@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`Zego Express-Video SDK` officially supports Android. ZEGO provides an Android SDK/library and Android integration documentation for the Express real-time audio/video product.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its normal use is real-time audio/video communication, which routinely depends on ZEGO-hosted backend infrastructure for room/session coordination and media transport features. In standard usage, the app connects to ZEGO services rather than operating purely locally.
+
+3. Integration requirement  
+Typical Android integration requires creating a ZEGO project in the vendor console and supplying vendor-issued identifiers/secrets to initialize the SDK and authenticate usage. ZEGO Express setup commonly uses an `AppID` together with an `AppSign` (or a token flow derived from ZEGO project credentials). That is a vendor-issued credential requirement for normal service use.
+
+4. Scope  
+These credentials are part of `Zego Express-Video SDK` integration itself, not just a separate ZEGO product. They are used specifically so the Android app can initialize/connect to ZEGO Express services.

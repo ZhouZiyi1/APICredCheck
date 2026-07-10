@@ -1,0 +1,19 @@
+2026-05-17 21:17:29 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0090-doc_direct_analyze.log
+2026-05-17 21:17:29 [INFO] Run start: SDK_ID=0090 SDK=AdColony SDK vendor=AdColony results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:17:29 [INFO] Querying model='gpt-5.4' SDK='AdColony SDK' vendor='AdColony'
+2026-05-17 21:17:34 [INFO] LLM token usage: prompt_tokens=991 completion_tokens=233 total_tokens=1224
+2026-05-17 21:17:34 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0090_doc_direct_full.txt
+2026-05-17 21:17:34 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AdColony SDK has official Android integration/documentation as a mobile advertising SDK for Android apps.
+
+2. Service model — This is an advertising SDK, so normal operation relies on AdColony’s hosted ad-serving services. The SDK is not just an on-device utility; it connects to vendor infrastructure to request/show ads and report related events.
+
+3. Integration requirement — Yes. Standard AdColony integration requires the developer to configure vendor-issued identifiers for the app/ad setup. In typical AdColony Android setup, this includes at least an App ID (often alongside zone/ad unit identifiers). That qualifies as an API credential under the prompt because it is a console-issued identifier required for the SDK to use AdColony-hosted services.
+
+4. Scope — The credential is specific to AdColony SDK integration itself, not merely to some separate product. The App ID is part of AdColony’s documented setup for serving ads through this SDK.
+2026-05-17 21:17:34 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0090_doc_direct_rslt.txt
+2026-05-17 21:17:34 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "App ID"}
+2026-05-17 21:17:34 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0090-doc_direct_analyze.log

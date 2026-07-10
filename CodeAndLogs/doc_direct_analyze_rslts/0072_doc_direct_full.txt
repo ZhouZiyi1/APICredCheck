@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google Play Games Services has official Android integration through Google Play services / Play Games SDK documentation for Android games.
+
+2. **Service model** — This SDK is not just an on-device utility. Its standard features (sign-in, achievements, leaderboards, saved games, etc.) rely on Google-hosted Play Games Services backend.
+
+3. **Integration requirement** — Yes. Typical setup requires the developer to configure the game in the Google Play Console / Play Console and link an app. For Android integration, a key console-issued identifier commonly used by the SDK is the **Google Play Games Services Application ID** (often surfaced as a games app ID / app_id and added to Android resources). OAuth client configuration may also exist for sign-in, but the core product-specific console value for Play Games Services itself is the Play Games Services App ID.
+
+4. **Scope** — This credential belongs to the documented integration of **Play Games Services SDK** itself, not merely another Google product. Package name and signing certificates alone are not the credential; the relevant configured value is the Play Games Services App ID.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AppIntro is an Android library/SDK used to build onboarding and intro flows inside Android apps, with documented Android integration via Gradle dependency and Android components. That satisfies official Android support.
+
+2. Service model: This SDK is primarily on-device UI functionality. Its normal purpose is to render introductory slides/screens and related transitions in the app itself. There is no standard vendor-hosted backend or remote API that the SDK must contact for core operation.
+
+3. Integration requirement: Usual setup does not require registering the app with APL Developers or obtaining a console-issued identifier/secret. Integration is typically adding the library dependency and configuring slides in code/XML.
+
+4. Scope: Any app identifiers such as Android package name or signing config are ordinary Android app setup, not a vendor-issued credential for AppIntro itself. There is no documented AppIntro-specific API key, App ID, token, or config file needed for standard Android use.

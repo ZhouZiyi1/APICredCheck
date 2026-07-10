@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. NHN's TOAST/Toast SDK has official Android integration artifacts and Android setup documentation for its SDK modules, so this product supports Android.
+
+2. Service model: It is not just an on-device utility library. The SDK is used to connect the app to NHN/TOAST-hosted services such as analytics, push, crash/logging, or related backend features, depending on the module.
+
+3. Integration requirement: Typical Android setup requires a console-issued app identifier, commonly documented as an `App Key` (or `appKey`), when initializing the SDK or its service modules.
+
+4. Scope: That credential is part of this product family's documented integration and is used so the SDK can talk to NHN-hosted TOAST services. It is not merely an Android package/signing requirement and not only a separate third-party product's credential.

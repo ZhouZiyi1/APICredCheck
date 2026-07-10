@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear evidence that "Route-Me SDK" by "Route Me" has an official Android SDK or documented Android integration. The name strongly resembles older iOS-focused/open-source mapping software, but that does not establish an official Android product from this vendor under this exact name. Because the prompt requires evaluating only this named product, and evidence for Android support is weak or absent, I treat Android support as not established.
+
+Steps 2-4 are skipped because Android support is not established (N/A on Android).

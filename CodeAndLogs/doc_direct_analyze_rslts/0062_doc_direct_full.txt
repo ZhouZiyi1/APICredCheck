@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Apache Cordova officially supports Android as a target platform via its Android platform tooling (`cordova-android`) and documented Android app builds.
+
+2. Service model — Cordova is primarily a client-side/hybrid app framework. It packages HTML/CSS/JavaScript into a native Android wrapper and exposes device capabilities through plugins. Its standard operation does not depend on Apache-hosted backend services.
+
+3. Integration requirement — No vendor-issued API credential is normally required to use Apache Cordova on Android. Typical setup involves installing the framework/platform and optionally plugins, but not registering the app with Apache or configuring an Apache-issued key/secret/App ID.
+
+4. Scope — Any credentials a Cordova app may use are for separate third-party services accessed by the app or by specific plugins, not for Cordova itself. Therefore they do not count as credentials for this product.

@@ -1,0 +1,2 @@
+SECTION 1: Detailed Analysis
+TrustDefender Mobile SDK has an official Android integration. Standard use relies on ThreatMetrix-hosted services for device risk/fraud analysis, so it is not purely on-device. Usual setup requires a vendor-issued Org ID (with related profile/config values) from the ThreatMetrix console, which counts as an API credential for this SDK’s documented integration.

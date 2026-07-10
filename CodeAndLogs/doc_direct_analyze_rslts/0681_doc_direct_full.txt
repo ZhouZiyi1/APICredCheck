@@ -1,0 +1,15 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+TnkAd SDK appears to support Android. TNK Factory is known for a mobile advertising / offerwall SDK integrated into Android apps, and the SDK name itself is used in Android integration contexts.
+
+2. Service model  
+This is an ad/offerwall SDK, so normal operation depends on TNK Factory-hosted services to fetch offers/ads, track engagement, and handle reward or attribution flows. It is not a purely on-device library.
+
+3. Integration requirement  
+For this kind of ad SDK, the usual integration requires the app developer to register the app with the vendor and configure an app-specific identifier issued by the vendor so the SDK can associate requests with the publisher app. For TnkAd SDK, this is typically an app identifier / application key style value rather than just package name or signing data.
+
+4. Scope  
+That credential is part of the TnkAd SDK's own integration model as an advertising platform SDK, not merely a separate third-party service added alongside it.
+
+Evidence is somewhat limited without live vendor docs here, but the standard integration pattern for this specific SDK category and vendor strongly indicates a required app-issued identifier.

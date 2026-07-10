@@ -1,0 +1,17 @@
+2026-05-17 21:11:02 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0026-doc_direct_analyze.log
+2026-05-17 21:11:02 [INFO] Run start: SDK_ID=0026 SDK=ClassKit SDK vendor=Apple results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:11:02 [INFO] Querying model='gpt-5.4' SDK='ClassKit SDK' vendor='Apple'
+2026-05-17 21:11:09 [INFO] LLM token usage: prompt_tokens=977 completion_tokens=129 total_tokens=1106
+2026-05-17 21:11:09 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0026_doc_direct_full.txt
+2026-05-17 21:11:09 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — No.
+
+Apple ClassKit is an Apple education framework for iPadOS/iOS that integrates with Apple Schoolwork and related Apple platform capabilities. It is provided as part of Apple's platform SDKs for Apple operating systems, not as an official Android library or Android integration. There is no standard documented Android SDK for ClassKit from Apple.
+
+Because step 1 is no, steps 2–4 are skipped. API credential evaluation is N/A on Android.
+2026-05-17 21:11:09 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0026_doc_direct_rslt.txt
+2026-05-17 21:11:09 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:11:09 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0026-doc_direct_analyze.log

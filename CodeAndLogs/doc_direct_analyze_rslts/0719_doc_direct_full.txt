@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Qonversion provides an official Android SDK and Android integration documentation for in-app subscriptions/purchases.
+
+2. **Service model** - Qonversion is not a purely on-device library. Its standard purpose is to connect the app to Qonversion’s hosted backend for subscription analytics, entitlement management, purchase validation, and related remote product features.
+
+3. **Integration requirement** - Yes. Typical Qonversion Android setup requires initializing the SDK with a console-issued project/application identifier from Qonversion so the SDK can associate the app with the correct Qonversion backend project. This is an integration credential under the prompt’s definition because it is vendor-issued and used for the SDK’s normal connection to Qonversion-hosted services.
+
+4. **Scope** - The credential is part of Qonversion SDK’s own documented integration, not merely a separate third-party dependency. Package name or signing alone is not the key requirement; the relevant configured value is the Qonversion project key/public SDK key used when initializing the SDK.

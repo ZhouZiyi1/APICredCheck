@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+Answers SDK (Google Fabric) has documented Android support, so step 1 is yes.  
+It is a product analytics / crash / engagement SDK that typically works by sending app events to vendor-hosted services as part of standard operation. However, for the Android SDK integration itself, the usual setup does not require the developer to obtain and embed a separate API key, App ID, or secret from a console specifically for Answers SDK use. Any required identifiers are generally app/package-related setup, not an API credential for this SDK’s hosted service. Evidence for a required console-issued credential for this product’s normal Android integration is weak/absent, so treat as no API credential.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Tapstream SDK has documented Android integration as a mobile attribution / analytics SDK for Android apps.
+
+2. **Service model** - It routinely relies on Tapstream-hosted services. The SDK is used for attribution, deep linking, and analytics/reporting, which depend on sending app/install/event data to Tapstream’s backend rather than operating purely on-device.
+
+3. **Integration requirement** - Yes. Typical Tapstream Android setup requires configuring vendor-issued app credentials so the SDK can associate traffic and events with the correct Tapstream app/account. The standard credential naming used by Tapstream integration is an **App ID** and **SDK Secret** (often provided together as account/app credentials).
+
+4. **Scope** - These credentials are part of Tapstream SDK’s own documented integration for Tapstream attribution/analytics, not merely another separate product. They are used by this SDK to communicate with Tapstream’s service.

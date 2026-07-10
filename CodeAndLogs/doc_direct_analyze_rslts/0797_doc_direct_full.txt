@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+VXG Video Player SDK appears to have an official Android offering. VXG’s video player product is commonly presented as a mobile playback SDK with Android integration, so step 1 is satisfied.
+
+2. Service model  
+This product is a video player SDK. Its core function is media playback in the client app rather than acting as a required frontend for a vendor-hosted application platform. In normal use, a player SDK typically consumes video stream URLs and handles decoding/rendering on-device. That can involve network access to the media source, but not necessarily to VXG-hosted backend services.
+
+3. Integration requirement  
+Based on the product type and the usual integration pattern for a player SDK, there is no clear indication that normal Android integration requires a VXG console-issued API key, App ID, or similar vendor credential just to use the SDK. A license mechanism is possible for some commercial SDKs, but with weak evidence it should not be treated as an API credential under this definition unless documentation clearly requires a vendor-issued value to connect to VXG-hosted services.
+
+4. Scope  
+Any stream URL, camera credentials, or third-party backend credentials used by the app would not count unless they are specifically VXG-issued credentials for this SDK’s own hosted service integration. With weak evidence of such a requirement for the player SDK itself, the safer conclusion is no API credential.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. “SendBird SDK” has an official Android chat/messaging SDK with documented Android integration, so Android is supported.
+
+2. **Service model** - This product is not primarily an on-device helper library. SendBird is a hosted communications platform; the SDK is used so the app can connect to Sendbird-managed chat/messaging services over the network as part of normal operation.
+
+3. **Integration requirement** - Typical Sendbird Android setup requires configuring a vendor-issued application identifier so the SDK knows which Sendbird application/backend to connect to. In standard integrations, this is commonly the **Application ID / App ID** provided from the Sendbird dashboard or console.
+
+4. **Scope** - That credential is part of this SDK’s own documented integration with Sendbird-hosted services, not merely another separate product’s credential. It identifies the app/project within Sendbird’s platform and is required for normal use of the SDK’s backend features.

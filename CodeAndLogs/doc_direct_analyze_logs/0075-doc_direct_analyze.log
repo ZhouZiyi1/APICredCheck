@@ -1,0 +1,19 @@
+2026-05-17 21:16:01 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0075-doc_direct_analyze.log
+2026-05-17 21:16:01 [INFO] Run start: SDK_ID=0075 SDK=Google Drive SDK vendor=Google results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:16:01 [INFO] Querying model='gpt-5.4' SDK='Google Drive SDK' vendor='Google'
+2026-05-17 21:16:08 [INFO] LLM token usage: prompt_tokens=988 completion_tokens=270 total_tokens=1258
+2026-05-17 21:16:08 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0075_doc_direct_full.txt
+2026-05-17 21:16:08 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google Drive has official Android integration via Google APIs / Google Play services account sign-in flows and Android examples for accessing Drive from Android apps.
+
+2. **Service model** — This SDK is not primarily on-device; it is used to access Google Drive, a vendor-hosted cloud service. Typical functionality depends on calling Google’s remote Drive API on behalf of the user.
+
+3. **Integration requirement** — For normal Android use, developers typically must configure Google Cloud console credentials for OAuth access, most commonly an **OAuth 2.0 Client ID** (often via Google Sign-In / app configuration tied to Drive API access). This is a console-issued identifier used as part of the app’s setup to access Google-hosted Drive services.
+
+4. **Scope** — This credential is part of integrating access to Google Drive itself on Android, not merely an unrelated add-on. While end-user authentication is involved, the app normally still requires project/app OAuth client configuration issued by Google for Drive API usage. No stronger product-specific non-auth key appears more central than the OAuth client configuration for standard Android integration.
+2026-05-17 21:16:08 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0075_doc_direct_rslt.txt
+2026-05-17 21:16:08 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "OAuth 2.0 Client ID"}
+2026-05-17 21:16:08 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0075-doc_direct_analyze.log

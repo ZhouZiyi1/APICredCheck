@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support - Yes. A Unity SDK is intended for Unity-based mobile apps, including Android builds, and Unity Analytics historically supported Android through Unity game integrations rather than as a standalone native Android SDK.
+
+2. Service model - This product is analytics/telemetry, so its normal function depends on sending event data from the app to Unity-hosted analytics services. It is not primarily an on-device-only library.
+
+3. Integration requirement - For standard Unity Analytics integration, developers typically enable/configure Analytics for their Unity project in the Unity dashboard/editor and the app uses the project linkage to send data. This is effectively tied to a Unity Project ID / project configuration rather than working as a pure anonymous client library.
+
+4. Scope - The credential/configuration belongs to Unity Analytics integration for this specific product, not merely to some unrelated Unity service. Evidence is somewhat limited because this is a legacy product and documentation can vary by version, but standard operation appears to require project-level Unity service configuration.

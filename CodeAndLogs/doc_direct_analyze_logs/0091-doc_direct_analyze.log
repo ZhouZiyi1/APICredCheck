@@ -1,0 +1,19 @@
+2026-05-17 21:17:34 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0091-doc_direct_analyze.log
+2026-05-17 21:17:34 [INFO] Run start: SDK_ID=0091 SDK=EventBus SDK vendor=Greenrobot.org results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:17:34 [INFO] Querying model='gpt-5.4' SDK='EventBus SDK' vendor='Greenrobot.org'
+2026-05-17 21:17:40 [INFO] LLM token usage: prompt_tokens=979 completion_tokens=226 total_tokens=1205
+2026-05-17 21:17:40 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0091_doc_direct_full.txt
+2026-05-17 21:17:40 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. EventBus by Greenrobot is a well-known Android/Java publish-subscribe library with official Android integration and usage documentation for Android apps.
+
+2. **Service model** — It is primarily an **on-device** library. EventBus handles in-app communication between components within the app process; it does not depend on Greenrobot-hosted APIs or a vendor backend for its standard operation.
+
+3. **Integration requirement** — Normal Android setup does **not** require registering the app with Greenrobot or obtaining any console-issued identifier, API key, App ID, secret, token, or config file. Typical integration is just adding the library dependency and using annotations / registration in code.
+
+4. **Scope** — Any package name, signing config, or other app setup is unrelated to a vendor-hosted EventBus service. EventBus itself is a client-side SDK/library, not a cloud-backed product requiring vendor credentials.
+2026-05-17 21:17:40 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0091_doc_direct_rslt.txt
+2026-05-17 21:17:40 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:17:40 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0091-doc_direct_analyze.log

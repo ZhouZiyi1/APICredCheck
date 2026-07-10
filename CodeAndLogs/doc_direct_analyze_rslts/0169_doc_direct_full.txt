@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is an ironSource mediation adapter specifically for the Unity Ads Android SDK, and it has an official Android integration path via the ironSource/LevelPlay Android mediation setup.
+
+2. Service model  
+This is not a purely on-device library. Its normal purpose is to connect an Android app, through ironSource mediation, to Unity Ads ad-serving infrastructure so ads can be requested, filled, and reported. Standard operation therefore depends on remote hosted ad services.
+
+3. Integration requirement  
+Yes. Typical setup for the Unity Ads network requires the developer to register the app in the Unity Ads/Unity dashboard and configure the issued identifier in mediation setup. The key credential is the Unity Ads `Game ID` (placements are also configured, but the primary console-issued app credential is the Game ID).
+
+4. Scope  
+This credential is part of the documented integration for this specific adapter, because the adapter exists to mediate Unity Ads inventory and requires Unity Ads network-side app configuration. This is not merely an unrelated credential from another ironSource product.

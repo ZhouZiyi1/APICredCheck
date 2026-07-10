@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not identify an official Android SDK, Android package, or documented Android integration for **M13ProgressSuite SDK** by **Brandon McQuilkin**. M13ProgressSuite is known as an iOS/macOS progress HUD and progress-view library from that developer, not an Android/mobile cross-platform SDK. On that basis, Android support is not established.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

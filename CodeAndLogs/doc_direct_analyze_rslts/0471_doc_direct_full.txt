@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. PubMatic provides an official Android monetization SDK and Android integration documentation for loading ads in Android apps.
+
+2. Service model: This SDK is not primarily on-device. Its normal function is to request and render ads using PubMatic-hosted ad-serving infrastructure, so it routinely depends on the vendor’s remote services.
+
+3. Integration requirement: Yes. Standard PubMatic Android integration requires publisher-side identifiers issued by PubMatic for ad serving configuration. PubMatic setups commonly require values such as a `Publisher ID` and `Profile ID` (and often ad-unit/config identifiers) to initialize requests and fetch inventory.
+
+4. Scope: These identifiers are part of PubMatic SDK integration itself, not merely another separate product. They are used so the SDK can make PubMatic ad requests for the publisher’s account.

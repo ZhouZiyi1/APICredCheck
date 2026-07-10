@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Mapbox Navigation SDK has an official Android SDK/integration for building turn-by-turn navigation in Android apps.
+
+2. **Service model** - This product routinely relies on Mapbox-hosted services as part of normal use. Navigation features commonly depend on remote routing, map/tiles, and related Mapbox services rather than being purely on-device.
+
+3. **Integration requirement** - Yes. Standard Android integration for Mapbox Navigation SDK requires a Mapbox credential configured in the app/project so the SDK can access Mapbox services and artifacts. The typical credential is an **access token**.
+
+4. **Scope** - This credential is part of the documented integration for **Mapbox Navigation SDK** itself, not just some separate optional product. The SDK is built to use Mapbox-hosted navigation/maps services, and the token is used for that integration.

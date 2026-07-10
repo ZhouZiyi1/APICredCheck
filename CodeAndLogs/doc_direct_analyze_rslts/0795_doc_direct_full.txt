@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. Apple HomeKit is an Apple platform framework for building smart-home integrations on Apple operating systems such as iOS, iPadOS, tvOS, watchOS, and macOS. Apple documents HomeKit through its native Apple developer frameworks, and there is no official Android SDK or documented Android integration for HomeKit from Apple.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android for this product.

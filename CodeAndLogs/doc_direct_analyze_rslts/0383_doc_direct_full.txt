@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is specifically an ironSource mediation adapter for the Chartboost Android SDK, and ironSource publishes Android integration guidance for mediation adapters like this one. That is sufficient evidence of official Android support.
+
+2. Service model  
+This adapter is not a purely on-device utility. Its normal purpose is to connect an Android app, via ironSource mediation, to Chartboost’s ad-serving network. Standard operation therefore depends on remote vendor-hosted ad services.
+
+3. Integration requirement  
+Yes. Typical setup for the Chartboost adapter requires Chartboost console-issued identifiers, commonly the `App ID` and `App Signature`, so the mediated Chartboost SDK can initialize and request ads.
+
+4. Scope  
+These values are part of the documented integration for this specific adapter, not just an unrelated optional product. The adapter exists to bridge ironSource mediation with Chartboost, and Chartboost credentials are standard configuration for that integration on Android.

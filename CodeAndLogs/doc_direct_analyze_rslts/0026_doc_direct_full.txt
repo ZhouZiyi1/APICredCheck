@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No.
+
+Apple ClassKit is an Apple education framework for iPadOS/iOS that integrates with Apple Schoolwork and related Apple platform capabilities. It is provided as part of Apple's platform SDKs for Apple operating systems, not as an official Android library or Android integration. There is no standard documented Android SDK for ClassKit from Apple.
+
+Because step 1 is no, steps 2–4 are skipped. API credential evaluation is N/A on Android.

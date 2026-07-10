@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Nend SDK has official Android support. FAN Communications provides an Android ad SDK (`net.nend.android` / `NendAdView`, interstitial and native formats) with documented Android integration.
+
+2. Service model  
+This is an advertising SDK, so normal operation depends on FAN Communications' hosted ad-serving infrastructure. The SDK is not primarily on-device; it routinely contacts the vendor's backend to request and display ads.
+
+3. Integration requirement  
+Standard Android setup requires developer-issued identifiers from nend's management console. Typical Android examples initialize ad placements with values such as an `apiKey` and a `spotId`/ad spot ID. Those values identify the publisher/app placement to the nend service.
+
+4. Scope  
+These identifiers are part of Nend SDK's own documented Android integration for serving nend ads, not merely another separate product. Package name or signing data alone are not the integration credential here.

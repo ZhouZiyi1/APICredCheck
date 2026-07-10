@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — **No.** Apple’s **StoreKit** is Apple’s in-app purchase framework for Apple platforms (primarily iOS, iPadOS, macOS, tvOS, watchOS, visionOS). It is not an official Android SDK and does not have documented native Android integration from Apple.
+
+Because step 1 is **no**, steps 2–4 are **skipped** per instructions. On Android, this is **not applicable**.

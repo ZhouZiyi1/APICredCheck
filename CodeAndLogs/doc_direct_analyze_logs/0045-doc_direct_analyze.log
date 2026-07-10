@@ -1,0 +1,19 @@
+2026-05-17 21:13:12 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0045-doc_direct_analyze.log
+2026-05-17 21:13:12 [INFO] Run start: SDK_ID=0045 SDK=Applovin SDK vendor=AppLovin results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:13:12 [INFO] Querying model='gpt-5.4' SDK='Applovin SDK' vendor='AppLovin'
+2026-05-17 21:13:17 [INFO] LLM token usage: prompt_tokens=991 completion_tokens=221 total_tokens=1212
+2026-05-17 21:13:17 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0045_doc_direct_full.txt
+2026-05-17 21:13:17 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AppLovin provides an official Android SDK for ads/mediation integration, so this product supports Android.
+
+2. Service model — The AppLovin SDK is an advertising/mediation SDK that routinely connects to AppLovin-hosted services to load ads, report events, and support monetization features. This is not a purely on-device library.
+
+3. Integration requirement — Yes. Standard Android integration for the AppLovin SDK requires configuring a vendor-issued application identifier from the AppLovin dashboard/console. In AppLovin documentation this is typically the SDK Key (often added in Android manifest metadata or initialization code).
+
+4. Scope — This credential is part of the AppLovin SDK’s own documented setup for Android, not just a separate product. Ad unit IDs may also exist for placements, but the core console-issued integration credential for the SDK itself is the SDK Key.
+2026-05-17 21:13:17 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0045_doc_direct_rslt.txt
+2026-05-17 21:13:17 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "SDK Key"}
+2026-05-17 21:13:17 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0045-doc_direct_analyze.log

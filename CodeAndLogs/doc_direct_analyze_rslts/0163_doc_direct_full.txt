@@ -1,0 +1,17 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. `ironSource Mediation adapter for Facebook SDK` is an Android integration component: ironSource publishes mediation adapters for specific ad networks, including Facebook/Meta Audience Network, for Android apps.
+
+2. Service model  
+This adapter is not a pure on-device utility. In normal use it participates in ad mediation, which depends on remote ad-serving/back-end systems. However, the adapter mainly acts as a bridge between the ironSource mediation SDK and the Facebook SDK rather than exposing its own standalone end-user service.
+
+3. Integration requirement  
+For the adapter itself, the usual setup is adding the Android adapter dependency and pairing it with the underlying mediation SDK / Facebook network configuration. The adapter does not appear to require its own separate console-issued credential configured specifically for this adapter in the app.
+
+4. Scope  
+Credentials commonly involved in a working integration are typically for:
+- the base ironSource / LevelPlay mediation SDK (for example an app key), and/or
+- the Facebook/Meta network setup (for example placement or app identifiers).
+
+Those belong to the broader mediation platform or the underlying ad network, not uniquely to the `ironSource Mediation adapter for Facebook SDK` as a standalone Android product. Under the requested scope, that supports `false` for an API credential specific to this SDK.

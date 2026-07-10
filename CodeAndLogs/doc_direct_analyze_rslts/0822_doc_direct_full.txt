@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AndEngine is an Android game engine created specifically for building 2D games on Android, with documented Android integration as a library/framework for Android apps.
+
+2. Service model: AndEngine is primarily an on-device SDK. Its core purpose is rendering, scene management, input handling, physics integration, audio, and other local game-engine functions inside the Android app. It does not normally depend on Nicolas Gramlich-hosted APIs or a vendor backend for standard operation.
+
+3. Integration requirement: There is no usual setup requirement to register the app with a vendor console or configure a vendor-issued API key, App ID, secret, or token in order to use AndEngine itself. Typical integration is adding the engine/library to the Android project and coding against it.
+
+4. Scope: Android app package identifiers, signing, or any third-party services a game might optionally add are outside AndEngine's own integration requirements. No evidence indicates that AndEngine itself requires a product-specific API credential. Evidence is straightforward, so `false` is appropriate.

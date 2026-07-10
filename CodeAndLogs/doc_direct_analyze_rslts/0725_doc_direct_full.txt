@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Embrace SDK has an official Android SDK/integration for mobile app observability and crash/performance monitoring.
+
+2. **Service model** - This product is not just an on-device helper. Its standard purpose is to collect telemetry, crashes, performance/network/session data from the Android app and send that data to Embrace’s hosted backend for processing and display. So routine use depends on vendor-hosted services.
+
+3. **Integration requirement** - Yes. Standard setup requires configuring an Embrace-issued application credential so the SDK can associate uploaded telemetry with the correct app/project in Embrace’s platform. This is typically documented as an **App ID** in the Android integration flow.
+
+4. **Scope** - The credential is part of Embrace SDK’s own integration, not merely another separate product. It is used so this SDK can send data to Embrace’s service for the registered app.

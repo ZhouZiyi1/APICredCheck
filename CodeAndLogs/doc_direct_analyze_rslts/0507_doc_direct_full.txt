@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Adobe provides an official Android Mobile SDK. Adobe’s mobile libraries have documented Android integration for Adobe Experience Cloud / Adobe Experience Platform use cases.
+
+2. Service model  
+This SDK is not just an on-device utility library. Its standard use is to collect and send data to Adobe-hosted services such as analytics, lifecycle/event collection, identity, and related Experience Cloud services. Typical operation depends on Adobe backend configuration and network calls.
+
+3. Integration requirement  
+Yes. Normal integration requires Adobe-issued app configuration, historically via `ADBMobileConfig.json` and in newer Adobe Experience Platform Mobile SDK setups via an Adobe Data Collection / Launch environment configuration identified by an Adobe app/environment ID. That is a vendor-issued identifier/configuration used so the SDK can connect to Adobe’s services.
+
+4. Scope  
+This credential/configuration belongs to Adobe’s mobile SDK integration itself, not merely to a separate third-party product added alongside it. The Adobe mobile SDK’s documented setup routinely includes Adobe-managed app/environment configuration as part of standard use on Android.

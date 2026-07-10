@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. MoPub published official Android mediation adapters for third-party networks, including a mediation adapter for Facebook Audience Network, so this product has documented Android integration.
+
+2. Service model: This adapter is a bridge layer inside an Android app. Its purpose is to let the MoPub mediation stack communicate with the Facebook Audience Network SDK during ad loading/showing. It is not primarily an on-device utility, but it also is not a standalone MoPub-hosted service SDK with its own direct app-to-MoPub credential flow.
+
+3. Integration requirement: For normal Android use, developers typically add the adapter dependency and separately configure their MoPub ad units and Facebook placement/app settings. The adapter itself does not usually require a distinct console-issued identifier or secret to be embedded in the Android app specifically for the adapter.
+
+4. Scope: Any required identifiers are generally part of the surrounding MoPub SDK setup or Facebook Audience Network setup, not a credential unique to the "MoPub mediation adapter for Facebook Audience Network SDK" itself. Under the product-specific scope in this prompt, that points to no API credential for this adapter product.

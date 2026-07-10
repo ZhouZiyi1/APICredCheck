@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. The Google Play Games plugin for Unity is an official Unity integration for Google Play Games Services, and its standard target includes Android builds from Unity.
+
+2. Service model  
+This SDK is not mainly on-device. Its normal features, such as Play Games sign-in, achievements, leaderboards, events, and saved games, rely on Google-hosted Play Games Services.
+
+3. Integration requirement  
+Yes. Standard setup requires registering the game in Google Play Console / Play Games Services configuration and supplying a console-issued identifier to the app. In Unity integration, this is typically the Google Play Games / Play Games Services Android App ID that gets added to the Android resources used by the plugin. OAuth client configuration may also appear in setup, but the clearest product-specific required value is the App ID.
+
+4. Scope  
+This credential belongs to this product's documented integration, not just to some unrelated Google product. The Play Games Services App ID is part of configuring this SDK so the app can use Google Play Games backend features on Android.

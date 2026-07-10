@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**: Yes. MapQuest has an official Android mapping SDK / documented Android integration for embedding MapQuest maps and related features in Android apps.
+
+2. **Service model**: This SDK is not purely on-device. Standard use depends on MapQuest-hosted services such as map tiles and related location/map backend functionality, so the app is expected to contact MapQuest infrastructure during normal operation.
+
+3. **Integration requirement**: Yes. Typical MapQuest Android SDK setup requires obtaining a developer-issued key from MapQuest and configuring it in the Android app (commonly exposed in integration docs as an API key value in app configuration/manifest metadata).
+
+4. **Scope**: This credential is part of the MapQuest SDK integration itself, not merely another optional MapQuest product. The SDK’s core map/service access relies on vendor-hosted resources that are keyed to the developer account.

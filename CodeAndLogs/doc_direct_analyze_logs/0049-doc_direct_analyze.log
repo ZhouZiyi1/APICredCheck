@@ -1,0 +1,19 @@
+2026-05-17 21:13:35 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0049-doc_direct_analyze.log
+2026-05-17 21:13:35 [INFO] Run start: SDK_ID=0049 SDK=OneSignal SDK vendor=OneSignal results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:13:35 [INFO] Querying model='gpt-5.4' SDK='OneSignal SDK' vendor='OneSignal'
+2026-05-17 21:13:41 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=211 total_tokens=1189
+2026-05-17 21:13:41 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0049_doc_direct_full.txt
+2026-05-17 21:13:41 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. OneSignal provides an official Android SDK and Android integration documentation.
+
+2. Service model — OneSignal is a push notifications / messaging platform that relies on OneSignal’s hosted backend as part of normal operation. The SDK registers the app/device with OneSignal services and uses their remote infrastructure for messaging-related features.
+
+3. Integration requirement — Yes. Standard OneSignal setup requires the developer to create an app in the OneSignal dashboard and configure a OneSignal-issued identifier in the Android app. The commonly documented value is the OneSignal App ID.
+
+4. Scope — This credential is part of OneSignal SDK’s own documented integration, not merely a separate third-party product. Although push delivery on Android may also involve Firebase configuration, the OneSignal App ID itself is a credential/identifier for OneSignal’s own service and standard SDK setup.
+2026-05-17 21:13:41 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0049_doc_direct_rslt.txt
+2026-05-17 21:13:41 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "OneSignal App ID"}
+2026-05-17 21:13:41 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0049-doc_direct_analyze.log

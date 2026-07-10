@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tencent provides an official WeChat OpenSDK for Android, with documented Android integration for features such as sharing, login, and launching WeChat-related flows from an Android app. So Android is supported.
+
+2. Service model  
+The WeChat SDK is not just an on-device utility library. Its standard use is to interact with the WeChat platform and app ecosystem, including sharing content, authenticating via WeChat, or invoking WeChat platform capabilities. Those flows depend on WeChat/Tencent-controlled services and platform-side validation.
+
+3. Integration requirement  
+Typical Android integration requires the developer to register the app with WeChat/Open Platform and configure an `App ID` in the Android app. The SDK uses that identifier to associate requests with the registered application.
+
+4. Scope  
+This `App ID` is part of the WeChat SDK’s own documented integration flow, not merely a package-name or signing requirement, and not only a credential for some separate Tencent product. It is the core application identifier used by WeChat SDK integrations on Android.

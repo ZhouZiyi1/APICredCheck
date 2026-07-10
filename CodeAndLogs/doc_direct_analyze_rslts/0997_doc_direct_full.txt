@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Smooch SDK had an official Android SDK/integration for in-app messaging on Android.
+
+2. **Service model** - It is not a purely on-device library. Smooch SDK is a messaging/customer communication SDK that connects the app to Smooch.io’s hosted messaging backend as part of normal operation.
+
+3. **Integration requirement** - Yes. Typical Android integration for Smooch required configuring vendor-issued application identifiers so the app could connect to the Smooch service. The standard credential used in setup is an **App ID**.
+
+4. **Scope** - This credential is part of Smooch SDK’s own documented integration for connecting to Smooch-hosted messaging services, not merely another separate product’s credential.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Zego LiveRoom has official Android integration. ZEGO provides Android real-time audio/video and live streaming SDKs, and LiveRoom is part of that Android offering.
+
+2. Service model  
+This SDK is not a pure on-device library. Its normal use is to connect to ZEGO’s real-time communication/live streaming backend for room login, stream publishing, playback, signaling, and related session services.
+
+3. Integration requirement  
+Typical LiveRoom setup requires values issued from ZEGO’s developer console, most notably an `AppID`, and commonly an authentication/signing value such as `AppSign` or token-based auth depending on the integration mode. These are configured in the app so the SDK can authenticate against ZEGO-hosted services.
+
+4. Scope  
+Those credentials are part of Zego LiveRoom’s own documented integration model, not merely another optional product layered on top. The credential is used so this SDK can access its vendor-hosted room/streaming services.

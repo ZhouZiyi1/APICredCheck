@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I find no clear evidence that "AppYet SDK" is an official embeddable Android SDK with documented Android app integration. AppYet is primarily known as an app-building/publishing platform for creating Android apps, which is different from providing a client SDK that developers add to an existing Android project. Because step 1 is not satisfied, steps 2-4 are skipped as N/A on Android.

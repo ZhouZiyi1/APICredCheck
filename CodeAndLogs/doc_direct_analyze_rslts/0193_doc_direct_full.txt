@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. PhoneGap PushPlugin was documented for PhoneGap/Cordova apps and included Android as a supported platform through its Android plugin implementation for push notifications.
+
+2. Service model  
+This SDK is mainly a client integration layer inside a PhoneGap/Cordova app. Its purpose is to bridge the app to platform push systems on Android rather than to Adobe-hosted backend services. In normal use, message delivery depends on the underlying push provider for Android, not on an Adobe cloud service operated specifically for this plugin.
+
+3. Integration requirement  
+For Android push delivery, developers typically configure credentials or identifiers for the underlying push provider (historically Google Cloud Messaging, later Firebase Cloud Messaging), such as a sender ID or `google-services.json`. However, those values are not issued for Adobe's PhoneGap PushPlugin itself.
+
+4. Scope  
+The required console-issued values belong to Google/Firebase push infrastructure, which is a separate product dependency, not to this Adobe SDK's own vendor-hosted service. Based on that scope rule, this SDK itself does not require an Adobe-issued API credential for standard Android integration.

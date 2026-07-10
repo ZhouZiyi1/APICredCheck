@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+SuperAwesome's AwesomeAds Publisher SDK has documented Android integration and an Android SDK/library for serving ads in Android apps. Step 1 is yes.
+
+2. Service model  
+This is an ad-serving SDK, so standard operation depends on SuperAwesome-hosted ad delivery/services rather than being purely on-device. The SDK requests and renders ad inventory tied to the publisher's account/setup.
+
+3. Integration requirement  
+Typical integration requires using identifiers created in SuperAwesome's publisher/ad setup, especially ad placement identifiers used when loading ads. Those values are issued through the vendor's platform/dashboard and configured in the app as part of normal SDK use.
+
+4. Scope  
+The identifier is part of AwesomeAds Publisher SDK integration itself, not just a separate unrelated product. For an ad SDK, the placement/ad-unit identifier is the product-specific value that connects the app's ad requests to the vendor's serving infrastructure. Evidence for a secret-style credential is weak, but evidence for a required publisher ad identifier is strong.

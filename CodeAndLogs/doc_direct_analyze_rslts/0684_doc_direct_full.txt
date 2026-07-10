@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+WebEngage SDK officially supports Android. WebEngage provides an Android SDK and documented Android integration for analytics, user engagement, push notifications, and in-app messaging.
+
+2. Service model  
+This SDK is not a pure on-device library. Its standard use depends on WebEngage-hosted backend services for event tracking, user profile sync, campaigns, push delivery/in-app messaging orchestration, and related engagement features.
+
+3. Integration requirement  
+Typical Android setup requires configuring vendor-issued app credentials from the WebEngage dashboard/console. In standard integration, developers add WebEngage identifiers such as a `license_code` and `private_key`/secret in Android configuration so the SDK can connect the app to the correct WebEngage account/backend.
+
+4. Scope  
+These credentials are part of WebEngage SDK's own documented integration, not merely another optional third-party product. They identify the app/account for WebEngage services themselves.

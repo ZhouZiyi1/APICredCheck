@@ -1,0 +1,16 @@
+2026-05-17 21:17:55 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0095-doc_direct_analyze.log
+2026-05-17 21:17:55 [INFO] Run start: SDK_ID=0095 SDK=Sentry SDK vendor=Functional Software results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:17:55 [INFO] Querying model='gpt-5.4' SDK='Sentry SDK' vendor='Functional Software'
+2026-05-17 21:18:03 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=147 total_tokens=1125
+2026-05-17 21:18:03 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0095_doc_direct_full.txt
+2026-05-17 21:18:03 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+Sentry SDK has an official Android library and documented Android integration, so Android is supported.
+
+It is primarily an on-device error/performance monitoring SDK that sends events to Sentry’s hosted service as part of normal operation. Standard integration typically requires configuring a Sentry DSN in the app so events can be routed to the correct Sentry project.
+
+The needed value belongs to this SDK’s documented integration (not another product): the DSN is the standard project connection string used by Sentry SDKs.
+2026-05-17 21:18:03 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0095_doc_direct_rslt.txt
+2026-05-17 21:18:03 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "DSN"}
+2026-05-17 21:18:03 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0095-doc_direct_analyze.log

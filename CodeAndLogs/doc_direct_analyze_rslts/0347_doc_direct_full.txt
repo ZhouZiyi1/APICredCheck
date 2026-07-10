@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No clear official Android library or Android integration documentation is associated with RMStore SDK. RMStore is known as a Robot Media library for Apple's in-app purchase stack (StoreKit) and is positioned around iOS/macOS Apple platform purchasing rather than Android billing. On that basis, this product should be treated as not officially supporting Android.
+
+Steps 2-4 are skipped because Android support is not established (N/A on Android).

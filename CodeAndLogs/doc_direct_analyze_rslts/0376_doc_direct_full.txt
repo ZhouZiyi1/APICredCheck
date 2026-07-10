@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. HockeyApp SDK had an official Android SDK and documented Android integration for features like crash reporting, update distribution, and feedback.
+
+2. Service model: It routinely relied on Microsoft HockeyApp hosted services. Standard features send crash data, feedback, and app distribution/update checks to HockeyApp backend rather than operating purely on-device.
+
+3. Integration requirement: Yes. Typical Android setup required registering the app in HockeyApp and configuring the issued app identifier in the Android app (commonly called the HockeyApp App ID / App Identifier).
+
+4. Scope: This credential is part of HockeyApp SDK’s own documented integration, used so the SDK can associate the app with HockeyApp-hosted services. It is not merely an Android package name, signing value, or a credential from some separate Microsoft product.

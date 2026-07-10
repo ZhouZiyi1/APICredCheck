@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No.
+
+Apple CallKit is an iOS platform framework for integrating calling UI and telephony-related behaviors on Apple platforms. It is documented for iOS, not as an Android SDK, and Apple does not provide an official Android library or Android integration for CallKit.
+
+Because step 1 is no, steps 2–4 are skipped. N/A on Android.

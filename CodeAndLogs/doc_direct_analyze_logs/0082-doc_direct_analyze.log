@@ -1,0 +1,18 @@
+2026-05-17 21:16:42 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0082-doc_direct_analyze.log
+2026-05-17 21:16:42 [INFO] Run start: SDK_ID=0082 SDK=Firebase Dynamic Links SDK vendor=Firebase results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:16:42 [INFO] Querying model='gpt-5.4' SDK='Firebase Dynamic Links SDK' vendor='Firebase'
+2026-05-17 21:16:46 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=165 total_tokens=1143
+2026-05-17 21:16:46 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0082_doc_direct_full.txt
+2026-05-17 21:16:46 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+1. Android support: Yes. Firebase Dynamic Links SDK has official Android support and documented Android integration.
+
+2. Service model: It is a cloud-backed Firebase product. Dynamic links are created and resolved through Firebase-hosted services rather than being purely on-device.
+
+3. Integration requirement: Usual setup requires configuring the app with Firebase project information, typically via the Firebase Android config file (`google-services.json`) associated with a Firebase project/App registration.
+
+4. Scope: This credential/config belongs to Firebase Dynamic Links’ documented Firebase integration, not merely to an unrelated Firebase product.
+2026-05-17 21:16:46 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0082_doc_direct_rslt.txt
+2026-05-17 21:16:46 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "Firebase config (google-services.json)"}
+2026-05-17 21:16:46 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0082-doc_direct_analyze.log

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Keeva SDK by Soomla was offered as a mobile game engagement/retention SDK with Android integration documentation and Android SDK artifacts/plugin support in Soomla’s materials.
+
+2. **Service model** - It is not a pure on-device utility. Keeva’s purpose was to connect the app to Soomla’s hosted engagement features (such as game events / progression / rewards-style backend-driven functionality), so standard use depends on vendor-hosted services rather than only local device logic.
+
+3. **Integration requirement** - Yes. Typical integration required identifying the app to Keeva/Soomla’s backend using a vendor-issued application identifier from the Soomla/Keeva dashboard or console. This is the kind of console-issued value used so the SDK can talk to the product’s hosted service.
+
+4. **Scope** - This credential appears to belong to Keeva’s own documented integration, not merely to some separate third-party service added alongside it. The relevant value is an app-level identifier for Keeva/Soomla service connectivity. Evidence on the exact label is somewhat dated/limited, so the safest short name is a generic app identifier rather than a more specific undocumented term.

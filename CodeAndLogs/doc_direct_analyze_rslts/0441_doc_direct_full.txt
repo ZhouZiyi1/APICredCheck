@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Criteo provides an official Android SDK for mobile advertising/app monetization, with documented Android integration via Gradle/Maven and Android-specific setup APIs. So Android support is present.
+
+2. Service model  
+This SDK is not a purely on-device library. Its normal use is to request and render advertising-related data from Criteo-hosted services as part of ad bidding/serving. That means standard operation depends on Criteo’s remote backend.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with a Criteo-issued publisher identifier. In Criteo Android setup examples, the app is configured with a `publisherId` when building/initializing the SDK. That value identifies the developer’s account/app to Criteo’s services and is part of normal integration.
+
+4. Scope  
+The publisher identifier is part of the Criteo SDK’s own documented integration flow, not merely another separate product the app might optionally add. Package name or signing alone would not satisfy this; the configured publisher ID is the relevant credential-like value.

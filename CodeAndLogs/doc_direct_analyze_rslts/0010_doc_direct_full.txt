@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — **No**. Apple’s **MapKit SDK** is Apple’s native mapping framework for Apple platforms (such as iOS, iPadOS, macOS, watchOS, and related Apple ecosystems). It is not offered as an official Android SDK, and Apple does not provide documented Android integration for MapKit as an Android mobile SDK.
+
+Because step 1 is **no**, steps 2–4 are **skipped** per instructions. API credential evaluation is **N/A on Android** for this product.

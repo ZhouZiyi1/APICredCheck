@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+BidMachine SDK does support Android. BidMachine provides an official Android/mobile ads SDK and documented Android integration for serving ads in Android apps.
+
+2. Service model  
+This is an advertising/monetization SDK, so standard operation depends on BidMachine-hosted services to request, auction, and return ads. It is not a purely on-device library.
+
+3. Integration requirement  
+Typical BidMachine Android integration requires the developer to register the app in BidMachine and configure a vendor-issued identifier in the app during SDK setup. In BidMachine documentation, this is commonly presented as an app identifier used to initialize the SDK.
+
+4. Scope  
+That identifier is part of BidMachine SDK’s own integration flow for accessing BidMachine ad services, not merely a separate third-party product or a package/signing requirement.

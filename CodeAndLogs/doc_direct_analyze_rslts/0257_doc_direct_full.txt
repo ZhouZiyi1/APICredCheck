@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is an Android mediation adapter for Google Mobile Ads/AdMob, distributed as an Android library and documented for Android integration.
+
+2. Service model: It is not a pure on-device library. In normal use, it brokers ad serving between the app and the mediated i-mobile ad network, so remote ad services are part of standard operation.
+
+3. Integration requirement: For the adapter itself, the usual Android integration is adding the adapter dependency alongside the Google Mobile Ads SDK. The mediated network may require network-specific account values in the AdMob mediation UI, but that is not the same as a console-issued credential that must be configured in the Android app for this adapter.
+
+4. Scope: The Google Mobile Ads SDK may separately require its own AdMob App ID, and the i-mobile network may separately require its own placement/account identifiers, but those belong to the base ads SDK or the third-party ad network setup, not specifically to the "Admob mediation adapter for i-Mobile SDK" as an Android in-app credential requirement. On that basis, this adapter should be treated as not having its own API credential requirement.

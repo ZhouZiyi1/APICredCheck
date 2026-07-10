@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Mixpanel provides an official Android SDK and Android integration documentation for tracking events and user properties in Android apps.
+
+2. Service model: Mixpanel is not a purely on-device library. Its standard use is to collect analytics data in the app and send it to Mixpanel's hosted analytics backend for ingestion, reporting, and analysis.
+
+3. Integration requirement: Standard Android setup requires configuring the SDK with a Mixpanel project token. This token is obtained from the Mixpanel project/settings console and supplied in the app during initialization so events are associated with the correct Mixpanel project.
+
+4. Scope: The project token is part of Mixpanel's own documented SDK integration and is used for Mixpanel's hosted service, not just for some separate third-party product. This fits the definition of an API credential here because normal SDK use depends on a vendor-issued identifier configured in the app to communicate with Mixpanel's backend.

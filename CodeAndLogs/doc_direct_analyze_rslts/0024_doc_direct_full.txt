@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Facebook Audience Network SDK has had official Android integration for showing ads in Android apps.
+
+2. Service model — This is an advertising SDK, so normal operation depends on Meta-hosted ad serving/backend services. The SDK does not work as a purely on-device library; it fetches and serves ad inventory from the vendor’s network.
+
+3. Integration requirement — Yes. Standard integration requires Meta-issued identifiers configured in the app for ad serving. For Audience Network, the usual product-specific credential-like value is the placement identifier used for ad units. In practice, integration may also occur within a Meta app registration context, but the clearest required value for this SDK itself is the ad placement ID.
+
+4. Scope — The placement ID belongs directly to Facebook Audience Network integration and is used by this ad product to request and render ads. This is not merely package/signing metadata and not only a separate product’s credential.

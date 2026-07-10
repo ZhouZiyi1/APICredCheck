@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - The OnePasswordExtension SDK is an Android integration/library intended to let Android apps interact with the 1Password app via the 1Password extension/fill mechanism. This is an officially documented Android use case, so Android support is **yes**.
+
+2. **Service model** - This SDK’s typical role is local app-to-app integration on the device: an Android app invokes 1Password functionality so the user can fill or save credentials using the installed 1Password app. The normal flow does not depend on the app developer directly calling an AgileBits-hosted backend through the SDK.
+
+3. **Integration requirement** - Usual setup for this SDK does not require the developer to obtain a vendor console-issued API key, App ID, client secret, or similar credential from AgileBits. Integration is based on adding the Android library/intents and handling the local extension flow.
+
+4. **Scope** - Any user’s own 1Password account/sign-in is separate from whether the app developer needs a product credential for this SDK. For this SDK itself, there is no standard developer-issued API credential required for Android integration.

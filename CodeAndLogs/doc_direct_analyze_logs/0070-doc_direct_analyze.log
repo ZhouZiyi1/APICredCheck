@@ -1,0 +1,19 @@
+2026-05-17 21:15:32 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0070-doc_direct_analyze.log
+2026-05-17 21:15:32 [INFO] Run start: SDK_ID=0070 SDK=Vungle SDK vendor=Vungle results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:15:32 [INFO] Querying model='gpt-5.4' SDK='Vungle SDK' vendor='Vungle'
+2026-05-17 21:15:37 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=188 total_tokens=1166
+2026-05-17 21:15:37 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0070_doc_direct_full.txt
+2026-05-17 21:15:37 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Vungle SDK is an official mobile advertising SDK with documented Android integration.
+
+2. Service model — It relies on Vungle-hosted ad services as part of normal operation. The SDK is not just on-device; it connects to Vungle’s backend to initialize, request, and serve ads.
+
+3. Integration requirement — Yes. Standard Android integration requires configuring a Vungle-issued application identifier during SDK initialization. This is commonly referred to as the Vungle App ID.
+
+4. Scope — This credential is part of the Vungle SDK’s own documented setup for serving ads, not merely a separate optional product. Ad unit / placement IDs may also be used, but the core console-issued app-level credential is the App ID.
+2026-05-17 21:15:37 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0070_doc_direct_rslt.txt
+2026-05-17 21:15:37 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "App ID"}
+2026-05-17 21:15:37 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0070-doc_direct_analyze.log

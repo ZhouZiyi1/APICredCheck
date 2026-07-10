@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Zego Express-Audio SDK is part of ZEGO's Express real-time audio/video SDK family and has official Android integration documentation/libraries for Android apps.
+
+2. **Service model** - This SDK is not a pure on-device library. Its normal purpose is real-time audio communication, which depends on ZEGO’s hosted real-time communication infrastructure for signaling/media transport as part of standard use.
+
+3. **Integration requirement** - Yes. Typical ZEGO Express SDK integration requires the developer to create a project in ZEGO’s developer console and initialize the SDK with vendor-issued project credentials, commonly an `AppID` and related authentication material such as an `AppSign` (or token-based auth setup derived from those project credentials).
+
+4. **Scope** - These credentials belong to the documented integration of the ZEGO Express-Audio SDK itself, not merely a separate optional product. They are used to initialize/connect the SDK to ZEGO’s own service environment.

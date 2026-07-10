@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Faceunity provides official Android integration for its beauty/AR rendering SDK, including Android libraries and Android demo/setup documentation.
+
+2. Service model: The core SDK functionality is primarily on-device (camera effects, beautification, stickers, rendering). It is not mainly a cloud API product. However, standard use of the SDK typically includes vendor authorization/licensing for the SDK itself.
+
+3. Integration requirement: Yes. Faceunity Android integrations commonly require a vendor-issued authorization artifact such as an `authpack`/license bundle configured in the app during SDK initialization. That is a product-specific credential supplied by Faceunity for normal SDK use.
+
+4. Scope: This credential is part of Faceunity SDK integration itself, not just a separate Faceunity product. While rendering is local, the authorization material is still a vendor-issued integration requirement for this SDK. Evidence can vary by SDK version, but the recurring Android setup pattern is an `authpack`-style license credential, so this is strong enough to treat as required.

@@ -1,0 +1,4 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find evidence that "Armchair SDK" by Urban Apps has an official Android SDK or Android integration. Armchair is known as an in-app customer feedback / rating prompt product originating in the iOS ecosystem, and the available documentation and references are associated with Apple platforms rather than Android.
+2. Because step 1 is **no**, steps 2-4 are **skipped**. Under the required method, API credential evaluation is **N/A on Android** for this product.

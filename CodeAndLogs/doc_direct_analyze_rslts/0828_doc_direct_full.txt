@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. AppDynamics provides an official Android mobile instrumentation/agent SDK for Android apps.
+
+2. **Service model** - This SDK is not just an on-device helper. Its normal purpose is mobile app performance monitoring: the app agent collects telemetry/crash/performance data and sends it to AppDynamics’ controller/backend for analysis and reporting. So standard use depends on vendor-hosted services.
+
+3. **Integration requirement** - Yes. Typical AppDynamics Android setup requires configuring values issued for the monitored mobile app from the AppDynamics controller/account, commonly an **App Key** (often alongside controller/collector endpoint configuration). That key identifies the app to AppDynamics’ backend.
+
+4. **Scope** - The credential is part of this product’s own documented mobile monitoring integration, not a separate unrelated product. Package name or signing alone would not satisfy setup; the AppDynamics-issued app identifier/key is the relevant integration credential.

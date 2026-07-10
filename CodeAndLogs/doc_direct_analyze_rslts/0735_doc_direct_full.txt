@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find evidence that `DraggableCollectionView SDK` by Luke Scott has an official Android library or documented Android integration. The product is known as an iOS `UICollectionView` layout/interaction component, tied to Apple's UIKit naming and patterns rather than Android APIs. The available naming and typical usage indicate an iOS-only UI library, not a cross-platform or Android SDK.
+
+Because step 1 is **no**, steps 2-4 are skipped as **N/A on Android**.

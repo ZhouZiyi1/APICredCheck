@@ -1,0 +1,2 @@
+SECTION 1: Detailed Analysis
+Facebook Fresco SDK has official Android support as an image loading/processing library for Android apps. It is a client-side SDK used to load and display images efficiently on-device, not a product that normally depends on Meta-hosted services or remote APIs for standard use. Typical integration does not require registering the app in a developer console or configuring an API key, App ID, access token, or similar console-issued credential for Fresco itself. Any credentials would belong to separate products/services the app may use, not Fresco.

@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. CRI Sofdec2 is CRI Middleware's video playback middleware and is documented/sold as part of its cross-platform game/media SDK offerings, including Android support for mobile applications.
+
+2. Service model: Mostly on-device. Sofdec2 is a client-side media/video playback SDK used to decode and play packaged video/audio content inside the app or game. Its standard function does not depend on CRI-hosted APIs or a vendor cloud backend during normal runtime.
+
+3. Integration requirement: I do not find evidence that normal Android integration requires a developer-console-issued API key, App ID, token, or similar credential to connect to a CRI-hosted service. Licensing/commercial agreements may exist, but that is not the same as an in-app API credential for vendor-hosted services.
+
+4. Scope: Any licensing or contract artifacts associated with CRI middleware are not the same as a product-specific runtime API credential as defined here. For Sofdec2 itself on Android, the usual integration appears to be embedding the SDK/library, not configuring a console-issued value for remote service access.
+
+Evidence is somewhat limited in public-facing documentation, but the product's standard role is local media playback middleware, so the safer conclusion is no API credential.

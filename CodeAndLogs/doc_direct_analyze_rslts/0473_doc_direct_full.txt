@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. NetEase's IM product is documented as an Android SDK/library for in-app instant messaging, commonly distributed as the NetEase/Yunxin IM Android SDK.
+
+2. Service model: This SDK is not primarily an on-device utility library. Its normal use depends on NetEase-hosted IM infrastructure for messaging, sessions, offline delivery, and related cloud-backed communication features.
+
+3. Integration requirement: Typical Android integration requires configuring a vendor-issued application identifier during SDK initialization so the app can connect to NetEase's IM service. In NetEase IM documentation and examples, this is commonly the `AppKey` (sometimes written `appKey`).
+
+4. Scope: The `AppKey` is part of the IM product's own setup, not just a separate product or generic Android identifier. It is used specifically so the SDK can access NetEase's hosted IM backend.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Paytm provides an official Android payment integration, commonly referred to as the Paytm All-in-One SDK / Android SDK for app payments. That satisfies Android support.
+
+2. Service model  
+This SDK is not primarily on-device. Its normal use is to initiate and complete Paytm payment flows against Paytm-hosted payment services, using server-generated transaction data and Paytm’s backend.
+
+3. Integration requirement  
+Typical Android integration requires a Paytm merchant account and merchant-specific values. In the Android flow, the app is usually given a `MID` (Merchant ID) and a transaction token/order context generated for that merchant. `MID` is a vendor-issued identifier tied to the Paytm merchant setup and is part of standard SDK/payment initialization.
+
+4. Scope  
+The Merchant ID belongs to Paytm’s payment SDK integration itself, not just some unrelated Paytm product. While the merchant key/secret is generally kept server-side rather than shipped in the app, the SDK’s standard Android integration still depends on a vendor-issued app-configured identifier for Paytm-hosted payment services.

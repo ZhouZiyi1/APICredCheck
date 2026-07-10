@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. "Android Saripaar" is an Android form-validation library specifically built for Android apps, with documented Android integration as a dependency/library.
+
+2. Service model: The SDK operates on-device. Its purpose is validating UI/input fields in the Android app using annotations and validators. Its normal behavior does not depend on vendor-hosted APIs, remote services, or a cloud backend.
+
+3. Integration requirement: There is no usual setup requirement to register the app with the vendor or configure a console-issued identifier/secret. Integration is adding the library and using its validation APIs in code.
+
+4. Scope: No credential appears to be part of this SDK's own documented integration. Any unrelated app credentials used elsewhere in an app would not belong to Saripaar itself.

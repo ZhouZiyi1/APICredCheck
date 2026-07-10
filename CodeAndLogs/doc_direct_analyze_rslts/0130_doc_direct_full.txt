@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Snap Kit has official Android integration for Snapchat features such as Login Kit, Creative Kit, and Bitmoji on Android.
+
+2. Service model: This SDK is not purely on-device. Its standard use involves Snapchat platform services, such as authenticating with Snapchat, accessing Bitmoji-related platform data, or invoking Snapchat sharing flows tied to the app’s registration.
+
+3. Integration requirement: Yes. Standard Snap Kit setup requires the developer to register the app in Snap’s developer portal and configure a console-issued identifier in the Android app. The documented Android setup uses a `client_id`/OAuth client identifier.
+
+4. Scope: This credential is part of Snap Kit’s own integration, not just a separate unrelated Snap product. The app registration and client identifier are required so Snapchat recognizes the calling app for Snap Kit features.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Weibo SDK has official Android integration for sharing/login in Android apps. Android setup documentation and distributed Android libraries exist for the product, so Android is supported.
+
+2. Service model  
+This SDK is not just an on-device utility. Its normal use is to connect the app to Weibo platform services for social login, authorization, and/or content sharing. Those flows depend on Weibo-hosted backend/services as part of the standard feature set.
+
+3. Integration requirement  
+Typical integration requires the developer to register the application with Weibo and configure a console-issued identifier in the Android app. The standard credential is an `App Key` (often accompanied by redirect URL and Android package/signature settings, but those settings are not themselves the credential).
+
+4. Scope  
+The `App Key` belongs to the Weibo SDK integration itself, because it identifies the calling app to Weibo's own platform services used by this SDK. This is not merely a separate product's credential or only end-user OAuth data.

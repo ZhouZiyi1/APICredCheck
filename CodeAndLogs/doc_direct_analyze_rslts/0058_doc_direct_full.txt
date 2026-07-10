@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — **No.** AFNetworking is a well-known networking library for Apple's platforms (historically iOS/macOS/watchOS/tvOS) written for Objective-C/Cocoa. It is not an official Android SDK and does not have standard Android integration as an Android library.
+
+Because step 1 is **no**, steps 2–4 are **skipped**. This product is **N/A on Android** for the purpose of API credential evaluation.

@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. DT Exchange SDK is an officially documented mobile advertising SDK with Android integration. Fyber / Digital Turbine materials for DT Exchange cover Android app setup for ad serving.
+
+2. Service model — This SDK is not primarily on-device. Its normal function is to request, fill, and render ads from Fyber / DT Exchange’s hosted ad marketplace and related mediation/exchange services. Standard use therefore depends on vendor-hosted backend systems.
+
+3. Integration requirement — Yes. Ad SDK integrations of this product require the app to be registered in the vendor platform and configured with vendor-issued identifiers so ad requests can be associated with the correct publisher/app inventory. For DT Exchange, the standard credential is an app-level identifier, often accompanied by placement/spot identifiers for ad units.
+
+4. Scope — This credential belongs to DT Exchange SDK integration itself, not merely to some separate optional product. The identifiers are used so the SDK can reach and transact with DT Exchange ad-serving infrastructure for that specific app.
+
+Evidence note: naming can vary across Fyber / DT Exchange documentation by product generation (for example app/placement or spot terminology), but the integration pattern is consistently a vendor-issued app identifier for ad serving. That is sufficient to classify this as requiring an API credential.

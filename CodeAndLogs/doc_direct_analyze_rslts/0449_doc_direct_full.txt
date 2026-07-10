@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tinkoff ID appears to support Android integration. Tinkoff ID is documented as an authentication / sign-in product for apps and sites, and its mobile integration materials describe Android app setup rather than being limited to web or iOS only.
+
+2. Service model  
+This product is not primarily on-device. Its normal function is user authentication through Tinkoff's hosted identity service, so the Android app relies on vendor-hosted authorization endpoints and related backend flows as part of standard use.
+
+3. Integration requirement  
+Typical Tinkoff ID integration requires the developer to register the application and configure an app-specific identifier for OAuth/OpenID-style authorization. The standard credential is a `client_id` (often described as an application/client ID). Depending on the flow, redirect URI registration is also required, but package name / redirect URI alone do not count as the credential here.
+
+4. Scope  
+The `client_id` belongs to Tinkoff ID's own authentication integration, not to a separate unrelated TCS Bank product. Because the app must identify itself to Tinkoff ID's hosted auth service, this fits the API credential definition for this SDK.

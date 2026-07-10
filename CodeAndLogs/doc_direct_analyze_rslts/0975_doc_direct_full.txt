@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Odnoklassniki provides an Android SDK / documented Android integration for social login, sharing, and related platform features.
+
+2. Service model: This SDK is not a purely on-device helper. Its standard use is to connect the app to Odnoklassniki platform services for authentication, social actions, and API-backed user interactions, so it routinely relies on Odnoklassniki-hosted endpoints.
+
+3. Integration requirement: Typical integration requires the developer to register the application with Odnoklassniki and configure an app-issued identifier in the Android app. For this kind of social platform SDK, the documented setup centers on the app's Odnoklassniki application identifier (commonly called an App ID / Application ID; some flows may also involve app key values, but the core credential is the registered app identifier).
+
+4. Scope: This credential belongs to the Odnoklassniki SDK integration itself, because the SDK uses the registered Odnoklassniki application identity to access Odnoklassniki services. Package name or signing settings alone would not satisfy this requirement.

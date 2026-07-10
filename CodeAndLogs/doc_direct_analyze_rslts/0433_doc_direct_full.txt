@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Countly provides an official Android SDK and documented Android integration for analytics, crash reporting, user profiles, and related telemetry features.
+
+2. Service model: Countly is not a purely on-device library. In normal use, the Android SDK collects events/device data in the app and sends them to a Countly backend (Countly Cloud or a self-hosted Countly server). Its standard feature set depends on that remote backend.
+
+3. Integration requirement: Yes. Standard Android setup requires configuring at least the Countly server URL and an application-specific `appKey` during SDK initialization. The `appKey` is obtained when creating/registering the app in the Countly dashboard/admin UI and identifies which Countly application the SDK should report to.
+
+4. Scope: This credential is part of Countly SDK's own documented integration, not a separate product. Package name or signing are not the credential here; the relevant console-issued value is the Countly application key.

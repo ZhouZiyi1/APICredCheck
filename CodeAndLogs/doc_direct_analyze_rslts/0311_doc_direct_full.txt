@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Huawei Push Kit officially supports Android through Huawei Mobile Services (HMS) and provides Android integration documentation and SDK setup for Android apps.
+
+2. Service model  
+Push Kit is not a purely on-device library. Its standard function depends on Huawei-hosted push infrastructure: the app obtains a push token from Huawei and receives notifications through Huawei's backend service.
+
+3. Integration requirement  
+Normal Android integration requires registering the app in AppGallery Connect and adding Huawei-issued configuration to the app, typically via `agconnect-services.json`. That configuration supplies identifiers such as the app's `app_id` and related project/service values used by HMS services. Without this registration/configuration, standard Push Kit operation is not set up correctly.
+
+4. Scope  
+This credential/configuration is part of Push Kit's documented Android integration through Huawei's HMS/AppGallery Connect setup, not merely an unrelated product. Package name and signing are also part of setup, but by themselves they do not satisfy the API credential requirement; the console-issued app configuration does.

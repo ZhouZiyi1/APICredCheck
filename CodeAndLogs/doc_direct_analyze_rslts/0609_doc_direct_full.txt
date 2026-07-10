@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Tencent MTA (Mobile Tencent Analytics) has an official Android SDK/integration path and is documented for Android apps.
+
+2. Service model: This SDK is an analytics product. In normal use, the Android client collects events/device/app usage data and sends that data to Tencent-hosted analytics services for reporting. That means standard operation is not purely on-device; it relies on the vendor backend.
+
+3. Integration requirement: Yes. Typical MTA Android setup requires registering the app in Tencent's MTA console and configuring a console-issued app identifier in the Android app. The commonly documented value is an `AppKey` (often alongside a channel identifier, but the channel is not the core vendor-issued credential).
+
+4. Scope: The `AppKey` is part of MTA's own Android integration, used so the SDK can attribute uploaded analytics data to the correct app in Tencent's analytics service. This is product-specific and not merely package-name/signing metadata or a credential for some separate Tencent product.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Comscore Analytics SDK does support Android. comScore provides an official Android/mobile analytics measurement SDK for apps, with Android integration documentation and Android library/package usage for tagging app activity and streaming measurement events.
+
+2. Service model  
+This SDK is not just an on-device helper. Its standard purpose is to collect measurement/analytics data from the app and send it to comScore’s analytics/measurement backend. That means normal use depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical Android setup requires configuring comScore-assigned measurement identifiers in the app. In comScore mobile implementations, the key required value is commonly the `c2` value, also referred to as the publisher/client ID, supplied by comScore for the customer account/property. That identifier is part of the normal integration so the SDK can attribute submitted telemetry to the correct customer.
+
+4. Scope  
+This identifier belongs to the comScore analytics product’s own integration, not a separate third-party product. It is not just package name or signing metadata; it is an account/property identifier configured for comScore measurement.

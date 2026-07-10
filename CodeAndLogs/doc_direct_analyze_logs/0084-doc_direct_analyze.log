@@ -1,0 +1,19 @@
+2026-05-17 21:16:51 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0084-doc_direct_analyze.log
+2026-05-17 21:16:51 [INFO] Run start: SDK_ID=0084 SDK=Chartboost SDK vendor=Chartboost results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:16:51 [INFO] Querying model='gpt-5.4' SDK='Chartboost SDK' vendor='Chartboost'
+2026-05-17 21:16:58 [INFO] LLM token usage: prompt_tokens=989 completion_tokens=198 total_tokens=1187
+2026-05-17 21:16:58 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0084_doc_direct_full.txt
+2026-05-17 21:16:58 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Chartboost SDK has an official Android SDK/integration for mobile apps.
+
+2. **Service model** — This is an advertising/monetization SDK, so normal operation depends on Chartboost-hosted services to request, deliver, and track ads. It is not a purely on-device library.
+
+3. **Integration requirement** — Yes. Standard Chartboost Android integration requires the developer to register the app in Chartboost and configure vendor-issued identifiers in the app. The usual required values are the **Chartboost App ID** and **Chartboost App Signature**.
+
+4. **Scope** — These credentials belong to the Chartboost SDK’s own documented setup for connecting the app to Chartboost’s ad platform, not just to a separate product.
+2026-05-17 21:16:58 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0084_doc_direct_rslt.txt
+2026-05-17 21:16:58 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "App ID and App Signature"}
+2026-05-17 21:16:58 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0084-doc_direct_analyze.log

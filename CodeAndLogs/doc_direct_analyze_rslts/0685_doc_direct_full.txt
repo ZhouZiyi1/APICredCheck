@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Dynatrace provides an official Android/mobile monitoring SDK and documented Android integration for native Android apps.
+
+2. Service model: Dynatrace SDK is not just an on-device utility. Its standard purpose is mobile observability/RUM, which routinely sends telemetry from the app to Dynatrace-hosted ingestion/endpoints for analysis in the Dynatrace platform.
+
+3. Integration requirement: Typical Android setup requires values generated from the Dynatrace environment when the mobile app is created/configured there. In standard Dynatrace Android setup, developers configure at least an application identifier and Dynatrace endpoint/beacon URL so the SDK can report data to Dynatrace services.
+
+4. Scope: Those values are part of Dynatrace SDK’s own documented mobile monitoring integration, not merely another separate product. They are used specifically so this SDK can communicate with Dynatrace’s backend.

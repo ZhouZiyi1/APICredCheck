@@ -1,0 +1,6 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`NJKWebViewProgress SDK` by Satoshi Asano appears to be an iOS library, not an Android SDK. It is known as an Objective-C helper for `UIWebView`/`WKWebView` style progress tracking in iOS apps, and the naming/vendor association matches that iOS component rather than an Android library or service. I find no indication of an official Android package or Android integration documentation for this specific product.
+
+Because step 1 is no, steps 2-4 are skipped. They are not applicable on Android for this product.

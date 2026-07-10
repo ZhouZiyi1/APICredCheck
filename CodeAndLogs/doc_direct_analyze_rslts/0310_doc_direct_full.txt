@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. The product is specifically an `ironSource Mediation adapter for InMobi SDK`, and ironSource/LevelPlay mediation adapters are officially provided for Android integration so apps can mediate InMobi demand on Android.
+
+2. Service model  
+This is not a purely on-device helper library. Its standard purpose is to connect the app, through mediation, to InMobi’s ad-serving infrastructure so ads can be requested and rendered. That means normal use relies on vendor-hosted ad services.
+
+3. Integration requirement  
+Yes. Typical Android integration for the InMobi adapter requires values issued from InMobi’s console, most notably the `Account ID` used to initialize the InMobi SDK, and usually placement identifiers for actual ad instances. The clearest SDK-level credential is the `InMobi Account ID`.
+
+4. Scope  
+This credential is part of the documented setup needed to use this specific mediation adapter with InMobi demand on Android, not merely an unrelated product. Without InMobi-issued configuration, the adapter cannot perform its standard mediated ad-serving role.

@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1: Android support
+
+`Pop SDK` from Meta appears to refer to `POP`, Meta/Facebook's animation engine. The official product is known as an iOS/macOS animation library, with documentation and distribution centered on Apple platforms rather than an official Android SDK or Android integration guide. I do not find a standard Meta-provided Android library or documented Android setup for this specific product.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android for this SDK.

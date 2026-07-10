@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. CARTO Mobile SDK has an official Android SDK/library and documented Android integration, so Android is supported.
+
+2. Service model: This SDK is primarily a native mobile mapping/GIS library. Its core value is on-device rendering and spatial functionality in the app, including offline/local data use. While it can consume remote map/data sources, the SDK itself is not inherently centered on a mandatory CARTO-hosted backend for baseline Android operation.
+
+3. Integration requirement: For standard Android integration, developers generally add the SDK/library to the app and initialize its map components; a vendor console-issued API key or app credential is not normally required just to use the SDK itself. Any credentials that may appear in examples for specific online services are tied to those external or optional hosted data sources, not to baseline SDK activation.
+
+4. Scope: I do not see strong evidence that CARTO Mobile SDK, as a product, requires a CARTO-issued Android app credential for normal use. Separate CARTO platform/service credentials would belong to those services, not to the SDK integration itself. Given that, the safer classification is no API credential required for the SDK itself.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`ijkplayer` has official Android support. It is a media playback SDK/library from Bilibili with Android modules and documented Android integration in its repository and build setup.
+
+2. Service model  
+This SDK is primarily an on-device media player. It wraps native playback components such as FFmpeg and related player logic to decode and play audio/video streams in the app. While the app may fetch media from arbitrary URLs, that network access is to the app's chosen media source, not to a required Bilibili-hosted backend that the SDK depends on for normal operation.
+
+3. Integration requirement  
+Typical Android integration does not require the developer to register the app with Bilibili or obtain a console-issued key, App ID, secret, or token. Setup is adding the library/native components and using the player APIs.
+
+4. Scope  
+There is no evidence that `ijkplayer` itself requires a product-specific credential for Android integration. Any credentials used to access third-party video sources or other separate services would belong to those services, not to `ijkplayer`.

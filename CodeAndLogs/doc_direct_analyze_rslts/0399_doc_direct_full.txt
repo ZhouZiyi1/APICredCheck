@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find an official Android SDK or Android integration from QOS.ch for Logback itself. QOS.ch's Logback is the Java logging framework (`logback-classic`, `logback-core`) aimed at standard Java environments, and Android usage is typically handled through third-party adaptations such as `logback-android`, not an official Android product from QOS.ch. Because the requirement is for an official Android library or documented Android integration for this named product from this vendor, step 1 is no.
+
+Steps 2-4 are skipped because Android support is N/A for this product from QOS.ch.

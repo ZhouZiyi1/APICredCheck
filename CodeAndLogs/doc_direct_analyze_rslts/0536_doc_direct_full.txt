@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Leadbolt published an Android mobile advertising SDK with official Android integration documentation and Android library usage for showing ads in Android apps.
+
+2. Service model: This is an ad network SDK, so standard use depends on Leadbolt-hosted services to fetch and serve ads, track impressions/clicks, and handle monetization. It is not a purely on-device library.
+
+3. Integration requirement: Yes. Typical Leadbolt Android integration required the developer to create/register an app in Leadbolt’s dashboard and configure a Leadbolt-issued identifier in the app. In Leadbolt docs and examples this is commonly an `App ID` (sometimes paired with ad placement/section identifiers, depending on ad format).
+
+4. Scope: That identifier is part of Leadbolt SDK’s own documented ad-serving integration, not merely another separate product. It is used so the SDK can request inventory and associate traffic/revenue with the publisher app.

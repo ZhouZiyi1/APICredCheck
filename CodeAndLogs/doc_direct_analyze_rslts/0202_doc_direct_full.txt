@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Amazon In-App Purchasing (IAP) has official Android integration for apps distributed through the Amazon Appstore, including Android/Fire OS app integration via the Amazon IAP SDK.
+
+2. Service model: This SDK is not purely on-device. Its standard behavior depends on Amazon-hosted commerce services for product data, purchase flows, receipts, and entitlement/subscription handling.
+
+3. Integration requirement: Normal Android integration does require the app to be registered in Amazon's developer portal and IAP items to be defined there, but the usual SDK setup does not require embedding a console-issued API key, App ID, client secret, or similar credential in the app. The SDK typically identifies the app through its Appstore distribution context and app/package registration rather than a shipped credential value.
+
+4. Scope: The developer-console setup is for cataloging the app and its purchasable items, not for configuring an in-app API credential specific to this SDK. Package identity / signing / store registration alone do not count as an API credential under the stated definition.

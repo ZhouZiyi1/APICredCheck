@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. ironSource SDK has official Android integration documentation and an Android library for adding ads/mediation features in Android apps.
+
+2. **Service model** — This SDK is an advertising/mediation SDK. Its normal use depends on ironSource-hosted services and ad delivery / mediation backend behavior, not just on-device logic. The SDK communicates with vendor-controlled remote services as part of standard operation.
+
+3. **Integration requirement** — Yes. Standard ironSource Android integration requires configuring an app-level identifier issued in the ironSource console so the SDK can initialize for that publisher app and connect to the mediation/ad services. The commonly required credential is the **App Key**.
+
+4. **Scope** — This credential is part of the ironSource SDK’s own documented setup, not merely a separate third-party network requirement. While mediated ad networks may require additional IDs, the ironSource SDK itself typically requires the ironSource **App Key**.

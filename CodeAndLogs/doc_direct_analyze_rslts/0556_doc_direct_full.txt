@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Splunk Mint SDK officially supported Android. Splunk Mint was a mobile monitoring / crash reporting SDK with documented Android integration for adding the Android library and initializing it in the app.
+
+2. Service model  
+This product is not just an on-device utility. Its standard purpose is to collect crash, performance, and usage telemetry from the mobile app and send that data to Splunk Mint's hosted backend for reporting and analysis.
+
+3. Integration requirement  
+Typical Android setup required initializing the SDK with a vendor-issued application key for the Mint project/app. That key identifies the app to Splunk Mint's backend so telemetry can be associated with the correct account/project.
+
+4. Scope  
+That credential is part of Splunk Mint SDK's own documented integration, not merely another Splunk product layered on separately. The app key is used directly by Mint during normal Android SDK initialization.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Start.io provides an Android mobile advertising/monetization SDK and documents Android app integration.
+
+2. Service model: This SDK is not primarily on-device only. Its normal function is to fetch and serve ads / monetization content and report related events through Start.io-hosted services.
+
+3. Integration requirement: Yes. Standard Android integration requires a console-issued app identifier to initialize the SDK. Start.io documentation for Android integrations uses an app-level identifier such as an `App ID` / `Application ID` in the app configuration or SDK init.
+
+4. Scope: This credential is part of Start.io’s own SDK setup for its ad/monetization service, not just a separate third-party product. Based on that, it qualifies as an API credential under the definition here.

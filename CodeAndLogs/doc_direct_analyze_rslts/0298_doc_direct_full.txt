@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Ogury SDK has official Android integration documentation and Android library support for app monetization / ads and related Ogury services. So Android is supported.
+
+2. Service model  
+This SDK is not a purely on-device utility. In normal use it connects to Ogury-hosted ad/monetization infrastructure and related backend services to initialize, fetch, and serve its product features.
+
+3. Integration requirement  
+Typical Ogury Android integration requires a developer-provided identifier issued by Ogury. Ogury documentation commonly refers to this as an `Asset Key`, which is configured during SDK initialization so the app is associated with the correct Ogury account/application setup.
+
+4. Scope  
+That credential is part of Ogury SDK’s own documented setup, not just a separate third-party product. It is used specifically to initialize and connect the Ogury SDK to Ogury services. Evidence is consistent enough to treat this as a required API credential for normal Android use.

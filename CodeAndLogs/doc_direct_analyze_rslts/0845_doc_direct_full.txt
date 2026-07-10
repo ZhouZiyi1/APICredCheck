@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+GrowingIO SDK does support Android. GrowingIO provides an official Android SDK for mobile app analytics / tracking, with documented Android integration and Android-specific setup.
+
+2. Service model  
+This product is not just an on-device helper library. Its standard use is to collect analytics / event data in the app and send that data to GrowingIO’s hosted analytics backend. That means routine operation depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical GrowingIO Android setup requires configuring identifiers issued for the app/project in GrowingIO. In standard integrations, developers provide values such as a `projectId` and related app/data source identifiers in the SDK configuration so the SDK knows which GrowingIO project/backend to send data to. That fits the definition of an API credential here because the app is configured with vendor-issued identifiers for access to this product’s hosted service.
+
+4. Scope  
+These identifiers are part of the documented GrowingIO SDK integration itself, not merely another separate product. Package name or signing alone is not the key requirement; the SDK’s own project/app identifiers are what tie the Android app to GrowingIO’s service.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AppNext provides an official Android SDK for integrating its ad formats in Android apps.
+
+2. Service model: This is not a purely on-device library. AppNext is an advertising SDK, so normal operation depends on AppNext-hosted ad serving and related backend services to fetch and display ads.
+
+3. Integration requirement: Typical AppNext Android integration requires configuring a vendor-issued identifier for the ad placement. In AppNext documentation and integrations, this is usually a `Placement ID` used when requesting/showing ads. That identifier is issued through AppNext’s publisher/dashboard setup and is part of standard SDK use.
+
+4. Scope: The placement identifier is part of AppNext SDK integration itself, not just some separate third-party product. It is used by the AppNext SDK to connect the app’s ad placement to AppNext’s hosted ad inventory and reporting. I do not see strong evidence that a separate secret is required for basic Android SDK use; the relevant console-issued value is the placement identifier.

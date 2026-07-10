@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. "AppAvailability" by ohh2ahh is known as a mobile plugin/SDK used to check whether another app is installed and optionally open it. Its documented integrations have included Android support alongside iOS, typically through Cordova/PhoneGap-style Android bindings. That is sufficient to count as official Android integration.
+
+2. Service model: The normal behavior is primarily on-device. Checking whether another app is installed, resolving package names, and launching or linking out are local OS-level operations on Android. This does not typically depend on vendor-hosted APIs or a backend operated by ohh2ahh.
+
+3. Integration requirement: There is no usual requirement to register the app with the vendor or obtain a console-issued key/ID/secret for standard Android use. Integration is typically just adding the plugin/library and calling its local APIs.
+
+4. Scope: Any package names or URI schemes used with AppAvailability are identifiers for target apps on the device, not vendor-issued credentials for this product. They do not qualify as API credentials under the definition given.
+
+Evidence note: Public information about this specific vendor/product is limited, but the product category and typical integration pattern strongly indicate no vendor API credential. Given the weak evidence, false/null is still the appropriate result.

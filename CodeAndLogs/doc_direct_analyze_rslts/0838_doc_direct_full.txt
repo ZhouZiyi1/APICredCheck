@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Fingerprint provides an official Android SDK / Android integration for its device identification product, so `supports_android` is true.
+
+2. Service model  
+This product is not a pure on-device utility. Its normal operation relies on Fingerprint’s hosted identification service: the Android client collects signals and sends them to Fingerprint-managed endpoints to obtain or link a visitor/device identifier and related results.
+
+3. Integration requirement  
+Typical Fingerprint integrations require a console-issued key to initialize the SDK and authorize calls to Fingerprint’s cloud service. In Fingerprint’s terminology this is generally an API key (often specifically a public API key for client-side/mobile use).
+
+4. Scope  
+That credential is part of Fingerprint’s own documented product integration, not a separate third-party dependency. Package name or signing setup alone would not satisfy the integration; the SDK still needs the Fingerprint-issued key for normal hosted-service use.

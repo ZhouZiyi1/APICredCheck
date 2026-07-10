@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. `jsoup` is a Java HTML parser library that is commonly used on Android and is compatible with Android as a client-side dependency/library. Its integration model is adding the library to the app; it is not a separate cloud product or web-only SDK.
+
+2. Service model: `jsoup` is primarily an on-device/client library. It parses HTML, cleans markup, extracts data, and can make ordinary HTTP requests to fetch documents, but those requests are to whatever target URL the developer chooses, not to vendor-hosted Jsoup services. The product itself is not built around a Jsoup backend.
+
+3. Integration requirement: There is no normal setup step requiring the developer to register the app with Jsoup or obtain a console-issued identifier/secret. Standard Android usage is just including the library and calling its APIs.
+
+4. Scope: Any credentials an app might use with sites or APIs it fetches through `jsoup` would belong to those external services, not to `jsoup` itself. Package name, signing, or dependency coordinates do not constitute an API credential.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Sensors Data provides an official Android SDK (`SensorsAnalyticsSDK`) and Android integration documentation for app analytics/event tracking. Step 1 is yes.
+
+2. Service model  
+This SDK is an analytics client. In normal use it collects app events on-device and sends them to a Sensors Data ingestion endpoint/backend for storage and analysis. So it does rely on a vendor-hosted or vendor-operated backend in standard usage, rather than being a purely local utility library.
+
+3. Integration requirement  
+Typical Android setup requires configuring the SDK with a server/ingestion URL and related runtime options. That is endpoint configuration, but it is not clearly a console-issued app credential such as an API key, App ID, client secret, or token. The usual integration does not appear to require a developer to obtain a distinct credential from a Sensors Data console before the Android SDK can function.
+
+4. Scope  
+The required value for standard integration is the data collection server URL for this SDK, not a product-specific credential issued to identify the app in the way defined here. Package name/signing are also not API credentials. On that basis, the evidence supports Android support, but not a required API credential for normal Android integration.

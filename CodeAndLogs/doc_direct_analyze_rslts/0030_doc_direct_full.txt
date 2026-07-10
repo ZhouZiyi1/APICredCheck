@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Bolts SDK has an Android library and is commonly used as a utility/task/deeplinking support library in Android apps.
+
+2. Service model — Bolts is primarily a client-side utility library. Its core functions are things like Tasks, App Links helpers, and related app-side infrastructure. These are not, by default, a vendor-hosted backend product that routinely requires Meta cloud service access for normal operation.
+
+3. Integration requirement — For normal Android integration of Bolts itself, developers generally add the library dependency only. There is no standard requirement to obtain a Meta console-issued API key, App ID, secret, or equivalent specifically for Bolts SDK itself.
+
+4. Scope — While some use cases around Meta/Facebook products may involve an App ID, that belongs to other Meta SDK products or platform integrations, not to Bolts SDK as a standalone utility library. So it should not be counted here.

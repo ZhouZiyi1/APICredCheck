@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. DivKit has official Android support and documented Android integration as part of Yandex's open-source server-driven UI framework.
+
+2. Service model  
+DivKit is primarily a client-side rendering SDK. Its standard role is to render UI from JSON/templates inside the app. While an app may fetch that JSON from its own backend, the SDK itself is not built around mandatory Yandex-hosted runtime services for normal Android use.
+
+3. Integration requirement  
+The usual Android setup does not require registering the app in a Yandex developer console or adding a Yandex-issued API key, App ID, client secret, or similar credential to use DivKit itself.
+
+4. Scope  
+Any network access used with DivKit is typically the app's own content/backend concern, not a DivKit-specific Yandex service credential requirement. Evidence for a required DivKit-specific vendor credential is weak to absent, so this should be treated as no.

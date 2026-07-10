@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Adobe Creative SDK had official Android support, including Android libraries/documentation for integrating creative workflows such as image editing and related Adobe-powered features into Android apps.
+
+2. **Service model** - This SDK was not purely on-device. Its standard value proposition commonly involved connecting the app to Adobe services and user assets/accounts, such as Creative Cloud-related resources and Adobe-hosted functionality, rather than acting only as a local utility library.
+
+3. **Integration requirement** - Yes. Typical integration required registering the application with Adobe and configuring an app-specific developer credential issued by Adobe for the SDK. Adobe documentation for Creative SDK integrations commonly referred to this as an **API Key** (sometimes tied to an application registration and used alongside redirect/config setup).
+
+4. **Scope** - This credential belongs to the Creative SDK integration itself, not merely to some unrelated Adobe product added separately. The app registration/API key was part of enabling the SDK’s Adobe service connectivity and authentication flow.

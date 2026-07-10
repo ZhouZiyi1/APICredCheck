@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Mobvista provided an Android advertising SDK/integration (later commonly branded under Mintegral), with Android setup documentation and Android library distribution for app developers.
+
+2. Service model: This is an ad/monetization SDK, so normal use depends on the vendor’s hosted ad-serving backend. The SDK is not primarily on-device; it initializes against Mobvista/Mintegral services and requests ad inventory remotely.
+
+3. Integration requirement: Yes. Standard Android integration requires the developer to register an app in the vendor console and configure console-issued identifiers in the app. The usual required values are an `App ID` and `App Key` for SDK initialization, with ad unit / placement IDs used for specific ad placements.
+
+4. Scope: These identifiers belong to the Mobvista SDK’s own documented integration flow for ad serving, not just to some separate third-party product. Package name or signing alone is not sufficient.

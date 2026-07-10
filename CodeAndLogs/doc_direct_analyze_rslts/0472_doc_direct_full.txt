@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+TalkingData SDK has official Android integration. TalkingData is known for mobile analytics / attribution products with Android SDK setup instructions and Android package integration, so Android support is present.
+
+2. Service model  
+This SDK is not just an on-device utility. Its normal purpose is analytics / measurement data collection and reporting to TalkingData’s hosted backend, where events and app usage data are processed and viewed. That means routine use depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical TalkingData Android integration requires the app to be registered with TalkingData and configured with a TalkingData-issued application identifier. In common Android setups this appears as an `App ID` (sometimes alongside a channel value). The key integration requirement is the vendor-issued `App ID`, which identifies the app to TalkingData’s backend.
+
+4. Scope  
+This credential is part of TalkingData SDK’s own documented setup for its analytics service, not a separate third-party product. A package name or signing config alone would not satisfy this; the relevant console-issued value is the TalkingData app identifier.

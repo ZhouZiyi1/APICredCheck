@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. MoPub mediation adapters are officially provided for Android, and the AdMob adapter is specifically an Android integration that connects the MoPub Android SDK with Google Mobile Ads / AdMob.
+
+2. Service model: This is not a purely on-device library. In normal use it participates in ad mediation, which depends on remote ad-serving systems. On the MoPub side, the app requests ads through MoPub mediation; the adapter also enables serving from AdMob/Google demand.
+
+3. Integration requirement: Yes, normal Android use requires a console-issued identifier on the MoPub side: a MoPub ad unit ID (publisher ad unit identifier) configured in the app to request mediated ads. Adapter setup may also involve AdMob-specific IDs, but those belong to Google/AdMob rather than MoPub.
+
+4. Scope: The MoPub ad unit ID is part of this product’s documented use within MoPub mediation and is the credential attributable to this product/vendor. AdMob App ID or ad unit IDs are for the separately integrated Google SDK and should not be treated as this product’s own credential.

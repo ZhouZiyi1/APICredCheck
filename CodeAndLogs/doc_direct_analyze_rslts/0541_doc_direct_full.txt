@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find this product as an official Android SDK. "GTM HTTP Fetcher" is known as a Google client-side HTTP utility library associated with Apple's platforms, primarily Objective-C / Swift integration for iOS and macOS, not an Android library with documented Android setup. Because step 1 is no, steps 2-4 are skipped as N/A on Android.

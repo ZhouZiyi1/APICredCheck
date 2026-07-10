@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google Analytics for Firebase has official Android integration as part of the Firebase Android SDK, with documented setup for Android apps.
+
+2. **Service model** — This SDK routinely relies on Google/Firebase hosted backend services. Analytics events are collected in the app and sent to Firebase/Google servers for reporting, processing, and dashboard use. So this is not a purely on-device library.
+
+3. **Integration requirement** — Yes. Standard Android integration requires connecting the app to a Firebase project and adding the vendor-issued Firebase Android configuration file, **`google-services.json`**, to the app. That file contains identifiers used by the app to communicate with Firebase services (including Analytics), such as project/app configuration values.
+
+4. **Scope** — This credential/configuration is part of the documented setup for **Google Analytics for Firebase SDK** itself on Android, not merely an optional separate product. Analytics for Firebase normally uses Firebase project/app registration and the shipped config file as part of standard integration.

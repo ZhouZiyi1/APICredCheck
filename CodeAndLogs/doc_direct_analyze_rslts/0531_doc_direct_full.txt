@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1: Android support
+
+`Spring Framework SDK` from Pivotal is not an official Android SDK. Spring Framework is a general Java application framework primarily used for server-side applications, dependency injection, web MVC, data access, and related backend concerns. It is not documented as an Android client library with standard Android app integration, and there is no normal official Android SDK setup path for it as a mobile product.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android for this product.

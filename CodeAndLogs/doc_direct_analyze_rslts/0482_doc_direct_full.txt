@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AdGeneration is a mobile advertising SDK from Supership with documented Android integration as part of its ad serving/mediation offering.
+
+2. Service model: This is not a pure on-device library. Its normal purpose is to request and render ads, so standard operation depends on Supership-hosted ad delivery services.
+
+3. Integration requirement: Yes. Ad SDKs of this type normally require the publisher to register the app/ad placement in the vendor’s management console and configure vendor-issued identifiers in the Android app. For AdGeneration, the documented integration uses placement/app-style identifiers rather than only package name or signing metadata.
+
+4. Scope: Those identifiers are part of AdGeneration’s own ad-serving integration, not just optional third-party products added separately. The available evidence supports treating the required value as an AdGeneration placement identifier. Exact public naming can vary by doc version, so the strongest concise label is the ad spot/placement ID.

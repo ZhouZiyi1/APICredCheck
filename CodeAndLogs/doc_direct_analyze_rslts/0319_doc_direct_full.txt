@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is a Java WebSocket library by Nathan Rajlich (`Java-WebSocket` / `org.java-websocket`), and it is used as a general-purpose Java networking library rather than a platform-specific cloud SDK. Because it is distributed as a Java library and is commonly integrated into JVM-based environments including Android, this satisfies documented/official Android integration support at the library level.
+
+2. Service model: The SDK is mostly on-device/client-side infrastructure. It implements the WebSocket protocol so the app can connect to whatever WebSocket server the developer chooses. It is not built around Nathan Rajlich-hosted APIs or a vendor backend that the SDK routinely depends on for standard operation.
+
+3. Integration requirement: Normal integration does not require registering the app with the vendor or obtaining any console-issued identifier/secret. Developers add the library and connect it to their own WebSocket endpoint.
+
+4. Scope: Any URL, token, or auth header a developer may use for their own WebSocket server belongs to that separate backend, not to this SDK's own product integration. There is no product-specific vendor credential requirement for standard Android use.

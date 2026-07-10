@@ -1,0 +1,15 @@
+2026-05-17 21:18:03 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0096-doc_direct_analyze.log
+2026-05-17 21:18:03 [INFO] Run start: SDK_ID=0096 SDK=Alamofire SDK vendor=Alamofire results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:18:03 [INFO] Querying model='gpt-5.4' SDK='Alamofire SDK' vendor='Alamofire'
+2026-05-17 21:18:07 [INFO] LLM token usage: prompt_tokens=982 completion_tokens=120 total_tokens=1102
+2026-05-17 21:18:07 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0096_doc_direct_full.txt
+2026-05-17 21:18:07 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — No. Alamofire is a Swift-based networking library for Apple platforms (commonly iOS, macOS, tvOS, watchOS). It is not an Android SDK and does not have an official Android library or Android integration documentation under this product name.
+
+Because step 1 is no, steps 2–4 are skipped. API credential evaluation is N/A on Android for this product.
+2026-05-17 21:18:07 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0096_doc_direct_rslt.txt
+2026-05-17 21:18:07 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:18:07 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0096-doc_direct_analyze.log

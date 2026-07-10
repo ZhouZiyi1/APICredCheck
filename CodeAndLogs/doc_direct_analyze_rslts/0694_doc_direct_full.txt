@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Tencent COS (Cloud Object Storage) has an official Android SDK and documented Android integration for uploading/downloading objects from Tencent Cloud COS.
+
+2. Service model: This SDK is not primarily on-device. Its normal purpose is to access Tencent-hosted object storage buckets over Tencent Cloud services, so routine use depends on the vendor's remote backend.
+
+3. Integration requirement: Yes. Standard COS Android integration requires the app to provide COS authorization credentials through a credential provider. Tencent documentation typically directs mobile apps to use temporary credentials/signatures derived from Tencent Cloud CAM/STS rather than embedding permanent secrets directly in the app. Those credentials ultimately come from Tencent Cloud account setup and authorization configuration.
+
+4. Scope: This credential requirement belongs to Tencent COS itself, not a separate unrelated Tencent product. Bucket/region alone are not credentials, but the required COS authorization material is. The exact form may be temporary `SecretId`/`SecretKey`/`SessionToken` or a server-issued signature, so the safest short credential label is the COS temporary credential/signature setup.

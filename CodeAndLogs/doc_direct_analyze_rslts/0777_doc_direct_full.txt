@@ -1,0 +1,12 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Segment provides an Android integration/connector for Firebase as part of its mobile SDK ecosystem, so this product is officially usable on Android.
+
+2. Service model: This connector’s normal role is to bridge or forward analytics events from Segment’s Android SDK into the Firebase SDK inside the app. That is primarily an on-device integration layer. Any backend communication is mainly to Firebase (through Firebase’s own SDK), not to a distinct hosted service operated by this specific Firebase connector.
+
+3. Integration requirement: There is no separate console-issued credential documented as being required specifically for the Segment connector for Firebase SDK itself. Typical setup is adding the Android dependency and wiring it into the Segment/Firebase SDK setup. A Firebase project config such as `google-services.json` belongs to Firebase, and a Segment write key belongs to Segment’s core analytics product, not to this connector as a standalone requirement.
+
+4. Scope: The relevant credentials in a real integration are for other products in the stack:
+- Firebase credentials/config are for Firebase.
+- Segment write key is for the core Segment analytics SDK/workspace.
+Neither is a connector-specific API credential for the named product itself.

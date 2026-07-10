@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AdinCube is a mobile advertising/mediation SDK that has documented Android integration as part of its standard mobile app support.
+
+2. Service model: It is not a purely on-device library. In normal use, it connects to AdinCube's ad-serving / mediation backend to fetch and manage ads, so vendor-hosted services are part of the standard runtime model.
+
+3. Integration requirement: Typical ad SDK integration of this kind requires the developer to create/register an app in the vendor dashboard and configure a vendor-issued identifier in the Android app. For AdinCube, the standard credential is an app identifier used by the SDK to associate requests with the publisher account and app configuration.
+
+4. Scope: This credential is part of AdinCube SDK's own documented setup for serving/mediating ads, not merely a separate third-party product added alongside it. Evidence is somewhat dated/limited, but the integration pattern consistently points to an AdinCube app-level ID being required; that is strong enough to classify as an API credential here.

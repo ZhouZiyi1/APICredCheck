@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. This product is specifically an AdMob mediation adapter for the AppLovin SDK, and mediation adapters of this type were provided for Android integration with the Google Mobile Ads SDK. Even though it is marked deprecated, it still refers to an Android SDK integration category.
+
+2. Service model — This is an advertising/mediation integration, so normal use depends on remote ad-serving services rather than being purely on-device. The adapter exists to connect AdMob mediation on Android with AppLovin ad demand / SDK behavior.
+
+3. Integration requirement — For normal setup of this adapter, developers typically must configure AppLovin-side identifiers for the mediated network, most notably the AppLovin SDK key. That is a vendor-issued integration value used so the AppLovin SDK can access AppLovin-hosted ad services.
+
+4. Scope — The credential belongs to the mediated AppLovin SDK integration used by this named product (the AdMob mediation adapter for AppLovin SDK), not merely to some unrelated separate product. While AdMob mediation also involves AdMob configuration, the vendor-hosted service relevant to this adapter includes AppLovin’s SDK setup credential.

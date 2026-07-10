@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Yandex Mobile Ads SDK has official Android integration documentation and an Android library artifact for app integration.
+
+2. Service model: This SDK is not primarily on-device. Its normal purpose is to load and display ads from Yandex-hosted ad services, so standard operation depends on the vendor’s remote backend.
+
+3. Integration requirement: Yes. Typical integration requires the developer to use Yandex-issued ad placement identifiers when creating banner/interstitial/rewarded/native ad objects. Yandex documentation commonly refers to these as an ad unit / block ID, and demo IDs are only for test use. For real production serving, the developer must create placements in Yandex’s ad system and configure those IDs in the app.
+
+4. Scope: This identifier is part of this SDK’s own ad-serving integration, not just another separate Yandex product. Package name or signing alone are not the operative credential here; the relevant configured value is the Yandex ad placement identifier used by the Mobile Ads SDK.

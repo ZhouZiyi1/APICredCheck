@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is specifically an Android mediation adapter: ironSource publishes Android integration for the AdColony adapter, typically as a Gradle dependency used with the ironSource/LevelPlay Android SDK. That is official Android support.
+
+2. Service model  
+This adapter is not a pure on-device utility. Its normal purpose is to connect the app, through ironSource mediation, to AdColony’s ad-serving platform so ads can be requested, filled, and reported. Standard operation therefore depends on vendor-hosted ad services.
+
+3. Integration requirement  
+Yes. Typical setup for the AdColony network in ironSource mediation requires configuring AdColony-issued identifiers, commonly the AdColony `App ID` and ad placement/`Zone ID` values, in the mediation setup. These are console-provided identifiers used so the adapter can access AdColony inventory/services for that app.
+
+4. Scope  
+These identifiers are part of the documented integration for this specific adapter product, not merely unrelated app metadata. The adapter exists to bridge ironSource mediation with AdColony, and the AdColony network parameters are standard required configuration for that adapter path on Android.

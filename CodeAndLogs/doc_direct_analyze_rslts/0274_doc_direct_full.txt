@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Adobe AIR SDK officially supports packaging and deploying apps for Android. AIR has long been documented as a cross-platform application runtime/SDK targeting Android among other platforms.
+
+2. Service model  
+Adobe AIR SDK is primarily a client-side runtime and packaging/deployment SDK. Its standard role is to let developers build and run apps on-device using ActionScript/Adobe AIR APIs. Normal Android use does not inherently depend on Adobe-hosted backend services.
+
+3. Integration requirement  
+For standard Android integration, there is no usual requirement to obtain an Adobe console-issued API key, App ID, client secret, or equivalent credential from Adobe. Typical AIR setup involves installing the SDK, configuring build tools, app descriptors, certificates for signing, and packaging settings, but not vendor-hosted service credentials.
+
+4. Scope  
+Android signing certificates and package identifiers are required for app distribution, but those are not Adobe-issued API credentials and do not grant access to an Adobe-hosted service. Any separate Adobe cloud service used alongside an AIR app would belong to another product/integration, not to Adobe AIR SDK itself.

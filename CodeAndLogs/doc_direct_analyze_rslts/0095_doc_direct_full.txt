@@ -1,0 +1,6 @@
+SECTION 1: Detailed Analysis
+Sentry SDK has an official Android library and documented Android integration, so Android is supported.
+
+It is primarily an on-device error/performance monitoring SDK that sends events to Sentry’s hosted service as part of normal operation. Standard integration typically requires configuring a Sentry DSN in the app so events can be routed to the correct Sentry project.
+
+The needed value belongs to this SDK’s documented integration (not another product): the DSN is the standard project connection string used by Sentry SDKs.

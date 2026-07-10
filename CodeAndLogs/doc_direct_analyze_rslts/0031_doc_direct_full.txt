@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. ZXing ("Zebra Crossing") is a well-known barcode scanning/encoding library with Android integration. It has long provided Android-related components/usages (for example via Android embedding/integration patterns and Android app/library use), so Android support is established.
+
+2. **Service model** — The SDK/library is primarily **on-device**. ZXing performs barcode/QR code encoding and decoding locally in the app/device camera processing flow. Its normal operation does not depend on vendor-hosted APIs or a ZXing cloud/backend service.
+
+3. **Integration requirement** — There is no usual requirement to register the app with the vendor or obtain a console-issued identifier/secret for standard Android use. Integration is typically by adding the library/package and using local APIs only.
+
+4. **Scope** — Any unrelated app credentials a developer might use elsewhere (analytics, backend, OAuth, etc.) are not part of ZXing SDK’s own documented integration. For ZXing itself, no vendor-issued API credential is required.

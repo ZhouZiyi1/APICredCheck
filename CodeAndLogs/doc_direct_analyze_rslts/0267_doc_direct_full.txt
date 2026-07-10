@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: `DKImagePickerController` is known as an iOS image picker library (`UIImagePickerController`-style replacement for iPhone/iPad apps), distributed for Apple platforms rather than Android. There is no official Android SDK/library or documented Android integration for this product under the named SDK. Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

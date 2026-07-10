@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. This product is specifically a mediation adapter for the Unity Ads SDK within Fyber’s mediation stack, and mediation adapters of this type are provided for Android integration in mobile apps.
+
+2. **Service model** - It routinely relies on remote ad-serving services. A mediation adapter is not a purely on-device utility; it bridges the app’s mediation layer to Unity Ads network services so ads can be requested, filled, and reported.
+
+3. **Integration requirement** - Yes. Normal use of a Unity Ads mediation adapter typically requires configuring a console-issued application identifier for Unity Ads so the SDK/network can serve ads for the registered app. That is a standard integration value rather than just local code inclusion.
+
+4. **Scope** - The credential is part of integrating this product’s documented function as a Unity Ads mediation adapter on Android, because the adapter’s purpose is to connect the app to Unity Ads inventory through mediation. The relevant credential belongs to the Unity Ads side of the adapter integration, not merely unrelated package/signing metadata. Evidence is somewhat indirect from the product name/category, but strong enough to treat the app identifier as required for normal Android use.

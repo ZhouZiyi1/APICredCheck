@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1: Android support
+
+`SWTableViewCell` by Chris Wendel is an iOS UI component for `UITableViewCell` swipe actions. It is documented and distributed as an Objective-C / iOS library for UIKit table views, not as an Android SDK or cross-platform product. There is no official Android library, Android package, or documented Android integration for this product.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is not applicable on Android for this SDK.

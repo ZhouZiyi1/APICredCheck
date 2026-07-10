@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Adobe Primetime TVSDK had an official Android SDK/integration path for building Android video playback apps. Adobe documentation and release materials historically referenced TVSDK for Android alongside other platforms. Step 1 is therefore yes.
+
+2. Service model  
+Primetime TVSDK is primarily a client-side video playback SDK. Its core role is playback, ad handling, and media/DRM integration inside the app. While it can interact with remote endpoints during playback (media manifests, ad servers, DRM/license servers), those are not inherently Adobe-hosted TVSDK backend services that the SDK itself must be registered against for normal operation.
+
+3. Integration requirement  
+For normal Android integration of TVSDK itself, there is no clear evidence that the developer must obtain a TVSDK-specific console-issued API key, App ID, client secret, or equivalent from Adobe and embed it in the app. Typical setup appears to involve adding the SDK and configuring playback/ad/DRM endpoints, not registering the app for a vendor-issued credential tied to TVSDK.
+
+4. Scope  
+Some related Adobe Primetime components or adjacent services may involve credentials or configuration values, and third-party DRM/ad systems can also require their own identifiers. Those do not by themselves make TVSDK an SDK with a required Adobe-issued API credential. Based on the product-specific integration pattern, the credential requirement for TVSDK itself is not established. Evidence is somewhat dated, so I prefer false/null.

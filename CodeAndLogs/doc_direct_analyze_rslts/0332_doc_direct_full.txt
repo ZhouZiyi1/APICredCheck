@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Mobilefuse SDK supports Android. It is an in-app advertising/monetization SDK and is documented/distributed as an Android library for app integration, so step 1 is satisfied.
+
+2. Service model  
+This product is not primarily an on-device utility library. Its standard purpose is to request, render, and track ads, which depends on MobileFuse-hosted ad serving infrastructure and related remote services during normal operation.
+
+3. Integration requirement  
+For normal Android use, ad SDKs in this category typically require a vendor-issued application/publisher identifier so the SDK can associate the app with the correct account and serve inventory. For Mobilefuse SDK, the standard integration is tied to an app-level identifier rather than being purely plug-and-play with no configured value.
+
+4. Scope  
+That identifier is part of the Mobilefuse SDK integration itself, not merely a separate third-party product the app might also use. Package name or signing alone would not satisfy the SDK’s account/app registration need. The exact label can vary by documentation, but the credential is best characterized as an App ID.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Kochava SDK officially supports Android. Kochava provides an Android SDK for attribution/analytics integration in Android apps.
+
+2. Service model  
+This SDK is not just an on-device utility. Its normal purpose is mobile attribution, analytics, and related measurement, which depends on sending app/event/install data to Kochava-hosted services.
+
+3. Integration requirement  
+Typical Kochava Android integration requires configuring a Kochava-issued app identifier during SDK setup. In Kochava documentation this is commonly referred to as the `App GUID` (sometimes described as the app's Kochava key/ID in setup flows). That value identifies the app to Kochava's backend.
+
+4. Scope  
+This credential is part of Kochava SDK's own documented integration for its measurement services, not merely a package name, signing setting, or a separate third-party product.

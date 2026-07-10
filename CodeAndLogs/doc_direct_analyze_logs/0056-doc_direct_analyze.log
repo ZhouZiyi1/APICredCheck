@@ -1,0 +1,19 @@
+2026-05-17 21:14:16 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0056-doc_direct_analyze.log
+2026-05-17 21:14:16 [INFO] Run start: SDK_ID=0056 SDK=Crashlytics SDK vendor=Google Fabric results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:14:16 [INFO] Querying model='gpt-5.4' SDK='Crashlytics SDK' vendor='Google Fabric'
+2026-05-17 21:14:23 [INFO] LLM token usage: prompt_tokens=990 completion_tokens=235 total_tokens=1225
+2026-05-17 21:14:23 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0056_doc_direct_full.txt
+2026-05-17 21:14:23 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Crashlytics SDK had official Android integration under Fabric, and later via Firebase Crashlytics for Android.
+
+2. Service model — It relies on vendor-hosted backend services as part of normal use. The SDK collects crash reports in the app and sends them to Fabric/Google-hosted crash reporting services for processing and display in the console.
+
+3. Integration requirement — Yes. Standard Android integration required registering the app with Fabric/Firebase and adding a vendor-issued app configuration to the app. In the Fabric-era Crashlytics setup, this was typically supplied through the Fabric/Crashlytics API key embedded via the manifest/resources (often also provisioned through the Fabric plugin). This is not merely local functionality.
+
+4. Scope — The credential is part of Crashlytics/Fabric integration itself, used so the app is associated with the vendor’s crash reporting backend. This is not just package name/signing, nor only a separate unrelated product’s credential.
+2026-05-17 21:14:23 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0056_doc_direct_rslt.txt
+2026-05-17 21:14:23 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "API key"}
+2026-05-17 21:14:23 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0056-doc_direct_analyze.log

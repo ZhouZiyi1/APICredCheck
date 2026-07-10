@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+PubMatic OpenWrap SDK has official Android integration/documentation and Android library artifacts for in-app header bidding / ad monetization. So Android is supported.
+
+2. Service model  
+OpenWrap is not a purely on-device library. Its normal use is to request bidding/monetization data from PubMatic-hosted ad infrastructure as part of serving ads in a mobile app.
+
+3. Integration requirement  
+Typical OpenWrap Android integration requires publisher-side identifiers configured from PubMatic’s platform, such as publisher/account setup values and inventory identifiers used when creating ad requests. In practice, OpenWrap integrations commonly use values like `publisherId`, `profileId`, and `adUnitId` so the SDK can fetch bids for the correct publisher inventory.
+
+4. Scope  
+These identifiers are part of OpenWrap’s own documented setup for PubMatic monetization, not merely another separate product’s optional configuration. They function as vendor-issued app/inventory identifiers required for standard OpenWrap operation on Android.

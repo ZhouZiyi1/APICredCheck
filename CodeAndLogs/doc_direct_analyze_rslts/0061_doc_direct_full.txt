@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. The IAB Open Measurement SDK (OM SDK) has official Android support and is documented for Android integration by IAB Tech Lab / Open Measurement working group participants.
+
+2. Service model — This SDK is primarily an on-device measurement library used to standardize viewability and verification measurement in ads shown inside mobile apps. Its core integration is local in the app/webview environment, exposing signals to measurement/verification scripts. It is not, as a standard SDK integration, a client for an IAB-hosted backend service that the app must call.
+
+3. Integration requirement — Usual OM SDK setup for Android does not require the app developer to obtain an IAB-issued API key, App ID, client secret, or similar console credential. Integration is based on including the library and using its APIs in ad sessions, not configuring vendor-issued access credentials for IAB-hosted services.
+
+4. Scope — Any identifiers that may appear in broader ad-tech stacks belong to ad servers, SSPs, verification vendors, or other products layered around OM SDK, not to the IAB Open Measurement SDK itself. For this SDK’s own documented Android integration, no vendor-issued API credential appears to be required.

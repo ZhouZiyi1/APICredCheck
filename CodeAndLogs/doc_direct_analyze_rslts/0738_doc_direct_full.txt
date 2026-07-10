@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. ByteBrew provides an official Android SDK / Android integration as part of its mobile game analytics and live-ops offering.
+
+2. **Service model** - ByteBrew is not a purely on-device library. Its standard purpose is to send analytics, events, progression, remote config / A-B testing, and related game telemetry to ByteBrew-hosted backend services.
+
+3. **Integration requirement** - Typical ByteBrew integration requires the developer to create/register an app in ByteBrew and initialize the SDK with console-issued identifiers so the app is associated with the correct ByteBrew project/backend. The standard credential is an application/game identifier pair rather than just local-only configuration.
+
+4. **Scope** - These identifiers belong to ByteBrew SDK’s own documented integration and are used so the SDK can communicate with ByteBrew services. They are not merely Android package/signing metadata, and they are not credentials for a separate third-party product.

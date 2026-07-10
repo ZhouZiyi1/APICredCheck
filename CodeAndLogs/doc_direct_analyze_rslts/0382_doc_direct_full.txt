@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+CleverTap SDK officially supports Android. CleverTap provides an Android SDK and documented Android integration for analytics, engagement, push, inbox, and related features.
+
+2. Service model  
+This SDK is not primarily an on-device utility. Its standard use is to send events, profiles, and engagement data to CleverTap's hosted backend and to receive campaign/push/inbox-related data from CleverTap services.
+
+3. Integration requirement  
+Typical Android setup requires configuring vendor-issued identifiers in the app. CleverTap's Android integration uses credentials such as the **CleverTap Account ID** and **CleverTap Account Token** obtained from the CleverTap dashboard/console, commonly added in Android manifest metadata or initialization code. A region value may also be configured, but the core console-issued credentials are the account ID/token.
+
+4. Scope  
+These credentials are part of CleverTap SDK's own documented integration and are used so the app can communicate with CleverTap-hosted services. They are not merely Android package/signing identifiers, and they are not only for a separate third-party product.

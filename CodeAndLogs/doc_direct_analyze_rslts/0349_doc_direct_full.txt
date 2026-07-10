@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Intercom provides an official Android SDK and documented Android integration. So `supports_android = true`.
+
+2. Service model  
+Intercom is not a purely on-device library. Its standard use is in-app messaging, customer support, user conversations, and related engagement features that depend on Intercom's hosted backend. The Android SDK is built to connect the app to Intercom-managed services.
+
+3. Integration requirement  
+Typical Android setup requires initializing the SDK with vendor-issued values from the Intercom workspace, specifically an `App ID` and an Android `API Key`. These are configured in the app so the SDK can authenticate/connect to Intercom services.
+
+4. Scope  
+These credentials are part of Intercom SDK's own documented integration, not a separate third-party product. Package name or signing alone is not sufficient; the SDK normally needs the Intercom-issued configuration values.

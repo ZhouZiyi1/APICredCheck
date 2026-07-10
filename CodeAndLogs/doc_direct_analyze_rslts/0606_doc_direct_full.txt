@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AT Internet provides an official Android analytics/tracker SDK, with documented Android integration for mobile apps. So Android support is present.
+
+2. Service model  
+This SDK is an analytics/tracking product. In normal use, the app collects events locally and sends them to AT Internet-hosted collection endpoints for reporting and analysis. That means standard operation depends on the vendor’s remote backend, not just on-device functionality.
+
+3. Integration requirement  
+Typical AT Internet Android setup requires configuring tracker/account values in the app, notably a `siteId` (and often collection endpoint/log settings). The `siteId` is an account/application identifier used so events are routed to the correct AT Internet analytics property.
+
+4. Scope  
+That identifier is part of this SDK’s own documented analytics integration, not a separate product. While endpoint/domain settings also appear in setup, the clearest console-issued integration identifier is the AT Internet `Site ID`.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Tenjin provides an official Android SDK and standard Android integration for mobile attribution / analytics use cases.
+
+2. Service model: Tenjin is not a purely on-device library. Its standard purpose is mobile attribution, analytics, and campaign measurement, which depend on sending app/install/event data to Tenjin-hosted backend services.
+
+3. Integration requirement: Yes. Normal Android setup requires configuring a Tenjin-issued app credential in the SDK initialization so the app can report to Tenjin's backend. In Tenjin documentation this is typically the SDK/API key for the app.
+
+4. Scope: This credential is part of Tenjin SDK's own documented integration, not a separate third-party product. It is used so the Android app can communicate with Tenjin's attribution service.

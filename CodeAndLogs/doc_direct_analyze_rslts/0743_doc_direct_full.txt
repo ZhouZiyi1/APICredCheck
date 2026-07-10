@@ -1,0 +1,4 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - The named product is specifically **“SMSSDK-for-iOS SDK”**, which is an iOS-only SDK by name and product scope. Based on the product name provided, this is not the Android edition and therefore does **not** constitute official Android support for the named SDK itself.
+2. Because step 1 is **no**, steps 2-4 are **skipped**. Any credential question is **N/A on Android** for this specific product.

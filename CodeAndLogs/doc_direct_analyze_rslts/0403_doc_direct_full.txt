@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tencent IM SDK has official Android support. Tencent provides Android client integration for its IM/chat product (commonly branded TIM/TUIKit/Tencent Cloud Chat), so this product is supported on Android.
+
+2. Service model  
+This SDK is not a purely on-device library. Its normal use depends on Tencent-hosted messaging/account services for login, messaging, conversations, groups, offline push coordination, and related IM features.
+
+3. Integration requirement  
+Standard integration requires a Tencent-issued `SDKAppID` for initializing the Android client. Typical login also uses `UserSig`, which is generated from Tencent console material on the app server side, but the clearest app-configured console-issued value for Android integration is the `SDKAppID`.
+
+4. Scope  
+The `SDKAppID` belongs to this IM product’s own documented setup, not to some separate Tencent product. It is part of the normal Tencent IM SDK initialization flow on Android.

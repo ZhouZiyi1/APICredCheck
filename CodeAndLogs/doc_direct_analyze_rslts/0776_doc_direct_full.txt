@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - No official Android SDK or Android integration is indicated for Cartography SDK by Robert Böhnke. Cartography is known as a Swift-based Auto Layout DSL for Apple platforms, intended for iOS/macOS/tvOS development rather than Android. There is no standard Android library, Gradle/Maven Android package, or Android integration documentation associated with this specific product.
+
+Because step 1 is **no**, steps 2-4 are skipped. API credential evaluation is **N/A on Android** for this SDK.

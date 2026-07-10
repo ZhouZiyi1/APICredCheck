@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Everyplay had an official Android SDK and documented Android integration for adding gameplay recording/sharing to Android apps.
+
+2. Service model: Everyplay was not just an on-device utility. Its standard feature set centered on recording, sharing, and viewing gameplay clips through Everyplay's hosted service and social platform, so normal use depended on vendor-run backend services.
+
+3. Integration requirement: Yes. The usual Everyplay setup required registering the app in Everyplay's developer portal and configuring issued application credentials in the Android app. The documented initialization commonly used values such as a client ID, client secret, and redirect URI.
+
+4. Scope: These credentials belong to Everyplay SDK's own integration, not a separate Unity product. They were part of connecting the app to Everyplay's service for authentication/sharing features.

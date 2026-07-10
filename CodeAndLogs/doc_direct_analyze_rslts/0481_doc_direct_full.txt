@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`Blurry for Android SDK` is an Android library by Wasabeef, distributed for Android app integration. It is specifically documented and used as an Android image-blurring utility, so Android support is present.
+
+2. Service model  
+This SDK performs image blur effects locally in the app/UI layer. Its typical use is on-device image processing and view rendering, not communication with a Wasabeef-hosted backend or remote API.
+
+3. Integration requirement  
+Normal integration consists of adding the Android dependency and calling the library APIs in code. There is no standard setup requiring the developer to register the app with Wasabeef or obtain a console-issued key, token, App ID, or config file.
+
+4. Scope  
+Any credentials an app might use elsewhere for unrelated services are outside this SDK’s integration. For `Blurry for Android SDK` itself, there is no product-specific API credential requirement. Evidence is consistent with a pure client-side utility library.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. The product is specifically named "Android Wheel SDK," which indicates an Android-targeted SDK/library rather than a cross-platform or non-Android product. There is no indication that Android support is absent.
+
+2. Service model: This appears to be a client-side Android component/library. "Wheel" SDK strongly suggests a UI/control/widget-style SDK used inside the app itself, with functionality that runs on-device rather than depending on vendor-hosted backend services as a standard part of operation.
+
+3. Integration requirement: There is no clear evidence that normal integration requires the developer to register the app with a vendor console or obtain a vendor-issued API key, App ID, token, or config file. For a wheel/widget SDK, standard setup would normally just be adding the library and using its classes/resources.
+
+4. Scope: No product-specific credential requirement is evident for this SDK itself. Any unrelated app credentials the developer might use elsewhere would not count. Because evidence of a vendor-hosted service dependency is weak, the safer classification is no API credential.

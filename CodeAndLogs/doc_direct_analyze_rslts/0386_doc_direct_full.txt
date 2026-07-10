@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This is an official mediation adapter for integrating Facebook Audience Network through ironSource/LevelPlay on Android, so Android support is explicit.
+
+2. Service model  
+In normal use, the adapter participates in ad mediation and therefore works with remote ad-serving systems rather than being purely on-device. However, the adapter itself is a bridge layer between the ironSource mediation SDK and the Facebook Audience Network SDK.
+
+3. Integration requirement  
+For the adapter itself, there is not a distinct Android credential issued specifically for this product that developers configure in the app. Typical setup for serving Facebook Audience Network ads may involve Meta/Facebook identifiers such as app IDs or placement IDs, and the overall mediation stack may require ironSource/LevelPlay configuration, but those are not credentials unique to this adapter artifact itself.
+
+4. Scope  
+Any required Facebook Audience Network app/placement identifiers belong to the separately integrated Facebook Audience Network product, not to the "ironSource Mediation adapter for Facebook Audience Network SDK" as its own standalone credentialed service. Based on that scope boundary, this adapter should be classified as not having its own API credential requirement.

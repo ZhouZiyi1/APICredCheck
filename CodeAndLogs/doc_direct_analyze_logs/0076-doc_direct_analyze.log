@@ -1,0 +1,15 @@
+2026-05-17 21:16:08 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0076-doc_direct_analyze.log
+2026-05-17 21:16:08 [INFO] Run start: SDK_ID=0076 SDK=FMDB SDK vendor=Flying Meat results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:16:08 [INFO] Querying model='gpt-5.4' SDK='FMDB SDK' vendor='Flying Meat'
+2026-05-17 21:16:13 [INFO] LLM token usage: prompt_tokens=989 completion_tokens=131 total_tokens=1120
+2026-05-17 21:16:13 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0076_doc_direct_full.txt
+2026-05-17 21:16:13 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — **No**. FMDB is a well-known Objective-C wrapper around SQLite created by Flying Meat, primarily for Apple platforms (iOS/macOS). Its documented integration and package distribution target Cocoa/Cocoa Touch environments, not Android. I do not find this product described as an official Android SDK/library by Flying Meat.
+
+Because step 1 is no, steps 2–4 are **skipped**. This is **N/A on Android**.
+2026-05-17 21:16:13 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0076_doc_direct_rslt.txt
+2026-05-17 21:16:13 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:16:13 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0076-doc_direct_analyze.log

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find evidence that "Objection SDK" by Atomic Object is an official Android SDK product. Atomic Object is known as a software consultancy, and "Objection" is commonly associated with other tools/libraries not presented as an Atomic Object Android SDK. With the product name/vendor combination given, evidence for an official Android library or documented Android integration is weak or absent.
+
+Because step 1 is **no/unsupported based on available evidence**, steps 2-4 are **skipped** as not applicable on Android.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+DFINERY SDK appears to have an official Android SDK/integration from IGAWorks. IGAWorks/DFINERY mobile measurement and analytics integrations are documented for Android and distributed as Android libraries, so Android support is present.
+
+2. Service model  
+This SDK is not just an on-device helper. Its standard purpose is mobile analytics/attribution/marketing measurement, which routinely sends app events and attribution data to IGAWorks/DFINERY hosted services.
+
+3. Integration requirement  
+Typical Android setup for this SDK requires vendor-issued app identifiers during initialization. IGAWorks Android integrations commonly use an `app key` together with a `hash key` configured in the app so the SDK can connect uploads/events to the correct DFINERY account.
+
+4. Scope  
+Those keys are part of the documented integration for this SDK/product family itself, not merely for some unrelated third-party service. Package name or signing data alone would not satisfy the normal setup.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Huawei ML Kit is part of Huawei Mobile Services and has official Android integration documentation and Android SDK artifacts.
+
+2. Service model: Huawei ML Kit includes both on-device and cloud-backed capabilities. Even where inference can run on-device, the product is distributed and integrated through Huawei's HMS/AppGallery Connect ecosystem rather than as a completely standalone local library.
+
+3. Integration requirement: Usual Android setup requires registering the app in AppGallery Connect and adding the Huawei-generated `agconnect-services.json` file to the app. That config file supplies identifiers such as the app's `app_id` and related project/client values used by Huawei services. Some ML Kit flows may also involve an API key, but the standard documented baseline integration is the console-issued config file/app registration.
+
+4. Scope: This requirement belongs to Huawei ML Kit's own documented Android integration through HMS/AppGallery Connect, not merely to an unrelated Huawei product. Package name and signing alone are not the credential; the console-issued config file is.

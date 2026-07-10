@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Nielsen SDK has official Android integration/documentation for mobile audience measurement and related tracking use cases, so Android is supported.
+
+2. **Service model** - This SDK is not just a local utility library. Its standard purpose is measurement/analytics, where the app instruments content/ad playback and usage events for Nielsen’s audience measurement systems. That implies routine use with Nielsen-hosted measurement/collection services as part of the product’s normal function.
+
+3. **Integration requirement** - Yes. Nielsen mobile SDK integrations typically require configuring vendor-provided identifiers in the SDK setup, most notably an **App ID** (often referred to in Nielsen docs as an application ID or similar integration identifier) supplied by Nielsen for the measured property/app. This is part of normal SDK initialization so data can be associated with the correct client/property in Nielsen systems.
+
+4. **Scope** - This credential appears to belong to the Nielsen SDK integration itself, not just to some separate third-party product. The identifier is used as part of Nielsen measurement setup rather than being merely Android package/signing metadata.

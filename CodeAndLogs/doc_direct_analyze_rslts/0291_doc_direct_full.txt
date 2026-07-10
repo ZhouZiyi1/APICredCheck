@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Razorpay provides an official Android SDK / Android checkout integration for native Android apps.
+
+2. Service model: This SDK is not a purely on-device library. Its normal use is to launch Razorpay checkout and interact with Razorpay-hosted payment infrastructure as part of payment processing.
+
+3. Integration requirement: Yes. Standard Android integration requires the developer to supply a Razorpay console-issued key in the checkout options, typically the public-facing `key_id` used by the SDK/checkout flow.
+
+4. Scope: This credential is part of Razorpay Checkout's own documented integration, not merely another unrelated product. Package name or signing config are not the credential; the relevant configured value is the Razorpay Key ID.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Qiniu PLShortVideo SDK does support Android. Qiniu documents an Android integration for the PLShortVideo product, with Android-native setup using the SDK package in an Android app.
+
+2. Service model  
+PLShortVideo SDK is primarily a client-side short-video capture/editing SDK. Its core functions are recording, beauty/effects, editing, mixing, and export on the device. Those standard features do not inherently depend on Qiniu-hosted runtime APIs in the way a map, ads, or backend SDK would.
+
+3. Integration requirement  
+For normal Android integration, the usual setup is adding the Android SDK/library and configuring device permissions and media capabilities. I do not find strong evidence that standard PLShortVideo Android use requires a vendor-console-issued API key, App ID, or secret to let the app talk to a mandatory Qiniu backend for this product itself. Some broader Qiniu workflows may involve upload/storage or other cloud products, but those are separate integrations.
+
+4. Scope  
+Any credentials used for Qiniu cloud storage, upload tokens, or other Qiniu services would belong to those separate services rather than being an inherent API credential required by PLShortVideo SDK’s documented core Android integration. If there is any commercial licensing process, that is not clearly the same as a normal app-configured API credential for vendor-hosted service access. Evidence on a product-specific required credential is weak, so the safer classification is false.

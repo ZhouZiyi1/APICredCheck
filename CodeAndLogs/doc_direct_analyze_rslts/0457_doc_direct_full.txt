@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find this product documented as an official Android SDK or Android-specific integration. "MessagePack" is primarily a serialization format and set of language libraries (for example, Java libraries) rather than a vendor-hosted mobile SDK with Android setup documentation. A general Java library may sometimes be usable in Android projects, but that is not the same as an official Android SDK or documented Android integration for this product. Because step 1 is not satisfied, steps 2-4 are skipped as N/A on Android.

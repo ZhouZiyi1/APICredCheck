@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Zoom Video SDK has official Android support with a native Android SDK/integration path.
+
+2. **Service model** - This SDK is not a pure on-device library. Its normal purpose is to connect the app to Zoom’s hosted real-time video infrastructure for sessions, audio/video transport, and related session features.
+
+3. **Integration requirement** - Yes. Standard Zoom Video SDK integration requires developer-provisioned credentials tied to a Zoom Video SDK app setup. Typical integration uses a **SDK Key** (and commonly a signature/token flow generated from SDK credentials) so the Android app can join/use Zoom Video SDK sessions.
+
+4. **Scope** - This credential requirement belongs to the **Zoom Video SDK** product itself, not merely some separate Zoom product. The SDK’s normal documented use depends on Zoom-issued Video SDK app credentials for access to the service.

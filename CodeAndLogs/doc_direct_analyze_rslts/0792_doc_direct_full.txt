@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**: I could not identify reliable evidence of an official Android library, Android package/artifact, or documented Android integration specifically for **"NXO Auth2 Client SDK"** from **nxtbgthng**. The product name is not a recognizable Android SDK in the available knowledge, and I do not have a concrete Android-specific distribution signal such as Maven coordinates, Gradle setup, Android class/package references, or vendor documentation naming Android support for this SDK. Because the evidence for Android support is weak, I treat Android support as **not established**.
+
+Since step 1 is **no / not established**, steps 2-4 are **skipped** as **N/A on Android**.

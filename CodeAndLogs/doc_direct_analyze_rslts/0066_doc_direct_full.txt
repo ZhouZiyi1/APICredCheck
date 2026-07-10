@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1 — Android support: No.
+
+Apple Speech SDK refers to Apple's speech recognition / speech framework offering, which is part of Apple's platform SDKs (such as iOS/macOS APIs like Speech.framework). Apple does not provide an official Android library or documented Android integration for this product. Since the named product is Apple’s own platform speech SDK rather than a cross-platform Android SDK, it is not supported on Android.
+
+Per the required method, steps 2–4 are skipped because Android support is absent; API credential evaluation is N/A on Android.

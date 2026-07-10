@@ -1,0 +1,19 @@
+2026-05-17 21:14:32 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0059-doc_direct_analyze.log
+2026-05-17 21:14:32 [INFO] Run start: SDK_ID=0059 SDK=Firebase Realtime Database SDK vendor=Firebase results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:14:32 [INFO] Querying model='gpt-5.4' SDK='Firebase Realtime Database SDK' vendor='Firebase'
+2026-05-17 21:14:38 [INFO] LLM token usage: prompt_tokens=990 completion_tokens=208 total_tokens=1198
+2026-05-17 21:14:38 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0059_doc_direct_full.txt
+2026-05-17 21:14:38 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Firebase Realtime Database has an official Android SDK as part of Firebase's Android libraries and documented Android setup.
+
+2. Service model — This SDK is not primarily on-device. Its normal purpose is to connect the Android app to Firebase-hosted Realtime Database backend services for syncing and storing data.
+
+3. Integration requirement — Yes. Standard Android integration for Firebase requires registering an app in the Firebase console and adding the Firebase config file to the Android app. That config file (`google-services.json`) carries console-issued project/app identifiers and API key values used for Firebase service connectivity.
+
+4. Scope — This credential/configuration is part of this product's normal documented integration because Realtime Database is a Firebase hosted backend service and the Android client is configured through the Firebase project/app setup, not merely by package name or signing alone.
+2026-05-17 21:14:38 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0059_doc_direct_rslt.txt
+2026-05-17 21:14:38 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "google-services.json"}
+2026-05-17 21:14:38 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0059-doc_direct_analyze.log

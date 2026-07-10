@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+LogRocket does support Android. LogRocket provides an Android/mobile SDK with documented Android integration for capturing sessions and telemetry in Android apps.
+
+2. Service model  
+This product is not a purely on-device library. Its standard purpose is to collect client-side session/activity data and send it to LogRocket’s hosted service for replay, monitoring, and analysis. That means routine use depends on LogRocket’s backend.
+
+3. Integration requirement  
+Typical LogRocket SDK setup requires initializing the SDK with a LogRocket-issued app/project identifier so collected data is associated with the correct LogRocket account/project. In Android examples, this is commonly an `appID`/App ID passed during initialization.
+
+4. Scope  
+That identifier is part of LogRocket SDK’s own documented integration and is used so the Android app can send data to LogRocket’s hosted service. It is not merely package-name/signing metadata and does not belong only to some separate third-party product.

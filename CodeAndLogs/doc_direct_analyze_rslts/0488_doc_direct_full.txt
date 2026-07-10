@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is specifically a mediation adapter for integrating the AppLovin SDK into MoPub mediation on Android, and it is documented/distributed as an Android library for that purpose.
+
+2. Service model: In normal use, it participates in ad serving, which ultimately relies on remote ad-network services. However, this adapter itself is a bridge layer between MoPub mediation and the AppLovin SDK rather than a standalone MoPub-hosted client service.
+
+3. Integration requirement: Typical setup for this adapter involves adding the adapter plus the underlying AppLovin SDK, then configuring AppLovin-specific values such as an AppLovin SDK key or placement/zone identifiers. Those values are used so AppLovin can serve ads.
+
+4. Scope: The required identifiers belong to AppLovin's ad network integration, not to the MoPub mediation adapter itself as a separate product. For the named SDK, evidence supports Android availability, but not a distinct console-issued API credential required by this adapter product itself. Because the prompt says to evaluate only this product and not other vendor products used alongside it, the safer classification is no API credential for this SDK.

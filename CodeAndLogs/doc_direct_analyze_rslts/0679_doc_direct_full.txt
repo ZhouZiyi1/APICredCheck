@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Rollbar has official Android support. Rollbar documents Android integration for reporting crashes/errors from Android apps, so step 1 is yes.
+
+2. Service model  
+This SDK is not primarily on-device only. Its standard purpose is to send error and crash telemetry from the app to Rollbar's hosted monitoring service, where events are aggregated and displayed.
+
+3. Integration requirement  
+Typical Rollbar Android setup requires configuring a Rollbar project access token in the app initialization/configuration so the SDK can post events to Rollbar's backend. In Rollbar terminology for client/mobile reporting, this is commonly the `post_client_item` access token.
+
+4. Scope  
+That token is part of Rollbar's own SDK setup for sending data to Rollbar, not a separate third-party product. This fits the definition of an API credential for this SDK.

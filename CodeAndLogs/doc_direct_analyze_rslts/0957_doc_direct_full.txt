@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+WonderPush SDK has official Android support. WonderPush documents an Android SDK and Android integration paths (including native Android and cross-platform wrappers that target Android), so step 1 is satisfied.
+
+2. Service model  
+WonderPush is a push notification / mobile marketing platform that relies on WonderPush-hosted backend services for device registration, audience/notification management, and campaign delivery. This is not a purely on-device library; standard use depends on the vendor’s remote service.
+
+3. Integration requirement  
+Typical WonderPush setup requires the developer to create/configure an application in the WonderPush console and add vendor-issued identifiers to the Android app. WonderPush documentation commonly refers to configuring a `clientId` and also a `clientSecret` during setup. That is a console-issued credential used so the app can connect to WonderPush services.
+
+4. Scope  
+These values are part of WonderPush’s own documented integration, not just another vendor’s product layered on top. Although Android push delivery may also involve Firebase for transport, the WonderPush app credentials are separate and belong to WonderPush itself.

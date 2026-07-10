@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: There does not appear to be an official Android SDK or Android-specific integration guide for Mozilla Rhino as a product. Rhino is primarily a Java-based JavaScript engine/project from Mozilla, typically used as an embeddable Java library for JVM environments, but that is not the same as a documented Android SDK offering. On the available product identity here, evidence for official Android support is weak, so I treat Android support as not established.
+
+Steps 2-4 are skipped because step 1 is not satisfied (N/A on Android).

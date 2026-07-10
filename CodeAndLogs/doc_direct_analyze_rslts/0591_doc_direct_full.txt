@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AChartEngine is an Android charting library/SDK intended for building charts and graphs inside Android apps, with documented Android integration and Android-specific usage.
+
+2. Service model: It is primarily an on-device UI/data-visualization library. Its normal function is rendering charts locally in the app from data the app already has. There is no standard vendor-hosted backend or remote service that the SDK must contact to perform its core features.
+
+3. Integration requirement: There is no usual setup step requiring the developer to register the app with 4ViewSoft or obtain a console-issued key, App ID, secret, or token for standard Android use.
+
+4. Scope: Any network/API credentials an app might use to fetch its own data are external to AChartEngine itself. They are not part of this product's documented integration.

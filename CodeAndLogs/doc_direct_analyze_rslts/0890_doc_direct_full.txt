@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not identify an official Android SDK or Android integration for Keith Lazuka's "Kal". The known "Kal" project associated with this vendor is an Objective-C/iOS calendar UI component rather than an Android library. On that basis, there is no evidence of official Android support for this product.
+
+Steps 2-4 are skipped because Android support is not established; API credential requirements are therefore N/A on Android.

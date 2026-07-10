@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Agora Video SDK has an official Android SDK and standard Android integration for real-time audio/video in Android apps.
+
+2. Service model: This SDK is not a purely on-device library. Its normal use is to connect the app to Agora’s hosted real-time communications infrastructure for channel join, media relay, and related RTC services.
+
+3. Integration requirement: Yes. Standard Agora Video SDK setup requires an Agora console-issued `App ID` to initialize and use the SDK on Android. Many deployments also use temporary tokens for access control, but the baseline vendor-issued integration credential is the `App ID`.
+
+4. Scope: The `App ID` is part of this SDK’s documented integration itself, not just another separate Agora product. It identifies the developer’s Agora project so the Android app can use Agora’s RTC backend.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear, product-specific evidence that the product named **"Nimbus SDK"** from **"NIMBUS ADVERTISING"** has an official Android SDK or documented Android integration. The name is generic, and without reliable Android documentation tied specifically to this product, Android support is not established.
+
+Because step 1 is **no / not established**, steps 2-4 are **skipped**. On this method, API credential evaluation is **N/A on Android** when official Android support is not confirmed.

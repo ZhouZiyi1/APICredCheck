@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Firebase App Indexing SDK is an official Android SDK/product for adding in-app indexing and deep-link discovery on Android.
+
+2. Service model — It is not just a standalone on-device utility library. Typical integration is tied to Firebase/Google services so indexed content and deep links can participate in Google/Firebase-backed app discovery and search-related flows.
+
+3. Integration requirement — Yes. Usual setup requires adding the app to Firebase and including the Firebase configuration file in the Android app. That file (`google-services.json`) supplies console-issued identifiers used by Firebase services, such as the Firebase App ID / project configuration.
+
+4. Scope — This credential/config is part of the documented setup for this Firebase product itself, not merely an unrelated optional add-on. Even if App Indexing does not expose a product-specific standalone key name, standard integration depends on Firebase app configuration from the Firebase console.

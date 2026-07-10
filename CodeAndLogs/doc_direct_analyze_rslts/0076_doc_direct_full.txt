@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — **No**. FMDB is a well-known Objective-C wrapper around SQLite created by Flying Meat, primarily for Apple platforms (iOS/macOS). Its documented integration and package distribution target Cocoa/Cocoa Touch environments, not Android. I do not find this product described as an official Android SDK/library by Flying Meat.
+
+Because step 1 is no, steps 2–4 are **skipped**. This is **N/A on Android**.

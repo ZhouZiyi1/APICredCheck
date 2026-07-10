@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Localytics provided an official Android SDK and Android integration documentation for analytics, in-app messaging, push, and related mobile engagement features. So `supports_android = true`.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its normal use is to collect app analytics/events and interact with Localytics-hosted services for reporting, audience segmentation, messaging, and campaign delivery. That means routine use depends on the vendor backend.
+
+3. Integration requirement  
+Typical Android setup for Localytics requires configuring a Localytics-issued application identifier in the app. In Localytics Android examples/integration flows, the SDK is initialized with an app-specific key obtained from the Localytics dashboard/console. That value is required so the SDK can associate app traffic with the correct Localytics project.
+
+4. Scope  
+This credential is part of the Localytics SDK’s own documented integration, not a separate third-party dependency. It is the app key used by the Localytics service itself.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support - Yes. UserVoice SDK has documented Android integration and an Android library/SDK offering for embedding support/feedback functionality in Android apps.
+
+2. Service model - It relies on UserVoice-hosted services as part of normal use. The SDK is for in-app support/feedback/forum/helpdesk style interactions, which are served from UserVoice’s backend rather than being purely on-device utilities.
+
+3. Integration requirement - Yes. Typical UserVoice SDK setup requires configuring the app with a vendor-issued identifier for the UserVoice instance, commonly documented as a site/subdomain-style key such as the UserVoice site or account identifier used to connect the SDK to the correct hosted UserVoice service.
+
+4. Scope - This credential is part of the UserVoice SDK’s own integration, not just another separate product. The configured identifier is used so the SDK can connect to the app owner’s UserVoice-hosted account/service. Evidence for a secret-style API key is weaker than for an account/site identifier, so the safest classification is that Android support exists and a configured service identifier is required.

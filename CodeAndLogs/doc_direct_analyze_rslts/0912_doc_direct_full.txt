@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is specifically an Android library/SDK: "Android Maps Extensions SDK" by Maciej Górski is documented as an Android integration that extends the Google Maps Android API behavior in Android apps.
+
+2. Service model: It appears to be a client-side helper/extension library, not a vendor-hosted platform. Its role is to add Android map UI/features on top of existing map functionality inside the app. There is no indication that standard use depends on Maciej Górski-operated backend services.
+
+3. Integration requirement: There is no clear evidence that normal integration requires obtaining a console-issued key, app ID, token, or config file from Maciej Górski. Typical setup is adding the Android library to the app.
+
+4. Scope: A developer may still need a Google Maps API key for Google’s own map service, but that credential belongs to Google Maps, not to this SDK/product from Maciej Górski. Under the requested scope, that does not count as this product’s API credential.
+
+Weakness note: Public information on this SDK is relatively limited/older, but the available product framing is consistent with a pure Android extension library rather than a vendor-cloud product. That supports `false` for API credential.

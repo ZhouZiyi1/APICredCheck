@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is explicitly an Android SDK/library for Google Play in-app billing ("Android In-App Billing v3 SDK"), so official Android integration is the whole purpose of the package.
+
+2. Service model: This SDK is primarily a client-side wrapper around Google Play's in-app billing APIs. Its role is to simplify Android purchase flow and local billing integration logic. It does not appear to be a cloud service from AnjLab, and normal use does not depend on AnjLab-hosted backend services.
+
+3. Integration requirement: No vendor-issued API credential is typically required for this SDK itself. Integrations of Google Play billing may use values such as the app's licensing/public key from Google Play Console, but that is issued by Google for Google Play services, not by AnjLab for AnjLab-hosted services.
+
+4. Scope: Any setup values involved belong to Google Play / Android billing infrastructure, not to this AnjLab SDK as a product. Therefore they do not count as an API credential for this SDK under the stated definition.

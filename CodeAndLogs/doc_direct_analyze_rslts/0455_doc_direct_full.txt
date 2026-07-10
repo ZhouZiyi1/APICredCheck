@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. PermissionsDispatcher is an Android-focused library for handling Android runtime permission flows, with official Android integration via Gradle/annotation processing and Android code annotations.
+
+2. Service model: This SDK is mostly on-device. It generates or supports local Android permission-handling code and does not depend on a vendor-hosted backend or remote API as part of its standard functionality.
+
+3. Integration requirement: There is no usual setup step requiring the developer to register an app with the vendor or obtain a console-issued key, app ID, secret, or config file. Typical integration is adding the library/plugin and using its annotations/codegen.
+
+4. Scope: Any Android manifest permissions involved are Android platform permissions, not vendor-issued credentials for PermissionsDispatcher services. There is no separate vendor cloud product in the documented core integration that would require an API credential.

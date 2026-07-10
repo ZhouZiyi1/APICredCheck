@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Microsoft Graph provides an official Java SDK that is used from Android apps, and Microsoft documents Android scenarios for calling Microsoft Graph from mobile apps. That is sufficient to treat it as supported on Android.
+
+2. Service model  
+Microsoft Graph SDK is not primarily an on-device library. Its normal purpose is to call Microsoft-hosted Microsoft Graph REST APIs for Microsoft 365 / Entra / Outlook / files / user data. Standard use therefore depends on vendor-hosted remote services.
+
+3. Integration requirement  
+Yes. Typical Android integration requires registering the app in Microsoft Entra ID / Azure AD and configuring an application identifier so the app can obtain access tokens and call Microsoft Graph. In practice this is usually the Application (client) ID, often placed into MSAL configuration used alongside Graph access.
+
+4. Scope  
+This credential is part of the documented Microsoft Graph integration path, not just an unrelated add-on. While authentication is handled through identity tooling such as MSAL, the app registration and client ID are required so the app can access Microsoft Graph APIs on behalf of the user. Package name or signing alone would not satisfy this.

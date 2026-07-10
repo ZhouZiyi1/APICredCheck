@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. GameThrive SDK had an official Android integration. GameThrive was the earlier branding for what became OneSignal’s mobile push SDK, and Android setup was part of its documented platform support.
+
+2. **Service model** - This SDK is not a purely on-device library. Its normal use is to connect the app to GameThrive/OneSignal’s hosted push notification service for device registration, message delivery coordination, and related notification features.
+
+3. **Integration requirement** - Yes. Standard Android integration requires registering the app with the vendor’s dashboard/service and configuring a vendor-issued identifier in the app. The key value used in the client integration is the **App ID**.
+
+4. **Scope** - The App ID belongs to this product’s own hosted notification service integration, not just to some separate third-party SDK. Android push setups may also involve Google/FCM credentials, but those are external platform credentials; the vendor-specific credential for GameThrive SDK itself is the **App ID**.

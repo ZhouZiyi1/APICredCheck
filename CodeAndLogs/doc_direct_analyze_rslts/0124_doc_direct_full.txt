@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Adlib SDK appears to have official Android integration. It is documented as an Android advertising/mediation SDK, with Android library setup and app-side integration steps. Step 1 is therefore yes.
+
+2. Service model  
+This SDK is for ad serving/mediation, so normal use depends on vendor-hosted services and ad network communication rather than only on-device behavior. An app using Adlib SDK typically contacts remote services to request and serve ads.
+
+3. Integration requirement  
+For ad mediation SDKs like Adlib, the normal setup requires registering the app/publisher with the Adlib service and configuring an issued identifier in the Android app so requests are associated with the correct inventory/account. Available evidence points to an app-level Adlib-issued key/identifier being part of standard integration.
+
+4. Scope  
+That identifier belongs to Adlib SDK integration itself, not merely to some separate optional product. Because the public evidence is somewhat limited and naming can vary across Adlib documentation, the safest credential label is a generic Adlib app/publisher key rather than a more specific undocumented name.

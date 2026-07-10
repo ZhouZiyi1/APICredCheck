@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Socket.IO/Engine.IO has an official Java client ecosystem used on Android, with Android-specific integration guidance in the Java client line. Engine.IO is the transport-layer client underneath that stack, so Android integration is supported through the official Java/Android client implementation.
+
+2. Service model: Engine.IO is primarily a client/server transport library for realtime communication over HTTP long-polling and WebSocket. In normal use, the Android app connects to a developer-chosen Engine.IO/Socket.IO server endpoint; it is not built around a Socket.IO-hosted cloud service that the SDK must reach by vendor account.
+
+3. Integration requirement: Usual setup does not require registering the app in a Socket.IO developer console or configuring a vendor-issued App ID, API key, secret, or config file. The normal integration is to add the library and point it at the server URL.
+
+4. Scope: Any authentication token a developer may use for their own backend connection is app/backend-specific, not a standard vendor-issued credential for Engine.IO itself. That does not qualify as an API credential for this SDK.

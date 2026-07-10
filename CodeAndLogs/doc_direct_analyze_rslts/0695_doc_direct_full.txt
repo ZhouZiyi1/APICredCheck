@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Verizon Ads SDK has official Android integration/documentation as a mobile advertising SDK for Android apps.
+
+2. Service model: This SDK is not mainly on-device. Its standard purpose is to request and render ads from Verizon-hosted ad services, so routine use depends on the vendor backend.
+
+3. Integration requirement: Yes. Normal Android integration requires configuring vendor-issued identifiers so the SDK can request ads for the publisher account and placements. The commonly documented app-level identifier is an `Application ID` (with ad placement identifiers used for serving specific inventory).
+
+4. Scope: This credential is part of the Verizon Ads SDK's own ad-serving integration, not just a separate Verizon product. Package name or signing alone would not satisfy the setup.

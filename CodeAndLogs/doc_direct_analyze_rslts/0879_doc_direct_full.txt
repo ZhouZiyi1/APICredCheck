@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Huawei Scan Kit has official Android integration as part of HMS Core, with Android SDK/docs for embedding scan and decode features in Android apps.
+
+2. Service model: Scan Kit is primarily a scanning SDK used inside the Android app, but Huawei’s standard integration model for HMS Core kits is tied to Huawei’s app registration and service configuration. Even when scanning work is largely device-side, the documented Android setup is not just a pure standalone local library drop-in.
+
+3. Integration requirement: Yes. The usual Android setup for Huawei Scan Kit requires registering the app in AppGallery Connect and adding the Huawei config to the app, typically via `agconnect-services.json`, which carries the app’s HMS identifiers including the `App ID` used by the kit integration.
+
+4. Scope: This credential/config requirement is part of Scan Kit’s documented HMS Core integration path on Android, not merely an unrelated optional Huawei product. Package name and signing alone do not satisfy this; the app registration/config file is the relevant console-issued setup artifact.

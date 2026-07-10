@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Soomla Open Source Framework SDK includes Android support and is documented as an Android game/app monetization framework with Android integration modules/plugins.
+
+2. **Service model** - This SDK is primarily an open-source client framework used in-app for game economy, store, profiles, and related features. Its common modules are integrated into the app/client side and connect to third-party platforms (such as app stores) where relevant, rather than requiring a Soomla-hosted backend as the standard operating model.
+
+3. **Integration requirement** - There is no clear evidence that normal Android use of the Soomla Open Source Framework SDK requires obtaining a vendor-issued credential from a Soomla developer console or configuring a Soomla API key/App ID for Soomla-hosted services. Typical setup appears to involve adding the SDK/modules and app-specific configuration/code, not registering for a Soomla cloud credential.
+
+4. **Scope** - Any identifiers used for external services or stores would belong to those separate platforms/products, not to this SDK’s own vendor-hosted service integration. Based on the product itself, an API credential requirement is not established.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not find reliable evidence that a product specifically named **“Haneke SDK”** from **Hermes Pique** has an official Android SDK, Android package, or Android integration documentation. The name “Haneke” is more commonly associated with unrelated image-caching libraries, and there is not enough trustworthy product-specific documentation here tying **this named product** to an Android offering from **this vendor**.
+
+Because step 1 is not established, steps 2-4 are skipped as **N/A on Android** under the requested method.

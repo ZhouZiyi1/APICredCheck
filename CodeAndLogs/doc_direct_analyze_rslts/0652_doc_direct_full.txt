@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Zendesk Chat SDK has official Android integration. Zendesk documents a native Android Chat SDK (commonly referred to as Chat SDK for Android / Chat SDK v2), so `supports_android` is true.
+
+2. Service model  
+This SDK is not primarily on-device. Its standard purpose is live chat with Zendesk-hosted chat infrastructure, so routine operation depends on Zendesk remote services.
+
+3. Integration requirement  
+Typical Android setup for Zendesk Chat SDK requires initializing the SDK with vendor-issued configuration values from the Zendesk account/admin setup. In documented integrations, this includes at least an `account key`, and some versions/documentation also pair it with an `app id`. That means normal Android use does require vendor-issued credentials/configuration.
+
+4. Scope  
+These values are part of the Zendesk Chat SDK's own integration, not merely another separate Zendesk product. Package name or app signing is not the relevant setup element here; the chat service configuration values are.

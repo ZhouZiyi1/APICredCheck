@@ -1,0 +1,19 @@
+2026-05-17 21:16:36 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0081-doc_direct_analyze.log
+2026-05-17 21:16:36 [INFO] Run start: SDK_ID=0081 SDK=Apache HttpCore SDK vendor=Apache Software Foundation results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:16:36 [INFO] Querying model='gpt-5.4' SDK='Apache HttpCore SDK' vendor='Apache Software Foundation'
+2026-05-17 21:16:41 [INFO] LLM token usage: prompt_tokens=991 completion_tokens=220 total_tokens=1211
+2026-05-17 21:16:41 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0081_doc_direct_full.txt
+2026-05-17 21:16:42 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Apache HttpCore is a Java HTTP components library, and Android apps can use standard Java libraries like this as dependencies. It is not an Android-specific SDK, but it is usable/integratable in Android.
+
+2. Service model — This is a low-level HTTP transport/client-support library. Its role is mostly on-device: building/parsing HTTP messages, connections, protocol handling, etc. It does not exist to connect to Apache-hosted backend services.
+
+3. Integration requirement — No vendor console registration or console-issued identifier/secret is normally required to use Apache HttpCore itself. A developer just adds the library dependency and uses it in code.
+
+4. Scope — Any credentials an app might need would belong to whatever third-party server/API the app chooses to call through HttpCore, not to Apache HttpCore’s own product integration. Therefore they do not count as this SDK’s API credential.
+2026-05-17 21:16:42 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0081_doc_direct_rslt.txt
+2026-05-17 21:16:42 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:16:42 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0081-doc_direct_analyze.log

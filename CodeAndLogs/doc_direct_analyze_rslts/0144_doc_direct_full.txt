@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Bugly SDK officially supports Android. Tencent Bugly provides Android integration for crash reporting and related services, with Android-specific setup instructions and an Android SDK/API such as `CrashReport.initCrashReport(...)`.
+
+2. Service model  
+Bugly is not just an on-device utility. Its standard purpose is to collect crash/exception data from the Android app and send it to Tencent Bugly's hosted backend for aggregation, analysis, and display in the Bugly console. That means normal use relies on vendor-hosted services.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with a Bugly console-issued application identifier, commonly documented as an `App ID` or Bugly `APP ID`. This value is configured in the app during SDK initialization so reports are associated with the correct Bugly project/backend.
+
+4. Scope  
+This `App ID` is part of Bugly's own documented integration flow, not merely another Tencent product's credential. Package name or signing config may matter operationally, but those alone are not the credential; the relevant console-issued value for Bugly itself is the `App ID`.

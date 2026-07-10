@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AppsFlyer provides an official Android SDK and documented Android integration for mobile attribution/analytics.
+
+2. Service model — This SDK is not just on-device; its normal purpose is to send install, attribution, and in-app event data to AppsFlyer’s hosted backend for measurement and analytics.
+
+3. Integration requirement — Yes. Standard AppsFlyer Android integration requires configuring a vendor-issued identifier in the app, commonly the **AppsFlyer Dev Key** (also called developer key / API key in setup materials). The SDK is typically initialized with this key so it can associate app traffic and events with the developer’s AppsFlyer account and backend services.
+
+4. Scope — This credential is part of the AppsFlyer SDK’s own documented setup, not merely another separate product. While package name and platform app identifiers may also matter operationally, the relevant console-issued credential for this SDK is the AppsFlyer Dev Key.

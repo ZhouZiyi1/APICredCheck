@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+BIGO Audience Network provides an Android ads SDK and Android integration documentation for loading/showing ads in Android apps. That is sufficient to treat Android as officially supported.
+
+2. Service model  
+This is an advertising network SDK. Its normal operation depends on BIGO-hosted ad serving infrastructure to request, fill, and report ads. So standard use is not primarily on-device; it routinely connects to vendor services.
+
+3. Integration requirement  
+Typical ad network integration requires the publisher to register the app in the vendor console and configure vendor-issued identifiers in the Android app. For BIGO Audience Network, the documented setup uses an application identifier for SDK initialization and ad placement/unit identifiers for requesting ads. Those identifiers are part of the SDK’s normal integration so BIGO can associate requests with the correct publisher app and inventory.
+
+4. Scope  
+These identifiers belong to BIGO Audience Network itself, not a separate BIGO product. They are part of the standard Android ads integration for this SDK.

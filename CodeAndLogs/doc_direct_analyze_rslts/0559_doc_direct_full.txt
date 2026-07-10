@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Soomla’s SDK lineup historically included native Android components, and “Traceback SDK” appears to be positioned as a mobile SDK rather than a server-only library. While the surviving public documentation for this specific product is sparse, the available product naming and Soomla’s usual distribution model are consistent with official Android integration. I therefore treat Android support as present, but the evidence is weaker than for actively maintained SDKs.
+
+2. Service model  
+A product named “Traceback” is not a pure on-device utility; its standard value would be collecting and sending trace/crash/error or attribution-style data to Soomla-managed services for inspection or analysis. That implies routine use of vendor-hosted backend services as part of normal operation.
+
+3. Integration requirement  
+For an SDK that reports app data to a vendor backend, standard integration normally requires registering the app and configuring an app-specific identifier or key so uploaded data is associated with the correct project. For this SDK, the exact historical label is not well-supported by current public material, but an App ID / API key style credential is the likely requirement.
+
+4. Scope  
+That credential would belong to the Traceback product’s own backend integration, not merely to some unrelated Soomla product. Because the documentation trail is weak, I prefer a conservative generic credential label rather than claiming a more specific key name without stronger evidence.

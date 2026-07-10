@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Parse has an official Android SDK and documented Android integration (`Parse.initialize(...)`, Android dependency/setup), so it supports Android.
+
+2. Service model  
+Parse SDK is a client for a backend service (Parse Server), so normal use does involve remote APIs / a backend rather than being purely on-device.
+
+3. Integration requirement  
+Typical Parse Android setup includes values such as `applicationId` and `server` URL, and some deployments may also use a `clientKey`. However, these are for connecting to a Parse Server instance that the developer chooses or operates; Parse itself is no longer a vendor-hosted backend that developers must register with to obtain mandatory console-issued credentials for standard Android use.
+
+4. Scope  
+Because the required connection details are not inherently vendor-issued credentials for Parse-hosted services, this does not meet the prompt's API-credential definition. Any credentials would belong to the specific Parse Server deployment/provider the developer uses, not to Parse SDK itself as a vendor-hosted product. Evidence is somewhat mixed because `applicationId`/`clientKey` exist in setup, but under this definition the safer classification is `false`.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is specifically an AdMob mediation adapter for the Tapjoy SDK on Android, with official Android integration via Gradle/CocoaPods-style adapter documentation for AdMob mediation. So Android is supported.
+
+2. Service model: This is not a purely on-device library. A mediation adapter exists to connect the app, through AdMob mediation, to Tapjoy’s ad-serving/back-end services. Standard use therefore depends on remote vendor-hosted services.
+
+3. Integration requirement: Yes. Typical setup for the Tapjoy mediation adapter requires configuring Tapjoy-issued network credentials in the mediation setup, most notably the Tapjoy `SDK Key` (and usually placements for ad formats). That is a console-issued identifier used so the mediated Tapjoy service can be reached/configured correctly.
+
+4. Scope: The relevant credential is part of this adapter’s documented mediation integration, not just an unrelated extra product. Although the value is issued by Tapjoy rather than AdMob, it is required specifically to use the AdMob mediation adapter for Tapjoy in normal Android integration. The strongest single credential label is `Tapjoy SDK Key`.

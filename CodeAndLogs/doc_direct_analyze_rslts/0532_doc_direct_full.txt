@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find an official Android SDK or Android integration for `INTULocationManager SDK`. `INTULocationManager` is known as an Intuit open-source **iOS/Core Location** wrapper, documented for Objective-C/Swift Apple platforms rather than Android. There does not appear to be an official Android library/package or Android setup documentation for this specific product.
+
+Because step 1 is no, steps 2-4 are skipped. They are not applicable on Android for this SDK.

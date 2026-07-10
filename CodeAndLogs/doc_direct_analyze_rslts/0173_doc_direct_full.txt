@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Intuit’s “SDP” is known as an Android UI/resource library (`sdp-android`) used to provide scalable dp dimensions for Android layouts. That is an official Android integration.
+
+2. Service model: This product is an on-device UI helper/resource library. It supplies predefined dimension resources for layout scaling and does not depend on Intuit-hosted backend services as part of normal use.
+
+3. Integration requirement: Usual integration is adding the Android dependency and referencing its dimension resources in XML/layouts. There is no normal requirement to register the app with Intuit or configure a console-issued key, app ID, token, or similar credential.
+
+4. Scope: Any Android package name, signing config, or app store metadata is unrelated to this library’s own integration. No product-specific vendor credential appears necessary for SDP itself.
+
+Weak-evidence note: Public references to this product consistently describe it as a local Android resource library, which supports a `false` credential determination.

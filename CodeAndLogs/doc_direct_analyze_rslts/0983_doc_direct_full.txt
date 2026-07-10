@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Onfido provides an official Android SDK for identity verification / document capture and related checks, so Android is supported.
+
+2. **Service model** - This product is not a purely on-device utility. The SDK is used as part of Onfido’s hosted identity verification workflow, where captured data and session flow are tied to Onfido backend services as a standard part of the product.
+
+3. **Integration requirement** - Yes. Typical Onfido Android integration requires a developer-created backend/session setup with Onfido-issued credentials to create an SDK token/session for the mobile SDK. The mobile app is configured with an **SDK token** for the verification flow, which is part of Onfido’s documented product integration.
+
+4. **Scope** - The credential is specific to the Onfido SDK workflow itself, not merely to some unrelated third-party product. While there may also be server-side API tokens involved in creating the mobile token, the app-facing credential used for the SDK’s standard operation is the **SDK token**.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Millennial Media SDK did have official Android support. It was distributed as an Android advertising SDK with documented Android integration for banner, interstitial, and related ad formats.
+
+2. Service model  
+This is an ad-serving SDK, so normal operation depends on the vendor's hosted ad infrastructure. The SDK is not mainly an on-device utility library; it contacts Millennial Media / One by AOL ad services to request and render ads.
+
+3. Integration requirement  
+Typical Android integration required the developer to configure a vendor-issued application identifier in the app. In Millennial Media documentation and sample code, this appears as an `apid` / application ID value associated with the publisher app or ad placement setup. That is a console-issued identifier used so the SDK can request inventory from the vendor's backend.
+
+4. Scope  
+That identifier is part of the Millennial Media SDK's own documented setup, not merely a credential for some separate AOL product. For this SDK, configuring the app/ad identifier is part of the standard integration path.

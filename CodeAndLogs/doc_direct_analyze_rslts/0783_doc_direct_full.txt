@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Juspay provides an official Android payment SDK/integration for native Android apps (commonly referred to as the Hyper SDK / Juspay Android SDK), so this product supports Android.
+
+2. Service model: This SDK is not primarily an on-device utility library. Its normal use is to power payments/checkout flows that depend on Juspay-hosted payment orchestration and related backend services. In a typical integration, the app hands off payment/session/order data that is processed through Juspay’s platform.
+
+3. Integration requirement: Yes. A merchant integrating Juspay normally needs merchant-specific configuration issued by Juspay, most notably a `merchantId` used in SDK/payment payloads. Depending on the flow, other server-side credentials or signed payload material may also exist, but `merchantId` is the clearest app-configured vendor-issued identifier tied to the SDK’s standard setup.
+
+4. Scope: This credential belongs to Juspay’s own payment SDK integration, not merely to a separate third-party service layered on top. The merchant identifier is part of configuring the Juspay checkout/payment flow itself.

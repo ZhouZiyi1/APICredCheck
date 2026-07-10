@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+New Relic has an official Android mobile monitoring/agent SDK. Its Android integration is documented through Gradle dependency setup and Android app initialization, so `supports_android` is true.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its standard purpose is to collect mobile app telemetry, crashes, traces, and related monitoring data and send that data to New Relic’s hosted observability platform.
+
+3. Integration requirement  
+Typical Android setup requires initializing the SDK with a New Relic-issued application token. In standard integration examples, the app calls the Android agent initialization with an app token value obtained from New Relic when creating/configuring the mobile app in New Relic.
+
+4. Scope  
+That token is part of the New Relic mobile SDK’s own documented setup for sending data to New Relic services. It is not merely an Android package name, signing artifact, or a credential belonging only to a separate product.

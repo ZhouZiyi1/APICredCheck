@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. EasyAR SDK has official Android integration and is known as an augmented reality SDK with Android support.
+
+2. **Service model** - Its core functionality is primarily on-device AR: image/object tracking, SLAM, and rendering features run locally in the mobile app rather than depending on a vendor-hosted runtime API for ordinary operation.
+
+3. **Integration requirement** - Typical EasyAR integration requires a license value issued by the vendor for the app/SDK use. This is generally configured in the Android app during setup.
+
+4. **Scope** - That license is tied to EasyAR SDK itself, not merely to a separate unrelated product. It is part of the documented SDK activation/setup model for using the SDK.

@@ -1,0 +1,19 @@
+2026-05-17 21:18:19 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0099-doc_direct_analyze.log
+2026-05-17 21:18:19 [INFO] Run start: SDK_ID=0099 SDK=React Native Vector Icons SDK vendor=Joel Arvidsson results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:18:19 [INFO] Querying model='gpt-5.4' SDK='React Native Vector Icons SDK' vendor='Joel Arvidsson'
+2026-05-17 21:18:25 [INFO] LLM token usage: prompt_tokens=982 completion_tokens=207 total_tokens=1189
+2026-05-17 21:18:25 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0099_doc_direct_full.txt
+2026-05-17 21:18:25 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. React Native Vector Icons is a React Native library that includes Android integration for rendering icon fonts in React Native Android apps. Its documented use covers Android as a supported platform.
+
+2. Service model — This SDK is primarily on-device. It provides icon fonts/components for UI rendering and does not depend on vendor-hosted APIs or a remote backend as part of normal functionality.
+
+3. Integration requirement — Typical setup does not require registering the app with the vendor or obtaining any console-issued key, app ID, token, or config file. Integration is usually limited to installing the package and linking/configuring fonts in the app.
+
+4. Scope — Any credentials that might exist in an app using this library would belong to other services, not to React Native Vector Icons itself. For this SDK, no API credential is part of standard Android integration.
+2026-05-17 21:18:25 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0099_doc_direct_rslt.txt
+2026-05-17 21:18:25 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:18:25 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0099-doc_direct_analyze.log

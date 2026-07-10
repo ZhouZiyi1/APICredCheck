@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. IQKeyboardManager SDK by Mohd Iftekhar Qurashi is an iOS keyboard-management library, commonly distributed for UIKit/iOS projects via CocoaPods, Swift Package Manager, or similar Apple-platform tooling. Its purpose is to manage text input and keyboard avoidance behavior in iPhone/iPad apps, and there is no official Android SDK or documented Android integration for this product.
+
+Steps 2-4 are skipped because Android support is not applicable for this SDK.

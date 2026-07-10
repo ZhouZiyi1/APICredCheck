@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Realm has an official Android SDK/library. Historically this was the Realm Java/Android SDK used directly in Android apps, so Android support is clearly documented.
+
+2. Service model  
+For the SDK itself, the standard Realm Android integration is an on-device mobile database embedded in the app. Its core usage does not inherently require calling Realm-hosted backend services.
+
+3. Integration requirement  
+Typical Android setup for the Realm SDK does not require registering the app in a Realm console or adding a vendor-issued key/secret/App ID just to use the database locally. You add the library and define local schemas/configuration in code.
+
+4. Scope  
+Realm did also have separate cloud/sync products in some eras, but those are distinct hosted-service integrations rather than a requirement for the base Realm Android SDK. For the named product here, evidence supports treating normal Android use as not requiring an API credential.

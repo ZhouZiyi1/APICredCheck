@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support - I could not find clear evidence that the specific product named "Jaxen SDK" from vendor "Werken" has an official Android SDK or documented Android integration. "Jaxen" is also the name of a general XML/XPath library unrelated to a mobile vendor SDK, which makes identification ambiguous. Because the product/vendor pairing here does not provide reliable evidence of an Android offering, Android support is not established.
+
+Steps 2-4 are skipped because step 1 is not satisfied; credential analysis is therefore N/A on Android.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. This product is an Android mediation adapter used with the Google Mobile Ads SDK to connect Android apps to Facebook/Meta Audience Network demand, and Google provides Android integration guidance for this adapter.
+
+2. Service model — It is not a purely on-device library. In normal use, the adapter helps the app request and display ads from remote ad-serving systems, especially the mediated Facebook/Meta Audience Network service.
+
+3. Integration requirement — Yes. Standard setup for this adapter requires a console-issued Meta/Facebook identifier to be configured for the Android app integration. In practice, the documented integration uses the Meta/Facebook App ID (and mediation mapping also uses placement identifiers in the AdMob console), which is required so the mediated network can initialize and serve ads.
+
+4. Scope — This credential is part of the documented setup for this specific mediation adapter workflow on Android, not merely an unrelated extra SDK. The adapter’s purpose is to connect AdMob mediation to Facebook/Meta Audience Network, and that integration depends on the network’s app identifier being configured.

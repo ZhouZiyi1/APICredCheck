@@ -1,0 +1,15 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. The product appears to be Code-Troopers' Android picker library ("BetterPickers"/Better Picker), which is an Android UI component library with documented Android integration as a native Android dependency. Evidence is reasonably strong that this is an Android SDK/library rather than a cross-platform service.
+
+2. Service model  
+This product is primarily on-device. Its purpose is to provide picker UI components (such as date, time, or number pickers) inside the app. That does not normally require calls to vendor-hosted APIs or a remote backend.
+
+3. Integration requirement  
+There is no usual setup requirement to register the app with Code-Troopers or configure a console-issued key, App ID, token, or config file. Standard integration is adding the library dependency and using the UI components in code.
+
+4. Scope  
+Any Android package name, signing config, or app-store metadata is unrelated to this product's own integration. There is no indication that Better Picker itself requires a product-specific vendor credential.
+
+Weakness note: the public identity of this SDK is somewhat sparse, but based on the identifiable Code-Troopers Android picker library, the evidence supports Android availability and no API credential requirement.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is specifically an AdMob mediation adapter for the AdColony SDK, and it is documented as an Android integration used with the Google Mobile Ads SDK on Android.
+
+2. Service model: This is not a purely on-device library. In normal use it participates in ad mediation and ad serving, which depends on remote vendor-hosted ad services.
+
+3. Integration requirement: Yes. Standard Android integration with AdMob requires configuring the Google Mobile Ads SDK with an AdMob-issued App ID in the Android app. Mediation setup for AdColony also commonly involves additional network-specific IDs, but the AdMob App ID is the clearest credential required for this product’s normal Android use.
+
+4. Scope: The AdMob App ID belongs to this product’s documented integration path because the adapter is used through the Google Mobile Ads / AdMob mediation stack on Android. The extra AdColony identifiers are for the mediated network, not the primary credential to attribute to this AdMob adapter product.

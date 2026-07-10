@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear evidence that the product specifically named **DeepLink Kit SDK** from **Button, Inc.** has an official Android SDK or Android integration guide under that product name. Button is known for mobile commerce/deep linking products, but the prompt requires evaluating only this named product and not inferring from other Button products. Because the evidence for an official Android library for **DeepLink Kit SDK** itself is weak or unclear, I treat Android support as not established.
+
+Steps 2-4 are skipped because Android support is not established for this product name (N/A on Android).

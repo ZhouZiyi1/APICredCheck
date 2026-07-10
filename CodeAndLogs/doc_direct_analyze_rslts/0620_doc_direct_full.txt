@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find evidence that `Ini4j SDK` has an official Android SDK, Android-specific artifact, or documented Android integration. `ini4j` is generally presented as a Java library for reading/writing INI configuration files, not as an Android product with official Android setup guidance. Because step 1 is not satisfied, steps 2-4 are skipped as N/A on Android.

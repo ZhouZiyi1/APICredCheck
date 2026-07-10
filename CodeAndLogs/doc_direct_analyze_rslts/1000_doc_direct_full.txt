@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Devtodev provides an Android/mobile game analytics SDK with documented Android integration, so this product supports Android.
+
+2. Service model: Devtodev is an analytics platform, not a purely on-device library. Its normal use is to collect app/game events and send them to Devtodev-hosted analytics services for processing, dashboards, and reporting.
+
+3. Integration requirement: Typical setup requires registering the application in Devtodev and initializing the Android SDK with vendor-issued identifiers/secrets for that app. Devtodev’s Android setup is commonly based on an application ID plus an application secret/key supplied from the Devtodev console.
+
+4. Scope: Those values are part of Devtodev SDK’s own documented integration for connecting the app to Devtodev’s backend, so they qualify as this product’s API credential. This is not just package-name/signing metadata, and it does not depend on a separate third-party product.

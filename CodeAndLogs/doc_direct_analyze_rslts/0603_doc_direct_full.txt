@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Brightcove has an official Android player SDK, commonly documented as the Brightcove Native SDK for Android / Brightcove Player SDK for Android, so Android is supported.
+
+2. **Service model** - This SDK is for video playback integration in Android apps. In normal use, it commonly works with Brightcove-hosted video/content delivery and playback services rather than being a purely on-device helper library. The SDK is designed to play back video content managed through Brightcove’s platform.
+
+3. **Integration requirement** - Typical Brightcove Android integrations use account-specific identifiers to retrieve/play Brightcove-managed media, especially through Brightcove playback services. Standard setup commonly includes values such as a `Policy Key` (and often account/video identifiers in app code or playback requests). The `Policy Key` is the clearest vendor-issued credential used so the app can access Brightcove playback APIs.
+
+4. **Scope** - The credential is tied to Brightcove’s own playback/content platform, not merely a separate third-party product. While some playback scenarios may vary, Brightcove-hosted media access typically relies on a Brightcove-issued playback credential. Evidence is sufficient that Android is supported and that a Brightcove credential is commonly required for standard platform-backed use.

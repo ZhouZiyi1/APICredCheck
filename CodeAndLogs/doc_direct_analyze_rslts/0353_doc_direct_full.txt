@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Heyzap SDK had official Android integration for mobile apps, including Android-specific setup and SDK packaging for ads/mediation use.
+
+2. Service model: This is an advertising/mediation SDK, so normal operation depends on vendor-hosted services and network mediation infrastructure rather than being purely on-device. Its standard purpose is to fetch and manage ads through Heyzap’s backend.
+
+3. Integration requirement: Yes. Typical Android integration required the developer to register the app with Heyzap and configure a console-issued identifier in the app. The documented credential was the Heyzap Publisher ID (often added in Android manifest metadata).
+
+4. Scope: That identifier belongs to Heyzap SDK’s own integration, not merely to a separate third-party network. It is the app-level value used so the SDK can connect the app to Heyzap’s ad/mediation service.

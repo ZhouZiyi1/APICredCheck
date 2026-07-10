@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Adapty has official Android support. It provides an Android SDK and documented Android integration for handling in-app subscriptions, paywalls, and purchase analytics in Android apps.
+
+2. Service model  
+Adapty is not a purely on-device library. Its normal operation relies on Adapty-hosted backend services for subscription state, paywall configuration, A/B tests, analytics, and related purchase infrastructure.
+
+3. Integration requirement  
+Standard Android setup requires initializing the SDK with a value issued from the Adapty dashboard. In typical Adapty Android integration, the app is activated with Adapty’s SDK key, commonly documented as a public SDK key/public API key for the app.
+
+4. Scope  
+This credential is part of Adapty’s own documented integration, not just a separate billing or analytics product. Google Play Billing is also involved for purchases, but Adapty itself still requires its own console-issued key for the SDK to connect to Adapty services.

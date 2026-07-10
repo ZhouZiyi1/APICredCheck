@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find an official Android SDK or Android integration for Meta/Facebook's "POP" animation library. The product is documented as an animation engine for Apple platforms (commonly described as iOS / OS X or iOS / macOS), not as an Android SDK. Because step 1 is no, steps 2-4 are skipped as N/A on Android.

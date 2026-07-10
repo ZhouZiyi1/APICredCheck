@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Zucks Ad Network SDK is an ad-serving SDK with Android integration documented through Android library usage and Android mediation/integration materials. This is enough to treat Android as officially supported.
+
+2. Service model: This product is not mostly on-device. An ad network SDK routinely contacts the vendor-hosted ad-serving backend to request, fill, and report ads. Remote service use is part of normal operation.
+
+3. Integration requirement: Yes. For normal ad network operation, the developer typically must register the app/placement with the ad network and configure a vendor-issued identifier in the Android app setup. For ad SDKs, that identifier is usually a placement/ad unit style ID rather than a secret.
+
+4. Scope: That identifier belongs to the Zucks ad product itself, because it is how Zucks knows which publisher app/placement is requesting ads from Zucks-hosted inventory. Package name or signing alone would not satisfy this. The exact field name is not fully clear from the available evidence, but the requirement for a Zucks-issued ad placement identifier is consistent with standard Android ad SDK integration.

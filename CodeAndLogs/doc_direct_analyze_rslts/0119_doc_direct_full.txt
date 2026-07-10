@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Moat Analytics SDK does support Android. Moat provided an Android/mobile app measurement SDK for integrating viewability and attention analytics into Android apps, so step 1 is satisfied.
+
+2. Service model  
+This SDK is not just an on-device utility library. Its purpose is ad/media measurement and analytics, which ordinarily involves sending measurement data to Moat/Oracle-hosted analytics systems as part of the product’s standard operation.
+
+3. Integration requirement  
+Typical Android integration for Moat requires initializing the SDK with a Moat-issued integration identifier, commonly referred to in Moat setup materials as a `partnerCode` (partner code). That value is configured in the app during SDK startup and is used to associate telemetry with the correct customer/integration.
+
+4. Scope  
+That identifier is part of the Moat Analytics SDK’s own documented integration flow, not merely a separate ad network or unrelated Oracle product. Evidence in public integration patterns points to a partner/integration code rather than a secret key. While documentation wording may vary by integration partner, the standard setup appears to require this Moat-specific identifier, so this meets the prompt’s API-credential definition.

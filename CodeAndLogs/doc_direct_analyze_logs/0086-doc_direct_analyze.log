@@ -1,0 +1,19 @@
+2026-05-17 21:17:02 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0086-doc_direct_analyze.log
+2026-05-17 21:17:02 [INFO] Run start: SDK_ID=0086 SDK=react-native-device-info SDK vendor=Becca Hughes results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:17:02 [INFO] Querying model='gpt-5.4' SDK='react-native-device-info SDK' vendor='Becca Hughes'
+2026-05-17 21:17:09 [INFO] LLM token usage: prompt_tokens=992 completion_tokens=260 total_tokens=1252
+2026-05-17 21:17:09 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0086_doc_direct_full.txt
+2026-05-17 21:17:09 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. `react-native-device-info` is a React Native module that includes Android support as part of its standard platform coverage. Its purpose is to expose device/system information to React Native apps, and Android integration is documented/implemented through the native Android side of the package.
+
+2. Service model — This SDK is mostly on-device. It reads device/app/system properties locally from the device and OS APIs (for example app version, build number, device model, system version, unique IDs where available). It is not a vendor-cloud product and does not routinely depend on vendor-hosted backend services for normal operation.
+
+3. Integration requirement — There is no usual setup requiring the developer to register the app with a vendor console or configure a console-issued identifier/secret for this SDK. Typical integration is just installing the React Native package and linking/autolinking it.
+
+4. Scope — Any credentials a developer might use elsewhere in the app would belong to other services, not to `react-native-device-info` itself. For this SDK’s documented integration on Android, no API key/App ID/client secret is required.
+2026-05-17 21:17:09 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0086_doc_direct_rslt.txt
+2026-05-17 21:17:09 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:17:09 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0086-doc_direct_analyze.log

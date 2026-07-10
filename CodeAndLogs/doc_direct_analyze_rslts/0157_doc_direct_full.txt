@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Branch provides an official Android SDK and documented Android integration for deep linking, attribution, and related mobile measurement features. So Android support is present.
+
+2. Service model  
+Branch SDK is not a purely on-device utility. Its standard use depends on Branch-hosted services for link resolution, attribution, deferred deep linking, and analytics/measurement behavior. The Android client communicates with Branch's backend as part of normal operation.
+
+3. Integration requirement  
+Typical Android setup requires a Branch-issued key from the Branch dashboard/console. In Android integrations this is commonly configured as the app's `BranchKey` in manifest metadata or equivalent initialization setup. That is a vendor-issued identifier used so the SDK can talk to Branch services.
+
+4. Scope  
+This credential is part of Branch SDK's own documented integration, not a separate third-party product. Package name or signing configuration alone would not satisfy the setup; the Branch key is the relevant console-issued value.

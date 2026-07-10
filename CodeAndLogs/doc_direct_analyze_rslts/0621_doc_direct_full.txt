@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`Atom SDK` from `atom technologies` appears to have official Android integration for mobile payments, with Android-specific SDK/docs distributed for merchant app integration. On that basis, Android support is present.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its standard use is to connect the app to Atom Technologies' hosted payment infrastructure for transaction initiation, processing, and related payment flows. That means normal operation depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical Atom payment SDK integration requires merchant-side onboarding and configuration of vendor-issued identifiers/credentials so the app/backend can identify the merchant account and use Atom's payment services. The documented setup commonly includes merchant/account identifiers rather than a purely local library drop-in. That meets the definition of an API credential for this product.
+
+4. Scope  
+The credential is part of integrating Atom's own payment product, not merely a separate third-party service added alongside it. The strongest short credential label is `Merchant ID` (sometimes accompanied by additional account credentials in real integrations). Evidence strength is moderate rather than perfect from product naming alone, but it is sufficient to classify this as requiring a vendor-issued integration credential.

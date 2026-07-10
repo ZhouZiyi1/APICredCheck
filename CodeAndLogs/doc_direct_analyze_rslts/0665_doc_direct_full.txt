@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Cuebiq has been documented as providing an Android mobile SDK for location data collection / audience intelligence use cases. On that basis, `supports_android` is true.
+
+2. Service model  
+This is not a purely on-device utility library. Its standard purpose is to collect location-related signals in the app and send them to Cuebiq-operated backend services for processing / analytics. That means normal use depends on vendor-hosted services.
+
+3. Integration requirement  
+For a product like this to function in production, the app generally must be identified to Cuebiq with a vendor-issued integration identifier during setup. Public descriptions of Cuebiq SDK integrations indicate an app/account-specific key or identifier is part of onboarding, rather than the SDK operating anonymously with no vendor-side registration.
+
+4. Scope  
+That identifier is part of the Cuebiq SDK integration itself, not merely a separate third-party product the app might also use. The exact public label is not strongly standardized in the material commonly referenced, so evidence for the precise name is weaker than for the existence of a required vendor-issued app identifier. The safest concise label is `App ID`.

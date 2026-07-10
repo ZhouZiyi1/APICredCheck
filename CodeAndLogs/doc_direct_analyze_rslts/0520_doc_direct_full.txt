@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Oauth Signpost is a Java OAuth 1.0 signing library and was distributed with Android-specific integration support/modules for Android HTTP clients, so there is documented Android use rather than only desktop/server Java.
+
+2. Service model: This SDK is primarily a client-side helper for signing OAuth requests. It does not provide Matthias Käppler-hosted backend services that the app is expected to call as part of normal SDK operation. Its job is to generate OAuth signatures for requests to other providers' APIs.
+
+3. Integration requirement: Normal integration does not require registering with Signpost or obtaining any console-issued credential from the Signpost vendor. A developer may need OAuth consumer keys/secrets from whatever third-party API they are targeting, but those credentials belong to that external service, not to Signpost itself.
+
+4. Scope: The relevant credentials in typical Signpost usage are for external APIs being accessed through OAuth, not for this SDK's own product integration. That does not meet the definition of an API credential for this SDK.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. AdFalcon SDK is documented as a mobile advertising SDK with Android integration for showing ads in Android apps.
+
+2. **Service model** - It routinely relies on the vendor’s hosted ad-serving platform. An ad SDK is not primarily on-device; its standard function is to request, receive, and track ads from the provider’s backend services.
+
+3. **Integration requirement** - Yes. Typical AdFalcon Android integration requires the developer to configure an app/publisher identifier issued through AdFalcon’s platform so the SDK can associate ad requests with the correct account/app inventory.
+
+4. **Scope** - This credential is part of AdFalcon SDK’s own ad-serving integration, not just another separate product. The identifier is used so AdFalcon’s service knows which app/account is requesting ads.

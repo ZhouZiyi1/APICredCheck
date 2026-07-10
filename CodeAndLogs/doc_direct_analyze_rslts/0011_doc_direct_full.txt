@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. OkHttp is an official Java/Kotlin HTTP client widely used on Android and documented for Android use.
+
+2. Service model — This is a client-side networking library. It provides HTTP request/response handling, connection pooling, caching, WebSocket support, etc. It does not depend on a Block-hosted backend or vendor-operated cloud service to function.
+
+3. Integration requirement — Normal Android integration does not require registering the app with Block or obtaining any console-issued identifier/secret. Developers just add the library dependency and use it to call whatever endpoints they choose.
+
+4. Scope — Any API keys or tokens used in an app with OkHttp would belong to the third-party service the app is calling, not to OkHttp itself. Therefore they do not count as an API credential for this SDK.

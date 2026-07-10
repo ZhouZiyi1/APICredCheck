@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Corona SDK officially supported building Android apps. It was a cross-platform mobile app/game SDK with documented Android packaging, testing, and deployment workflows, so step 1 is yes.
+
+2. Service model  
+Corona SDK is primarily a client-side runtime and development framework for building mobile apps and games. Its standard use is local app logic, rendering, input, audio, physics, and packaging for platforms like Android. Typical app operation does not inherently depend on Corona Labs-hosted backend services.
+
+3. Integration requirement  
+For normal Android integration, developers generally install the SDK/toolchain and configure project metadata, but there is no standard requirement to obtain a Corona Labs-issued API key, App ID, client secret, or equivalent credential from a vendor console in order to use the SDK itself.
+
+4. Scope  
+Corona apps may integrate third-party services such as ads, analytics, IAP, maps, or social SDKs, and those separate products can require their own keys or IDs. Those are not credentials for Corona SDK itself. Based on the usual documented integration for Corona SDK on Android, there is no product-specific API credential requirement from Corona Labs.

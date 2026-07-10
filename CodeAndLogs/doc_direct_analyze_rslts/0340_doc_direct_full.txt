@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Pollfish SDK has official Android integration. Pollfish provides an Android SDK for embedding surveys in Android apps, so Android is supported.
+
+2. Service model  
+Pollfish is not a purely on-device library. Its standard function is to connect the app to Pollfish-hosted survey/monetization services, fetch survey opportunities, and report activity back to Pollfish infrastructure.
+
+3. Integration requirement  
+Typical Android setup requires the developer to configure a Pollfish-issued app credential in the SDK initialization. Pollfish documentation commonly refers to this as an API key used when creating the SDK configuration for the app.
+
+4. Scope  
+This credential is part of Pollfish SDK’s own documented integration, not just a separate third-party dependency. It identifies the app to Pollfish’s service for normal SDK operation on Android.

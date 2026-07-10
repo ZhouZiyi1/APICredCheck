@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Tencent LiteAV SDK has official Android integration and Android SDK packages/documentation for Tencent’s real-time audio/video and live streaming features.
+
+2. Service model: This SDK is not just an on-device utility library. Its standard use is tied to Tencent Cloud real-time communication / live audio-video services, where the Android client connects to Tencent-hosted infrastructure for room, streaming, or RTC features.
+
+3. Integration requirement: Yes. Normal Android integration typically requires a Tencent Cloud console-issued application identifier for the service, commonly documented as `SDKAppID`, along with a generated `UserSig` for authentication in many LiteAV/TRTC flows. The core console-issued credential type is the app identifier.
+
+4. Scope: This credential is part of this product’s documented setup, not merely another Tencent product added separately. Package name or signing config alone is not sufficient; the SDK’s usual cloud-backed usage depends on Tencent-issued app credentials.

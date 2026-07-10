@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+iovation provides an official Android mobile SDK for its fraud/device reputation offering. Their mobile integration is documented for Android apps to collect device signals and produce a device fingerprint or similar payload for iovation analysis. Step 1 is therefore yes.
+
+2. Service model  
+This is not just a local utility library. The SDK’s normal purpose is to support iovation’s fraud/risk service by collecting device data for evaluation by iovation-hosted systems or for use with iovation’s backend-driven decisioning flow. That means the standard integration depends on the vendor’s hosted service model, not purely on-device behavior.
+
+3. Integration requirement  
+Typical iovation Android integrations require the app to be configured with a vendor-issued identifier tied to the customer’s iovation account/subscription. In iovation mobile SDK materials this is commonly described as a subscriber/account key value used when initializing the SDK. That is a console/account-issued integration credential for this product.
+
+4. Scope  
+This credential is part of the iovation SDK’s own documented setup, not just another unrelated product. Package name or signing configuration alone would not satisfy setup; the iovation-issued subscriber/account identifier is the relevant value.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. MobFox had an official Android SDK and documented Android integration for showing ads in Android apps.
+
+2. Service model: This is an advertising SDK, so standard use depends on MobFox-hosted ad serving. The app does not work purely on-device; it contacts MobFox infrastructure to request and display ads.
+
+3. Integration requirement: Yes. Typical MobFox Android integration requires developer-issued ad placement identifiers from the MobFox publisher side, commonly described as a `Publisher ID` and an ad/placement-specific identifier such as an `Inventory Hash` (or equivalent placement ID) when configuring ad requests.
+
+4. Scope: Those identifiers are part of MobFox SDK integration itself, not just a separate third-party product. They identify the publisher/app placement to MobFox's own ad service, which fits the API-credential definition used here for ad SDKs.

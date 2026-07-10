@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear evidence that a product specifically named **“Seismic SDK”** from **Block Inc** has an official Android SDK or documented Android integration. “Seismic” is also a name used in other contexts, which increases ambiguity, and the prompt requires evaluating only this named product from this vendor. With weak/conflicting evidence, the method says to prefer false.
+
+Because step 1 is **no / not established**, steps 2-4 are **skipped** as not applicable on Android.

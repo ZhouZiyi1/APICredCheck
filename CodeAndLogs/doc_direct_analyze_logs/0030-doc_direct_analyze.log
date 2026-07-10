@@ -1,0 +1,19 @@
+2026-05-17 21:11:23 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0030-doc_direct_analyze.log
+2026-05-17 21:11:23 [INFO] Run start: SDK_ID=0030 SDK=Bolts SDK vendor=Meta results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:11:23 [INFO] Querying model='gpt-5.4' SDK='Bolts SDK' vendor='Meta'
+2026-05-17 21:11:30 [INFO] LLM token usage: prompt_tokens=977 completion_tokens=224 total_tokens=1201
+2026-05-17 21:11:30 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0030_doc_direct_full.txt
+2026-05-17 21:11:30 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Bolts SDK has an Android library and is commonly used as a utility/task/deeplinking support library in Android apps.
+
+2. Service model — Bolts is primarily a client-side utility library. Its core functions are things like Tasks, App Links helpers, and related app-side infrastructure. These are not, by default, a vendor-hosted backend product that routinely requires Meta cloud service access for normal operation.
+
+3. Integration requirement — For normal Android integration of Bolts itself, developers generally add the library dependency only. There is no standard requirement to obtain a Meta console-issued API key, App ID, secret, or equivalent specifically for Bolts SDK itself.
+
+4. Scope — While some use cases around Meta/Facebook products may involve an App ID, that belongs to other Meta SDK products or platform integrations, not to Bolts SDK as a standalone utility library. So it should not be counted here.
+2026-05-17 21:11:30 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0030_doc_direct_rslt.txt
+2026-05-17 21:11:30 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:11:30 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0030-doc_direct_analyze.log

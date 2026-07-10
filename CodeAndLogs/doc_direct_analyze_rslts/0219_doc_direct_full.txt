@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. The product named here is `Charts SDK` by `Daniel Cohen Gindi`, which is the Swift/iOS charting library commonly distributed for Apple platforms. Daniel Cohen Gindi is not the vendor of the Android library `MPAndroidChart`; that is a separate product/project. Based on the named product alone, there is no official Android library or Android integration for this SDK from this vendor.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

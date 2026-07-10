@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AppLovin provides an official Android SDK for ads/mediation integration, so this product supports Android.
+
+2. Service model — The AppLovin SDK is an advertising/mediation SDK that routinely connects to AppLovin-hosted services to load ads, report events, and support monetization features. This is not a purely on-device library.
+
+3. Integration requirement — Yes. Standard Android integration for the AppLovin SDK requires configuring a vendor-issued application identifier from the AppLovin dashboard/console. In AppLovin documentation this is typically the SDK Key (often added in Android manifest metadata or initialization code).
+
+4. Scope — This credential is part of the AppLovin SDK’s own documented setup for Android, not just a separate product. Ad unit IDs may also exist for placements, but the core console-issued integration credential for the SDK itself is the SDK Key.

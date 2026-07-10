@@ -1,0 +1,1001 @@
+﻿SDK Rank,SDK,supports_android,has_api_credential,credential_name
+0001,Google Firebase SDK,True,True,google-services.json
+0002,Google Play Services SDK,True,False,
+0003,Google Sign-In SDK,True,True,OAuth client ID
+0004,Google Analytics for Firebase SDK,True,True,google-services.json
+0005,Admob SDK,True,True,AdMob App ID
+0006,Firebase Cloud Messaging SDK,True,True,google-services.json
+0007,StoreKit SDK,False,*,
+0008,CloudKit SDK,False,*,
+0009,SiriKit SDK,False,*,
+0010,MapKit SDK,False,*,
+0011,OKHttp SDK,True,False,
+0012,Google Location SDK,True,False,
+0013,gson SDK,True,False,
+0014,AdX SDK,True,True,App ID
+0015,Core ML SDK,False,*,
+0016,Facebook Login Kit SDK,True,True,Facebook App ID
+0017,Facebook Core SDK,True,True,Facebook App ID
+0018,Google Places SDK,True,True,API key
+0019,Firebase Authentication SDK,True,True,google-services.json
+0020,Glide SDK,True,False,
+0021,GoogleUtilities SDK,True,False,
+0022,Facebook Share Kit SDK,True,True,Facebook App ID
+0023,Google Maps SDK,True,True,API key
+0024,Facebook Audience Network SDK,True,True,Placement ID
+0025,Protobuf SDK,True,False,
+0026,ClassKit SDK,False,*,
+0027,Unity Engine SDK,True,False,
+0028,Firebase Performance Monitoring SDK,True,True,google-services.json
+0029,CallKit SDK,False,*,
+0030,Bolts SDK,True,False,
+0031,Z Xing SDK,True,False,
+0032,Google User Messaging Platform SDK,True,False,
+0033,AppAnalytics SDK,False,*,
+0034,Google DataTransport SDK,True,False,
+0035,UnityAds SDK,True,True,Game ID
+0036,Google Tag Manager SDK,True,True,Container ID
+0037,Firebase Crash Reporting SDK,True,True,google-services.json
+0038,SDWebImage SDK,False,*,
+0039,Google Analytics SDK,True,True,Google App ID
+0040,Google Guava SDK,True,False,
+0041,Square Retrofit SDK,True,True,access token
+0042,Facebook AppLinks SDK,True,True,Facebook App ID
+0043,ExoPlayer SDK,True,False,
+0044,Play Billing Library SDK,True,False,
+0045,Applovin SDK,True,True,SDK Key
+0046,Google Play In-app billing SDK,True,False,
+0047,Google Mobile Ads SDK (Admob),True,True,AdMob App ID
+0048,Fmod SDK,True,False,
+0049,OneSignal SDK,True,True,OneSignal App ID
+0050,Facebook Messenger Share Kit SDK,True,True,Facebook App ID
+0051,App Tracking Transparency,False,*,
+0052,React Native SDK,True,False,
+0053,AppLovin MAX SDK,True,True,SDK Key
+0054,AppsFlyer SDK,True,True,AppsFlyer Dev Key
+0055,Admob mediation adapter for AppLovin SDK(deprecated),True,True,AppLovin SDK Key
+0056,Crashlytics SDK,True,True,API key
+0057,Google Cloud Messaging SDK,True,True,Sender ID / Project Number
+0058,AFNetworking SDK,False,*,
+0059,Firebase Realtime Database SDK,True,True,google-services.json
+0060,Reachability SDK,False,*,
+0061,IAB Open Measurement SDK,True,False,
+0062,Apache Cordova SDK,True,False,
+0063,Fabric SDK,True,True,Fabric API Key
+0064,Answers SDK,True,False,
+0065,ironSource SDK,True,True,App Key
+0066,Apple Speech SDK,False,*,
+0067,MBProgressHUD SDK,False,*,
+0068,HealthKit SDK,False,*,
+0069,Volley SDK,True,False,
+0070,Vungle SDK,True,True,App ID
+0071,Facebook Places SDK,True,True,Facebook App ID
+0072,Play Games Services SDK,True,True,Play Games Services App ID
+0073,Flutter SDK,True,False,
+0074,Facebook Yoga SDK,True,False,
+0075,Google Drive SDK,True,True,OAuth 2.0 Client ID
+0076,FMDB SDK,False,*,
+0077,Google Pay SDK,True,True,Merchant ID
+0078,GameKit SDK,False,*,
+0079,Google Cast SDK,True,True,Cast App ID
+0080,Pangle SDK,True,True,App ID
+0081,Apache HttpCore SDK,True,False,
+0082,Firebase Dynamic Links SDK,True,True,Firebase config (google-services.json)
+0083,SpriteKit SDK,False,*,
+0084,Chartboost SDK,True,True,App ID and App Signature
+0085,Facebook Fresco SDK,True,False,
+0086,react-native-device-info SDK,True,False,
+0087,SafetyNet SDK,True,True,API key
+0088,RxJava SDK,True,False,
+0089,Adjust SDK,True,True,App Token
+0090,AdColony SDK,True,True,App ID
+0091,EventBus SDK,True,False,
+0092,CircleImageView SDK,True,False,
+0093,InMobi SDK,True,True,App ID
+0094,Masonry SDK,False,*,
+0095,Sentry SDK,True,True,DSN
+0096,Alamofire SDK,False,*,
+0097,Google Plus SDK,True,True,OAuth client ID
+0098,SSZipArchive SDK,False,*,
+0099,React Native Vector Icons SDK,True,False,
+0100,Flurry SDK,True,True,Flurry API Key
+0101,ShortcutBadger SDK,True,False,
+0102,Admob mediation adapter for Facebook SDK,True,True,Meta Audience Network App ID
+0103,SVProgressHUD SDK,False,*,
+0104,RxAndroid SDK,True,False,
+0105,WeChat SDK,True,True,App ID
+0106,Tink SDK,True,False,
+0107,Start.io,True,True,App ID
+0108,Google Toolbox for Mac SDK,False,*,
+0109,Slf4j SDK,True,False,
+0110,MJRefresh SDK,False,*,
+0111,CarPlay SDK,False,*,
+0112,Jsoup SDK,True,False,
+0113,iMessage SDK,False,*,
+0114,Realm SDK,True,False,
+0115,IQKeyboardManager SDK,False,*,
+0116,PassKit SDK,False,*,
+0117,Unity IAP SDK,True,False,
+0118,Butter Knife SDK,True,False,
+0119,Moat Analytics SDK,True,True,Partner Code
+0120,YouTube SDK,True,True,API key
+0121,AppMetrica SDK,True,True,API key
+0122,cocos2d-x SDK,True,False,
+0123,Mobile Vision SDK,True,False,
+0124,Adlib SDK,True,True,Adlib app key
+0125,FasterXML jackson SDK,True,False,
+0126,Google Fit SDK,True,False,
+0127,Jackson SDK,True,False,
+0128,CocoaAsyncSocket SDK,False,*,
+0129,SKAdNetwork,False,*,
+0130,SnapKit SDK,True,True,Client ID
+0131,Xamarin SDK,True,False,
+0132,Firebase In-App Messaging SDK,True,True,google-services.json
+0133,DT Exchange SDK,True,True,App ID
+0134,Tapjoy SDK,True,True,SDK Key
+0135,SDNetworkActivityIndicator SDK,False,*,
+0136,Kingfisher SDK,False,*,
+0137,Nineoldandroids SDK,True,False,
+0138,Nine Old Androids SDK,True,False,
+0139,Firebase Invites SDK,True,True,google-services.json
+0140,SocketRocket SDK,False,*,
+0141,Amazon Mobile ads SDK,True,True,App Key
+0142,Shimmer SDK,False,*,
+0143,Shimmer for Android SDK,True,False,
+0144,Bugly SDK,True,True,App ID
+0145,LevelPlay,True,True,App Key
+0146,Android Auto,True,False,
+0147,Yandex Mobile Ads SDK,True,True,Ad Unit ID
+0148,Apache HttpClient SDK,False,*,
+0149,Admob mediation adapter for AppLovin SDK,True,False,
+0150,FLAnimatedImage SDK,False,*,
+0151,Admob mediation adapter for Unity Ads SDK,True,True,AdMob App ID
+0152,Joda Time SDK,False,*,
+0153,Airbnb Lottie SDK,True,False,
+0154,PhotoView SDK,True,False,
+0155,RoundedImageView SDK,True,False,
+0156,Material Dialogs SDK,True,False,
+0157,Branch SDK,True,True,Branch Key
+0158,MJExtension SDK,False,*,
+0159,AndroidSVG SDK,True,False,
+0160,Tencent SDK,True,True,App ID
+0161,Universal Image Loader SDK,True,False,
+0162,BouncyCastle SDK,False,*,
+0163,ironSource Mediation adapter for Facebook SDK,True,False,
+0164,AndroidPdfViewer SDK,True,False,
+0165,Stripe SDK,True,True,Publishable key
+0166,ReLinker SDK,True,False,
+0167,Amplitude SDK,True,True,API key
+0168,Bidmachine SDK,True,True,App ID
+0169,ironSource Mediation adapter for UnityAds SDK,True,True,Unity Ads Game ID
+0170,RevenueCat SDK,True,True,Public SDK Key
+0171,ALToastView SDK,False,*,
+0172,ironSource Mediation adapter for Admob SDK,True,True,App Key
+0173,SDP SDK,True,False,
+0174,DatePicker Plugin for Cordova SDK,True,False,
+0175,Digital Turbine Exchange,True,True,App ID
+0176,Android Asynchronous Http Client SDK,True,False,
+0177,Segment SDK,True,True,writeKey
+0178,ASM SDK,False,*,
+0179,uMeng Analytics SDK,True,True,Appkey
+0180,GameAnalytics SDK,True,True,game key and game secret
+0181,Bouncy Castle Crypto SDK,True,False,
+0182,Firebase AppIndexing SDK,True,True,google-services.json
+0183,Mintegral SDK,True,True,App ID and App Key
+0184,Bytedance UnionAD SDK,True,True,App ID
+0185,Jiguang JPush SDK,True,True,AppKey
+0186,Android-Image-Cropper SDK,True,False,
+0187,Moshi SDK,True,False,
+0188,Twitterkit SDK,True,True,API key and API secret
+0189,myTarget SDK,True,True,Slot ID
+0190,App Center SDK,True,True,App Secret
+0191,Admob mediation adapter for Vungle SDK,True,True,AdMob App ID
+0192,Mixpanel SDK,True,True,Project Token
+0193,PhonegapPushPlugin SDK,True,False,
+0194,Cordova sqlite storage plugin SDK,True,False,
+0195,Android-SpinKit SDK,True,False,
+0196,Contacts SDK,True,False,
+0197,SDCycleScrollView SDK,False,*,
+0198,DACircularProgress SDK,False,*,
+0199,SBJson SDK,False,*,
+0200,YYKit SDK,False,*,
+0201,libPhoneNumber-iOS SDK,False,*,
+0202,Amazon In-App Purchasing SDK,True,False,
+0203,ARKit SDK,False,*,
+0204,ironSource Mediation adapter for AppLovin SDK,True,True,AppLovin SDK Key
+0205,DivKit SDK,True,False,
+0206,ViewPagerIndicator SDK,True,False,
+0207,UIC Key Chain Store SDK,False,*,
+0208,GCDWebServer SDK,False,*,
+0209,PL Crash Reporter SDK,False,*,
+0210,Alipay SDK,True,True,App ID
+0211,MPAndroidChart SDK,True,False,
+0212,Line Ads SDK,True,True,Placement ID
+0213,Glide Transformations SDK,True,False,
+0214,WebRTC SDK,True,False,
+0215,Admob mediation adapter for InMobi SDK,True,False,
+0216,ASIHTTPRequest SDK,False,*,
+0217,AppNext SDK,True,True,Placement ID
+0218,SSKeychain SDK,False,*,
+0219,Charts SDK,False,*,
+0220,Card.io SDK,True,False,
+0221,FloatingActionButton SDK,False,*,
+0222,Weibo SDK,True,True,App Key
+0223,SAMKeychain SDK,False,*,
+0224,Maio SDK,True,True,Media ID / Spot ID
+0225,libPhoneNumber SDK,True,False,
+0226,iCarousel SDK,False,*,
+0227,BIGO Audience Network,True,True,App ID
+0228,Tencent Social Ads SDK,True,True,App ID
+0229,Junit SDK,False,*,
+0230,GoogleLibPhoneNumber SDK,True,False,
+0231,Google Play Games plugin for Unity SDK,True,True,Google Play Games App ID
+0232,Digital Turbine FairBid SDK,True,True,App ID
+0233,ironSource Mediation adapter for Vungle SDK,True,False,
+0234,Pop (by Facebook) SDK,False,*,
+0235,QBImagePicker SDK,False,*,
+0236,JSONModel SDK,False,*,
+0237,Pop SDK,False,*,
+0238,CircleIndicator SDK,True,False,
+0239,ReactiveObjC SDK,False,*,
+0240,GPUImage SDK,False,*,
+0241,NVActivityIndicatorView SDK,False,*,
+0242,Socket.IO SDK,True,False,
+0243,EasyPermissions SDK,True,False,
+0244,Admob mediation adapter for IronSource SDK,True,True,AdMob App ID
+0245,Google Play License Verification Library SDK,True,True,Google Play licensing public key
+0246,Appodeal SDK,True,True,App Key
+0247,Hamcrest SDK,True,False,
+0248,Mantle SDK,False,*,
+0249,HyprMX SDK,True,True,App ID
+0250,JWT SDK,False,*,
+0251,AndroidViewAnimations SDK,True,False,
+0252,Spongy Castle SDK,True,False,
+0253,Huawei Ads Kit,True,True,App ID
+0254,Alibaba Cloud OSS SDK,True,True,AccessKey ID/Secret
+0255,Admob mediation adapter for AdColony SDK,True,True,AdMob App ID
+0256,mParticle connector for AppsFlyer SDK,True,True,AppsFlyer Dev Key
+0257,Admob mediation adapter for i-Mobile SDK,True,False,
+0258,Moloco Ads SDK,True,True,App Key
+0259,ijkplayer SDK,True,False,
+0260,ZBarSDK,True,False,
+0261,Alibaba Cloud Object Storage Service SDK,True,True,AccessKey ID / AccessKey Secret
+0262,Parse SDK,True,False,
+0263,MWPhotoBrowser SDK,False,*,
+0264,DateTools SDK,False,*,
+0265,PLCrashReporter SDK,False,*,
+0266,FSCalendar SDK,False,*,
+0267,DKImagePickerController SDK,False,*,
+0268,Bugsnag SDK,True,True,API Key
+0269,Keychain SDK,False,*,
+0270,Keychain Access SDK,False,*,
+0271,PubNative SDK,True,True,App Token
+0272,Agora Video SDK,True,True,App ID
+0273,Google Conversion Tracking SDK,True,True,Conversion ID / Conversion Label
+0274,Adobe Air SDK,True,False,
+0275,Material Ripple Layout SDK,True,False,
+0276,File Opener Plugin for Cordova SDK,True,False,
+0277,OpenCV SDK,True,False,
+0278,AwesomeAds Publisher SDK,True,True,Placement ID
+0279,HMSegmentedControl SDK,False,*,
+0280,Starscream SDK,False,*,
+0281,Braintree SDK,True,True,tokenization key / client token
+0282,Android Beacon Library SDK,True,False,
+0283,Otto SDK,False,*,
+0284,AltBeacon SDK,True,False,
+0285,Dagger SDK,True,False,
+0286,Material-ish Progress SDK,True,False,
+0287,Android-sqlite-connector SDK,True,False,
+0288,TensorFlow Lite SDK,True,False,
+0289,Subsampling Scale Image View SDK,True,False,
+0290,Google IMA SDK,True,False,
+0291,RazorPay SDK,True,True,Key ID
+0292,SWRevealViewController SDK,False,*,
+0293,MaterialDateTimePicker SDK,True,False,
+0294,ActionSheetPicker SDK,False,*,
+0295,AMap SDK,True,True,API Key
+0296,Anjlab Android In-App Billing v3 SDK,True,False,
+0297,MarqueeLabel SDK,False,*,
+0298,Ogury SDK,True,True,Asset Key
+0299,AndroidSlidingUpPanel SDK,True,False,
+0300,New Relic SDK,True,True,Application token
+0301,iRate SDK,False,*,
+0302,Calligraphy SDK,True,False,
+0303,MMDrawerController SDK,False,*,
+0304,Mapbox Maps SDK,True,True,Access Token
+0305,BEMCheckBox SDK,False,*,
+0306,GeTui SDK,True,True,AppId/AppKey/AppSecret
+0307,Tenjin SDK,True,True,API Key
+0308,Android Disk LRU Cache SDK,True,False,
+0309,metadata-extractor SDK,True,False,
+0310,ironSource Mediation adapter for InMobi SDK,True,True,InMobi Account ID
+0311,Huawei Push Kit,True,True,App ID / agconnect-services.json
+0312,ironSource Mediation adapter for Fyber SDK,True,True,Fyber App ID / Spot ID
+0313,json-smart-v2 SDK,False,*,
+0314,Acra SDK,True,False,
+0315,Mopub mediation adapter for Facebook Audience Network SDK,True,False,
+0316,Google APIs REST SDK,True,True,API key or OAuth 2.0 client ID
+0317,Smart Location Library SDK,True,False,
+0318,Android-Iconics SDK,True,False,
+0319,Java - WebSocket SDK,True,False,
+0320,SVPullToRefresh SDK,False,*,
+0321,GTM OAuth2 SDK,False,*,
+0322,SkeletonView SDK,False,*,
+0323,Json.simple SDK,False,*,
+0324,AWS Cognito SDK,True,True,Cognito App Client ID / Identity Pool ID
+0325,CocoaHTTPServer SDK,False,*,
+0326,SQLCipher for Android SDK,True,False,
+0327,Auth0 SDK,True,True,Client ID and Domain
+0328,KS Crash SDK,False,*,
+0329,PromiseKit SDK,False,*,
+0330,ironSource Mediation adapter for AdColony SDK,True,True,AdColony App ID / Zone ID
+0331,Engine.IO SDK,True,False,
+0332,Mobilefuse SDK,True,True,App ID
+0333,Agora Voice SDK,True,True,App ID
+0334,Conceal SDK,True,False,
+0335,Phonegap Barcode Scanner SDK,True,False,
+0336,Magical Record SDK,False,*,
+0337,Amazon Device Messaging SDK,True,False,
+0338,OrmLite SDK,True,False,
+0339,Android-AdvancedWebView SDK,True,False,
+0340,Pollfish SDK,True,True,API Key
+0341,MGSwipeTableCell SDK,False,*,
+0342,Singular SDK,True,True,SDK Key and SDK Secret
+0343,MLKit SDK,True,False,
+0344,PINCache SDK,False,*,
+0345,Admob mediation adapter for Chartboost SDK,True,True,Chartboost App ID and App Signature
+0346,Airship SDK,True,True,App Key and App Secret
+0347,RMStore SDK,False,*,
+0348,DropDown SDK,False,*,
+0349,Intercom SDK,True,True,App ID + Android API Key
+0350,RNCryptor SDK,False,*,
+0351,Firebase Vision SDK,True,True,google-services.json
+0352,Aspects SDK,False,*,
+0353,Heyzap SDK,True,True,Publisher ID
+0354,Cropper SDK,True,False,
+0355,AutoFitTextView SDK,True,False,
+0356,SVGKit SDK,False,*,
+0357,Sweet Alert Dialog SDK,True,False,
+0358,Pin Cache SDK,False,*,
+0359,GoogleNetworkingUtilities SDK,False,*,
+0360,AndroidSwipeLayout SDK,True,False,
+0361,NJKWebViewProgress SDK,False,*,
+0362,PagerSlidingTabStrip SDK,True,False,
+0363,CircularImageView SDK,True,False,
+0364,Calloutview SDK,False,*,
+0365,MaterialDrawer SDK,True,False,
+0366,Baidu Maps SDK,True,True,API Key (AK)
+0367,Android Wheel SDK,True,False,
+0368,libGDX SDK,True,False,
+0369,RSKImageCropper SDK,False,*,
+0370,Libdx SDK,True,False,
+0371,DeviceUtil SDK,False,*,
+0372,Mopub mediation adapter for Admob SDK,True,True,MoPub ad unit ID
+0373,Microsoft Graph SDK,True,True,Application (client) ID
+0374,TopOn SDK,True,True,App ID and App Key
+0375,ImageViewZoom SDK,True,False,
+0376,HockeyApp SDK,True,True,App ID
+0377,Braze SDK,True,True,API Key
+0378,KVOController SDK,False,*,
+0379,BlocksKit SDK,False,*,
+0380,Square Wire SDK,True,False,
+0381,SmartTabLayout SDK,True,False,
+0382,CleverTap SDK,True,True,CleverTap Account ID / Account Token
+0383,ironSource Mediation adapter for Chartboost SDK,True,True,Chartboost App ID and App Signature
+0384,Toast SDK,True,True,App Key
+0385,AndroidAsync SDK,True,False,
+0386,ironSource Mediation adapter for Facebook Audience Network SDK,True,False,
+0387,Zendesk Support SDK,True,True,Application ID / OAuth Client ID
+0388,AHBottomNavigation SDK,True,False,
+0389,EGOTableViewPullRefresh SDK,False,*,
+0390,JGProgressHUD SDK,False,*,
+0391,AppAvailability SDK,True,False,
+0392,Prettytime SDK,False,*,
+0393,CTVideoPlayerView SDK,False,*,
+0394,Nend SDK,True,True,API Key and Spot ID
+0395,ironSource Mediation adapter for Tapjoy SDK,True,True,Tapjoy SDK Key
+0396,Admob mediation adapter for Mopub SDK,True,True,AdMob App ID
+0397,AWS Key Management Service SDK,True,False,
+0398,Twitter4j SDK,True,True,Consumer Key / Consumer Secret
+0399,Logback SDK,False,*,
+0400,RegexKitLite SDK,False,*,
+0401,KissXML SDK,False,*,
+0402,TikTok Business SDK,True,True,App ID / Client Token
+0403,Tencent IM SDK,True,True,SDKAppID
+0404,Agora Real-Time Engagement Platform SDK,True,True,App ID
+0405,iso-8601-date-formatter SDK,False,*,
+0406,Qiniu SDK,True,False,
+0407,Kryo SDK,True,False,
+0408,VKontakte SDK,True,True,App ID
+0409,Minlog SDK,True,False,
+0410,Shape Image View SDK,True,False,
+0411,JVFloatLabeledTextField SDK,False,*,
+0412,fastjson SDK,True,False,
+0413,Kochava SDK,True,True,App GUID
+0414,Android Image Slider SDK,True,False,
+0415,CHTCollectionViewWaterfallLayout SDK,False,*,
+0416,Amazon Kinesis SDK,True,True,AWS credentials
+0417,DTFoundation SDK,False,*,
+0418,Naver ID Login SDK,True,True,Client ID and Client Secret
+0419,Amazon Cognito SDK,True,True,User Pool ID / App Client ID
+0420,MBCircularProgressBar SDK,False,*,
+0421,MaterialEditText SDK,True,False,
+0422,PINRemoteImage SDK,False,*,
+0423,GameCenterManager SDK,False,*,
+0424,LINE SDK,True,True,Channel ID
+0425,SWTableViewCell SDK,False,*,
+0426,Vuforia SDK,True,True,Vuforia License Key
+0427,greenDAO SDK,True,False,
+0428,FastAdapter SDK,True,False,
+0429,MMMaterialDesignSpinner SDK,False,*,
+0430,Smaato SDK,True,True,Adspace ID
+0431,Comscore Analytics SDK,True,True,Publisher ID (c2)
+0432,DTCoreText SDK,False,*,
+0433,Countly SDK,True,True,App Key
+0434,Android Asynchronous Networking and Image Loading SDK,True,False,
+0435,Appcelerator Titanium SDK,True,False,
+0436,Facebook Account Kit SDK,True,True,App ID and Client Token
+0437,OpenWrap SDK,True,True,Publisher ID / Profile ID / Ad Unit ID
+0438,PhotoDraweeView SDK,True,False,
+0439,Tencent LiteAV SDK,True,True,SDKAppID
+0440,DataDog SDK,True,True,Client Token
+0441,Criteo SDK,True,True,Publisher ID
+0442,AppIntro SDK,True,False,
+0443,Rhino SDK,False,*,
+0444,Tencent Real-Time Communication SDK,True,True,SDKAppID
+0445,comScore SDK,True,True,Publisher ID
+0446,Android-Rate SDK,True,False,
+0447,FCUUID SDK,False,*,
+0448,Apache Log4j SDK,True,False,
+0449,Tinkoff ID,True,True,client_id
+0450,MapQuest SDK,True,True,API Key
+0451,CircularProgressBar SDK,True,False,
+0452,DBFlow SDK,True,False,
+0453,SDKBox SDK,True,False,
+0454,Breakpad SDK,True,False,
+0455,PermissionsDispatcher SDK,True,False,
+0456,Google AR Core SDK,True,False,
+0457,MessagePack SDK,False,*,
+0458,Millennial Media SDK,True,True,Application ID (APID)
+0459,Tencent TXVod Player SDK,True,True,Player License (License URL/Key)
+0460,Rebound (by Facebook) SDK,True,False,
+0461,ARCore SDK,True,False,
+0462,Snackbar (By Top) SDK,True,False,
+0463,Adobe Experience Platform Mobile SDK,True,True,App ID
+0464,Pushwoosh SDK,True,True,Pushwoosh App ID
+0465,PKHUD SDK,False,*,
+0466,RecyclerView Animators SDK,True,False,
+0467,Rongcloud IM SDK,True,True,App Key
+0468,i-mobile SDK,True,True,Publisher ID / Media ID / Spot ID
+0469,JSQMessagesViewController SDK,False,*,
+0470,PopupDialog SDK,False,*,
+0471,PubMatic SDK,True,True,Publisher ID / Profile ID
+0472,TalkingData SDK,True,True,App ID
+0473,Netease IM SDK,True,True,AppKey
+0474,SMPageControl SDK,False,*,
+0475,Belvedere SDK,True,False,
+0476,AWS Mobile SDK,True,True,awsconfiguration.json
+0477,PubNub SDK,True,True,Publish Key and Subscribe Key
+0478,Paper SDK,True,False,
+0479,Mopub mediation adapter for Unity Ads SDK,True,True,Unity Ads Game ID
+0480,Android-Segmented-Control SDK,True,False,
+0481,Blurry for Android SDK,True,False,
+0482,AdGeneration SDK,True,True,Ad Spot ID
+0483,ksoap2 SDK,True,False,
+0484,CircleProgress SDK,False,*,
+0485,MQTT-Client-Framework SDK,False,*,
+0486,JSQSystemSoundPlayer SDK,False,*,
+0487,SCLAlertView SDK,False,*,
+0488,Mopub mediation adapter for AppLovin SDK,True,False,
+0489,MWFeedParser SDK,False,*,
+0490,SwipeView SDK,False,*,
+0491,Android SQLite Asset Helper SDK,True,False,
+0492,Dropbox SDK,True,True,App key
+0493,DGActivityIndicatorView SDK,False,*,
+0494,CircularReveal SDK,False,*,
+0495,android-numberpicker SDK,True,False,
+0496,libextobjc SDK,False,*,
+0497,IDMPhotoBrowser SDK,False,*,
+0498,Paytm Mobile SDK,True,True,Merchant ID (MID)
+0499,Twilio Video SDK,True,True,Access Token
+0500,Paytm SDK,True,True,Merchant ID (MID)
+0501,Admob mediation adapter for Tapjoy SDK,True,True,Tapjoy SDK Key
+0502,Android Color Picker SDK,True,False,
+0503,Mopub mediation adapter for AdColony SDK,True,True,AdColony App ID / Zone ID
+0504,react-native-spinkit SDK,True,False,
+0505,EGOCache SDK,False,*,
+0506,Agora Real-Time Engagement SDK,True,True,App ID
+0507,Adobe Mobile SDK,True,True,App ID
+0508,SZTextView SDK,False,*,
+0509,Yandex MapKit SDK,True,True,API key
+0510,Mopub mediation adapter for Vungle SDK,True,True,Vungle App ID
+0511,SimpleCropView SDK,True,False,
+0512,FindBugs SDK,False,*,
+0513,HtmlTextView for Android SDK,True,False,
+0514,Eureka SDK,False,*,
+0515,Tappx SDK,True,True,Placement ID
+0516,Android-RoundCornerProgressBar SDK,True,False,
+0517,Amazon Simple Notifications SDK,False,*,
+0518,OpenTok SDK,True,True,API Key
+0519,Hyphenate SDK,True,True,App Key
+0520,Oauth Signpost SDK,True,False,
+0521,KMPlaceholderTextView SDK,False,*,
+0522,RATreeView SDK,False,*,
+0523,Easemob IM SDK,True,True,App Key
+0524,MXParallaxHeader SDK,False,*,
+0525,SensorData SDK,True,False,
+0526,StickyListHeaders SDK,True,False,
+0527,DFINERY SDK,True,True,App Key and Hash Key
+0528,ELCImagePickerController SDK,False,*,
+0529,RESideMenu SDK,False,*,
+0530,Amazon DynamoDB SDK,True,True,AWS credentials
+0531,Spring Framework SDK,False,*,
+0532,INTULocationManager SDK,False,*,
+0533,EAIntroView SDK,False,*,
+0534,Uxcam SDK,True,True,App Key
+0535,HtmlCleaner SDK,False,*,
+0536,Leadbolt SDK,True,True,App ID
+0537,Helpshift SDK,True,True,API Key / App ID / Domain
+0538,NYTPhotoViewer SDK,False,*,
+0539,Easemob SDK,True,True,App Key
+0540,MobilePush SDK,True,True,Application ID
+0541,GTM HTTP Fetcher SDK,False,*,
+0542,Naver SDK,False,*,
+0543,Launch Darkly SDK,True,True,mobile key
+0544,ECSlidingViewController SDK,False,*,
+0545,AppBrain SDK,True,True,App ID
+0546,SecureUDID SDK,False,*,
+0547,Adobe Primetime SDK,True,False,
+0548,NumberProgressBar SDK,True,False,
+0549,Sliding Menu SDK,True,False,
+0550,Instabug SDK,True,True,App Token
+0551,RxLifecycle SDK,True,False,
+0552,ErrorView SDK,False,*,
+0553,Braze (Appboy) SDK,True,True,API Key
+0554,MoEngage SDK,True,True,App ID
+0555,QRCodeReaderView SDK,True,False,
+0556,Splunk Mint SDK,True,True,API key
+0557,SlidingMenu SDK,True,False,
+0558,Mopub mediation adapter for IronSource SDK,True,True,ironSource App Key
+0559,Soomla Traceback SDK,True,True,App ID / API key
+0560,GBDeviceInfo SDK,False,*,
+0561,Jaxen SDK,False,*,
+0562,Agora Rtc Kit SDK,True,True,App ID
+0563,PayPal SDK,True,True,Client ID
+0564,Paho SDK,True,False,
+0565,Pusher SDK,True,True,App Key
+0566,Localytics SDK,True,True,App Key
+0567,Mopub mediation adapter for Chartboost SDK,True,True,Chartboost App ID and App Signature
+0568,SOCKit SDK,False,*,
+0569,Harpy SDK,False,*,
+0570,Android-PullToRefresh SDK,True,False,
+0571,KenBurnsView SDK,True,False,
+0572,AppYet SDK,False,*,
+0573,Smart AdServer SDK,True,True,Publisher ID
+0574,Adapty SDK,True,True,Public SDK Key
+0575,STTwitter SDK,False,*,
+0576,SIAlertView SDK,False,*,
+0577,Android-Easing SDK,True,False,
+0578,Digits SDK,True,True,Consumer Key and Secret
+0579,XMPP Framework SDK,False,*,
+0580,StreamingKit SDK,False,*,
+0581,PNChart SDK,False,*,
+0582,Tapku SDK,False,*,
+0583,Amazon Pinpoint SDK,True,True,Pinpoint App ID
+0584,Android Saripaar SDK,True,False,
+0585,AndroidProcesses SDK,True,False,
+0586,DiscreteSeekBar SDK,True,False,
+0587,Chameleon SDK,False,*,
+0588,LeanCloud SDK,True,True,App ID / App Key
+0589,Kount SDK,True,True,Merchant ID
+0590,Batch SDK,True,True,API Key
+0591,AChartEngine SDK,True,False,
+0592,Nimbuskit SDK,False,*,
+0593,AudioStreamer SDK,False,*,
+0594,MobFox SDK,True,True,Publisher ID / Inventory Hash
+0595,Tune SDK,True,True,Advertiser ID / Conversion Key
+0596,zipzap SDK,False,*,
+0597,LKDBHelper SDK,False,*,
+0598,ios-ntp SDK,False,*,
+0599,Button SDK,True,True,App ID
+0600,JLRoutes SDK,False,*,
+0601,Mobile Tencent Analytics SDK,True,True,App Key
+0602,OpenIAB SDK,True,False,
+0603,BrightCove SDK,True,True,Policy Key
+0604,Login with Amazon SDK,True,True,Client ID
+0605,Airbridge SDK,True,True,SDK Token
+0606,AT Internet SDK,True,True,Site ID
+0607,SelectableRoundedImageView SDK,True,False,
+0608,LDProgressView SDK,False,*,
+0609,MTA SDK SDK,True,True,AppKey
+0610,ApsaraVideo Player SDK,True,False,
+0611,Admob mediation adapter for nend SDK,True,True,AdMob App ID
+0612,SmoothProgressBar SDK,True,False,
+0613,KVNProgress SDK,False,*,
+0614,Corona SDK,True,False,
+0615,ActiveAndroid SDK,True,False,
+0616,HorizontalVariableListView SDK,True,False,
+0617,Expandable RecyclerView SDK,True,False,
+0618,Amazon Simple Queue Service SDK,True,True,AWS access key ID and secret access key
+0619,Core Plot SDK,False,*,
+0620,Ini4j SDK,False,*,
+0621,Atom SDK,True,True,Merchant ID
+0622,CWStatusBarNotification SDK,False,*,
+0623,JTSImageViewController SDK,False,*,
+0624,LXReorderableCollectionViewFlowLayout SDK,False,*,
+0625,Faceunity SDK,True,True,authpack/license
+0626,KGModal SDK,False,*,
+0627,Taboola SDK,True,True,Publisher ID
+0628,Tapdaq SDK,True,True,App ID and Client Key
+0629,Swelen SDK,False,*,
+0630,AMPopTip SDK,False,*,
+0631,ironSource Mediation adapter for HyprMX SDK,True,False,
+0632,AboutLibraries SDK,True,False,
+0633,Huawei In-App Purchases,True,True,App ID
+0634,sticky-headers-recyclerview SDK,True,False,
+0635,Zego Express-Video SDK,True,True,AppID and AppSign
+0636,Http Request SDK,True,False,
+0637,CLImageEditor SDK,False,*,
+0638,Amazon Mobile Analytics SDK,True,True,App ID
+0639,Mobvista SDK,True,True,App ID and App Key
+0640,BBBadgeBarButtonItem SDK,False,*,
+0641,EZAudio SDK,False,*,
+0642,Fyber mediation adapter for Vungle SDK,True,False,
+0643,InAppSettingsKit SDK,False,*,
+0644,Smartlook SDK,True,True,Project Key
+0645,Samsung Pass SDK,True,False,
+0646,M13ProgressSuite SDK,False,*,
+0647,FontAwesome-iOS SDK,False,*,
+0648,CR Toast SDK,False,*,
+0649,Skubit SDK,True,True,Public Key
+0650,Sugar ORM SDK,True,False,
+0651,Admob mediation adapter for myTarget SDK,True,False,
+0652,Zendesk Chat SDK,True,True,Account Key
+0653,BSKeyboardControls SDK,False,*,
+0654,CRToast SDK,False,*,
+0655,Square In-App Payments SDK,True,True,Application ID
+0656,ThreatMetrix SDK,True,True,Org ID
+0657,FCFileManager SDK,False,*,
+0658,ObjectAL SDK,False,*,
+0659,Smaato mediation adapter for MoPub SDK,True,True,Publisher ID / Adspace ID
+0660,Smaato mediation adapter for Millennial Media SDK,True,False,
+0661,GRMustache SDK,False,*,
+0662,CarbonKit SDK,False,*,
+0663,Crittercism (Apptelligent) SDK,True,True,App ID
+0664,oneAudience SDK,True,False,
+0665,Cuebiq SDK,True,True,App ID
+0666,Zucks Ad Network SDK,True,True,Ad unit ID
+0667,Pinyin4j SDK,False,*,
+0668,Smaato mediation adapter for GooglePlay SDK,True,True,Publisher ID
+0669,SCSiriWaveformView SDK,False,*,
+0670,SystemBarTint SDK,True,False,
+0671,RippleEffect SDK,False,*,
+0672,MGInstagram SDK,False,*,
+0673,JNKeychain SDK,False,*,
+0674,Truecaller SDK,True,True,Partner Key
+0675,Heap SDK,True,True,Environment ID
+0676,NMRangeSlider SDK,False,*,
+0677,AerServ SDK,True,True,Placement ID
+0678,Prebid SDK,True,False,
+0679,Rollbar SDK,True,True,Post Client Item Access Token
+0680,PlayHaven SDK,True,True,App Token and App Secret
+0681,TnkAd SDK,True,True,App ID
+0682,mParticle SDK,True,True,API key and API secret
+0683,CircleView SDK,False,*,
+0684,WebEngage SDK,True,True,License Code and Private Key
+0685,Dynatrace SDK,True,True,Application ID / Beacon URL
+0686,DragSortListView SDK,True,False,
+0687,Volc VOD SDK,True,True,Player License
+0688,Tencent Audio Video Terminal SDK,True,True,SDKAppID
+0689,Zoom Meeting SDK,True,True,SDK Key/Secret
+0690,Agora Spatial Audio Extension SDK,True,True,App ID
+0691,Fyber mediation adapter for Admob SDK,True,False,
+0692,Iconify SDK,True,False,
+0693,PKRevealController SDK,False,*,
+0694,Tencent COS,True,True,COS temporary credentials
+0695,Verizon Ads SDK,True,True,Application ID
+0696,Cloudinary SDK,True,True,cloud name
+0697,Mopub mediation adapter for Tapjoy SDK,True,True,Tapjoy SDK Key
+0698,GraphView SDK,True,False,
+0699,RMDateSelectionViewController SDK,False,*,
+0700,PostHog,True,True,API Key
+0701,TrustDefender Mobile SDK,True,True,Org ID
+0702,Fancybuttons SDK,True,False,
+0703,Java MP4 Parser SDK,True,False,
+0704,FFmpeg-Android-Java SDK,True,False,
+0705,Apache Thrift SDK,True,False,
+0706,BottomSheet SDK,False,*,
+0707,MKNumberBadgeView SDK,False,*,
+0708,MZFormSheetController SDK,False,*,
+0709,Admob mediation adapter for maio SDK,True,True,Media ID
+0710,Ono SDK,False,*,
+0711,Clarity SDK,True,True,Project ID
+0712,Fyber mediation adapter for Facebook SDK,True,True,Fyber App ID
+0713,Proxi.cloud SDK,False,*,
+0714,MMWormhole SDK,False,*,
+0715,DialogPlus SDK,True,False,
+0716,Admob mediation adapter for ONE by AOL SDK,True,True,App ID / Placement ID
+0717,Zego Express-Audio SDK,True,True,AppID
+0718,Agora Chat SDK,True,True,App Key
+0719,Qonversion SDK,True,True,Project Key
+0720,Tweaks SDK,False,*,
+0721,iVersion SDK,False,*,
+0722,Pendo SDK,True,True,App Key
+0723,Cauly SDK,True,True,Cauly App ID
+0724,SwipeMenuListView SDK,True,False,
+0725,Embrace SDK,True,True,App ID
+0726,ShowcaseView SDK,False,*,
+0727,HTMLReader SDK,False,*,
+0728,LoganSquare SDK,True,False,
+0729,android-transcoder SDK,True,False,
+0730,Huawei ML Kit,True,True,agconnect-services.json
+0731,MiniDNS SDK,True,False,
+0732,CRI ADX2 SDK,True,False,
+0733,Baidu Cloud Push SDK,True,True,API Key
+0734,Smack SDK,True,False,
+0735,DraggableCollectionView SDK,False,*,
+0736,Unreal Engine SDK,True,False,
+0737,SendBird SDK,True,True,Application ID
+0738,ByteBrew SDK,True,True,Game ID and Secret Key
+0739,ZipArchive SDK,False,*,
+0740,SwipyRefreshLayout SDK,True,False,
+0741,Kakao SDK,True,True,Native App Key
+0742,Secure-preferences SDK,True,False,
+0743,SMSSDK-for-iOS SDK,False,*,
+0744,Nielsen SDK,True,True,App ID
+0745,Vitamio SDK,True,False,
+0746,Admob mediation adapter for Zucks SDK,True,True,Zucks app/placement ID
+0747,Advanced RecyclerView SDK,True,False,
+0748,Snowplow Tracker SDK,True,False,
+0749,Dialogflow SDK,True,True,Google Cloud service account credential
+0750,AdPOPcorn SDK,True,True,App Key
+0751,Objective-Zip SDK,False,*,
+0752,SnappyDB SDK,True,False,
+0753,SAMTextView SDK,False,*,
+0754,MPMessagePack SDK,False,*,
+0755,Date4j SDK,False,*,
+0756,Giphy SDK,True,True,API Key
+0757,Soomla Open Source Framework SDK,True,False,
+0758,Amazon IVS Player SDK,True,False,
+0759,MRProgress SDK,False,*,
+0760,AdFit SDK,True,True,Ad Unit ID
+0761,NoNonsense-FilePicker SDK,True,False,
+0762,CKCalendar SDK,False,*,
+0763,Kanna SDK,False,*,
+0764,Admost AMR SDK,True,True,App ID
+0765,Facetec,True,True,Device Key Identifier
+0766,HelloCharts for Android SDK,True,False,
+0767,CTAssetsPickerController SDK,False,*,
+0768,Google VR SDK,True,False,
+0769,Opencsv SDK,False,*,
+0770,CRI File Majik PRO SDK,True,False,
+0771,RNCachingURLProtocol SDK,False,*,
+0772,Android Stackblur SDK,True,False,
+0773,FormatterKit SDK,False,*,
+0774,com.dd.plist SDK,False,*,
+0775,Material CircularProgressView SDK,True,False,
+0776,Cartography SDK,False,*,
+0777,Segment connector for Firebase SDK,True,False,
+0778,requery SDK,True,False,
+0779,InfiniteViewPager SDK,True,False,
+0780,Adfurikun SDK,True,True,App ID
+0781,Fyber mediation adapter for UnityAds SDK,True,True,Unity Ads Game ID
+0782,GKImagePicker SDK,False,*,
+0783,Juspay SDK,True,True,Merchant ID
+0784,Keen IO SDK,True,True,Project ID / Write Key
+0785,Seismic SDK,False,*,
+0786,Ably SDK,True,True,API key
+0787,KAProgressLabel SDK,False,*,
+0788,MTMigration SDK,False,*,
+0789,Android ViewBadger SDK,True,False,
+0790,Admob mediation adapter for Fyber SDK,True,True,Fyber App ID
+0791,AdinCube SDK,True,True,App ID
+0792,NXO Auth2 Client SDK,False,*,
+0793,RxDataSources SDK,False,*,
+0794,SlackTextViewController SDK,False,*,
+0795,HomeKit SDK,False,*,
+0796,SvUDID SDK,False,*,
+0797,VXG Video Player SDK,True,False,
+0798,Cheetah Mobile Ads SDK,True,True,App ID / Ad Unit ID
+0799,Huawei Location Kit,True,True,agconnect-services.json
+0800,Material Menu SDK,True,False,
+0801,RecyclerViewPager Custom SDK,True,False,
+0802,Fyber mediation adapter for Applovin SDK,True,False,
+0803,MDRadialProgress SDK,False,*,
+0804,LLSimpleCamera SDK,False,*,
+0805,Mitek MiSnap SDK,True,False,
+0806,Zoom Video SDK,True,True,SDK Key
+0807,AdFalcon SDK,True,True,App ID / Publisher ID
+0808,NIDropDown SDK,False,*,
+0809,M13BadgeView SDK,False,*,
+0810,MONActivityIndicatorView SDK,False,*,
+0811,Tencent GVoice SDK,True,True,AppID/AppKey
+0812,GameThrive SDK,True,True,App ID
+0813,RootTools SDK,True,False,
+0814,Fyber mediation adapter for Adcolony SDK,True,False,
+0815,Kontakt.io SDK,True,True,API Key
+0816,Samsung In-App Purchase SDK,True,False,
+0817,GMGridView SDK,False,*,
+0818,Amazon Transparent Ad Marketplace,False,*,
+0819,Samsung Pay SDK,True,True,App ID
+0820,Bmob SDK,True,True,App ID
+0821,Qualtrics SDK,True,True,Brand ID / Project ID / Intercept ID
+0822,AndEngine SDK,True,False,
+0823,HoloColorPicker SDK,True,False,
+0824,Apptentive SDK,True,True,App Key and App Signature
+0825,LicensesDialog SDK,True,False,
+0826,CSStickyHeaderFlowLayout SDK,False,*,
+0827,FlatUIKit SDK,False,*,
+0828,AppDynamics SDK,True,True,App Key
+0829,Microsoft Azure Mobile SDK,True,True,Application Key
+0830,Adjoe SDK,True,True,SDK Hash
+0831,ironSource Mediation adapter for Maio SDK,True,True,Maio App ID
+0832,Insider SDK,True,True,Partner Name
+0833,Admob mediation adapter for Flurry SDK,True,True,Flurry API Key
+0834,Huawei Map Kit,True,True,API Key
+0835,dom4j SDK,False,*,
+0836,FHSTwitterEngine SDK,False,*,
+0837,BTNavigationDropdownMenu SDK,False,*,
+0838,Fingerprint,True,True,API key
+0839,Caldroid SDK,True,False,
+0840,Wwise SDK,True,False,
+0841,Amazon API Gateway SDK,True,False,
+0842,NYXImagesKit SDK,False,*,
+0843,Adobe Primetime TVSDK,True,False,
+0844,Android Auto Scroll ViewPager SDK,True,False,
+0845,GrowingIO SDK,True,True,Project ID
+0846,SumSub,True,True,SDK access token
+0847,APAddressBook SDK,False,*,
+0848,Android-BitmapCache SDK,True,False,
+0849,OHHTTPStubs SDK,False,*,
+0850,Leanplum SDK,True,True,App ID and Development/Production Key
+0851,FXImageView SDK,False,*,
+0852,RBBAnimation SDK,False,*,
+0853,Android Smart Image View SDK,True,False,
+0854,Smaato mediation adapter for Facebook SDK,True,False,
+0855,TagSoup SDK,False,*,
+0856,OAStackView SDK,False,*,
+0857,EasyAR SDK,True,True,License Key
+0858,DXAlertView SDK,False,*,
+0859,Tencent Game Multimedia Engine(GME) SDK,True,True,App ID
+0860,1Password App Extension SDK,False,*,
+0861,Jastor SDK,False,*,
+0862,OnePasswordExtension SDK,True,False,
+0863,SMXMLDocument SDK,False,*,
+0864,Armchair SDK,False,*,
+0865,Objection SDK,False,*,
+0866,IMG.LY VideoEditor SDK,True,False,
+0867,PSPDFTextView SDK,False,*,
+0868,Twilio Voice SDK,True,True,Access Token
+0869,AdBuddiz SDK,True,True,Publisher Key
+0870,Fyber mediation adapter for ChartBoost SDK,True,False,
+0871,Algolia SDK,True,True,Application ID and API Key
+0872,MaterialLoadingProgressBar SDK,True,False,
+0873,MenuDrawer SDK,True,False,
+0874,Twilio Programmable Chat SDKs,True,True,Access Token
+0875,QBPopupMenu SDK,False,*,
+0876,Agora Signaling SDK,True,True,App ID
+0877,DOUAudioStreamer SDK,False,*,
+0878,iovation SDK,True,True,Subscriber Key
+0879,Huawei Scan Kit,True,True,App ID (via agconnect-services.json)
+0880,AreaMetrics SDK,False,*,
+0881,REMenu SDK,False,*,
+0882,Quick SDK,False,*,
+0883,android-betterpickers SDK,True,False,
+0884,MaterialSpinner SDK,True,False,
+0885,GrowthPush SDK,True,True,Application ID / Credential ID
+0886,JW Player SDK,True,False,
+0887,Repro SDK,True,True,Application ID
+0888,Bugsee SDK,True,True,App token
+0889,Better Picker SDK,True,False,
+0890,Kal SDK,False,*,
+0891,SKSTableView SDK,False,*,
+0892,Enhance SDK,False,*,
+0893,Segment connector for Amplitude SDK,True,True,API Key
+0894,Haneke SDK,False,*,
+0895,Appsee SDK,True,True,API Key
+0896,SlimeRefresh SDK,True,False,
+0897,Qiniu PLShortVideo SDK,True,False,
+0898,Jayway JsonPath SDK,True,False,
+0899,FullStory SDK,True,True,Org ID
+0900,Quantcast SDK,True,True,P-Code
+0901,ListViewAnimations SDK,True,False,
+0902,Amazon Lambda SDK,False,*,
+0903,PocketSVG SDK,False,*,
+0904,Jumio SDK,True,True,SDK token
+0905,APParallaxHeader SDK,False,*,
+0906,DU Ad Platform SDK,True,True,App ID
+0907,Audiokit SDK,False,*,
+0908,Tapstream SDK,True,True,App ID / SDK Secret
+0909,MaterialRangeBar SDK,True,False,
+0910,MaterialTextField SDK,False,*,
+0911,MultiLayerNavigation SDK,False,*,
+0912,Android Maps Extensions SDK,True,False,
+0913,Reveal Mobile SDK,False,*,
+0914,FLKAutoLayout SDK,False,*,
+0915,QuickBlox SDK,True,True,Application ID / Auth Key / Auth Secret / Account Key
+0916,Sift SDK,True,True,Account ID
+0917,Klarna Mobile SDK,True,False,
+0918,AFViewShaker SDK,False,*,
+0919,Radar SDK,True,True,Publishable API key
+0920,JBWhatsAppActivity SDK,False,*,
+0921,Sinch Voice SDK,True,True,Application Key
+0922,Tealium SDK,True,True,account/profile/environment
+0923,Nimbus SDK,False,*,
+0924,DeepLink Kit SDK,False,*,
+0925,AMoAd SDK,True,True,Ad Spot ID
+0926,PDFTron SDK,True,True,License Key
+0927,OCMock SDK,False,*,
+0928,LoginID SDK,True,True,App ID
+0929,JazzyViewPager SDK,True,False,
+0930,Legacy Unity Analytics SDK,True,True,Unity Project ID
+0931,KASlideShow SDK,False,*,
+0932,Android PDFView SDK,True,False,
+0933,Gimbal SDK,True,True,API key
+0934,Route-Me SDK,False,*,
+0935,Mapsforge SDK,True,False,
+0936,Split.io SDK,True,True,SDK key
+0937,Piwik Pro SDK,True,True,Site ID
+0938,CARTO Mobile SDK,True,False,
+0939,AdPie SDK,True,True,App ID
+0940,Jiguang JAnalytics SDK,True,True,AppKey
+0941,AATKit SDK,True,True,Application ID
+0942,Optimizely SDK,True,True,SDK key
+0943,CRI Sofdec2 SDK,True,False,
+0944,android-gifview SDK,True,False,
+0945,Survey Monkey SDK,False,*,
+0946,UserVoice SDK,True,True,UserVoice site/account identifier
+0947,Easy Video Player SDK,True,False,
+0948,Keeva SDK,True,True,App ID
+0949,Chat SDK,True,True,App Client ID
+0950,AppRater SDK,True,False,
+0951,100ms Live Video SDK,True,True,auth token
+0952,BlinkReceipt SDK,True,True,license key
+0953,Azure Mobile Apps SDK (Microsoft Azure Mobile) SDK,True,False,
+0954,Conductor SDK,True,False,
+0955,Snapchat Login Kit SDK,True,True,Client ID
+0956,AHKActionSheet SDK,False,*,
+0957,Wonder Push SDK,True,True,Client ID
+0958,Android-Bootstrap SDK,True,False,
+0959,RudderStack SDKs,True,True,Write Key
+0960,REComposeViewController SDK,False,*,
+0961,Android-RobotoTextView SDK,True,False,
+0962,MGSplitViewController SDK,False,*,
+0963,Amazon Chime SDK,True,False,
+0964,RoboSpice SDK,True,False,
+0965,AppNexus SDK,True,True,Placement ID
+0966,Huawei Account Kit,True,True,agconnect-services.json / App ID
+0967,Jiguang JMessage SDK,True,True,AppKey
+0968,Midtrans SDK,True,True,Client Key
+0969,Android-ReactiveLocation SDK,True,False,
+0970,FastImageCache SDK,False,*,
+0971,NKOColorPickerView SDK,False,*,
+0972,PSTAlertController SDK,False,*,
+0973,SAVideoRangeSlider SDK,False,*,
+0974,Mapbox Navigation SDK,True,True,Mapbox access token
+0975,Odnoklassniki SDK,True,True,App ID
+0976,Samsung Health SDK,True,False,
+0977,DeltaDNA SDK,True,True,Environment key / API key
+0978,OBShapedButton SDK,False,*,
+0979,Adobe Creative SDK,True,True,API Key
+0980,StickyScrollViewItems SDK,True,False,
+0981,Canvas SDK,False,*,
+0982,AppHud SDK,True,True,API Key
+0983,Onfido SDK,True,True,SDK token
+0984,KARTE SDK,True,True,App Key
+0985,9elements PhotoEditor SDK,True,False,
+0986,Android Tooltip SDK,False,*,
+0987,PaperFold-for-iOS SDK,False,*,
+0988,STUtils SDK,False,*,
+0989,Bistri SDK,False,*,
+0990,Tap GoSell Payment SDK,True,True,API key
+0991,LogRocket SDK,True,True,App ID
+0992,aFileChooser SDK,True,False,
+0993,RecyclerViewFastScroller SDK,True,False,
+0994,Zego LiveRoom,True,True,AppID
+0995,Everyplay SDK,True,True,Client ID and Client Secret
+0996,Evernote SDK,True,True,Consumer Key / Consumer Secret
+0997,Smooch SDK,True,True,App ID
+0998,Yandex ID SDK,True,True,OAuth client ID
+0999,Gigya SDK,True,True,API key
+1000,Devtodev SDK,True,True,App ID and App Secret

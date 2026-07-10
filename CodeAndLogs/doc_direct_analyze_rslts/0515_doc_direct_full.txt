@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tappx SDK supports Android. Tappx publishes an Android advertising SDK / adapter integration path, so step 1 is yes.
+
+2. Service model  
+This is an ad SDK, not a purely on-device library. Its normal function is to request, return, and display ads from Tappx-hosted ad services, so standard use depends on the vendor backend.
+
+3. Integration requirement  
+Standard ad-network integration requires the developer to register the app in Tappx and configure a dashboard-issued identifier in the Android app. For Tappx, the documented setup commonly uses Tappx-issued app/placement identifiers for requesting inventory. That fits the definition of an API credential here because the identifier is required so the SDK can reach Tappx services and attribute ad serving to the publisher account.
+
+4. Scope  
+This identifier belongs to Tappx SDK integration itself, not only to some separate third-party product. Even if exact naming varies across Tappx docs or mediation contexts, the requirement is still a Tappx-issued publisher/ad placement identifier for this SDK's normal Android use.

@@ -1,0 +1,19 @@
+2026-05-17 21:18:25 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0100-doc_direct_analyze.log
+2026-05-17 21:18:25 [INFO] Run start: SDK_ID=0100 SDK=Flurry SDK vendor=Yahoo! results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:18:25 [INFO] Querying model='gpt-5.4' SDK='Flurry SDK' vendor='Yahoo!'
+2026-05-17 21:18:30 [INFO] LLM token usage: prompt_tokens=977 completion_tokens=205 total_tokens=1182
+2026-05-17 21:18:30 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0100_doc_direct_full.txt
+2026-05-17 21:18:30 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Flurry SDK has an official Android SDK/integration for mobile apps.
+
+2. **Service model** — Flurry is primarily an analytics/monetization SDK that sends app event and usage data to Flurry/Yahoo-hosted backend services. Its normal operation is not purely on-device; standard analytics features depend on Flurry’s remote service.
+
+3. **Integration requirement** — Yes. Typical Flurry Android integration requires the developer to create/register an app in the Flurry developer console and initialize the SDK with a console-issued identifier. The standard credential used is a **Flurry API Key**.
+
+4. **Scope** — This credential is part of Flurry SDK’s own documented setup for connecting the app to Flurry’s analytics service, not merely another separate Yahoo product.
+2026-05-17 21:18:30 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0100_doc_direct_rslt.txt
+2026-05-17 21:18:30 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "Flurry API Key"}
+2026-05-17 21:18:30 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0100-doc_direct_analyze.log

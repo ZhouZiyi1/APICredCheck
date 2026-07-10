@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. PromiseKit by Max Howell is an Apple-platform promises library documented for Swift/Objective-C ecosystems such as iOS, macOS, tvOS, and watchOS. Its standard distribution and documentation target CocoaPods, Carthage, and Swift Package Manager for Apple development, and there is no official Android SDK or Android integration documentation for this product.
+
+Steps 2-4 are skipped because Android is not supported for this SDK; API credential evaluation is therefore N/A on Android.

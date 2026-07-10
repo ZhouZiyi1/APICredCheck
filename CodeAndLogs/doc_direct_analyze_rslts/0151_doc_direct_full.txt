@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This is an Android mediation adapter for Google Mobile Ads / AdMob that bridges to the Unity Ads Android SDK, so it has official Android integration.
+
+2. Service model  
+It is not a purely on-device library. In normal use, it participates in AdMob-mediated ad serving, which relies on remote ad network services.
+
+3. Integration requirement  
+Yes. Standard AdMob Android integration requires a console-issued AdMob identifier configured in the app, most notably the `AdMob App ID` in the Android manifest. Ad requests also use Ad Unit IDs, but the core app-level required credential for SDK setup is the App ID.
+
+4. Scope  
+The AdMob App ID belongs to AdMob / Google Mobile Ads integration for this product path. Unity Ads credentials such as Game ID belong to the separate Unity Ads network setup, not to this AdMob SDK itself.

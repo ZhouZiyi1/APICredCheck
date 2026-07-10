@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. InMobi SDK has official Android integration as a mobile advertising SDK for Android apps.
+
+2. **Service model** — This SDK is an ad/monetization SDK, so normal operation relies on InMobi-hosted services to request, deliver, and track ads. It is not a purely on-device library.
+
+3. **Integration requirement** — Yes. Standard Android integration for InMobi requires the developer to use an InMobi-issued application identifier configured in the Android app (commonly added in AndroidManifest metadata). This is a vendor-provided identifier used so the SDK can connect the app to InMobi’s ad services.
+
+4. **Scope** — The required identifier is part of the InMobi SDK’s own documented setup, not merely another separate product. Therefore it qualifies as an API credential under the provided definition.

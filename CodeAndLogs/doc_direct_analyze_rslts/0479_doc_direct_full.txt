@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is an Android mediation adapter: MoPub’s Unity Ads adapter exists to connect the Unity Ads Android SDK into MoPub mediation on Android.
+
+2. Service model  
+This is not a purely on-device library. Its standard purpose is to broker ad requests to Unity Ads, which depends on Unity’s hosted ad-serving backend.
+
+3. Integration requirement  
+Typical Unity Ads mediation setup requires the developer to create/configure a Unity Ads application in Unity’s dashboard and use Unity-issued identifiers for the integration. In practice, the key integration value is the Unity Ads `Game ID` (with placement/ad unit mapping also commonly required for serving inventory).
+
+4. Scope  
+That credential is part of this adapter’s documented mediation setup for Unity Ads, not merely some unrelated separate product. The adapter exists specifically to connect MoPub inventory to Unity Ads service credentials/configuration.

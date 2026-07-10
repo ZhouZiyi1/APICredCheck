@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Smartlook provides an official Android SDK and documented Android integration for adding session recording / analytics to Android apps.
+
+2. Service model: Smartlook is not a purely on-device utility. Its standard use is to capture app behavior data and send it to Smartlook’s hosted backend so recordings, events, and analytics can be viewed in the Smartlook dashboard.
+
+3. Integration requirement: Yes. Normal Android setup requires initializing the SDK with a Smartlook-issued project-specific value obtained from the Smartlook dashboard/console. The documented setup uses a `project key` to connect the app to the correct Smartlook project.
+
+4. Scope: This credential is part of Smartlook SDK’s own integration, not a separate third-party service. Package name or signing alone are not sufficient; the project key is the actual app-configured identifier used for Smartlook’s hosted service.

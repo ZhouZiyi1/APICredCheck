@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is specifically an ironSource mediation adapter for the HyprMX SDK, and ironSource/LevelPlay adapters are documented as Android integration artifacts. That satisfies official Android support.
+
+2. Service model  
+This adapter is not a purely on-device library. Its purpose is to connect the app, through mediation, to HyprMX ad-serving infrastructure via the underlying HyprMX SDK. Standard use therefore relies on remote vendor-hosted ad services.
+
+3. Integration requirement  
+For the Android adapter itself, the usual integration is adding the Android adapter/library dependency and enabling/configuring the HyprMX network in mediation settings. The key question here is whether the developer must place a console-issued credential in the Android app for this product. For this adapter, the normal setup does not appear to require an app-embedded API key/App ID in Android code or manifest specifically for the adapter itself. Any HyprMX-side identifiers are typically mediation/network configuration values handled in the mediation platform or network setup, rather than a direct in-app credential requirement of the adapter artifact.
+
+4. Scope  
+That distinction matters here: this product is the ironSource mediation adapter, not the full HyprMX standalone SDK integration. Evidence for an Android-side credential requirement attributable to this adapter itself is weak. Following the instruction to prefer false/null when evidence is weak or conflicting, this should be treated as no documented app-level API credential requirement for the adapter.

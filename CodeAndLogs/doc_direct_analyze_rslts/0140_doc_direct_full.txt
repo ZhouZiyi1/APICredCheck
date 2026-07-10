@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No official Android SDK or Android integration appears to exist for Meta's "SocketRocket SDK." SocketRocket is known as a native Objective-C WebSocket client library intended for Apple platforms (primarily iOS/macOS). That means step 1 is no for Android.
+
+Steps 2-4 are skipped because this product is not supported on Android, so API-credential requirements are N/A on Android.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Baidu Maps SDK has official Android integration. Baidu provides an Android Maps SDK used to embed maps and related map capabilities in Android apps.
+
+2. Service model  
+This SDK is not a purely on-device library. Standard map display and related features depend on Baidu-hosted map/services infrastructure, so normal use routinely involves Baidu remote services.
+
+3. Integration requirement  
+Typical Android setup for Baidu Maps SDK requires the developer to register the application with Baidu and configure an `AK` value, commonly described as an API Key / Access Key, in the Android app integration.
+
+4. Scope  
+That key is part of the Baidu Maps SDK integration itself, not merely a separate unrelated Baidu product. Package name and signing constraints may also be part of registration, but those alone are not the credential; the relevant configured credential is the Baidu Maps API key (`AK`).

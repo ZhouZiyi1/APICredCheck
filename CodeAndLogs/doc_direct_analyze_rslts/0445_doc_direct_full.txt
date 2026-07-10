@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. comScore provides an official Android SDK for app audience/analytics measurement, with documented Android integration and Android-specific setup.
+
+2. Service model: This SDK is not just an on-device helper. Its normal purpose is to collect measurement/usage data in the app and send it to comScore’s measurement backend as part of standard operation.
+
+3. Integration requirement: Standard Android setup requires configuring a comScore-assigned identifier, commonly documented as a `publisherId` / Publisher ID (often also referred to as the client’s comScore ID in setup examples). That value is placed in the app configuration/initialization so collected data is attributed to the correct comScore customer account.
+
+4. Scope: This identifier is part of the comScore SDK’s own documented integration, not a separate product’s credential. It is used so the SDK can report to comScore’s hosted measurement service. While public docs may not always describe a self-service “developer console,” the integration does require a vendor-issued account identifier for normal use. That meets the prompt’s definition of an API credential.

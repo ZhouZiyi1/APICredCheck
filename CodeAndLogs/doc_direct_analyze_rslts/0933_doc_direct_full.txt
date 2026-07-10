@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Gimbal SDK has official Android integration/documentation for Android apps, so Android is supported.
+
+2. **Service model** - Gimbal is not just an on-device utility library. Its typical use centers on Gimbal’s location/proximity platform, including beacon/geofence/campaign-related services that depend on Gimbal-hosted backend systems and app registration.
+
+3. **Integration requirement** - Yes. Standard Gimbal Android integration requires configuring vendor-issued app credentials so the SDK can identify the app to Gimbal services. The documented credential is commonly provided as an **Application/API key** (often referred to in Gimbal setup as an app key/API key tied to the registered application).
+
+4. **Scope** - This credential is part of Gimbal SDK’s own documented setup, not merely a separate third-party service added alongside it. It is used for this product’s backend-connected functionality.

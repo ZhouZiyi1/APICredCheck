@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: There appears to be an Android integration for AdPie SDK. AdPie is presented as an advertising SDK, and Android support is consistent with the standard distribution pattern for mobile ad network SDKs. I do not have strong primary-source documentation in the current context, so this point is somewhat confidence-limited, but Android support is more likely than not.
+
+2. Service model: An ad SDK is not a purely on-device library. Its normal operation depends on vendor-hosted ad delivery, tracking, and reporting services. That means the SDK routinely communicates with AdPie's backend as part of standard use.
+
+3. Integration requirement: For ad SDKs, standard integration usually requires the publisher/developer to register the app or ad placement and configure a vendor-issued identifier in the app so the backend can serve ads and attribute traffic. For AdPie SDK, the most plausible credential type is an app/publisher identifier rather than a secret.
+
+4. Scope: This identifier would belong to AdPie's own advertising platform integration, not to a separate third-party product. Because direct evidence is limited here, the exact field name is uncertain; a generic app ID / publisher ID label is the safest characterization.

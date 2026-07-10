@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tencent's Mobile Tencent Analytics SDK has official Android integration. Tencent Mobile Analytics (commonly documented as MTA / Tencent MTA) provides an Android SDK and Android setup instructions, so `supports_android` is true.
+
+2. Service model  
+This is a mobile analytics product, not a purely on-device library. Its normal use is to collect app events, sessions, and device/app metadata and send that telemetry to Tencent's hosted analytics backend for reporting. That means standard operation depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical Android integration requires the developer to register the app in Tencent's analytics console and configure a Tencent-issued app identifier in the Android app, commonly documented as an `App Key` / `MTA App Key` in manifest metadata or equivalent setup. This value is used so uploaded analytics data is associated with the correct Tencent analytics project/app.
+
+4. Scope  
+That credential is part of this analytics product's own documented setup, not merely another Tencent product layered on top. Package name or signing settings alone are not the credential; the console-issued analytics app key is the relevant integration value.

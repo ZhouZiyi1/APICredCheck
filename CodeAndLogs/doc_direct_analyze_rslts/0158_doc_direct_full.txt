@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No clear official Android library or Android integration exists for "MJExtension SDK" by Coder MJ Lee. MJExtension is known as an Objective-C model/object mapping library used in the Apple ecosystem, typically distributed for iOS/macOS development, not as an Android SDK. I do not find this product described as having an Android package, Android setup instructions, or an official Android artifact.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android.

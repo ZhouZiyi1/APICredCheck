@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Helpshift SDK has official Android integration. Helpshift provides an Android SDK for in-app customer support / help center / messaging features, so `supports_android` is yes.
+
+2. Service model  
+This product is not primarily an on-device library. Standard Helpshift features rely on Helpshift-hosted services for support content, conversations, issue tracking, and related backend-driven messaging/support flows.
+
+3. Integration requirement  
+Typical Helpshift Android setup requires initializing the SDK with vendor-issued app configuration values. In Helpshift documentation and common integration patterns, this includes identifiers such as an API key plus app-specific backend identifiers like App ID and Domain/Install Domain so the app can connect to the correct Helpshift service instance.
+
+4. Scope  
+These values belong to Helpshift SDK’s own documented integration and are required for the SDK to talk to Helpshift’s backend, not merely to some separate third-party product. That fits the definition of an API credential here.

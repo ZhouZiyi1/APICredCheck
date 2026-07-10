@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Eclipse Paho has an official Android client/library, commonly distributed as the Paho Android Service / Android MQTT client, with documented Android integration for MQTT messaging.
+
+2. Service model: This SDK is primarily a client library for the MQTT protocol. In a typical Android app, it connects to whatever MQTT broker the developer chooses. It is not built around an Eclipse Foundation hosted backend that the SDK must use for standard operation.
+
+3. Integration requirement: Normal setup does not require registering the app with Eclipse Foundation or obtaining a console-issued API key, App ID, client secret, or similar vendor credential. Developers configure broker connection details (such as server URI, username/password, certificates, client ID), but those are for the chosen MQTT broker, not vendor-issued credentials for Eclipse Paho itself.
+
+4. Scope: Any authentication used is broker-specific and belongs to the external MQTT server the app connects to, not to the Paho SDK product’s own vendor-hosted service. That does not meet the definition of an API credential for this SDK.

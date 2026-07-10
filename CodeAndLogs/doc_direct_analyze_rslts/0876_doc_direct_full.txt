@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Agora Signaling SDK has official Android support. Agora documents Android integration for its signaling/RTM functionality through an Android SDK, so step 1 is satisfied.
+
+2. Service model  
+This SDK is not primarily on-device. Its normal use is to connect the app to Agora-hosted real-time messaging/signaling infrastructure for presence, peer/channel messaging, and related signaling features.
+
+3. Integration requirement  
+Typical Android setup requires creating an Agora project in the vendor console and configuring the project’s `App ID` in the app. Many deployments also use a token for authenticated access, but the baseline documented integration consistently requires the console-issued App ID.
+
+4. Scope  
+The `App ID` belongs to Agora Signaling/RTM integration itself, not merely to some separate Agora product. It is part of the standard initialization path for this SDK on Android.

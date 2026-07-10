@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Yandex ID SDK has official Android integration/documentation as an SDK for adding Yandex account sign-in to Android apps.
+
+2. **Service model** - This SDK is not a purely on-device helper. Its normal purpose is to let users authenticate with Yandex accounts, which inherently involves Yandex-hosted identity services during the sign-in flow.
+
+3. **Integration requirement** - Yes. Typical integration requires the developer to register the application with Yandex and configure an issued OAuth/client identifier for the app so Yandex can recognize the calling application during authentication. This is a console-issued app/client credential used as part of the SDK setup.
+
+4. **Scope** - This credential belongs to the Yandex ID SDK integration itself, because the SDK’s documented purpose is Yandex sign-in and the app identifier/client configuration is part of enabling that product’s auth flow. Package name or signing alone would not satisfy this; the relevant credential is the registered client/application ID.

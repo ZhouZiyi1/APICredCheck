@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find this as an official Google Android SDK or a documented Google product with a standard Android integration path. "TagSoup" is known primarily as a Java HTML/XML parser library, not a Google mobile SDK with Android setup documentation. Even though Java code of this type may be usable in Android projects in practice, that is not the same as an official Android SDK or documented Android integration for this named product from this vendor.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android for this evaluation.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Easemob SDK has official Android integration. EaseMob/Hyphenate provides an Android IM/chat SDK with Android setup APIs and initialization examples for native Android apps.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its standard purpose is real-time messaging/chat and related features that depend on the vendor's hosted backend services for connection, message delivery, user/account handling, groups, and presence.
+
+3. Integration requirement  
+Typical Android setup requires the developer to create/register an application in the vendor platform and initialize the SDK with a vendor-issued application identifier. In common Easemob/Hyphenate Android integration, this is configured as an `appKey` during SDK initialization. That is a console-issued value used so the app can connect to the vendor's cloud service.
+
+4. Scope  
+This credential is part of Easemob SDK's own documented integration flow for its messaging backend, not just a separate third-party product. Package name or signing may also matter operationally, but those alone are not the credential; the relevant configured value is the SDK app key.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Apptentive provides an official Android SDK/integration for mobile apps.
+
+2. **Service model** - Apptentive is a customer feedback/engagement SDK that is built to connect the app to Apptentive-hosted services for surveys, message center, ratings prompts, and related engagement features. This is not a purely on-device utility library; normal operation relies on Apptentive’s backend.
+
+3. **Integration requirement** - Yes. Standard Android integration requires configuring vendor-issued app credentials so the SDK can identify the app/workspace to Apptentive’s service. Apptentive’s setup commonly uses an **Apptentive App Key** together with an **Apptentive App Signature** in the Android app configuration.
+
+4. **Scope** - These credentials belong to Apptentive SDK’s own documented integration, not merely to some separate third-party product. They are used specifically so the Apptentive SDK can communicate with Apptentive-hosted services.

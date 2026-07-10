@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tapjoy SDK officially supports Android. Tapjoy provides an Android SDK for monetization and ads, with documented Android integration.
+
+2. Service model  
+This SDK is not primarily on-device. Its normal use depends on Tapjoy-hosted ad/monetization services such as offerwalls, rewarded content, placements, and related remote configuration/content delivery.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with a Tapjoy-issued app credential from the Tapjoy dashboard/console. In standard Tapjoy Android setup, this is the `SDK Key` used during SDK connection/initialization.
+
+4. Scope  
+This credential is part of Tapjoy SDK’s own documented integration, not a separate product. It is used so the app can connect to Tapjoy’s backend services.

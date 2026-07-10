@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. CRI Middleware documents **ADX2 for Android** as part of its game audio middleware/runtime, with Android integration through its native/mobile SDK offerings. So Android is supported.
+
+2. **Service model** - CRI ADX2 is primarily an **on-device audio middleware** SDK used for playback/control of game audio assets inside the app. Its standard purpose is local audio runtime behavior, not routine communication with CRI-hosted cloud APIs.
+
+3. **Integration requirement** - Typical ADX2 integration uses SDK libraries, tools, and audio asset/workflow setup, but there is no clear evidence that normal Android use requires a **developer-console-issued API key, App ID, secret, token, or vendor-hosted service config** to make the SDK function.
+
+4. **Scope** - Any licensing, purchase, or contract arrangements for middleware use are not the same as an in-app API credential for vendor-hosted services. I do not find strong evidence that **this product's Android SDK integration** requires a console-issued app credential. Evidence for any such credential is weak, so prefer false.

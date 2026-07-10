@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support - Yes. Tap GoSell Payment SDK is documented for Android integration as a mobile payment SDK from Tap Payments, so step 1 passes.
+
+2. Service model - This SDK is not a purely on-device utility. A payment SDK normally works with Tap Payments’ hosted payment infrastructure to create/process charges, tokenize cards, and handle transaction flows. Its standard use therefore depends on vendor-hosted services.
+
+3. Integration requirement - Yes. Typical GoSell integrations require the merchant to configure vendor-issued payment credentials so the SDK/app can authenticate requests to Tap’s payment backend. The documented integration commonly refers to this as API keys, usually distinguishing public and secret/server-side keys; on the client side, the recognizable credential type is an API key/public key style value.
+
+4. Scope - This credential is part of the Tap GoSell payment integration itself, not merely another unrelated Tap product. Because the SDK is built to connect to Tap’s payment platform, the configured key belongs to this product’s normal setup.

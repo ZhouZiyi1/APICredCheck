@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**: Yes. Tencent provides official Android integration for its mobile/open-platform SDKs, commonly referred to as the Tencent/QQ OpenSDK, with Android setup documentation and Android library distribution.
+
+2. **Service model**: This SDK is not just an on-device utility library. Its standard features such as QQ login, sharing, and related platform interactions depend on Tencent-operated platform services. The app identifies itself to Tencent’s backend/platform during those flows.
+
+3. **Integration requirement**: Yes. Typical Android integration requires the developer to register the application in Tencent’s developer/open platform and configure a Tencent-issued **App ID** in the Android app. That value is used as part of the SDK’s standard setup so Tencent’s platform can recognize the calling app.
+
+4. **Scope**: The App ID is part of this SDK’s own documented integration flow, not merely another Tencent product added separately. Package/signature configuration may also appear in setup, but those do not replace the console-issued credential; the credential is the **App ID**.
+
+Because the product name is somewhat generic, the exact Tencent SDK family could matter, but for the commonly documented Android Tencent SDK integration, the evidence supports an app-registration credential requirement.

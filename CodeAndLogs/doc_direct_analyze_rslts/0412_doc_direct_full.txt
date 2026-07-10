@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. `fastjson` is Alibaba's JSON serialization/deserialization library for Java, and it has been commonly used in Android projects as a Java dependency. Its integration model is as a local client library, not a platform-specific cloud SDK, but it does support Android use through normal Java/Android dependency inclusion.
+
+2. Service model: This product is mostly on-device. Its purpose is to parse JSON into objects and serialize objects back into JSON within the app process. Standard use does not depend on Alibaba-hosted APIs, backend services, or any vendor runtime infrastructure.
+
+3. Integration requirement: No vendor-issued app registration, API key, App ID, or secret is normally required. Typical setup is just adding the library dependency and calling its parsing/serialization APIs locally.
+
+4. Scope: Any credentials an app might use with its own backend or some separate Alibaba cloud product are outside the scope of `fastjson` itself. For this SDK specifically, there is no documented product-specific console credential needed for normal Android integration.

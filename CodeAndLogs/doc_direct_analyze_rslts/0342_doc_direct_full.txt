@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Singular provides an official Android SDK for mobile attribution, analytics, and deep linking, with documented Android integration.
+
+2. Service model: This SDK is not primarily an on-device utility. Its standard purpose is to send install/session/event attribution and related analytics data to Singular’s hosted backend, so routine use depends on vendor-operated remote services.
+
+3. Integration requirement: Yes. Standard Android setup requires initializing the SDK with console-issued app credentials so the app can identify itself to Singular’s backend. Singular’s Android integration is typically configured with a `SDK Key` and `SDK Secret`.
+
+4. Scope: These credentials are part of Singular SDK’s own documented integration, not merely another vendor product added alongside it. They are used directly by the Singular SDK to connect to Singular services.

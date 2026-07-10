@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Segment provides an official Android analytics SDK and Android integration documentation, so this product supports Android.
+
+2. Service model — This SDK is not just an on-device helper. Its standard purpose is to collect analytics events in the app and send them to Segment’s hosted ingestion/backend services for routing and processing.
+
+3. Integration requirement — Yes. Normal Android setup requires configuring a Segment-issued `writeKey` in the SDK initialization so the app can send data to the correct Segment source/workspace.
+
+4. Scope — The `writeKey` is part of Segment SDK’s own documented integration and is used for Segment’s hosted analytics pipeline, not merely for some separate third-party product added alongside it.

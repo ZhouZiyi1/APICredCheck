@@ -1,0 +1,4 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not find reliable evidence that "MTMigration SDK" by "Mysterious Trousers" has an official Android SDK, Android package, or documented Android integration. The product name suggests a migration utility rather than a clearly published mobile Android library, and there is no strong vendor-specific Android documentation evident from the provided information.
+Because step 1 is not established, steps 2-4 are skipped as N/A on Android.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Smart AdServer provided an Android SDK for mobile ad serving/in-app advertising integration, so this product supports Android.
+
+2. Service model — This is an ad serving SDK, so standard operation depends on Smart AdServer-hosted services to request, deliver, and track ads. It is not primarily an on-device utility library.
+
+3. Integration requirement — Typical ad SDK integrations require the publisher/app to be identified so the vendor can serve the correct inventory and account activity. For Smart AdServer SDK, standard integration uses vendor-issued ad placement / site / format identifiers configured in the app or ad request setup. That fits the definition of an API credential here because the app must supply vendor-recognized identifiers to access the product’s hosted ad-serving system.
+
+4. Scope — These identifiers are part of the Smart AdServer product’s own ad-serving integration, not merely another separate product. Evidence for the exact label can vary by SDK version, but the integration appears to require Smart AdServer publisher/ad placement identifiers. Because naming can differ, the safest short credential label is an app/publisher identifier rather than a secret.

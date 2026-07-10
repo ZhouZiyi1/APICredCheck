@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. GrowthPush provides an official Android SDK/integration for adding push notifications to Android apps.
+
+2. Service model: GrowthPush is not a pure on-device library. Its standard purpose is to connect the app to Growthbeat/GrowthPush hosted push-notification services for device registration, delivery targeting, and related backend-driven messaging features.
+
+3. Integration requirement: Yes. Typical Android setup requires initializing the SDK with vendor-issued app identifiers rather than using it with no account-level configuration. GrowthPush Android integrations are documented with values such as an `Application ID` and `Credential ID` obtained from the GrowthPush/Growthbeat management console.
+
+4. Scope: These identifiers are part of GrowthPush’s own integration, not merely another optional product. They are used so the app can register with and communicate to GrowthPush’s backend service as part of normal SDK operation.

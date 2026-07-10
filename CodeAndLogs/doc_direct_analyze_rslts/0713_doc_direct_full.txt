@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear official evidence that the specific product named **Proxi.cloud SDK** from **ProxiCloud** has an official Android SDK or Android integration guide. The available name suggests a proximity/location-related product, but without product-specific Android documentation, Maven/Gradle artifacts, or official Android setup instructions for this exact SDK, Android support is not established.
+
+Because step 1 is not confirmed, steps 2-4 are skipped as **N/A on Android** under the required method. Per the instructions, I do not evaluate API credential requirements further.

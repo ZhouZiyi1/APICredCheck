@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. LaunchDarkly provides an official Android client-side/mobile SDK for integrating feature flags into Android apps.
+
+2. Service model: This SDK routinely relies on LaunchDarkly-hosted services. Its standard purpose is to connect the app to LaunchDarkly’s remote flag delivery/evaluation infrastructure so the app can fetch and react to feature flag state.
+
+3. Integration requirement: Yes. Standard Android setup requires configuring a LaunchDarkly environment credential issued by LaunchDarkly for mobile/client use. For the Android SDK, this is documented as a mobile key in typical SDK initialization.
+
+4. Scope: This credential is part of LaunchDarkly SDK integration itself, not a separate product. It is used so the Android app can communicate with LaunchDarkly’s hosted feature flag service.

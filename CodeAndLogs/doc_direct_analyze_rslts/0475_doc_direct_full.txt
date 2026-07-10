@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Belvedere SDK is an official Zendesk Android library. It is documented and published for Android integration, primarily as a media/file selection and handling component used in Android apps.
+
+2. Service model: Belvedere is mostly an on-device utility/UI SDK. Its typical role is handling attachments, media picking, storage, and related Android UX flows locally in the app. It is not a cloud-service SDK that normally depends on Zendesk-hosted APIs as part of its core function.
+
+3. Integration requirement: Usual Belvedere setup does not require the developer to register the app in a Zendesk console or configure a Zendesk-issued API key, App ID, client secret, or similar credential. Android integration is by adding the library and wiring it into the app.
+
+4. Scope: Any Zendesk account credentials or app configuration used elsewhere in Zendesk products (for example Support/Chat backends) belong to those other products' hosted services, not to Belvedere itself. For Belvedere specifically, evidence indicates no product-specific API credential is required.

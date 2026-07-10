@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I found no indication that Charcoal Design's "iCarousel SDK" has an official Android SDK or Android integration. iCarousel is known as a UI carousel library for Apple's platforms, distributed as Objective-C source for iOS and related Apple environments rather than as an Android library. Based on that product identity, there is no documented Android support for this SDK.
+
+Steps 2-4 are skipped because they are not applicable on Android when the product does not support Android.

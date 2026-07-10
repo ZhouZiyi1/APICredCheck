@@ -1,0 +1,19 @@
+2026-05-17 21:13:57 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0053-doc_direct_analyze.log
+2026-05-17 21:13:57 [INFO] Run start: SDK_ID=0053 SDK=AppLovin MAX SDK vendor=AppLovin results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:13:57 [INFO] Querying model='gpt-5.4' SDK='AppLovin MAX SDK' vendor='AppLovin'
+2026-05-17 21:14:04 [INFO] LLM token usage: prompt_tokens=992 completion_tokens=261 total_tokens=1253
+2026-05-17 21:14:04 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0053_doc_direct_full.txt
+2026-05-17 21:14:04 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. AppLovin MAX SDK has official Android integration documentation and Android SDK artifacts. It is a mobile ad mediation/monetization SDK intended for Android apps as a standard platform.
+
+2. **Service model** — This SDK routinely relies on AppLovin-hosted services as part of normal operation. MAX is an ad mediation platform; the app SDK communicates with AppLovin services to initialize mediation, fetch configuration, and support ad serving/monetization workflows.
+
+3. **Integration requirement** — Yes. Standard Android integration requires configuring a console-issued app identifier from AppLovin for the SDK initialization. In MAX documentation this is typically the **SDK Key** (used in initialization/configuration). That is a vendor-issued value tied to the developer/app setup and required for normal use.
+
+4. **Scope** — This credential is part of the documented integration for **AppLovin MAX SDK** itself, not merely for some separate optional product. Ad unit IDs may also be used, but the clearest product-level required credential is the AppLovin **SDK Key**.
+2026-05-17 21:14:04 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0053_doc_direct_rslt.txt
+2026-05-17 21:14:04 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "SDK Key"}
+2026-05-17 21:14:04 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0053-doc_direct_analyze.log

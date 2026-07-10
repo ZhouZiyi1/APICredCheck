@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Card.io SDK had an official Android SDK/library from PayPal for integrating card scanning into Android apps.
+
+2. Service model  
+Card.io’s standard function is card scanning/OCR using the device camera and on-device processing. Typical integration is a client-side SDK feature, not a vendor-hosted API product that routinely depends on PayPal-operated backend services for normal scanning.
+
+3. Integration requirement  
+Usual Android integration does not require obtaining a PayPal console-issued API key, App ID, client secret, or similar credential just to use the card-scanning SDK itself. The integration is generally adding the SDK and invoking its scanning activity/API.
+
+4. Scope  
+Any separate PayPal payment processing credentials belong to other PayPal products/services, not to Card.io SDK’s documented card-scanning integration itself. For this SDK specifically, evidence supports no required API credential for normal Android use.

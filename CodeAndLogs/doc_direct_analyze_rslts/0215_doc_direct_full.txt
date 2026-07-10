@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is an official Android mediation adapter used with the Google Mobile Ads SDK to connect AdMob mediation to the InMobi Android SDK, and Google documents Android integration for this adapter.
+
+2. Service model: In normal use, the adapter participates in ad mediation, which relies on remote ad-serving backends. However, the adapter itself is a bridge layer between the Google Mobile Ads SDK and the InMobi SDK rather than a standalone cloud service client.
+
+3. Integration requirement: Android integration typically requires values such as the Google Mobile Ads App ID / ad unit IDs and InMobi-side identifiers. But those credentials belong to the underlying ad network SDKs and mediation platform setup, not clearly to the adapter artifact itself as a separate product.
+
+4. Scope: For this specific product, the documented role is to adapt two other SDKs together. The console-issued values normally configured for a working integration are for AdMob / Google Mobile Ads and InMobi, not a distinct credential issued specifically for the "Admob mediation adapter for InMobi SDK" as its own product. Because the scope is limited to this named adapter, the safest classification is that it does not itself have a separate API credential requirement.

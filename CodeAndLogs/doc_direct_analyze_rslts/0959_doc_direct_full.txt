@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+RudderStack provides an official Android SDK (`rudder-sdk-android`) and documents Android setup, so Android is supported.
+
+2. Service model  
+RudderStack is a customer data / event pipeline SDK. In normal use, the Android SDK collects events in the app and sends them to RudderStack’s hosted data plane or control-plane-backed infrastructure. This is not a purely on-device library; routine operation depends on RudderStack remote services.
+
+3. Integration requirement  
+Standard Android integration requires configuring RudderStack connection values in the app. The usual setup includes a `writeKey` and a `dataPlaneUrl` when initializing the SDK. The console-issued identifier that functions as the SDK credential is the `writeKey`.
+
+4. Scope  
+The `writeKey` belongs to RudderStack’s own SDK setup, not just to some separate downstream destination. The app uses it directly to send data to RudderStack services. The data plane URL is configuration, but the credential-like value is the `writeKey`.

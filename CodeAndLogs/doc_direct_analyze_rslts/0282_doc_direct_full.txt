@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. AltBeacon's Android Beacon Library is an official Android SDK/library for detecting and transmitting BLE beacons on Android.
+
+2. Service model  
+This library is primarily on-device. Its standard functionality is scanning for nearby beacons, parsing beacon formats, ranging/monitoring regions, and optionally beacon transmission from the device. These operations use Android Bluetooth capabilities locally and do not depend on AltBeacon-hosted APIs or a vendor backend for normal operation.
+
+3. Integration requirement  
+Typical integration does not require registering the app with AltBeacon or obtaining any console-issued key, App ID, secret, or config file from the vendor. Setup is done by adding the library and configuring Android permissions and beacon parsing/monitoring in code.
+
+4. Scope  
+Any Bluetooth permissions, package identifiers, or Android manifest settings are platform requirements, not vendor-issued API credentials for this SDK. There is no standard AltBeacon product-specific credential required for the documented Android integration.

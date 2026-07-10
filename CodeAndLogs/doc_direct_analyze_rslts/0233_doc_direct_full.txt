@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This is an official Android mediation adapter library used to connect the Vungle ad network into the ironSource Android mediation stack, and ironSource documents Android adapter integration for network adapters like Vungle.
+
+2. Service model: This adapter is not a pure on-device utility. In normal use it bridges the app’s mediation layer to Vungle’s ad-serving backend through the underlying Vungle SDK, so standard operation depends on remote hosted ad services.
+
+3. Integration requirement: The Vungle side of the integration typically requires network-specific identifiers such as a Vungle App ID (and placements are also part of setup). However, for this specific product, those values are generally configured in the mediation/network setup rather than as an app-embedded credential for the adapter itself. The adapter’s Android installation is mainly adding the adapter dependency alongside the core mediation SDK.
+
+4. Scope: The clearest app-level credential in this stack is usually the ironSource App Key for the core mediation SDK, but that belongs to ironSource Mediation itself, not specifically to the "ironSource Mediation adapter for Vungle SDK." Because the adapter-specific requirement for an app-embedded console-issued credential is weak, the safer classification is no adapter-specific API credential.

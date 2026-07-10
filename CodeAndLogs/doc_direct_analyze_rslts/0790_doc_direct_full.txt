@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. “Admob mediation adapter for Fyber SDK” refers to a mediation adapter used in Android integrations between Google Mobile Ads (AdMob mediation) and Fyber’s Android monetization SDK. Mediation adapters of this type are distributed specifically for Android app integration.
+
+2. **Service model** - This product is not a purely on-device utility. Its normal purpose is to connect an Android app’s ad mediation stack to Fyber’s ad-serving/monetization service through the Fyber SDK, so standard operation depends on remote hosted ad services.
+
+3. **Integration requirement** - Yes. Typical setup for a Fyber ad network integration requires configuring a publisher/application identifier issued through Fyber’s publisher console/dashboard so the SDK can request and attribute ads for the correct app/account. In mediation, this is usually entered in the AdMob mediation configuration and/or Fyber SDK initialization.
+
+4. **Scope** - The credential is attributable to the Fyber-side product being integrated by this adapter, not merely to Android package/signing metadata. Although the adapter is under the AdMob ecosystem, the relevant configured value is for Fyber network access as part of this adapter’s documented mediation setup. Evidence for an AdMob-issued credential specific to this adapter is weaker; the routine required identifier is the Fyber app/publisher ID.

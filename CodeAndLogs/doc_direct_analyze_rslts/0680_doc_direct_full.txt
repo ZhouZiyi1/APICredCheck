@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+PlayHaven SDK did have official Android support. PlayHaven published an Android SDK for mobile games, with Android integration instructions and Android-specific setup such as manifest configuration and library inclusion.
+
+2. Service model  
+This SDK was not a purely on-device utility. PlayHaven was used for in-app promotions, ads, placements, and related game marketing/content features that depended on PlayHaven-hosted services. Standard SDK behavior involved the app contacting PlayHaven’s backend to fetch/show campaigns or promotional content.
+
+3. Integration requirement  
+The usual Android integration required developer-issued application credentials from PlayHaven. Historical Android setup documentation referenced configuring PlayHaven app values such as an app token and app secret in the Android app/manifest so the SDK could authenticate the application with PlayHaven services.
+
+4. Scope  
+Those credentials belonged to PlayHaven SDK itself, not just to some separate third-party service. They were part of the documented setup for using PlayHaven’s own hosted ad/promotion platform on Android.

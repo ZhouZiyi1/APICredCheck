@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not find credible evidence that a real, officially documented Android SDK product named **"Android Tooltip SDK"** from **ViHtarb** exists with an Android library, repository, Maven package, or integration guide. The name itself reads like a generic UI component label rather than a clearly documented vendor product, and there is no reliable indication of official Android integration materials for this specific SDK.
+
+Because step 1 is **no / not established**, steps 2-4 are **skipped**. API credential evaluation is therefore **N/A on Android** under the required method.

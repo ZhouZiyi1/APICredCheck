@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Apache HttpCore is a Java HTTP components library, and Android apps can use standard Java libraries like this as dependencies. It is not an Android-specific SDK, but it is usable/integratable in Android.
+
+2. Service model — This is a low-level HTTP transport/client-support library. Its role is mostly on-device: building/parsing HTTP messages, connections, protocol handling, etc. It does not exist to connect to Apache-hosted backend services.
+
+3. Integration requirement — No vendor console registration or console-issued identifier/secret is normally required to use Apache HttpCore itself. A developer just adds the library dependency and uses it in code.
+
+4. Scope — Any credentials an app might need would belong to whatever third-party server/API the app chooses to call through HttpCore, not to Apache HttpCore’s own product integration. Therefore they do not count as this SDK’s API credential.

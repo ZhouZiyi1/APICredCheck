@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Bouncy Castle provides Java cryptography libraries/APIs, and Java-based Bouncy Castle artifacts are commonly usable in Android apps because Android supports Java libraries. There is long-standing Android usage of Bouncy Castle-compatible providers/libraries, so Android support is reasonably established.
+
+2. Service model: This is a cryptography library that operates primarily on-device. Its standard functions are encryption, decryption, signing, certificate handling, and related crypto primitives within the app process. It is not built around vendor-hosted APIs or a Bouncy Castle cloud backend.
+
+3. Integration requirement: Typical integration does not require registering the app with Bouncy Castle or obtaining any vendor-issued key, App ID, client secret, or config file. Developers add the library dependency and use the APIs locally.
+
+4. Scope: Any keys or certificates used by the app are part of the app's own cryptographic workflow, not credentials issued by Bouncy Castle for access to a Bouncy Castle-hosted service. Package names or signing configuration also do not qualify as an API credential here.

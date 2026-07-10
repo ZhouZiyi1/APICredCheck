@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1 — Android support: No.
+
+SiriKit is Apple's framework for integrating an app with Siri and related Apple platform voice/intent features. It is documented for Apple's own platforms (primarily iOS and related Apple OS environments), not as an Android SDK and not with official Android integration documentation or library distribution.
+
+Because step 1 is no, steps 2–4 are skipped. API credential evaluation is N/A on Android for this product.

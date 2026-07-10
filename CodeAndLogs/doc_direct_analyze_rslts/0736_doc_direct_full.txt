@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Unreal Engine officially supports building games for Android, and the Unreal Engine SDK/tooling includes documented Android packaging/integration as a first-class target platform.
+
+2. **Service model** - Unreal Engine is primarily a game engine/runtime and development framework. Typical Android use is mostly on-device: rendering, input, audio, physics, gameplay code, and packaging are local engine capabilities. While a developer may optionally add Epic Online Services, ads, analytics, sign-in, or other third-party backends, those are separate services/products rather than the core Unreal Engine SDK itself.
+
+3. **Integration requirement** - For normal use of Unreal Engine on Android, there is not a standard requirement to obtain a vendor console-issued API key, App ID, client secret, or equivalent credential so the shipped app can call Epic-hosted services as part of the engine's core Android integration. Android setup typically involves SDK/NDK, package/signing configuration, and build settings, but those are not API credentials under the definition given.
+
+4. **Scope** - Any credentials a developer might encounter usually belong to separate integrations (for example, online services, store services, ads, analytics, or authentication providers), not to the Unreal Engine SDK itself. Package name and signing config also do not count as API credentials here.

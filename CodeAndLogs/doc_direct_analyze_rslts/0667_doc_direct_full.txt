@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I found no indication that Pinyin4j is an official Android SDK or that it has vendor-documented Android integration. Pinyin4j is known as a general Java library for converting Chinese characters to Hanyu Pinyin, published by Belerweb, rather than an Android-specific mobile SDK with official Android setup guidance. On that basis, Android support is not established as an official product capability.
+
+Steps 2-4 are skipped because they are N/A when official Android support is not established.

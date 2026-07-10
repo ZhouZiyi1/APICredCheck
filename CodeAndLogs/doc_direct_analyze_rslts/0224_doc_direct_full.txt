@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Maio SDK is an advertising SDK from i-mobile / maio, and it has documented Android integration as an Android ad SDK. So Android support is present.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its standard purpose is to request and display ads from maio’s ad-serving infrastructure, so normal use depends on vendor-hosted services.
+
+3. Integration requirement  
+For ad SDKs like Maio, the usual Android setup requires values issued for the publisher/app placement so the SDK can identify the app and ad spot when requesting ads. Maio integrations are commonly configured with identifiers such as a media/application ID and a spot/zone ID rather than working with no vendor-issued identifier.
+
+4. Scope  
+Those identifiers are part of Maio SDK’s own documented ad integration, not merely another separate product. They function as the app/placement credentials for Maio’s ad service.

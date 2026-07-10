@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Rebound was published by Facebook as a Java spring-dynamics animation library and includes Android integration/documentation for using it in Android apps.
+
+2. Service model: Rebound is a pure client-side UI/animation physics library. Its purpose is to model spring dynamics and drive animations locally in the app. It does not normally depend on Meta-hosted APIs, cloud services, or a vendor backend.
+
+3. Integration requirement: Typical integration is adding the library dependency and using its classes in code. There is no normal setup step requiring the developer to register the app with Meta or configure a console-issued identifier, secret, token, or config file.
+
+4. Scope: Any Meta app IDs or credentials used by other Facebook/Meta SDKs are not part of Rebound itself. For Rebound specifically, the documented integration is just the local library, so no API credential applies.

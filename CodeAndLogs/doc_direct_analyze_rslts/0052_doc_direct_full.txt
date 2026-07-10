@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Meta’s React Native SDK has documented Android integration as part of React Native app setup, so it supports Android.
+
+2. Service model — This SDK is primarily a client framework for building mobile UIs with JavaScript bridged to native Android/iOS components. Its standard function is on-device app runtime/rendering and native module access, not routine use of Meta-hosted backend services.
+
+3. Integration requirement — Typical Android integration for React Native does not require registering the app with Meta or obtaining a Meta console-issued identifier/secret. Setup involves adding packages, Gradle/native configuration, and JavaScript/runtime dependencies, but not a vendor-issued API key/App ID for the React Native framework itself.
+
+4. Scope — Meta may offer other products that do require App IDs or tokens, but those belong to separate SDKs/services, not to the React Native SDK’s own documented Android integration. Therefore no API credential applies for this product itself.

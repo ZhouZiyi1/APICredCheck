@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. ByteDance UnionAD SDK is an Android advertising SDK with official Android integration materials/libraries for showing ads in Android apps.
+
+2. Service model  
+This is not a purely on-device library. Its normal use is to request and render ads from ByteDance/Pangle/UnionAD-hosted ad services, so standard functionality depends on the vendor backend.
+
+3. Integration requirement  
+Yes. Typical Android integration requires the developer to register the app in the vendor ad platform and configure a vendor-issued application identifier in the SDK initialization. Ad placements also commonly use ad slot/unit IDs, but the core app-level console-issued credential is the App ID.
+
+4. Scope  
+That App ID is part of this ad SDK's own documented setup so the client can use UnionAD ad delivery services. It is not merely package/signing metadata and does not belong only to some separate product.

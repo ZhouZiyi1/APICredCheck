@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No. Apple HealthKit is Apple’s health-data framework for iPhone/Apple Watch platforms, documented for iOS/watchOS and tied to Apple’s operating systems and health data store. Apple does not provide an official Android HealthKit SDK or Android integration path for this product.
+
+Because step 1 is no, steps 2–4 are skipped as not applicable on Android.

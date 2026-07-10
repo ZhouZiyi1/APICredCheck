@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Instabug SDK officially supports Android. Instabug provides an Android SDK for in-app bug reporting, crash reporting, surveys, and related mobile observability/user-feedback features, with documented Android integration through Gradle and application initialization.
+
+2. Service model  
+This product is not a pure on-device library. Its standard use depends on Instabug-hosted backend services to upload bug reports, crashes, attachments, session data, surveys, and other app diagnostics/feedback tied to the developer’s Instabug project.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with a vendor-issued app-specific token/value. In common Instabug Android setup, developers pass an `APP_TOKEN` (often called an Instabug App Token) when building/starting the SDK. That indicates the app must be registered in Instabug’s console and configured with that value for normal use.
+
+4. Scope  
+This credential is part of Instabug SDK’s own documented integration, not a separate third-party product. The token identifies the app/project to Instabug’s own hosted services.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Midtrans provides official Android integration for its payment SDK, including Android-specific libraries/docs for embedding payment flows in Android apps.
+
+2. **Service model** - This SDK is not primarily on-device. It is a payment SDK designed to connect the app to Midtrans-hosted payment services and transaction flows. Typical use depends on Midtrans backend/payment infrastructure rather than only local processing.
+
+3. **Integration requirement** - Yes. Standard Midtrans Android integration requires configuring a vendor-issued identifier for the payment environment, commonly the **Client Key**. This key is used by the mobile SDK as part of normal setup to connect to Midtrans services. A server-side **Server Key** also exists in the Midtrans platform, but that is for backend use rather than app-side SDK configuration.
+
+4. **Scope** - The credential is part of Midtrans SDK’s own documented integration, not merely another separate product. The Android SDK setup itself uses the Midtrans-issued **Client Key** for client-side payment integration.

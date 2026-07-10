@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is specifically an Android mediation adapter that connects Google Mobile Ads / AdMob mediation with the nend network, and its documented integration is for Android apps.
+
+2. Service model: This is not a purely on-device helper library. In normal use it participates in AdMob mediation, which relies on Google-hosted ad serving / mediation infrastructure, while also brokering requests to the mediated network. So standard operation depends on remote vendor services.
+
+3. Integration requirement: Yes. Standard AdMob Android integration requires a console-issued identifier to be added to the app, most fundamentally the AdMob App ID in the Android manifest. In practice developers also use Ad Unit IDs, but the clearest required app-level credential for the SDK integration is the AdMob App ID.
+
+4. Scope: This credential is part of the documented integration for the AdMob mediation adapter flow on Android, not merely an unrelated separate product. The adapter is built to operate within the Google Mobile Ads / AdMob mediation setup, and that setup requires AdMob-issued identifiers.

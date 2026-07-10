@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Chartboost SDK has an official Android SDK/integration for mobile apps.
+
+2. **Service model** — This is an advertising/monetization SDK, so normal operation depends on Chartboost-hosted services to request, deliver, and track ads. It is not a purely on-device library.
+
+3. **Integration requirement** — Yes. Standard Chartboost Android integration requires the developer to register the app in Chartboost and configure vendor-issued identifiers in the app. The usual required values are the **Chartboost App ID** and **Chartboost App Signature**.
+
+4. **Scope** — These credentials belong to the Chartboost SDK’s own documented setup for connecting the app to Chartboost’s ad platform, not just to a separate product.

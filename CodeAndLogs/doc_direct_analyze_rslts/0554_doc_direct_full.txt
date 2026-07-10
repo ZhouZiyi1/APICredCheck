@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+MoEngage provides an official Android SDK and Android integration documentation for mobile apps. Android is a first-class supported platform for this product.
+
+2. Service model  
+MoEngage is a customer engagement / analytics / push / in-app messaging platform. Its normal use depends on MoEngage-hosted backend services for event ingestion, campaign delivery, user engagement, and related features. This is not a purely on-device library.
+
+3. Integration requirement  
+Typical Android setup requires configuring a MoEngage-issued application identifier in the app during SDK initialization. MoEngage documentation commonly shows initializing the SDK with an `App ID` (sometimes alongside regional/data-center configuration). That value is obtained from the MoEngage dashboard/console and is required for the SDK to send data to MoEngage services.
+
+4. Scope  
+This credential is part of the documented integration for the MoEngage SDK itself, not just for a separate third-party product. Package name or signing details alone are not the relevant credential here; the MoEngage `App ID` is.

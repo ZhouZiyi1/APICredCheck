@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: `CarbonKit SDK` by `Ermal Kaleci` is known as an iOS UI library, commonly used for components such as a pager/tab strip interface in iPhone/iPad apps. I am not aware of an official Android SDK, Android package, or Android integration documentation for this product. The vendor attribution also matches the iOS open-source library rather than a cross-platform or Android offering.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is therefore N/A on Android.

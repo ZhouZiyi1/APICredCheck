@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I found no indication that "SZTextView SDK" by Martin Glass is an official Android SDK. This product is known as an iOS/macOS-style `UITextView` helper/subclass, associated with Apple platform APIs rather than Android APIs. There is no standard Android library artifact, Android setup documentation, or Android-specific integration pattern tied to this product.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android.

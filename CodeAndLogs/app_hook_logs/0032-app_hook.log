@@ -1,0 +1,105 @@
+[*] Log file: app_hook_logs\0032-app_hook.log
+[*] Started at: 2026-06-10T19:53:46
+
+=== Instrumenting 0032 GoogleUserMessagingPlatformSDK ===
+[*] Pair config: results_dir=apk_analyze_rslts, hook_results_dir=app_hook_rslts, logs_dir=app_hook_logs, install_attacker=True, spawn_attacker=True, start_frida_server=True
+[*] Attacker APK: apks\0032-GoogleUserMessagingPlatformSDK-attacker.apk
+[+] Loaded 5 hook method signature(s).
+    Lcom/google/android/gms/ads/internal/util/zzm;->zzaz(Landroid/content/Context;)Ljava/lang/String;
+    Lcom/google/android/gms/ads/internal/util/zzm;->zzd(Landroid/os/Bundle;)Ljava/lang/String;
+    Lcom/google/android/gms/ads/BaseAdView;->setAdUnitId(Ljava/lang/String;)V
+    Lcom/google/android/gms/ads/AdView;->setAdUnitId(Ljava/lang/String;)V
+    Lcom/google/android/gms/internal/ads/zzze;->setAdUnitId(Ljava/lang/String;)V
+[*] Scanning APK strings for embedded key material...
+[+] Found 1 candidate key references.
+[+] Runtime replacement values loaded from demo APK:
+    package: com.google.usermessaging.demo
+    cert SHA-1: E1E849B19182D16A212E66E11C9152BA8AEBA41A
+    cert SHA-256: 9B6D3A65DE5F2E5035AEB5070B6C0E04786F4F178022986B34E45BAAB878B60F
+    primary API key: AIzaSy*********************************
+    AdMob app id: ca-app********************************
+    AdMob ad unit id: ca-app********************************
+[*] Spawning attacker app with Frida and loading script.
+[+] adb device connected: e8bbd65c
+[+] frida-server is already running.
+[*] Adaptive hook filtering enabled.
+[*] Strategy: baseline without target hooks, then add candidates one by one; a candidate that turns a success into failure/crash, or crashes by itself, is excluded.
+
+=== Adaptive attempt: baseline-passive-only ===
+[*] Hook subset size: 0
+Performing Streamed Install
+Success
+[+] Package is installed: com.google.usermessaging.attacker
+[*] Starting one-shot Frida attempt with runtime value replacement enabled.
+[*] Force-stopped com.google.usermessaging.attacker; waiting 2.0s for process cleanup.
+[*] Trying Frida spawn target: com.google.usermessaging.attacker
+[!] spawn failed for com.google.usermessaging.attacker: process not found
+[!] Frida spawn failed or timed out, falling back to adb launch + attach.
+[*] Launching app with adb: adb shell am start -W -n com.google.usermessaging.attacker/com.google.usermessaging.attacker.MyActivity
+[+] adb launch succeeded: com.google.usermessaging.attacker/.MyActivity
+[*] Attaching to pid 9643 for com.google.usermessaging.attacker.
+[frida] {"className": "android.util.Log", "methodName": "i", "kind": "hook_loaded", "ts": 1781092438563, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "d", "kind": "hook_loaded", "ts": 1781092438564, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "w", "kind": "hook_loaded", "ts": 1781092438565, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "e", "kind": "hook_loaded", "ts": 1781092438566, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092438567, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092438568, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092438569, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092438569, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438570, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438571, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438571, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438572, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438572, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438572, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438573, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092438573, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092438575, "process": "com.google.usermessaging.attacker"}
+[+] One-shot monitoring com.google.usermessaging.attacker for up to 45.0s with 0 hook signature(s).
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092439577, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092439577, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092439577, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092439577, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092439578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092439579, "process": "com.google.usermessaging.attacker"}
+[app-signal] status=unknown level=I tag=APICREDTEST message=APICREDTEST_MAIN_AUTO_CLICK_LOAD_AD
+[app-signal] status=start level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_START
+[frida] {"source": "AdMob.BaseBundle.getString", "replacementKind": "admob_app_id", "key": "com.google.android.gms.ads.APPLICATION_ID", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092440890, "process": "com.google.usermessaging.attacker"}
+[frida] {"source": "com.google.android.gms.ads.AdView.setAdUnitId", "replacementKind": "admob_ad_unit_id", "key": "adUnitId", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092441064, "process": "com.google.usermessaging.attacker"}
+[frida] {"source": "AdMob.BaseBundle.getString", "replacementKind": "admob_app_id", "key": "com.google.android.gms.ads.APPLICATION_ID", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092441079, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092441577, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092441578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092441578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092441578, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441579, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441579, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441579, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441579, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441579, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441579, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441580, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092441580, "process": "com.google.usermessaging.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092441580, "process": "com.google.usermessaging.attacker"}
+[app-signal] status=unverified_success level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_SUCCESS
+[app-signal] 06-10 19:54:05.082  9643  9643 I APICREDTEST: APICREDTEST_SDK_CALL_SUCCESS
+[+] SDK call success detected; keeping Frida session attached.
+[app-signal] status=complete level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_COMPLETE
+[*] One-shot attempt result: status=success, reason=sdk-call-success, last_signal=complete
+[!] Frida session detached: reason=application-requested, crash=None
+[*] Successful attempt completed; leaving app running.
+[+] Baseline run already reached SDK success; no target hook signatures are needed.
+[+] Adaptive filtering found a successful hook set.
+[+] Adaptive hook trace written: app_hook_logs\0032_adaptive_hook_filter.json
+[+] App hook result written: app_hook_rslts\0032_app_hook_rslt.md
+[+] Full hook script written: app_hook_rslts\0032_app_hook_full.js
+[+] Fill-in hook script written: app_hook_rslts\0032_app_hook_template.js
+[+] Safe signatures: 0; rejected signatures: 0
+[*] Adaptive final run disabled; run app_hooker.py again to use the persisted safe hook list.
+[*] Finished at: 2026-06-10T19:54:04

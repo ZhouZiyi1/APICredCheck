@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Firebase Crash Reporting historically had an official Android SDK/integration as part of Firebase for Android.
+
+2. **Service model** — This SDK is not purely on-device. Its purpose is to collect crash data from the app and send it to Firebase-hosted backend services for reporting and analysis.
+
+3. **Integration requirement** — Yes. Standard Firebase Android integration requires registering the Android app in the Firebase console and adding the Firebase configuration file to the app. For Android, this is typically the **`google-services.json`** file, which contains project/app identifiers used by Firebase services.
+
+4. **Scope** — This credential/config is part of the documented integration for Firebase Crash Reporting itself because the crash data is uploaded to Firebase backend services tied to a Firebase project. This is not merely a separate optional product’s credential.

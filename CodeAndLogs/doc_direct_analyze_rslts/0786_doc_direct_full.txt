@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Ably provides official Android support through its realtime/pub-sub client libraries and Android-targeted documentation for integrating Ably in Android apps.
+
+2. **Service model** - Ably SDK is not primarily an on-device helper library. Its standard purpose is to connect the app to Ably’s hosted realtime messaging infrastructure for publish/subscribe, presence, channels, and related realtime features. Normal use depends on Ably’s remote service.
+
+3. **Integration requirement** - Yes. Typical Ably integration requires configuring credentials issued by Ably so the SDK can authenticate to Ably’s service. The standard credential is an **API key** (even if production deployments may sometimes exchange that for token-based auth derived from the key). This is a vendor-issued credential used to access Ably-hosted services.
+
+4. **Scope** - The credential belongs to Ably SDK’s own documented integration, not a separate third-party product. The SDK’s normal connection/authentication flow is tied directly to Ably’s platform.

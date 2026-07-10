@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Spongy Castle is specifically known as an Android-oriented repackaging of the Bouncy Castle Java cryptography libraries, created to avoid classloader/provider conflicts on Android. It is distributed as libraries for use in Android apps, so official/documented Android integration exists.
+
+2. Service model: This is a pure client-side cryptography library. Its normal use is to provide encryption, decryption, certificates, TLS/crypto primitives, and related security functions inside the app. It does not depend on Roberto Tyley-hosted backend services as part of standard operation.
+
+3. Integration requirement: Typical integration is adding the library dependency and using its crypto APIs. There is no normal requirement to register the app with the vendor or obtain a console-issued API key, App ID, secret, or config file.
+
+4. Scope: Any keys or certificates a developer may use with cryptographic operations are application/security materials chosen by the developer, not vendor-issued credentials for accessing a Spongy Castle service. That does not meet the definition of an API credential for this SDK.

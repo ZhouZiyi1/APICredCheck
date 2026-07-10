@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Firebase Vision SDK had official Android integration as part of Firebase ML Kit / Firebase ML Vision for Android.
+
+2. Service model: Mixed. The product included both on-device vision features and cloud-backed vision features. Even where inference could run on-device, the SDK was distributed and initialized through Firebase’s Android setup, and some documented features relied on Google/Firebase hosted services.
+
+3. Integration requirement: Yes. Standard Android integration for Firebase Vision required adding the app to a Firebase project and including the Firebase configuration file in the Android app. That file (`google-services.json`) carries console-issued identifiers/keys such as the Firebase App ID and API key used for Firebase service access.
+
+4. Scope: This credential is part of this product’s documented Firebase Vision integration on Android, not merely an unrelated optional Google product. The required Firebase app configuration belongs to the Firebase Vision SDK setup itself.

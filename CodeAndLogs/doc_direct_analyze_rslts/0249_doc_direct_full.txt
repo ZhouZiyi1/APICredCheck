@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. HyprMX SDK is an official mobile advertising/monetization SDK with Android integration documentation and Android library support.
+
+2. Service model: This SDK is not primarily on-device. Its normal operation depends on HyprMX-hosted ad delivery/monetization services to request, load, and track ads or rewarded experiences.
+
+3. Integration requirement: Typical ad SDK integrations require the publisher/app to be identified to the vendor service. For HyprMX, the documented setup is associated with a console-issued application identifier used to configure the SDK so it can connect to HyprMX services for that app.
+
+4. Scope: That identifier is part of the HyprMX SDK integration itself, not just a separate third-party product layered on top. Package name or signing alone would not satisfy this; the SDK needs the vendor-issued app identifier for normal service use.
+
+Evidence note: Public ad SDK docs sometimes vary in naming across versions, but the integration pattern is consistent with a vendor-issued app identifier rather than no credential. The safest short credential label is "App ID".

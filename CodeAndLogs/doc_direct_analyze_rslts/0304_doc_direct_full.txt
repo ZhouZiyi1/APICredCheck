@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Mapbox Maps SDK has official Android support and documented Android integration as the native Mapbox maps library for Android apps.
+
+2. Service model  
+This SDK is not just an on-device rendering helper. In standard use, it is built to load Mapbox-hosted map styles, tiles, glyphs, sprites, and related map resources over the network. That means routine operation depends on Mapbox remote services unless a developer has built a fully self-hosted/offline setup.
+
+3. Integration requirement  
+Yes. Typical Android integration requires configuring a Mapbox access token. This token is issued from Mapbox and is used by the app/SDK to authenticate requests to Mapbox-hosted map resources. Even if some build-time tooling or package download paths have varied over time, the standard runtime integration for Mapbox maps on Android uses an access token.
+
+4. Scope  
+The credential is part of this product's own documented integration, not just some separate Mapbox product. The Maps SDK itself uses the token to access Mapbox map content and services that the SDK is designed to consume.

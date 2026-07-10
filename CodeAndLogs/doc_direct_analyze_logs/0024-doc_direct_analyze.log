@@ -1,0 +1,19 @@
+2026-05-17 20:19:24 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0024-doc_direct_analyze.log
+2026-05-17 20:19:24 [INFO] Run start: SDK_ID=0024 SDK=Facebook Audience Network SDK vendor=Meta results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 20:19:24 [INFO] Querying model='gpt-5.4' SDK='Facebook Audience Network SDK' vendor='Meta'
+2026-05-17 20:19:30 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=225 total_tokens=1203
+2026-05-17 20:19:30 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0024_doc_direct_full.txt
+2026-05-17 20:19:30 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Facebook Audience Network SDK has had official Android integration for showing ads in Android apps.
+
+2. Service model — This is an advertising SDK, so normal operation depends on Meta-hosted ad serving/backend services. The SDK does not work as a purely on-device library; it fetches and serves ad inventory from the vendor’s network.
+
+3. Integration requirement — Yes. Standard integration requires Meta-issued identifiers configured in the app for ad serving. For Audience Network, the usual product-specific credential-like value is the placement identifier used for ad units. In practice, integration may also occur within a Meta app registration context, but the clearest required value for this SDK itself is the ad placement ID.
+
+4. Scope — The placement ID belongs directly to Facebook Audience Network integration and is used by this ad product to request and render ads. This is not merely package/signing metadata and not only a separate product’s credential.
+2026-05-17 20:19:30 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0024_doc_direct_rslt.txt
+2026-05-17 20:19:30 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "Placement ID"}
+2026-05-17 20:19:30 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0024-doc_direct_analyze.log

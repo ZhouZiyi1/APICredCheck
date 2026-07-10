@@ -1,0 +1,19 @@
+2026-05-17 21:15:55 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0074-doc_direct_analyze.log
+2026-05-17 21:15:55 [INFO] Run start: SDK_ID=0074 SDK=Facebook Yoga SDK vendor=Meta results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:15:55 [INFO] Querying model='gpt-5.4' SDK='Facebook Yoga SDK' vendor='Meta'
+2026-05-17 21:16:01 [INFO] LLM token usage: prompt_tokens=988 completion_tokens=213 total_tokens=1201
+2026-05-17 21:16:01 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0074_doc_direct_full.txt
+2026-05-17 21:16:01 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Facebook Yoga is an open-source layout engine with official Android use via its Java/Android bindings and broad Android integration in native/mobile UI frameworks.
+
+2. **Service model** — It is primarily an **on-device** library. Yoga computes flexbox-style layout locally in the app/runtime and does not depend on Meta-hosted APIs or backend services for its normal operation.
+
+3. **Integration requirement** — There is no usual setup requiring the developer to register an app in a Meta developer console or configure an App ID, API key, token, or similar credential for Yoga itself. Typical integration is adding the library/package and using its layout APIs.
+
+4. **Scope** — Any Meta App ID or other credentials used elsewhere (for example, Facebook Login or other Meta platform SDKs) belong to different products, not to Yoga’s documented integration.
+2026-05-17 21:16:01 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0074_doc_direct_rslt.txt
+2026-05-17 21:16:01 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:16:01 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0074-doc_direct_analyze.log

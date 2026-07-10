@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. ACRA is an Android crash-reporting library specifically built for Android apps, with official Android integration via Gradle and application-level configuration.
+
+2. Service model: ACRA is primarily a client-side crash reporting SDK. Its standard role is to capture crashes on-device and send reports to a destination the developer chooses, such as email, self-hosted endpoints, or third-party backends. It is not centered on a required ACRA-hosted cloud service.
+
+3. Integration requirement: Usual ACRA setup does not require the developer to register the app in an ACRA vendor console or obtain an ACRA-issued API key/App ID/secret. Configuration typically consists of enabling the library and specifying report destinations or plugins.
+
+4. Scope: Any credentials a developer might use are for their own chosen transport target or another service integrated separately, not for ACRA itself. That does not count as an API credential for this SDK under the stated definition.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No clear evidence that "Opencsv SDK" is an official Android SDK product from the vendor. OpenCSV is generally known as a Java CSV parsing/writing library, not a vendor-hosted mobile service SDK with Android-specific integration docs. While a Java library may sometimes be usable in Android projects, the prompt asks for an official Android library or documented Android integration for this named product, and that evidence appears absent.
+
+Because step 1 is no, steps 2-4 are skipped as N/A on Android.

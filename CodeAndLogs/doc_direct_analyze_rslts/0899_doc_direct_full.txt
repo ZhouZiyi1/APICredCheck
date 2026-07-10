@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. FullStory provides an official Android/mobile SDK and documents Android integration for session replay / product analytics style capture in Android apps.
+
+2. **Service model** - This SDK is not primarily an on-device utility. Its standard purpose is to capture app session data and send it to FullStory’s hosted service for processing, replay, and analysis. So normal use routinely depends on FullStory’s backend.
+
+3. **Integration requirement** - Yes. FullStory’s usual mobile SDK setup requires configuring a vendor-issued app identifier so captured data is associated with the correct FullStory account/project and sent to FullStory’s service. The standard credential-like value used in setup is an **Org ID**.
+
+4. **Scope** - This value belongs to FullStory SDK integration itself, not to some separate third-party product. It is part of the documented setup for using FullStory’s own hosted session replay/analytics service on Android.

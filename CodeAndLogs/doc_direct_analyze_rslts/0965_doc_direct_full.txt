@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AppNexus provides an official mobile advertising SDK for Android. Its Android integration is documented around adding the AppNexus SDK to an Android app and using Android ad views / ad request classes. So Android support is present.
+
+2. Service model  
+This is an advertising SDK, not a purely on-device library. Its normal operation depends on AppNexus-hosted ad serving infrastructure: the app requests ads from AppNexus services, receives creatives, and reports related events. Remote vendor services are therefore part of the standard product behavior.
+
+3. Integration requirement  
+Typical AppNexus Android integration requires the developer to configure an AppNexus inventory identifier in the app, commonly a `placementId` for the ad slot. That value tells AppNexus which publisher placement is requesting ads and is part of normal SDK setup. This fits the prompt's definition of an API credential because it is a vendor-issued identifier configured in the app so the SDK can use AppNexus-hosted ad services.
+
+4. Scope  
+The relevant identifier belongs to this product's own documented integration, not to some separate third-party product. The placement identifier is specific to AppNexus ad serving setup for this SDK.

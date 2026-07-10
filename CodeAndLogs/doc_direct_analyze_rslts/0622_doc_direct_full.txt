@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. `CWStatusBarNotification SDK` is known as an iOS UI library for showing notification banners in the iOS status bar area, published by Cezary Wojcik as an Objective-C/CocoaPods component for Apple platforms. There is no official Android SDK, Android package, or documented Android integration for this product.
+
+Steps 2-4 are skipped because they are not applicable when Android is not supported.

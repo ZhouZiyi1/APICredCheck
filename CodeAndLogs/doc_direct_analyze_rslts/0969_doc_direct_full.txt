@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support - Yes. The product is explicitly an Android SDK/library: `Android-ReactiveLocation SDK` is a reactive wrapper for Android location APIs, published for Android integration.
+
+2. Service model - Mostly on-device / platform-service based. This SDK is a client-side helper around Android location functionality (for example, reactive access to Google Play Services location APIs), rather than a vendor-hosted backend operated by Michał Charmas. Its normal use is to simplify location API calls inside an Android app.
+
+3. Integration requirement - No vendor console-issued credential is typically required for this SDK itself. Standard setup is adding the library dependency and using Android/location permissions and any underlying platform libraries it wraps. There is no indication that Michał Charmas runs a hosted service for this SDK that requires an app key, App ID, token, or similar credential.
+
+4. Scope - Any API key a developer might need for separate services such as Google Maps/Places would belong to those separate Google products, not to `Android-ReactiveLocation SDK` itself. For this SDK’s documented integration, the credential requirement is not part of the product.

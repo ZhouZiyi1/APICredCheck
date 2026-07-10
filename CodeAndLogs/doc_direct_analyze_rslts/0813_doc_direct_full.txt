@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. RootTools SDK is an Android library specifically intended for rooted Android devices. It is used from Android apps to execute privileged shell commands and interact with root-level features on-device.
+
+2. **Service model** - This product is mostly on-device. RootTools is a utility/library for local root access, shell execution, file operations, and related Android device functionality. Its normal use does not depend on Stephen Stericson-hosted APIs or a vendor backend.
+
+3. **Integration requirement** - There is no usual setup requiring a developer to register the app with the vendor or obtain a console-issued API key, App ID, secret, token, or config file. Typical integration is adding the library to the Android project and calling its local APIs.
+
+4. **Scope** - Any permissions, package configuration, or root access handling are app/device concerns, not vendor-issued credentials for RootTools services. There is no evidence that this SDK’s documented Android integration requires credentials for vendor-hosted services.

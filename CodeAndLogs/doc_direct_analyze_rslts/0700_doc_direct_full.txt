@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+PostHog officially supports Android. It provides a native Android SDK and also Android support through its mobile integrations documentation.
+
+2. Service model  
+PostHog is an analytics / product analytics platform. In normal use, the Android SDK captures events, user properties, screen views, and related telemetry, then sends that data to PostHog-hosted ingestion/backend services. Its standard value depends on communicating with the vendor's remote service, not purely on-device behavior.
+
+3. Integration requirement  
+Typical PostHog Android setup requires configuring the SDK with a project-specific key used to send data to PostHog. In PostHog documentation this is commonly called the `apiKey` or project API key. That is a vendor-issued value used as part of the normal SDK initialization.
+
+4. Scope  
+This credential is part of PostHog's own documented SDK integration and is used for PostHog's hosted analytics ingestion. It is not merely an Android package identifier, signing detail, or a credential for a separate third-party product.

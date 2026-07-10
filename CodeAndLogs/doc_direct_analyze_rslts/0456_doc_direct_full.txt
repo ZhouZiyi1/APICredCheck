@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Google ARCore has official Android support, including the ARCore SDK for Android and documented Android app integration.
+
+2. Service model  
+In typical use, ARCore is primarily an on-device SDK. Core features such as motion tracking, environmental understanding, plane detection, light estimation, and anchors are performed locally on the device, with ARCore services delivered through Google Play Services for AR rather than through app-configured vendor-hosted API calls.
+
+3. Integration requirement  
+For standard Android integration, developers do not normally need to obtain a console-issued API key, App ID, client secret, or similar credential from Google and place it in the app. Usual setup is adding the SDK dependency, declaring camera/AR requirements, and handling ARCore availability.
+
+4. Scope  
+There are optional ARCore-related capabilities, such as certain cloud or geospatial features, that may involve separate Google Cloud / Google Maps Platform credentials. Those are not required for normal baseline use of the Google AR Core SDK on Android. Package name and signing configuration also do not change this conclusion.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No official Android library or Android integration is associated with Peter Steinberger's "Aspects SDK." Aspects is known as an Objective-C runtime hooking / aspect-oriented library for Apple platforms, intended for iOS/macOS codebases rather than Android. I do not find this product described as an Android SDK.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

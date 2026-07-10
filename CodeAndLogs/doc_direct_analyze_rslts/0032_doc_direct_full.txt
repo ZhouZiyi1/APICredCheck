@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google User Messaging Platform (UMP) SDK has an official Android SDK/library for displaying consent forms and handling user consent status in Android apps.
+
+2. Service model — This SDK is not purely on-device. Its normal use involves Google's consent messaging infrastructure: the SDK requests consent info and may load a Google-hosted consent form/message for presentation to users. So it relies on vendor-hosted services as part of standard functionality.
+
+3. Integration requirement — For standard Android integration, developers typically add the UMP SDK and configure consent request parameters, but they do not normally obtain and embed a product-specific API key, App ID, or secret specifically for UMP itself. The consent setup is generally managed through AdMob / Ad Manager privacy & messaging configuration, while the Android app integration does not require a separate console-issued credential value whose purpose is to authenticate the app to UMP services.
+
+4. Scope — Although a real app may also use AdMob/App ID or other Google ad stack identifiers through separate products, those belong to the ads/monetization products rather than being a required API credential for the UMP SDK itself. Package name or store listing configuration is not an API credential.

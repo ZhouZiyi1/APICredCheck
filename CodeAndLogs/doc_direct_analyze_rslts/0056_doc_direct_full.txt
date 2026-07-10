@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Crashlytics SDK had official Android integration under Fabric, and later via Firebase Crashlytics for Android.
+
+2. Service model — It relies on vendor-hosted backend services as part of normal use. The SDK collects crash reports in the app and sends them to Fabric/Google-hosted crash reporting services for processing and display in the console.
+
+3. Integration requirement — Yes. Standard Android integration required registering the app with Fabric/Firebase and adding a vendor-issued app configuration to the app. In the Fabric-era Crashlytics setup, this was typically supplied through the Fabric/Crashlytics API key embedded via the manifest/resources (often also provisioned through the Fabric plugin). This is not merely local functionality.
+
+4. Scope — The credential is part of Crashlytics/Fabric integration itself, used so the app is associated with the vendor’s crash reporting backend. This is not just package name/signing, nor only a separate unrelated product’s credential.

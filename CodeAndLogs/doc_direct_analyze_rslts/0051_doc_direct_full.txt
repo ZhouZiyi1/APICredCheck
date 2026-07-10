@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No. App Tracking Transparency is an Apple platform privacy framework used to request tracking permission on iOS/iPadOS/tvOS. It is part of Apple's native ecosystem and is documented for Apple operating systems, not as an Android SDK or Android integration.
+
+Because step 1 is no, steps 2–4 are skipped. This product is N/A on Android.

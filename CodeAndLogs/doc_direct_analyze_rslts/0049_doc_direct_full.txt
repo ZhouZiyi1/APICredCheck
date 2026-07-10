@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. OneSignal provides an official Android SDK and Android integration documentation.
+
+2. Service model — OneSignal is a push notifications / messaging platform that relies on OneSignal’s hosted backend as part of normal operation. The SDK registers the app/device with OneSignal services and uses their remote infrastructure for messaging-related features.
+
+3. Integration requirement — Yes. Standard OneSignal setup requires the developer to create an app in the OneSignal dashboard and configure a OneSignal-issued identifier in the Android app. The commonly documented value is the OneSignal App ID.
+
+4. Scope — This credential is part of OneSignal SDK’s own documented integration, not merely a separate third-party product. Although push delivery on Android may also involve Firebase configuration, the OneSignal App ID itself is a credential/identifier for OneSignal’s own service and standard SDK setup.

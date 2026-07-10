@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**  
+Tapdaq SDK has official Android integration documentation and an Android library/SDK for adding ad mediation and ad formats in Android apps. So Android is supported.
+
+2. **Service model**  
+Tapdaq is an advertising/mediation SDK. Its normal operation depends on Tapdaq-hosted services for ad serving, mediation configuration, reporting, and related remote functionality. This is not a purely on-device library.
+
+3. **Integration requirement**  
+Typical Tapdaq Android setup requires the developer to register the app in Tapdaq’s dashboard and configure vendor-issued identifiers in the app during SDK initialization. The documented integration commonly uses an **App ID** together with a **Client Key**.
+
+4. **Scope**  
+These credentials are part of Tapdaq SDK’s own integration flow, not merely credentials for a separate third-party product. They identify the publisher/app to Tapdaq’s own ad/mediation service.

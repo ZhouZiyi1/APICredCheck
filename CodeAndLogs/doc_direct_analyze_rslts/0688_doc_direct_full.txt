@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tencent Audio Video Terminal SDK does support Android. Tencent documents Android integration for its real-time audio/video client SDKs under this product line, with Android libraries used to join calls, publish audio/video, and use Tencent-hosted RTC capabilities.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its normal use is to connect the app to Tencent’s hosted real-time audio/video infrastructure for rooms, streams, signaling/session control, and related media services. That means standard operation routinely depends on vendor-hosted backend services.
+
+3. Integration requirement  
+Typical integration requires the developer to create an application in Tencent’s console and use a console-issued `SDKAppID`. Android clients also commonly authenticate sessions with `UserSig`, but that token is usually generated from server-side credentials rather than being the main console value embedded as the product’s app credential. The console-issued app identifier is part of normal setup.
+
+4. Scope  
+This credential requirement belongs to this SDK’s own documented integration flow for Tencent’s audio/video service, not to an unrelated Tencent product. Package name or signing settings are not the deciding factor here; the key requirement is the Tencent-issued application identifier used by the SDK’s service.

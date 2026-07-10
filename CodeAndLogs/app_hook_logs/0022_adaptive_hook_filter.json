@@ -1,0 +1,36 @@
+{
+  "sdk_id": "0022",
+  "sdk_name": "FacebookShareKitSDK",
+  "attempt_timeout_seconds": 45.0,
+  "original_count": 4,
+  "safe_count": 1,
+  "rejected_count": 0,
+  "safe_signatures": [
+    "Lcom/facebook/FacebookSdk;->getApplicationId()Ljava/lang/String;"
+  ],
+  "rejected_signatures": [],
+  "attempts": [
+    {
+      "label": "baseline-passive-only",
+      "subset_size": 0,
+      "subset": [],
+      "status": "failure",
+      "reason": "facebook-graph-response-failure",
+      "last_signal": "failure",
+      "stop_app_after": true
+    },
+    {
+      "label": "add-1",
+      "subset_size": 1,
+      "subset": [
+        "Lcom/facebook/FacebookSdk;->getApplicationId()Ljava/lang/String;"
+      ],
+      "status": "success",
+      "reason": "sdk-call-success",
+      "last_signal": "success",
+      "stop_app_after": true
+    }
+  ],
+  "final_status": "success",
+  "final_reason": "sdk-call-success"
+}

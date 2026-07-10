@@ -1,0 +1,100 @@
+[*] Log file: app_hook_logs\0047-app_hook.log
+[*] Started at: 2026-06-10T19:54:54
+
+=== Instrumenting 0047 GoogleMobileAdsSDK ===
+[*] Pair config: results_dir=apk_analyze_rslts, hook_results_dir=app_hook_rslts, logs_dir=app_hook_logs, install_attacker=True, spawn_attacker=True, start_frida_server=True
+[*] Attacker APK: apks\0047-GoogleMobileAdsSDK-attacker.apk
+[+] Loaded 1 hook method signature(s).
+    Lcom/google/android/gms/ads/BaseAdView;->setAdUnitId(Ljava/lang/String;)V
+[*] Scanning APK strings for embedded key material...
+[+] Found 0 candidate key references.
+[+] Runtime replacement values loaded from demo APK:
+    package: com.google.mobileads.demo
+    cert SHA-1: E1E849B19182D16A212E66E11C9152BA8AEBA41A
+    cert SHA-256: 9B6D3A65DE5F2E5035AEB5070B6C0E04786F4F178022986B34E45BAAB878B60F
+    primary API key: unknown
+    AdMob app id: ca-app********************************
+    AdMob ad unit id: ca-app********************************
+[*] Spawning attacker app with Frida and loading script.
+[+] adb device connected: e8bbd65c
+[+] frida-server is already running.
+[*] Adaptive hook filtering enabled.
+[*] Strategy: baseline without target hooks, then add candidates one by one; a candidate that turns a success into failure/crash, or crashes by itself, is excluded.
+
+=== Adaptive attempt: baseline-passive-only ===
+[*] Hook subset size: 0
+Performing Streamed Install
+Success
+[+] Package is installed: com.google.mobileads.attacker
+[*] Starting one-shot Frida attempt with runtime value replacement enabled.
+[*] Force-stopped com.google.mobileads.attacker; waiting 2.0s for process cleanup.
+[*] Trying Frida spawn target: com.google.mobileads.attacker
+[!] spawn failed for com.google.mobileads.attacker: process not found
+[!] Frida spawn failed or timed out, falling back to adb launch + attach.
+[*] Launching app with adb: adb shell am start -W -n com.google.mobileads.attacker/com.google.mobileads.attacker.MyActivity
+[+] adb launch succeeded: com.google.mobileads.attacker/.MyActivity
+[*] Attaching to pid 9647 for com.google.mobileads.attacker.
+[frida] {"className": "android.util.Log", "methodName": "i", "kind": "hook_loaded", "ts": 1781092520586, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "d", "kind": "hook_loaded", "ts": 1781092520587, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "w", "kind": "hook_loaded", "ts": 1781092520588, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "e", "kind": "hook_loaded", "ts": 1781092520589, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092520590, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092520590, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_missing", "ts": 1781092520591, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_missing", "ts": 1781092520591, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092520591, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092520592, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.InterstitialAd\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092520593, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.doubleclick.PublisherAdView\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092520593, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.doubleclick.PublisherInterstitialAd\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092520594, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092520594, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092520594, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092520595, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092520596, "process": "com.google.mobileads.attacker"}
+[+] One-shot monitoring com.google.mobileads.attacker for up to 45.0s with 0 hook signature(s).
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092521598, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092521598, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_missing", "ts": 1781092521598, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_missing", "ts": 1781092521598, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092521598, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092521599, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.InterstitialAd\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092521599, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.doubleclick.PublisherAdView\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092521600, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.doubleclick.PublisherInterstitialAd\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092521600, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092521600, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092521600, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092521600, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092521600, "process": "com.google.mobileads.attacker"}
+[app-signal] status=unknown level=I tag=APICREDTEST message=APICREDTEST_MAIN_AUTO_CLICK_LOAD_BANNER
+[app-signal] status=start level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_START
+[frida] {"source": "com.google.android.gms.ads.AdView.setAdUnitId", "replacementKind": "admob_ad_unit_id", "key": "adUnitId", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092522405, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092523600, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092523602, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_missing", "ts": 1781092523603, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_missing", "ts": 1781092523603, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092523603, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092523604, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.InterstitialAd\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092523606, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.doubleclick.PublisherAdView\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092523607, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "error": "Error: java.lang.ClassNotFoundException: Didn't find class \"com.google.android.gms.ads.doubleclick.PublisherInterstitialAd\" on path: DexPathList[[zip file \"/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/base.apk\"],nativeLibraryDirectories=[/data/app/~~w_X1OFr5VpTuWHQ56Taewg==/com.google.mobileads.attacker-c2t7QNHqdcdoNcO3XW51EQ==/lib/arm64, /system/lib64, /system_ext/lib64]]", "kind": "hook_error", "ts": 1781092523608, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092523609, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092523609, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_missing", "ts": 1781092523609, "process": "com.google.mobileads.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092523610, "process": "com.google.mobileads.attacker"}
+[app-signal] status=success level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_SUCCESS: Banner loaded.[*] One-shot attempt result: status=success, reason=sdk-call-success, last_signal=success
+[+] SDK call success detected; keeping Frida session attached.[app-signal] 06-10 19:55:25.546  9647  9647 I APICREDTEST: APICREDTEST_SDK_CALL_SUCCESS: Banner loaded.
+
+[app-signal] status=complete level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_COMPLETE
+[+] SDK call success detected; keeping Frida session attached.
+
+[!] Frida session detached: reason=application-requested, crash=None
+[*] Successful attempt completed; leaving app running.
+[+] Baseline run already reached SDK success; no target hook signatures are needed.
+[+] Adaptive filtering found a successful hook set.
+[+] Adaptive hook trace written: app_hook_logs\0047_adaptive_hook_filter.json
+[+] App hook result written: app_hook_rslts\0047_app_hook_rslt.md
+[+] Full hook script written: app_hook_rslts\0047_app_hook_full.js
+[+] Fill-in hook script written: app_hook_rslts\0047_app_hook_template.js
+[+] Safe signatures: 0; rejected signatures: 0
+[*] Adaptive final run disabled; run app_hooker.py again to use the persisted safe hook list.
+[*] Finished at: 2026-06-10T19:55:25

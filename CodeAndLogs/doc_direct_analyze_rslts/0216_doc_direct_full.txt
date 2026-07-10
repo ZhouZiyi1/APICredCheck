@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. ASIHTTPRequest is a legacy Objective-C networking library created for iPhone/macOS development, built around Apple platform APIs such as `NSOperation` and `CFNetwork`. Its documented usage and codebase target iOS/macOS, not Android, and there is no official Android SDK or Android integration guidance for this product from All-Seeing.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android for this SDK.

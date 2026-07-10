@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Repro SDK has official Android integration/documentation and an Android library for adding Repro to Android apps.
+
+2. **Service model** - Repro is a mobile marketing / analytics / engagement platform, not a purely on-device helper library. Its normal use involves the app sending data/events to Repro’s hosted backend so features like analytics, push/in-app messaging, and user engagement can work.
+
+3. **Integration requirement** - Yes. Standard Android setup for Repro requires configuring a vendor-issued application identifier in the app. Repro’s integration materials commonly refer to this as the Repro **Application ID** (often paired with an SDK token/secret in some platforms, but the key Android integration credential is the app identifier issued from the Repro console).
+
+4. **Scope** - This credential is part of Repro SDK’s own documented integration and is used so the Android app connects to Repro’s service, so it counts as this product’s API credential rather than a separate third-party dependency.

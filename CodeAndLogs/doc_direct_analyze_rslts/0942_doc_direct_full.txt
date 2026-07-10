@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Optimizely provides official Android SDK support for its feature experimentation / feature flagging client SDKs, with documented Android integration.
+
+2. **Service model** - This SDK is not just an on-device utility. In normal use, the Android app consumes Optimizely-hosted configuration/datafiles and/or communicates with Optimizely services as part of feature flagging and experimentation workflows. That means standard operation depends on vendor-hosted services.
+
+3. **Integration requirement** - Yes. Typical Optimizely SDK setup requires configuring an Optimizely project/environment identifier issued by Optimizely so the SDK can fetch the correct project data/configuration. In practice this is commonly the **SDK key** (sometimes documented as an environment-specific SDK key or similar project key) used by the client SDK.
+
+4. **Scope** - This credential is part of the documented integration for the Optimizely SDK itself, not merely another Optimizely product added separately. It is the standard value used by the SDK to connect the app to Optimizely’s hosted experimentation/feature delivery service.

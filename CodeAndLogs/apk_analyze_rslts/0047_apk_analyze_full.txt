@@ -1,0 +1,456 @@
+SDK_ID: 0047
+SDK_NAME: GoogleMobileAdsSDK
+DEMO_APK: apks\0047-GoogleMobileAdsSDK-demo.apk
+DEMO_PACKAGE: com.google.mobileads.demo
+
+HOOK_METHOD_SIGNATURES:
+- Lcom/google/android/gms/ads/BaseAdView;->setAdUnitId(Ljava/lang/String;)V
+
+PASSIVE_FRIDA_OBSERVATION_POINTS:
+- No structured observation points were extracted from the LLM response.
+
+HOOK_SELECTION_TRACE:
+- LLM observation points: 0
+- LLM filter counts: legacy=0, observe_only=0, high_risk=0, invalid_action=0
+- LLM selected signatures: 0
+- LLM observation points unavailable; using static auth+network fallback.
+- admob fallback unavailable: Lcom/google/android/gms/ads/internal/util/zzm;->zzaz(Landroid/content/Context;)Ljava/lang/String;
+- admob fallback unavailable: Lcom/google/android/gms/ads/internal/util/zzm;->zzd(Landroid/os/Bundle;)Ljava/lang/String;
+- admob fallback selected: Lcom/google/android/gms/ads/BaseAdView;->setAdUnitId(Ljava/lang/String;)V
+- admob fallback unavailable: Lcom/google/android/gms/ads/AdView;->setAdUnitId(Ljava/lang/String;)V
+- admob fallback unavailable: Lcom/google/android/gms/internal/ads/zzze;->setAdUnitId(Ljava/lang/String;)V
+- Static AdMob fallback selected signatures: 1
+- Static fallback selected signatures: 1
+
+STATIC_PROTECTION_EVIDENCE:
+
+[package_name]
+- smali\com\google\android\gms\ads\identifier\AdvertisingIdClient.smali:873: invoke-virtual {v1, v2, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\ads\internal\zzf.smali:542: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\zzf.smali:626: iget-object p2, p2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\zzf.smali:628: invoke-virtual {p1, p2, v4}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\ads\internal\zzr.smali:43: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\zzr.smali:55: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\zzr.smali:61: invoke-virtual {v1, p1, v2}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\ads\internal\client\zzev.smali:30: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\client\zzq.smali:98: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\zzbs.smali:1796: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:398: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:968: invoke-virtual {v5}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:2177: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\zzv.smali:175: invoke-virtual {p1}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\zzz.smali:88: invoke-virtual {p1}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:209: invoke-virtual {p2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:1057: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zza.smali:93: iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zza.smali:96: invoke-virtual {v4, v3, v2}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zza.smali:133: iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\ads\nonagon\util\logging\csi\CsiParamDefaults.smali:29: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\GoogleApiAvailabilityLight.smali:209: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\GoogleApiAvailabilityLight.smali:228: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\GoogleApiAvailabilityLight.smali:234: invoke-virtual {p2, p1, p3}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:238: invoke-virtual {p0, v1, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:271: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:415: invoke-virtual {v0, v4, v3}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:108: iget-object v2, p0, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:119: iget-object v2, p0, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:568: invoke-virtual {v1, p1, p3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\common\zzaa.smali:176: const-string v0, "packageName must be defined"
+- smali\com\google\android\gms\common\api\GoogleApi.smali:575: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\api\GoogleApiClient$Builder.smali:194: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\api\internal\NonGmsServiceBrokerClient.smali:410: invoke-virtual {p0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\BaseGmsClient.smali:611: invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\BaseGmsClient.smali:1921: invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\ClientIdentity.smali:19: .field public final packageName:Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\ClientIdentity.smali:45: iput-object p2, p0, Lcom/google/android/gms/common/internal/ClientIdentity;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\ClientIdentity.smali:82: iget-object p1, p1, Lcom/google/android/gms/common/internal/ClientIdentity;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\ViewUtils.smali:55: invoke-virtual {p2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\zac.smali:39: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\zzae.smali:74: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\stats\ConnectionTracker.smali:121: invoke-virtual {p6}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:55: invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\common\util\ClientLibraryUtils.smali:19: invoke-static {p0, p1}, Lcom/google/android/gms/common/util/ClientLibraryUtils;->getPackageInfo(Landroid/content/Context;Ljava/lang/String;)
+- smali\com\google\android\gms\common\util\ClientLibraryUtils.smali:56: .method public static getPackageInfo(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\common\util\ClientLibraryUtils.smali:68: invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getPackageInfo(Ljava/lang/String;I)Landroid/con
+- smali\com\google\android\gms\common\util\UidVerifier.smali:39: invoke-virtual {p1, v0, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\common\wrappers\PackageManagerWrapper.smali:167: .method public getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\common\wrappers\PackageManagerWrapper.smali:182: invoke-virtual {p0, p1, p2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali\com\google\android\gms\dynamite\DynamiteModule.smali:2359: iget-object v4, v0, Landroid/content/pm/ProviderInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzarz.smali:82: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzarz.smali:90: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzarz.smali:246: iget-object v8, v8, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzazm.smali:162: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbad.smali:25: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbad.smali:62: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbad.smali:68: invoke-virtual {p1, p0, p2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzbaj.smali:168: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbar.smali:37: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbar.smali:43: invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzbar.smali:48: invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbbq.smali:63: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbbq.smali:70: invoke-virtual {v1, v2, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzbbq.smali:75: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbcf.smali:68: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbcg.smali:286: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbcg.smali:742: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbfq.smali:744: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbio.smali:172: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbio.smali:210: invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbit.smali:95: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbit.smali:103: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbjp.smali:56: invoke-static {p1, v0}, Landroidx/browser/customtabs/CustomTabsClient;->getPackageName(Landroid/content/Context;Ljava/util/List;)Ljava/lang/
+- smali_classes3\com\google\android\gms\internal\ads\zzbjp.smali:63: invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbjr.smali:109: iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbqc.smali:173: iget-object p0, p0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbqd.smali:702: invoke-static {v0, v12}, Landroidx/browser/customtabs/CustomTabsClient;->getPackageName(Landroid/content/Context;Ljava/util/List;)Ljava/lang
+- smali_classes3\com\google\android\gms\internal\ads\zzbqd.smali:712: invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzbqd.smali:2611: iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+[app_metadata]
+- smali\com\google\android\gms\ads\internal\zzf.smali:615: invoke-virtual {p2}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\ads\internal\zzf.smali:626: iget-object p2, p2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali\com\google\android\gms\ads\internal\client\zzev.smali:36: invoke-virtual {v1, v2, v3}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\ads\internal\client\zzev.smali:41: iget-object v0, v1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\google\android\gms\ads\internal\overlay\zzm.smali:2566: invoke-virtual {p0}, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\ads\internal\overlay\zzm.smali:2570: iget v0, v0, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
+- smali\com\google\android\gms\ads\internal\overlay\zzm.smali:2593: invoke-virtual {p0}, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:2726: invoke-virtual {v0, p0, v1}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:2730: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\google\android\gms\ads\internal\util\zzz.smali:95: invoke-virtual {p1}, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\ads\internal\util\zzz.smali:99: iget p1, p1, Landroid/content/pm/ApplicationInfo;->uid:I
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:1063: invoke-virtual {v2, p0, v3}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:1067: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zza.smali:9: .field private final zzb:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zza.smali:45: invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zza.smali:49: iput-object p1, p0, Lcom/google/android/gms/ads/nonagon/signalgeneration/zza;->zzb:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\GoogleApiAvailability.smali:1001: invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\GoogleApiAvailability.smali:1005: iget v3, v3, Landroid/content/pm/ApplicationInfo;->icon:I
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:919: iget-object p0, v7, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:925: invoke-virtual {v6, v2, v4}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:956: iget-boolean p0, p0, Landroid/content/pm/ApplicationInfo;->enabled:Z
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:132: iget-object p1, p0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:143: iget p1, p1, Landroid/content/pm/ApplicationInfo;->flags:I
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:632: iget-object v4, p3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\internal\zac.smali:64: invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\internal\zac.smali:68: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->name:Ljava/lang/String;
+- smali\com\google\android\gms\common\internal\zzae.smali:89: invoke-virtual {p0, v1, v2}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\common\internal\zzae.smali:94: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\google\android\gms\common\stats\ConnectionTracker.smali:136: invoke-virtual {v2, p6, v1}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\common\stats\ConnectionTracker.smali:141: iget p6, p6, Landroid/content/pm/ApplicationInfo;->flags:I
+- smali\com\google\android\gms\common\util\ClientLibraryUtils.smali:28: iget-object v0, p0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\util\ClientLibraryUtils.smali:36: iget-object p0, p0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\util\ClientLibraryUtils.smali:38: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali\com\google\android\gms\common\util\WorkSourceUtil.smali:415: invoke-virtual {p0, p1, v2}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\common\util\WorkSourceUtil.smali:436: iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
+- smali\com\google\android\gms\common\util\WorkSourceUtil.smali:495: invoke-virtual {p0, p1, v3}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali\com\google\android\gms\common\wrappers\PackageManagerWrapper.smali:53: .method public getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\common\wrappers\PackageManagerWrapper.smali:68: invoke-virtual {p0, p1, p2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali\com\google\android\gms\common\wrappers\PackageManagerWrapper.smali:97: invoke-virtual {p0, p1, v1}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo
+- smali\com\google\android\gms\dynamite\DynamiteModule.smali:2384: iget-object p0, v0, Landroid/content/pm/ProviderInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\dynamite\DynamiteModule.smali:2388: iget-object p0, v0, Landroid/content/pm/ProviderInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+- smali\com\google\android\gms\dynamite\DynamiteModule.smali:2390: iget p0, p0, Landroid/content/pm/ApplicationInfo;->flags:I
+- smali_classes3\com\google\android\gms\internal\ads\zzbio.smali:216: invoke-virtual {p1, v1, v3}, Lcom/google/android/gms/common/wrappers/PackageManagerWrapper;->getApplicationInfo(Ljava/lang/String;I)Landroid
+- smali_classes3\com\google\android\gms\internal\ads\zzbio.smali:220: iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+- smali_classes3\com\google\android\gms\internal\ads\zzbzy.smali:147: invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzbzy.smali:163: invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzbzy.smali:167: iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzcai.smali:98: .field public final zzf:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcai.smali:154: .method constructor <init>(ILandroid/os/Bundle;Lcom/google/android/gms/ads/internal/client/zzm;Lcom/google/android/gms/ads/internal/client/z
+- smali_classes3\com\google\android\gms\internal\ads\zzcai.smali:170: iput-object p6, p0, Lcom/google/android/gms/internal/ads/zzcai;->zzf:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcaj.smali:723: sget-object v3, Landroid/content/pm/ApplicationInfo;->CREATOR:Landroid/os/Parcelable$Creator;
+- smali_classes3\com\google\android\gms\internal\ads\zzcaj.smali:730: check-cast v2, Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcaj.smali:803: invoke-direct/range {v7 .. v67}, Lcom/google/android/gms/internal/ads/zzcai;-><init>(ILandroid/os/Bundle;Lcom/google/android/gms/ads/interna
+- smali_classes3\com\google\android\gms\internal\ads\zzcbd.smali:28: .field public final zzc:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcbd.smali:64: .method public constructor <init>(Landroid/os/Bundle;Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel;Landroid/content/pm/
+- smali_classes3\com\google\android\gms\internal\ads\zzcbd.smali:76: iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzcbd;->zzc:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcbe.smali:180: sget-object v3, Landroid/content/pm/ApplicationInfo;->CREATOR:Landroid/os/Parcelable$Creator;
+- smali_classes3\com\google\android\gms\internal\ads\zzcbe.smali:189: check-cast v7, Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcbe.smali:223: invoke-direct/range {v4 .. v17}, Lcom/google/android/gms/internal/ads/zzcbd;-><init>(Landroid/os/Bundle;Lcom/google/android/gms/ads/internal
+- smali_classes3\com\google\android\gms\internal\ads\zzcbn.smali:47: .method public final declared-synchronized getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcfd.smali:955: invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcfd.smali:959: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzcnr.smali:54: invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcnr.smali:63: check-cast v0, Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcod.smali:63: check-cast p0, Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzcod.smali:71: iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+- smali_classes3\com\google\android\gms\internal\ads\zzdbw.smali:11: .field private final zzc:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzdbw.smali:33: .method constructor <init>(Lcom/google/android/gms/internal/ads/zzfpk;Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel;Lan
+- smali_classes3\com\google\android\gms\internal\ads\zzdbw.smali:42: iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzdbw;->zzc:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzdbx.smali:136: check-cast v4, Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzdbx.smali:242: invoke-direct/range {v1 .. v13}, Lcom/google/android/gms/internal/ads/zzdbw;-><init>(Lcom/google/android/gms/internal/ads/zzfpk;Lcom/google/
+- smali_classes3\com\google\android\gms\internal\ads\zzecb.smali:9: .field private final zzb:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzecb.smali:31: invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzecb.smali:35: iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzecb;->zzb:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzekr.smali:1618: invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzekr.smali:1622: iget v2, v2, Landroid/content/pm/ApplicationInfo;->icon:I
+- smali_classes3\com\google\android\gms\internal\ads\zzfax.smali:10: .field private final zza:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzfax.smali:18: .method constructor <init>(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/PackageInfo;Landroid/content/Context;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzfax.smali:23: iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzfax;->zza:Landroid/content/pm/ApplicationInfo;
+- smali_classes3\com\google\android\gms\internal\ads\zzfaz.smali:54: check-cast v0, Landroid/content/pm/ApplicationInfo;
+
+[signing_certificate]
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:804: iget-object p0, v9, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\GooglePlayServicesUtilLight.smali:808: iget-object v1, v7, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:176: iget-object v3, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:182: iget-object v3, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\GoogleSignatureVerifier.smali:189: iget-object v3, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:60: iget-object p1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:64: iget-object p1, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:85: iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+- smali_classes3\com\google\android\gms\internal\ads\zzask.smali:1485: const-string v1, "No signatures found"
+- smali_classes3\com\google\android\gms\internal\ads\zzask.smali:1496: const-string v1, "No supported signatures found"
+- smali_classes3\com\google\android\gms\internal\ads\zzask.smali:2081: const-string v1, "Signature algorithms don\'t match between digests and signatures records"
+- smali_classes3\com\google\android\gms\internal\ads\zzfxb.smali:235: const-string v0, "Failed to verify signatures"
+- smali_classes3\com\google\android\gms\internal\ads\zzgsl.smali:76: iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+
+[sha1_sha256_digest]
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:411: invoke-static {p1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:420: invoke-virtual {v2, v4}, Ljava/security/MessageDigest;->update([B)V
+- smali\com\google\android\gms\ads\internal\util\client\zzf.smali:429: invoke-virtual {v2}, Ljava/security/MessageDigest;->digest()[B
+- smali\com\google\android\gms\common\zzo.smali:515: const-string v3, "SHA-256"
+- smali\com\google\android\gms\common\zzo.smali:518: invoke-static {v3}, Lcom/google/android/gms/common/util/AndroidUtilsLight;->zza(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali\com\google\android\gms\common\zzo.smali:526: check-cast v4, Ljava/security/MessageDigest;
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:72: const-string p1, "SHA1"
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:75: invoke-static {p1}, Lcom/google/android/gms/common/util/AndroidUtilsLight;->zza(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali\com\google\android\gms\common\util\AndroidUtilsLight.smali:95: invoke-virtual {p1, p0}, Ljava/security/MessageDigest;->digest([B)[B
+- smali_classes3\com\google\android\gms\internal\ads\zzasd.smali:46: .method public final zzb([Ljava/security/MessageDigest;JI)V
+- smali_classes3\com\google\android\gms\internal\ads\zzasd.smali:96: invoke-virtual {v0, p2}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzase.smali:10: .method public abstract zzb([Ljava/security/MessageDigest;JI)V
+- smali_classes3\com\google\android\gms\internal\ads\zzasf.smali:42: .method public final zzb([Ljava/security/MessageDigest;JI)V
+- smali_classes3\com\google\android\gms\internal\ads\zzasf.smali:85: invoke-virtual {p4, p0}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzask.smali:1639: sget-object v19, Ljava/security/spec/MGF1ParameterSpec;->SHA256:Ljava/security/spec/MGF1ParameterSpec;
+- smali_classes3\com\google\android\gms\internal\ads\zzask.smali:1645: const-string v17, "SHA-256"
+- smali_classes3\com\google\android\gms\internal\ads\zzask.smali:1890: invoke-static {v3, v4}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+- smali_classes3\com\google\android\gms\internal\ads\zzazm.smali:369: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzazm.smali:372: invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzazm.smali:389: invoke-virtual {v1, v0, v4, v2}, Ljava/security/MessageDigest;->update([BII)V
+- smali_classes3\com\google\android\gms\internal\ads\zzazn.smali:35: invoke-static {p0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzazn.smali:39: invoke-static {p0}, Lcom/google/android/gms/internal/ads/zzazo;->zzf(Ljava/security/MessageDigest;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzazo.smali:13: .field private static zzd:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzazo.smali:350: sget-object v2, Lcom/google/android/gms/internal/ads/zzazo;->zzd:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzazo.smali:364: invoke-virtual {v1}, Ljava/security/MessageDigest;->reset()V
+- smali_classes3\com\google\android\gms\internal\ads\zzbfs.smali:12: .field private static zzb:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbfs.smali:45: .method protected final zzb()Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbfs.smali:54: sget-object v0, Lcom/google/android/gms/internal/ads/zzbfs;->zzb:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbfx.smali:7: .field private zzb:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbfx.smali:180: invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzbfs;->zzb()Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbfx.smali:184: iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzbfx;->zzb:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbga.smali:12: .field private zzb:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbga.smali:53: invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzbfs;->zzb()Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzbga.smali:57: iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzbga;->zzb:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzfxb.smali:168: const-string v2, "SHA-256"
+- smali_classes3\com\google\android\gms\internal\ads\zzfxb.smali:171: invoke-static {v2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzfxb.smali:179: invoke-virtual {v2, p1}, Ljava/security/MessageDigest;->digest([B)[B
+- smali_classes3\com\google\android\gms\internal\ads\zzgha.smali:7: .field private zza:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzgha.smali:87: invoke-static {p1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzgha.smali:91: iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzgha;->zza:Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzgpj.smali:141: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzgpj.smali:144: invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzgpj.smali:161: invoke-virtual {v1, v0, v4, v2}, Ljava/security/MessageDigest;->update([BII)V
+- smali_classes3\com\google\android\gms\internal\ads\zzgsk.smali:12: const-string v0, "SHA-256"
+- smali_classes3\com\google\android\gms\internal\ads\zzgsk.smali:14: invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzgsk.smali:21: invoke-virtual {v0, p0}, Ljava/security/MessageDigest;->update([B)V
+- smali_classes3\com\google\android\gms\internal\ads\zzhfd.smali:381: const-string v0, "Invalid tag size in bytes %d; can be at most 20 bytes for SHA1"
+- smali_classes3\com\google\android\gms\internal\ads\zzhfd.smali:444: const-string v0, "Invalid tag size in bytes %d; can be at most 32 bytes for SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhfd.smali:558: const-string v0, "unknown hash type; must be SHA1, SHA224, SHA256, SHA384 or SHA512"
+- smali_classes3\com\google\android\gms\internal\ads\zzhfe.smali:28: const-string v1, "SHA1"
+- smali_classes3\com\google\android\gms\internal\ads\zzhfe.smali:44: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhjb.smali:160: invoke-static {p0, v1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+- smali_classes3\com\google\android\gms\internal\ads\zzhjr.smali:224: invoke-static {p3, v1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+- smali_classes3\com\google\android\gms\internal\ads\zzhlc.smali:459: invoke-static {p0, v1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+- smali_classes3\com\google\android\gms\internal\ads\zzhlc.smali:501: check-cast v0, Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zzhlc.smali:508: invoke-virtual {v0, p0, v2, v1}, Ljava/security/MessageDigest;->update([BII)V
+- smali_classes3\com\google\android\gms\internal\ads\zzhos.smali:191: const-string v0, "Invalid tag size in bytes %d; can be at most 20 bytes for SHA1"
+- smali_classes3\com\google\android\gms\internal\ads\zzhos.smali:254: const-string v0, "Invalid tag size in bytes %d; can be at most 32 bytes for SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhos.smali:356: const-string v0, "unknown hash type; must be SHA256, SHA384 or SHA512"
+- smali_classes3\com\google\android\gms\internal\ads\zzhot.smali:28: const-string v1, "SHA1"
+- smali_classes3\com\google\android\gms\internal\ads\zzhot.smali:44: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhsh.smali:49: const-string v3, "SHA1"
+- smali_classes3\com\google\android\gms\internal\ads\zzhsh.smali:71: const-string v7, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhup.smali:133: const-string v0, "NIST_P256 requires SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhur.smali:24: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhwk.smali:24: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhww.smali:24: const-string v1, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhyw.smali:240: const-string p0, "SHA-256"
+- smali_classes3\com\google\android\gms\internal\ads\zzhyw.smali:266: sget-object p1, Ljava/security/spec/MGF1ParameterSpec;->SHA256:Ljava/security/spec/MGF1ParameterSpec;
+- smali_classes3\com\google\android\gms\internal\ads\zzhzu.smali:260: invoke-static {p2, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+- smali_classes3\com\google\android\gms\internal\ads\zziaf.smali:31: invoke-static {p1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zziaf.smali:39: invoke-static {p1, p2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zziai.smali:27: const-string v1, "SHA1"
+- smali_classes3\com\google\android\gms\internal\ads\zziai.smali:49: const-string v5, "SHA256"
+- smali_classes3\com\google\android\gms\internal\ads\zziaq.smali:150: check-cast v1, Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zziaq.smali:153: invoke-virtual {v1, p2}, Ljava/security/MessageDigest;->update([B)V
+- smali_classes3\com\google\android\gms\internal\ads\zziaq.smali:162: invoke-virtual {v1, p0}, Ljava/security/MessageDigest;->update([B)V
+- smali_classes3\com\google\android\gms\internal\ads\zziau.smali:197: check-cast v3, Ljava/security/MessageDigest;
+- smali_classes3\com\google\android\gms\internal\ads\zziau.smali:202: invoke-virtual {v3, v5}, Ljava/security/MessageDigest;->update([B)V
+- smali_classes3\com\google\android\gms\internal\ads\zziau.smali:212: invoke-virtual {v3, v5}, Ljava/security/MessageDigest;->update([B)V
+
+[network_send]
+- smali\com\google\android\gms\ads\AdLoader.smali:87: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\BaseAdView.smali:152: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\BaseAdView.smali:326: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\BaseAdView.smali:566: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\admanager\AdManagerAdView.smali:176: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\admanager\AdManagerInterstitialAd.smali:88: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\appopen\AppOpenAd.smali:123: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\identifier\zzc.smali:26: invoke-virtual {v2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+- smali\com\google\android\gms\ads\identifier\zzc.smali:31: check-cast v2, Ljava/net/HttpURLConnection;
+- smali\com\google\android\gms\ads\identifier\zzc.smali:40: invoke-virtual {v2}, Ljava/net/HttpURLConnection;->getResponseCode()I
+- smali\com\google\android\gms\ads\internal\zzk.smali:261: invoke-interface {p1, p0}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\zzk.smali:278: invoke-interface {p1, p0}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\zzk.smali:624: invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\zzs.smali:756: invoke-virtual {p1, v0}, Lcom/google/android/gms/ads/internal/zzq;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+- smali\com\google\android\gms\ads\internal\client\zzeu.smali:600: invoke-virtual {v0, v1}, Ljava/util/concurrent/ThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\client\zzeu.smali:648: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\overlay\zzz.smali:614: invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\util\WorkManagerUtil.smali:131: invoke-virtual {p0, p1}, Landroidx/work/WorkManager;->enqueue(Landroidx/work/WorkRequest;)Landroidx/work/Operation;
+- smali\com\google\android\gms\ads\internal\util\WorkManagerUtil.smali:258: invoke-virtual {p0, p1}, Landroidx/work/WorkManager;->enqueue(Landroidx/work/WorkRequest;)Landroidx/work/Operation;
+- smali\com\google\android\gms\ads\internal\util\zzat.smali:1039: invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\util\zzat.smali:1061: invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\util\zzat.smali:1087: invoke-interface {p2, p1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\util\zzj.smali:258: invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:3962: .method public final zzb(Landroid/content/Context;Ljava/lang/String;ZLjava/net/HttpURLConnection;ZI)V
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:4005: invoke-virtual {p4, p3}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+- smali\com\google\android\gms\ads\internal\util\zzs.smali:4010: invoke-virtual {p4, p5}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+- smali\com\google\android\gms\ads\internal\util\client\zzl.smali:774: .method public final zza(Ljava/net/HttpURLConnection;[B)V
+- smali\com\google\android\gms\ads\internal\util\client\zzl.smali:788: invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getRequestProperties()Ljava/util/Map;
+- smali\com\google\android\gms\ads\internal\util\client\zzl.smali:803: invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getRequestProperties()Ljava/util/Map;
+- smali\com\google\android\gms\ads\internal\util\client\zzu.smali:519: invoke-virtual {v5}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+- smali\com\google\android\gms\ads\internal\util\client\zzu.smali:524: check-cast v5, Ljava/net/HttpURLConnection;
+- smali\com\google\android\gms\ads\internal\util\client\zzu.smali:541: invoke-virtual {v5, v7}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+- smali\com\google\android\gms\ads\interstitial\InterstitialAd.smali:120: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\TaggingLibraryJsInterface.smali:428: invoke-interface {v3, v4}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\TaggingLibraryJsInterface.smali:730: invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zzbf.smali:195: invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zzbf.smali:539: invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zze.smali:824: invoke-interface {p0, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zzj.smali:539: invoke-interface {p2, v1}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zzq.smali:322: invoke-interface {v0, v3}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\nonagon\signalgeneration\zzv.smali:452: invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzhcg;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\query\QueryInfo.smali:104: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\rewarded\RewardedAd.smali:130: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\rewarded\RewardedAd.smali:233: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\rewardedinterstitial\RewardedInterstitialAd.smali:88: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\ads\rewardedinterstitial\RewardedInterstitialAd.smali:181: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\common\api\GoogleApiClient.smali:222: .method public enqueue(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/api/inte
+- smali\com\google\android\gms\common\api\GoogleApiClient.smali:244: .method public execute(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/api/inte
+- smali\com\google\android\gms\common\api\internal\ListenerHolder.smali:215: invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\common\api\internal\TaskApiCall$Builder.smali:113: const-string v1, "execute parameter required"
+- smali\com\google\android\gms\common\api\internal\TaskApiCall$Builder.smali:130: .method public execute(Lcom/google/android/gms/common/util/BiConsumer;)Lcom/google/android/gms/common/api/internal/TaskApiCall$Builder;
+- smali\com\google\android\gms\common\api\internal\zaaw.smali:285: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\common\api\internal\zabe.smali:1714: .method public final enqueue(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/ap
+- smali\com\google\android\gms\common\api\internal\zabe.smali:1839: .method public final execute(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/ap
+- smali\com\google\android\gms\common\api\internal\zabe.smali:2639: invoke-virtual {p0, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->execute(Lcom/google/android/gms/common/api/internal/BaseImplem
+- smali\com\google\android\gms\common\api\internal\zabk.smali:26: .method public final execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\common\api\internal\zabq.smali:1005: const-string p1, " could not execute call because it requires feature ("
+- smali\com\google\android\gms\common\api\internal\zabv.smali:54: .method public final enqueue(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/ap
+- smali\com\google\android\gms\common\api\internal\zabv.smali:78: .method public final execute(Lcom/google/android/gms/common/api/internal/BaseImplementation$ApiMethodImpl;)Lcom/google/android/gms/common/ap
+- smali\com\google\android\gms\common\images\ImageManager$ImageReceiver.smali:97: invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+- smali\com\google\android\gms\common\internal\service\zae.smali:35: invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->execute(Lcom/google/android/gms/common/api/internal/BaseImplem
+- smali\com\google\android\gms\common\util\concurrent\HandlerExecutor.smali:31: .method public final execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzaby.smali:100: invoke-interface {p0, v0}, Lcom/google/android/gms/internal/ads/zzacj;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzacd.smali:213: invoke-interface {p0, v0}, Lcom/google/android/gms/internal/ads/zzacj;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzaci.smali:30: .method public final execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzaci.smali:36: invoke-interface {p0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzacl.smali:26: .method public final synthetic execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzacq.smali:36: .method public final synthetic execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzacu.smali:69: invoke-interface {p0, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzacu.smali:96: invoke-interface {p5, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzacv.smali:461: invoke-interface {p1, p2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzadj.smali:26: .method public final synthetic execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzaec.smali:339: invoke-interface {v3, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzast.smali:29: .method public final execute(Ljava/lang/Runnable;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzatq.smali:7: .field public static final zza:Ljava/lang/String; = "Volley"
+- smali_classes3\com\google\android\gms\internal\ads\zzatq.smali:19: const-string v0, "Volley"
+- smali_classes3\com\google\android\gms\internal\ads\zzaud.smali:7: .field private final zza:Ljava/net/HttpURLConnection;
+- smali_classes3\com\google\android\gms\internal\ads\zzaud.smali:11: .method constructor <init>(Ljava/net/HttpURLConnection;)V
+- smali_classes3\com\google\android\gms\internal\ads\zzaud.smali:16: invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+- smali_classes3\com\google\android\gms\internal\ads\zzauf.smali:146: invoke-virtual {p2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+[binder_or_gms]
+- smali\com\google\android\gms\ads\AdError.smali:135: invoke-direct/range {v1 .. v6}, Lcom/google/android/gms/ads/internal/client/zze;-><init>(ILjava/lang/String;Ljava/lang/String;Lcom/google/an
+- smali\com\google\android\gms\ads\AdError.smali:151: invoke-direct/range {v2 .. v7}, Lcom/google/android/gms/ads/internal/client/zze;-><init>(ILjava/lang/String;Ljava/lang/String;Lcom/google/an
+- smali\com\google\android\gms\ads\formats\AdManagerAdViewOptions.smali:79: .method public final writeToParcel(Landroid/os/Parcel;I)V
+- smali\com\google\android\gms\ads\formats\AdManagerAdViewOptions.smali:83: invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+- smali\com\google\android\gms\ads\formats\AdManagerAdViewOptions.smali:94: invoke-static {p1, v0, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
+- smali\com\google\android\gms\ads\formats\PublisherAdViewOptions.smali:34: .field private final zzc:Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\formats\PublisherAdViewOptions.smali:50: .method constructor <init>(ZLandroid/os/IBinder;Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\formats\PublisherAdViewOptions.smali:61: invoke-static {p2}, Lcom/google/android/gms/ads/internal/client/zzck;->zzd(Landroid/os/IBinder;)Lcom/google/android/gms/ads/internal/client/
+- smali\com\google\android\gms\ads\formats\zzb.smali:20: .method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+- smali\com\google\android\gms\ads\formats\zzb.smali:24: invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+- smali\com\google\android\gms\ads\formats\zzb.smali:32: invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+- smali\com\google\android\gms\ads\formats\zzf.smali:20: .method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+- smali\com\google\android\gms\ads\formats\zzf.smali:24: invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+- smali\com\google\android\gms\ads\formats\zzf.smali:38: invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+- smali\com\google\android\gms\ads\identifier\AdvertisingIdClient.smali:959: invoke-virtual {v1, v2, v3, v0}, Lcom/google/android/gms/common/BlockingServiceConnection;->getServiceWithTimeout(JLjava/util/concurrent/Tim
+- smali\com\google\android\gms\ads\identifier\AdvertisingIdClient.smali:964: invoke-static {v0}, Lcom/google/android/gms/internal/ads_identifier/zze;->zza(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads_iden
+- smali\com\google\android\gms\ads\internal\zzl.smali:109: .method public final writeToParcel(Landroid/os/Parcel;I)V
+- smali\com\google\android\gms\ads\internal\zzl.smali:115: invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->beginObjectHeader(Landroid/os/Parcel;)I
+- smali\com\google\android\gms\ads\internal\zzl.smali:122: invoke-static {p1, v1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->writeBoolean(Landroid/os/Parcel;IZ)V
+- smali\com\google\android\gms\ads\internal\zzm.smali:20: .method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+- smali\com\google\android\gms\ads\internal\zzm.smali:24: invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+- smali\com\google\android\gms\ads\internal\zzm.smali:54: invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+- smali\com\google\android\gms\ads\internal\client\zzab.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzab.smali:41: invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzbzd;->zzb(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzbze;
+- smali\com\google\android\gms\ads\internal\client\zzac.smali:96: invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzbze;->zze(Lcom/google/android/gms/dynamic/IObjectWrapper;)Landroid/os/IBin
+- smali\com\google\android\gms\ads\internal\client\zzac.smali:100: invoke-static {v0}, Lcom/google/android/gms/internal/ads/zzbza;->zzI(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzbzb;
+- smali\com\google\android\gms\ads\internal\client\zzad.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzad.smali:51: invoke-interface {p1, p0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzad.smali:67: invoke-direct {p0, p1}, Lcom/google/android/gms/ads/internal/client/zzdu;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzaf.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzaf.smali:41: invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzceo;->zzb(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzcep;
+- smali\com\google\android\gms\ads\internal\client\zzah.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzah.smali:41: invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzbyw;->zzb(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzbyx;
+- smali\com\google\android\gms\ads\internal\client\zzaj.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzaj.smali:41: invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzbqv;->zzb(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzbqw;
+- smali\com\google\android\gms\ads\internal\client\zzao.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzao.smali:51: invoke-interface {p1, p0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzao.smali:67: invoke-direct {p0, p1}, Lcom/google/android/gms/ads/internal/client/zzbr;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzap.smali:115: invoke-virtual {v0, v2, v3, v4, v5}, Lcom/google/android/gms/ads/internal/client/zzbr;->zze(Lcom/google/android/gms/dynamic/IObjectWrapper;L
+- smali\com\google\android\gms\ads\internal\client\zzap.smali:127: invoke-interface {v0, v2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzap.smali:143: invoke-direct {v2, v0}, Lcom/google/android/gms/ads/internal/client/zzbo;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzaq.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzaq.smali:51: invoke-interface {p1, p0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzaq.smali:67: invoke-direct {p0, p1}, Lcom/google/android/gms/ads/internal/client/zzci;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzar.smali:106: invoke-virtual {v0, v1, v3, v4}, Lcom/google/android/gms/ads/internal/client/zzci;->zze(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/
+- smali\com\google\android\gms\ads\internal\client\zzar.smali:121: invoke-interface {v0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzar.smali:137: invoke-direct {v1, v0}, Lcom/google/android/gms/ads/internal/client/zzcf;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzas.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzas.smali:51: invoke-interface {p1, p0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzas.smali:67: invoke-direct {p0, p1}, Lcom/google/android/gms/ads/internal/client/zzcz;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzat.smali:103: invoke-virtual {v0, v2, v3}, Lcom/google/android/gms/ads/internal/client/zzcz;->zze(Lcom/google/android/gms/dynamic/IObjectWrapper;I)Landroi
+- smali\com\google\android\gms\ads\internal\client\zzat.smali:115: invoke-interface {v0, v2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+- smali\com\google\android\gms\ads\internal\client\zzat.smali:131: invoke-direct {v2, v0}, Lcom/google/android/gms/ads/internal/client/zzcw;-><init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzau.smali:39: check-cast p1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzau.smali:41: invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzbmk;->zzb(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzbml;
+- smali\com\google\android\gms\ads\internal\client\zzav.smali:123: invoke-interface {v0, v1, v2, v3, v4}, Lcom/google/android/gms/internal/ads/zzbml;->zze(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/
+- smali\com\google\android\gms\ads\internal\client\zzav.smali:128: invoke-static {v0}, Lcom/google/android/gms/internal/ads/zzbmh;->zzdG(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzbmi;
+- smali\com\google\android\gms\ads\internal\client\zzax.smali:42: instance-of v2, v1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzax.smali:46: const-string v1, "ClientApi class is not an instance of IBinder."
+- smali\com\google\android\gms\ads\internal\client\zzax.smali:55: check-cast v1, Landroid/os/IBinder;
+- smali\com\google\android\gms\ads\internal\client\zzbc.smali:10: .method constructor <init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzbc.smali:16: invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzbee;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+- smali\com\google\android\gms\ads\internal\client\zzbc.smali:34: invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzbee;->zza()Landroid/os/Parcel;
+- smali\com\google\android\gms\ads\internal\client\zzbd.smali:23: .method protected final zzdd(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+- smali\com\google\android\gms\ads\internal\client\zzbd.smali:39: invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+- smali\com\google\android\gms\ads\internal\client\zzbf.smali:10: .method constructor <init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzbf.smali:16: invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzbee;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+- smali\com\google\android\gms\ads\internal\client\zzbf.smali:34: invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzbee;->zza()Landroid/os/Parcel;
+- smali\com\google\android\gms\ads\internal\client\zzbg.smali:23: .method protected final zzdd(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+- smali\com\google\android\gms\ads\internal\client\zzbg.smali:47: invoke-static {p2, p1}, Lcom/google/android/gms/internal/ads/zzbeg;->zzb(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parc
+- smali\com\google\android\gms\ads\internal\client\zzbg.smali:54: invoke-static {p2}, Lcom/google/android/gms/internal/ads/zzbeg;->zzh(Landroid/os/Parcel;)V
+- smali\com\google\android\gms\ads\internal\client\zzbi.smali:10: .method constructor <init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzbi.smali:16: invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzbee;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+- smali\com\google\android\gms\ads\internal\client\zzbi.smali:34: invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzbee;->zza()Landroid/os/Parcel;
+- smali\com\google\android\gms\ads\internal\client\zzbj.smali:23: .method protected final zzdd(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+- smali\com\google\android\gms\ads\internal\client\zzbj.smali:47: invoke-static {p2, p1}, Lcom/google/android/gms/internal/ads/zzbeg;->zzb(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parc
+- smali\com\google\android\gms\ads\internal\client\zzbj.smali:54: invoke-static {p2}, Lcom/google/android/gms/internal/ads/zzbeg;->zzh(Landroid/os/Parcel;)V
+- smali\com\google\android\gms\ads\internal\client\zzbl.smali:10: .method constructor <init>(Landroid/os/IBinder;)V
+- smali\com\google\android\gms\ads\internal\client\zzbl.smali:16: invoke-direct {p0, p1, v0}, Lcom/google/android/gms/internal/ads/zzbee;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+- smali\com\google\android\gms\ads\internal\client\zzbl.smali:32: invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzbee;->zza()Landroid/os/Parcel;
+
+FULL_LLM_AUDIT:
+
+data: {"id":"","object":"chat.completion.chunk","created":0,"model":"gpt-5.4","system_fingerprint":"","choices":[],"usage":{"prompt_tokens":63743,"completion_tokens":0,"total_tokens":63743,"prompt_tokens_details":{"cached_tokens":0,"text_tokens":0,"audio_tokens":0,"image_tokens":0},"completion_tokens_details":{"text_tokens":0,"audio_tokens":0,"image_tokens":0,"reasoning_tokens":0},"input_tokens":0,"output_tokens":0,"input_tokens_details":null,"claude_cache_creation_5_m_tokens":0,"claude_cache_creation_1_h_tokens":0}}
+
+data: [DONE]

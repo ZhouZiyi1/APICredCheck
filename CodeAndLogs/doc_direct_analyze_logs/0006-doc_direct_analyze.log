@@ -1,0 +1,19 @@
+2026-05-17 20:17:45 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0006-doc_direct_analyze.log
+2026-05-17 20:17:45 [INFO] Run start: SDK_ID=0006 SDK=Firebase Cloud Messaging SDK vendor=Firebase results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 20:17:45 [INFO] Querying model='gpt-5.4' SDK='Firebase Cloud Messaging SDK' vendor='Firebase'
+2026-05-17 20:17:53 [INFO] LLM token usage: prompt_tokens=989 completion_tokens=271 total_tokens=1260
+2026-05-17 20:17:53 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0006_doc_direct_full.txt
+2026-05-17 20:17:53 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Firebase Cloud Messaging (FCM) has an official Android SDK/library and documented Android integration as part of Firebase for Android.
+
+2. **Service model** — FCM is not a purely on-device library. Its normal function depends on Firebase/Google-hosted messaging infrastructure so the app can register for tokens and receive cloud-delivered messages. Standard use relies on the vendor’s remote backend.
+
+3. **Integration requirement** — Yes. Typical Android setup requires registering the app in the Firebase console and adding the generated **`google-services.json`** file to the app. That file contains project/app identifiers and API configuration used for Firebase services, including FCM. This matches the prompt’s definition of a shipped config file whose standard purpose is to supply vendor-issued values so the app can communicate with the vendor-hosted service.
+
+4. **Scope** — This credential/configuration is part of FCM’s documented Firebase integration on Android, not merely a separate optional product. While FCM may also involve server-side credentials for sending messages, for normal Android SDK integration the app-side console-issued configuration file is the relevant credential artifact.
+2026-05-17 20:17:53 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0006_doc_direct_rslt.txt
+2026-05-17 20:17:53 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "google-services.json"}
+2026-05-17 20:17:53 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0006-doc_direct_analyze.log

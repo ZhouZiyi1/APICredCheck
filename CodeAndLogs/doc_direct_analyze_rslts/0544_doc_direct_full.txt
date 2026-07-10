@@ -1,0 +1,4 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`ECSlidingViewController` is known as an iOS UI navigation/container library for Objective-C/UIKit, originally distributed for iPhone/iPad apps. Its documentation and usage patterns reference `UIViewController` and iOS-specific APIs, and there is no official Android SDK or Android integration documentation for this product. Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

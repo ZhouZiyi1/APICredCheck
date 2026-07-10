@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. A “Fyber mediation adapter for Facebook SDK” is, by definition, an Android/iOS mediation integration component used with Fyber’s mobile ad mediation stack and Facebook’s Android ad SDK. This indicates official Android integration exists for the named product.
+
+2. **Service model** - This adapter is not a purely on-device utility. In normal use, it participates in ad mediation, which relies on remote ad-serving infrastructure. However, the adapter’s role is specifically to connect Fyber mediation with Facebook demand, rather than to expose a standalone Fyber cloud feature set directly to the app.
+
+3. **Integration requirement** - For standard mediation integrations, developers typically configure identifiers for the mediation platform and for the mediated network. For this specific adapter, the app generally needs Fyber/SponsorPay mediation configuration (such as an app ID / placement or ad-unit style identifier in the Fyber mediation setup) so mediation can operate. That is a console-issued integration identifier used as part of the product’s normal setup.
+
+4. **Scope** - The relevant credential is attributable to this product’s documented integration as a Fyber mediation adapter, not merely an unrelated extra library. Although Facebook may also require its own app configuration, the Fyber mediation side normally has its own publisher/app configuration, which qualifies under the definition. The exact label can vary by Fyber product generation, so evidence is somewhat naming-sensitive; still, the safest short credential label is Fyber App ID.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**  
+Airbridge SDK has official Android integration. Airbridge is a mobile attribution and analytics product with an Android SDK documented for app integration, so `supports_android = true`.
+
+2. **Service model**  
+This SDK is not just an on-device helper library. Its standard purpose is mobile measurement/attribution, event tracking, deep linking, and related analytics tied to Airbridge-hosted services. Typical operation relies on sending app/install/event data to Airbridge’s backend.
+
+3. **Integration requirement**  
+Normal Android setup requires values issued for the app in Airbridge, not just local code. Standard integration uses app-specific configuration such as the Airbridge app name and SDK token so the SDK can identify the app and communicate with Airbridge services. That means an API-style credential is required.
+
+4. **Scope**  
+These values are part of Airbridge SDK’s own documented setup, not a separate third-party product. The relevant credential label is best captured as `SDK Token` (Airbridge setup may also pair it with an app name, but the token is the credential-like console-issued value).

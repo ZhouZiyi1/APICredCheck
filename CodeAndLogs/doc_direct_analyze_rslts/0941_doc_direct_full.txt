@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AATKit SDK is a mobile advertising / mediation SDK with documented Android integration and an Android library for app developers.
+
+2. Service model: This SDK is not primarily an on-device utility. Its normal function is to request, mediate, and serve ads using AddApptr/AATKit-managed ad delivery and mediation services, so standard use depends on vendor-hosted services and network communication.
+
+3. Integration requirement: Yes. Typical AATKit integration requires the developer to configure identifiers issued for the app’s ad placements so the SDK knows which inventory/setup to use. In AATKit documentation and common ad SDK patterns, this is an app-specific publisher/application identifier rather than just local package metadata.
+
+4. Scope: The credential is part of AATKit’s own ad-serving/mediation setup, not merely a separate third-party product layered on top. Package name or signing alone would not be sufficient for standard ad delivery configuration.

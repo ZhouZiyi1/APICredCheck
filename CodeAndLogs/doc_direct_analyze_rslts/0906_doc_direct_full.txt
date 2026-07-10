@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Baidu's DU Ad Platform SDK appears to be an advertising/monetization SDK offered for mobile app integration, and available materials commonly describe Android integration for Baidu ad SDK offerings. So Android support is reasonably supported.
+
+2. **Service model** - As an ad platform SDK, its standard function is not purely on-device. It normally connects to Baidu-hosted ad delivery and reporting services to request, render, and track ads. That means vendor-hosted backend access is part of ordinary use.
+
+3. **Integration requirement** - Ad SDKs of this type typically require the developer to register the app or ad placement and configure an identifier issued by the platform so ads can be served to the correct publisher/account. For this product, the most likely required value is an app/publisher/ad placement identifier rather than a generic local-only library setup.
+
+4. **Scope** - That identifier is part of the ad platform integration itself, not merely another separate Baidu product. While public evidence for the exact label “DU Ad Platform SDK” is somewhat limited and naming may vary across Baidu ad products, the normal documented integration pattern for this SDK category supports treating the required credential as an app identifier for the ad service. Because the exact field name is weakly evidenced, use the broadest accurate label.

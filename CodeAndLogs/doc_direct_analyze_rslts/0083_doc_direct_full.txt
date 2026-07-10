@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — **No.** SpriteKit is Apple’s 2D game framework for Apple platforms (such as iOS, macOS, tvOS, watchOS), not an Android SDK. There is no official Android library or documented Android integration for SpriteKit from Apple.
+
+Because step 1 is **no**, steps 2–4 are **skipped**. API credential evaluation is **N/A on Android** for this product.

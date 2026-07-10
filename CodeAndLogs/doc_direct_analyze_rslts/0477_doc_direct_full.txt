@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+PubNub has an official Android SDK and documented Android integration, so Android is supported.
+
+2. Service model  
+PubNub SDK is not a purely on-device library. Its standard purpose is to connect the app to PubNub's hosted realtime messaging/presence infrastructure, so normal use relies on PubNub's remote service.
+
+3. Integration requirement  
+Typical PubNub Android setup requires initializing the SDK with vendor-issued keys, specifically a `subscribeKey` and usually a `publishKey`, obtained from the PubNub admin/dashboard for the app keyset. Those values are part of normal client integration so the app can connect to PubNub's network.
+
+4. Scope  
+These keys are part of PubNub's own product integration, not a separate third-party product. They are the standard identifiers for using the PubNub service from the Android SDK.

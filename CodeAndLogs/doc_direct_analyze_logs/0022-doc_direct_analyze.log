@@ -1,0 +1,19 @@
+2026-05-17 20:19:13 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0022-doc_direct_analyze.log
+2026-05-17 20:19:13 [INFO] Run start: SDK_ID=0022 SDK=Facebook Share Kit SDK vendor=Meta results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 20:19:13 [INFO] Querying model='gpt-5.4' SDK='Facebook Share Kit SDK' vendor='Meta'
+2026-05-17 20:19:18 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=217 total_tokens=1195
+2026-05-17 20:19:18 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0022_doc_direct_full.txt
+2026-05-17 20:19:18 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Facebook Share Kit is part of Meta/Facebook’s Android SDK offerings and has documented Android integration for sharing content from Android apps.
+
+2. **Service model** — This SDK is not just a pure on-device helper. Its normal purpose is to invoke Facebook sharing flows/dialogs tied to Facebook’s platform, so standard use depends on Meta/Facebook platform services.
+
+3. **Integration requirement** — Yes. Typical Android integration for Facebook Share Kit requires registering the app in Meta’s developer system and configuring a **Facebook App ID** in the Android app setup (commonly via manifest/resources). That is a vendor-issued identifier used for the Facebook platform integration.
+
+4. **Scope** — The credential is part of this product’s documented Facebook sharing/platform integration, not merely a separate unrelated SDK. A Facebook App ID is standard for Share Kit integration on Android.
+2026-05-17 20:19:18 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0022_doc_direct_rslt.txt
+2026-05-17 20:19:18 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "Facebook App ID"}
+2026-05-17 20:19:18 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0022-doc_direct_analyze.log

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not identify a clearly documented, official Android library or Android integration for the product specifically named **Otto SDK** from **Block Inc**. Block publishes Android SDKs for some other products, but the instruction here is to evaluate only this named product, and the evidence for an Android Otto SDK is weak or absent. On that basis, Android support is not established.
+
+Because step 1 is not satisfied, steps 2-4 are skipped as **N/A on Android**.

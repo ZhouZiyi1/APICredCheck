@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+UXCam provides an official Android SDK and Android integration documentation. The product is intended for mobile apps and includes standard Android setup and initialization.
+
+2. Service model  
+UXCam is not a purely on-device library. Its standard purpose is session recording, analytics, and behavioral insights that are uploaded to and processed by UXCam’s hosted backend. Normal use depends on UXCam’s remote service.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with a value issued for the app by UXCam, commonly referred to as an app key. This is used so the SDK can associate uploaded data with the correct UXCam project/account.
+
+4. Scope  
+That credential is part of UXCam SDK’s own documented setup, not a separate third-party dependency. Package name or signing is not the credential; the relevant required value is the UXCam app key.

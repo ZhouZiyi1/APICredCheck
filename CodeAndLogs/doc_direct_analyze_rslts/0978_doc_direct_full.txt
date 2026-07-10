@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No evidence that `OBShapedButton SDK` is an official Android SDK or has documented Android integration. `OBShapedButton` is known as an iOS/macOS UI control library by Ole Begemann for hit-testing irregularly shaped buttons, not a cross-platform or Android product. Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

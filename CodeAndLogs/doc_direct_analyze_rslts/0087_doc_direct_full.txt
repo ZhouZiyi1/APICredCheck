@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google SafetyNet had official Android APIs, exposed through Google Play services on Android, for features such as SafetyNet Attestation and related device/app integrity checks.
+
+2. Service model — This SDK is not purely on-device in normal use. SafetyNet Attestation relies on Google-hosted backend verification/services as part of its standard operation, with the app sending attestation requests and receiving results tied to Google’s service.
+
+3. Integration requirement — Yes. Standard SafetyNet Attestation integration required obtaining and configuring an API key from Google so the app could call the SafetyNet service. This is a vendor-issued credential used for the product’s normal Android integration.
+
+4. Scope — The API key is part of SafetyNet Attestation’s documented setup for this product on Android, not merely a separate unrelated Google product credential. While Android app restrictions such as package name/SHA may also be configured, those restrictions are not themselves the credential; the credential is the API key.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — **No.** SSZipArchive by Sam Soffes is known as an iOS/macOS Objective-C ZIP archive library, typically distributed via CocoaPods/Apple-platform tooling. It is not an official Android SDK and does not have documented Android integration as an Android library.
+
+Because step 1 is no, steps 2–4 are **skipped**. This product is **N/A on Android** under the requested method.

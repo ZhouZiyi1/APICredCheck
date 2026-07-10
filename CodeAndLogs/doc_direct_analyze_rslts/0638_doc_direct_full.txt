@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Amazon Mobile Analytics SDK did have official Android integration as part of the AWS Mobile SDK for Android. Amazon documented adding the Mobile Analytics client to Android apps to record and submit events.
+
+2. Service model  
+This SDK is not primarily on-device only. Its standard purpose is to collect app analytics events and send them to Amazon’s hosted Mobile Analytics backend for reporting, so normal use depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical setup required creating an app in Amazon Mobile Analytics and configuring the generated application identifier in the Android app. AWS credentials were also involved for request authorization, but the product-specific console-issued value tied directly to Mobile Analytics integration was the Mobile Analytics app identifier.
+
+4. Scope  
+The relevant credential here belongs to this product’s own integration flow: the Mobile Analytics application ID. Other AWS setup pieces such as Cognito/IAM can be part of broader AWS access configuration, but the clearest product-specific required identifier for Amazon Mobile Analytics itself is the app ID.

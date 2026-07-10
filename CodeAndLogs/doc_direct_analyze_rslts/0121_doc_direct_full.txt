@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. AppMetrica has an official Android SDK and documented Android integration for mobile apps.
+
+2. Service model: AppMetrica is not a purely on-device library. Its standard use is mobile analytics, crash reporting, attribution, and related telemetry sent from the app to Yandex/AppMetrica hosted backend services.
+
+3. Integration requirement: Yes. Standard Android setup requires the app to be activated/configured with an AppMetrica-issued value for the application. In AppMetrica documentation this is the `API key` used when initializing the SDK (for example via config or manifest/resource-based setup).
+
+4. Scope: This credential is part of AppMetrica’s own documented integration, not just another Yandex product. The key identifies the app to AppMetrica’s backend so SDK events and reports are associated with the correct application.

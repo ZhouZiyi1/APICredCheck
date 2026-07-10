@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. MoPub provided an official Android mediation adapter for the Chartboost SDK, with documented Android integration via Gradle/artifacts and adapter setup instructions.
+
+2. Service model: This adapter is not a pure on-device utility. Its normal purpose is to connect a MoPub-mediated Android app to Chartboost’s ad-serving backend through the Chartboost SDK, so standard use depends on remote hosted ad services.
+
+3. Integration requirement: Yes. Typical integration requires configuring Chartboost-issued credentials, specifically the `App ID` and `App Signature` (sometimes entered in MoPub’s network setup rather than hardcoded directly in app code, but still required for the Android integration to function).
+
+4. Scope: These credentials are part of the documented integration for this specific mediation adapter because the adapter is built to initialize and use Chartboost demand. They are not merely unrelated credentials for some separate optional product.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. FaceTec provides an official Android SDK for biometric identity verification/liveness and 3D face capture, with documented Android integration.
+
+2. **Service model** - This product is not just a pure local UI/helper SDK. Typical FaceTec deployments use the Android SDK together with FaceTec’s platform components for session handling, liveness/verification workflows, and server-side validation/orchestration. Standard integrations commonly involve the app obtaining data from the integrator backend that works with FaceTec’s service model.
+
+3. **Integration requirement** - Yes. Normal FaceTec Android integration typically requires configuring a vendor-issued SDK credential in the app. The commonly documented credential is a **Device Key Identifier** (paired in the broader system with keys/license material for FaceTec operation). This is part of standard SDK initialization/integration rather than an optional separate product.
+
+4. **Scope** - The credential is tied to FaceTec SDK integration itself, not merely to another unrelated product. It is used as part of enabling the FaceTec SDK in the Android app.

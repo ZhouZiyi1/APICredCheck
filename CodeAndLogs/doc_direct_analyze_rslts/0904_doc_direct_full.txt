@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Jumio provides an official Android/mobile SDK for identity verification and related workflows, so this product supports Android.
+
+2. Service model: Jumio SDK is not a purely on-device library. Its normal use is to capture identity/selfie data in the app and send or coordinate that data with Jumio-hosted verification services. The hosted backend is part of the standard product behavior.
+
+3. Integration requirement: Yes. Standard Jumio mobile integration requires a vendor-issued credential flow. In practice, developers obtain Jumio account credentials from Jumio, use them to create an SDK session/token on their backend, and then pass that SDK token into the Android SDK to start the flow. That means normal Android use depends on a console/account-issued credential chain for Jumio services.
+
+4. Scope: This credential requirement belongs to Jumio SDK itself, not just to some separate optional product. The mobile SDK’s documented verification flow depends on Jumio-issued credentials/session token for access to Jumio’s hosted verification service.

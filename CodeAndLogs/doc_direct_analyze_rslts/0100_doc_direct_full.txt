@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Flurry SDK has an official Android SDK/integration for mobile apps.
+
+2. **Service model** — Flurry is primarily an analytics/monetization SDK that sends app event and usage data to Flurry/Yahoo-hosted backend services. Its normal operation is not purely on-device; standard analytics features depend on Flurry’s remote service.
+
+3. **Integration requirement** — Yes. Typical Flurry Android integration requires the developer to create/register an app in the Flurry developer console and initialize the SDK with a console-issued identifier. The standard credential used is a **Flurry API Key**.
+
+4. **Scope** — This credential is part of Flurry SDK’s own documented setup for connecting the app to Flurry’s analytics service, not merely another separate Yahoo product.

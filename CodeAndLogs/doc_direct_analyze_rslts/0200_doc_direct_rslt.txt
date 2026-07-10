@@ -1,0 +1,1 @@
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}

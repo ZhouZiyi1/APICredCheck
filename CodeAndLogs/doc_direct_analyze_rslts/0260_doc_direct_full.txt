@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. ZBar/ZBarSDK has an Android integration history, including an Android SDK/library for barcode and QR scanning. It is used as a local scanning library embedded in Android apps rather than only as a desktop/server tool.
+
+2. Service model: ZBarSDK is primarily an on-device barcode scanning/decoding library. Its standard function is to access the camera, process frames locally, and decode barcodes without relying on a vendor-hosted backend.
+
+3. Integration requirement: There is no standard setup requirement to register the app with Jeff Brown/ZBar and obtain a console-issued API key, App ID, secret, or similar credential for normal Android use.
+
+4. Scope: Any permissions or device configuration used by Android integration are local app/platform requirements, not credentials for vendor-hosted ZBar services. Evidence points to a pure client-side SDK, so no product-specific API credential applies.

@@ -1,0 +1,15 @@
+2026-05-17 21:13:48 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0051-doc_direct_analyze.log
+2026-05-17 21:13:48 [INFO] Run start: SDK_ID=0051 SDK=App Tracking Transparency vendor=Apple results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:13:48 [INFO] Querying model='gpt-5.4' SDK='App Tracking Transparency' vendor='Apple'
+2026-05-17 21:13:52 [INFO] LLM token usage: prompt_tokens=988 completion_tokens=112 total_tokens=1100
+2026-05-17 21:13:52 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0051_doc_direct_full.txt
+2026-05-17 21:13:52 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — No. App Tracking Transparency is an Apple platform privacy framework used to request tracking permission on iOS/iPadOS/tvOS. It is part of Apple's native ecosystem and is documented for Apple operating systems, not as an Android SDK or Android integration.
+
+Because step 1 is no, steps 2–4 are skipped. This product is N/A on Android.
+2026-05-17 21:13:52 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0051_doc_direct_rslt.txt
+2026-05-17 21:13:52 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:13:52 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0051-doc_direct_analyze.log

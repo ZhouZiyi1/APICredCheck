@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No evidence that `GKImagePicker SDK` by Georg Kitz is an official Android SDK or has documented Android integration. This product is known as an iOS image picker / cropping library from Georg Kitz, distributed for Apple platforms rather than Android. Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Twitter4J has documented Android support as part of its official positioning as a Java library usable on Android, rather than being limited to server-side Java only. That is enough to treat it as supporting Android.
+
+2. Service model  
+Twitter4J is not mainly an on-device helper. Its normal purpose is to call Twitter/X remote APIs for timelines, posting, search, account operations, and similar network-backed features.
+
+3. Integration requirement  
+Typical Twitter4J usage requires registering an application with the Twitter developer platform and configuring API credentials such as a consumer key and consumer secret; many flows also involve access tokens. Without those values, the SDK cannot make authenticated requests in normal use.
+
+4. Scope  
+Those credentials are part of the standard Twitter4J integration path for accessing the Twitter API through this SDK, not just an unrelated add-on. The SDK itself is a client for that external service, so the credential requirement is intrinsic to normal integration. One caveat: the credentials come from Twitter's developer platform, not from Yusuke Yamamoto directly. Even so, they are required for the product's standard Android use.

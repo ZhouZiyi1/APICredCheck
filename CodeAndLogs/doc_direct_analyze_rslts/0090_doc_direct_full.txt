@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AdColony SDK has official Android integration/documentation as a mobile advertising SDK for Android apps.
+
+2. Service model — This is an advertising SDK, so normal operation relies on AdColony’s hosted ad-serving services. The SDK is not just an on-device utility; it connects to vendor infrastructure to request/show ads and report related events.
+
+3. Integration requirement — Yes. Standard AdColony integration requires the developer to configure vendor-issued identifiers for the app/ad setup. In typical AdColony Android setup, this includes at least an App ID (often alongside zone/ad unit identifiers). That qualifies as an API credential under the prompt because it is a console-issued identifier required for the SDK to use AdColony-hosted services.
+
+4. Scope — The credential is specific to AdColony SDK integration itself, not merely to some separate product. The App ID is part of AdColony’s documented setup for serving ads through this SDK.

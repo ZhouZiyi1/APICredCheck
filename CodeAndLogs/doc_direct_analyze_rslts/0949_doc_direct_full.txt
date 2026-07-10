@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Moxtra Chat SDK appears to have official Android support. Moxtra documents Android integration for its chat/messaging SDK offering, including Android SDK setup and client-side usage.
+
+2. **Service model** - This SDK is not a pure on-device UI/helper library. Chat/messaging features normally depend on Moxtra-hosted backend services for identity, conversations, message delivery, sync, and related collaboration data. So standard use routinely talks to vendor-hosted services.
+
+3. **Integration requirement** - Typical Moxtra SDK integration requires the developer to provision an app in Moxtra’s developer/admin setup and configure app-specific credentials so the SDK can initialize and authenticate against Moxtra services. The standard credential name used in Moxtra integrations is an `App Client ID` (often paired in server-side flows with other credentials, but the app-facing configured identifier is the key integration value).
+
+4. **Scope** - This credential is part of the Moxtra Chat SDK’s own integration with Moxtra-hosted chat services, not merely a separate third-party product. Because the SDK’s normal operation depends on Moxtra’s backend, the app registration value belongs to this product’s documented setup.

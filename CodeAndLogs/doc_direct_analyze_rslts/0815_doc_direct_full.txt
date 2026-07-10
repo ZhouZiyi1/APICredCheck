@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Kontakt.io provides Android SDK/integration materials for its beacon and indoor location platform, so this product supports Android.
+
+2. **Service model** - The SDK is not just a pure on-device utility. Typical Kontakt.io usage involves interacting with Kontakt.io’s platform for device/cloud-backed management, venue/location services, or related hosted features tied to the vendor’s ecosystem.
+
+3. **Integration requirement** - Usual Kontakt.io SDK integrations require configuring a vendor-issued application credential so the app can authenticate/use Kontakt.io platform services. The standard credential referenced for this SDK family is an **API Key**.
+
+4. **Scope** - This credential is part of Kontakt.io’s own product integration, not merely a separate third-party dependency. It is used to connect the app to Kontakt.io-managed services associated with the SDK.

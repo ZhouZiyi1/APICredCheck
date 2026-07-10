@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. The mParticle connector/kit for the AppsFlyer SDK is documented as an Android integration path for mParticle apps that want to route attribution and related data through AppsFlyer on Android.
+
+2. Service model  
+This is not a purely on-device helper. Its normal purpose is to connect the app to AppsFlyer's attribution/measurement service, which relies on AppsFlyer-hosted backend APIs as part of standard operation.
+
+3. Integration requirement  
+Yes. Standard AppsFlyer Android setup requires configuring an AppsFlyer-issued developer credential, commonly the `Dev Key`, so the SDK can initialize and send data to AppsFlyer services.
+
+4. Scope  
+The credential is part of the documented setup for this specific connector because the connector is built around the AppsFlyer SDK integration. Although the value is issued by AppsFlyer rather than mParticle, it is still a required integration credential for normal Android use of this named product.

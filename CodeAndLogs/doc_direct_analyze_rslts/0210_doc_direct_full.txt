@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Alipay provides an official Android mobile payment SDK and Android integration documentation for invoking Alipay from an app.
+
+2. Service model: This SDK is not purely on-device. Its normal purpose is to hand off or submit payment/auth requests that are processed through Alipay’s hosted payment infrastructure. The client SDK is part of a vendor-backed transaction flow.
+
+3. Integration requirement: Yes. Standard Alipay Android integration requires the developer to register an application in Alipay’s developer/open platform and use an issued `App ID` (`app_id`) in the integration/payment order flow. In practice, the app and its backend use this identifier as part of requests signed for Alipay services.
+
+4. Scope: The `App ID` is part of Alipay SDK integration itself, not merely a separate unrelated product. Package name, app scheme, or signing configuration alone would not qualify, but the Alipay-issued `App ID` does.

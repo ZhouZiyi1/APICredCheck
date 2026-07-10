@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. XMPPFramework by Robbie Hanson is an Objective-C XMPP library historically built for Apple platforms such as iOS and macOS, with Cocoa/CocoaPods-style integration and Apple-native APIs. There is no official Android SDK or documented Android integration for this product.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Facebook Yoga is an open-source layout engine with official Android use via its Java/Android bindings and broad Android integration in native/mobile UI frameworks.
+
+2. **Service model** — It is primarily an **on-device** library. Yoga computes flexbox-style layout locally in the app/runtime and does not depend on Meta-hosted APIs or backend services for its normal operation.
+
+3. **Integration requirement** — There is no usual setup requiring the developer to register an app in a Meta developer console or configure an App ID, API key, token, or similar credential for Yoga itself. Typical integration is adding the library/package and using its layout APIs.
+
+4. **Scope** — Any Meta App ID or other credentials used elsewhere (for example, Facebook Login or other Meta platform SDKs) belong to different products, not to Yoga’s documented integration.

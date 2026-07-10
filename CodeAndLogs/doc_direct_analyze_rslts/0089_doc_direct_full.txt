@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Adjust provides an official Android SDK and documents Android app integration.
+
+2. **Service model** — Adjust is a mobile measurement/analytics and attribution SDK. In normal use, the Android app sends install/session/event data to Adjust’s hosted backend for attribution, analytics, and related features. So it routinely relies on vendor-hosted services, not just on-device logic.
+
+3. **Integration requirement** — Yes. Standard Adjust Android integration requires configuring an app-specific identifier issued in the Adjust dashboard. The usual required value is the **App Token**, which is added when initializing the SDK.
+
+4. **Scope** — This credential is part of Adjust SDK’s own documented setup, not merely a separate third-party product. The App Token identifies the app to Adjust’s backend services.

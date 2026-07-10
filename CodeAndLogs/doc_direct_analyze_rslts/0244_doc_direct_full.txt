@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product has official Android integration as an AdMob mediation adapter used with the Google Mobile Ads SDK on Android.
+
+2. Service model  
+This is not a purely on-device library. In normal use, it participates in AdMob-mediated ad serving, which depends on Google/AdMob hosted ad services.
+
+3. Integration requirement  
+Yes. Standard Android use of AdMob mediation requires configuring AdMob-issued identifiers in the app and ad requests. At minimum, the integration is tied to AdMob app/ad unit configuration so the SDK can request ads through AdMob mediation.
+
+4. Scope  
+The relevant credential is part of this product's own documented AdMob mediation integration, not merely an unrelated extra SDK. IronSource-specific values may also be needed for the mediated network, but those belong to IronSource, not to the AdMob product named here. The clearest vendor-side credential for this SDK integration is the AdMob App ID.

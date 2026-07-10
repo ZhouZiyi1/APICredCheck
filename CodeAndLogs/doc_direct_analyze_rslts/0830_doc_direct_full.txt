@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Adjoe SDK has official Android integration documentation and Android library support for adding the SDK to an Android app.
+
+2. **Service model** - This SDK is not a purely on-device utility. Adjoe is a rewarded advertising / engagement SDK that connects the app to Adjoe’s hosted ad/offer services as part of normal operation.
+
+3. **Integration requirement** - Yes. Typical Adjoe Android integration requires a developer-provided identifier issued by Adjoe for the app/account so the SDK can initialize and connect to Adjoe services. The standard credential used in setup is an **SDK Hash**.
+
+4. **Scope** - The credential appears to belong to Adjoe SDK’s own documented integration rather than a separate third-party product. It is part of initializing this SDK for Adjoe-hosted functionality.

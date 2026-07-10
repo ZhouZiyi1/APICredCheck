@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not identify clear evidence of an official Android library or documented Android integration specifically for the product named "AreaMetrics SDK." Publicly recognizable documentation for AreaMetrics is limited, and I do not have strong evidence of a standard Android SDK setup, package, or integration guide for this product. Because step 1 is not established, Android support should be treated as unsupported/undocumented for this evaluation.
+
+Steps 2-4 are skipped because they are not applicable unless Android support is confirmed.

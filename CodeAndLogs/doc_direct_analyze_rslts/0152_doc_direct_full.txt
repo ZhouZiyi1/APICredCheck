@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: **No clear official Android SDK/integration from Joda.org.** Joda-Time is a general Java date/time library, not an Android-specific SDK, and the commonly known Android adaptation (`joda-time-android`) is a separate community project rather than an official Android library from the named vendor, Joda.org. Based on the requirement to evaluate official Android support for this product, evidence is insufficient to treat "Joda Time SDK" itself as an officially supported Android SDK.
+
+Steps 2-4 are skipped because Android support is not established for this product (N/A on Android).

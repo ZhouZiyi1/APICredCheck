@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No clear official Android SDK or Android integration documentation appears to exist for the product named "BouncyCastle SDK" from Bouncy Castle. Bouncy Castle is primarily distributed as general-purpose cryptography libraries for Java/.NET and related runtimes, not as an Android-specific SDK with documented Android setup. While developers may sometimes use Bouncy Castle-compatible libraries in Android projects, that does not by itself establish official Android support for this product under the requested definition.
+
+Because step 1 is no, steps 2-4 are skipped as N/A on Android.

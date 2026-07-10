@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Firebase Realtime Database has an official Android SDK as part of Firebase's Android libraries and documented Android setup.
+
+2. Service model — This SDK is not primarily on-device. Its normal purpose is to connect the Android app to Firebase-hosted Realtime Database backend services for syncing and storing data.
+
+3. Integration requirement — Yes. Standard Android integration for Firebase requires registering an app in the Firebase console and adding the Firebase config file to the Android app. That config file (`google-services.json`) carries console-issued project/app identifiers and API key values used for Firebase service connectivity.
+
+4. Scope — This credential/configuration is part of this product's normal documented integration because Realtime Database is a Firebase hosted backend service and the Android client is configured through the Firebase project/app setup, not merely by package name or signing alone.

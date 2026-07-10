@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — No. Apple’s Core ML SDK/framework is part of Apple’s machine learning stack for Apple platforms (such as iOS, macOS, watchOS, tvOS) and is documented for use in Apple’s ecosystem, not as an official Android SDK/library. I do not find this product described as having an official Android integration.
+
+Because step 1 is no, steps 2–4 are skipped. N/A on Android.

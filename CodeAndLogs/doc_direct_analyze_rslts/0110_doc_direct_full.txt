@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — `MJRefresh SDK` by Coder MJ Lee is known as an iOS UI component library for pull-to-refresh / load-more behavior, typically distributed for Objective-C / UIKit projects. Its standard documentation and ecosystem presence are for iOS rather than Android, and there is no official Android SDK or documented Android integration for this product. Because step 1 is no, steps 2–4 are skipped as not applicable on Android.

@@ -1,0 +1,6 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Bistri is primarily known as a WebRTC communications platform centered on browser/JavaScript integration. I do not find strong evidence that the specific product named "Bistri SDK" had an official Android native SDK or standard Android integration path comparable to its web offering. Because the Android support signal is weak and potentially absent, the conservative conclusion is that official Android support is not established.
+
+Steps 2-4 are skipped because Android support is not confirmed; they are N/A on Android for this evaluation.

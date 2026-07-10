@@ -1,0 +1,7 @@
+SECTION 1: Detailed Analysis
+
+Step 1: Android support
+
+`RSKImageCropper SDK` by Ruslan Skorb appears to be an iOS-only image cropping library, commonly distributed for Apple platforms via iOS-oriented tooling and documentation. Its public integration materials are centered on Objective-C/Swift usage in Xcode, with no official Android artifact, Android package, Gradle dependency, or Android integration guide. The product is known as a UI/image-editing component for iOS rather than a cross-platform or Android SDK.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Google documented a mobile app conversion tracking integration for Android under the Google Conversion Tracking SDK / Google Ads conversion tracking flow, so this product did have an official Android integration.
+
+2. Service model: This SDK is not just on-device logic. Its purpose is to report conversion events back to Google's advertising/conversion measurement systems, so standard use depends on Google's hosted backend.
+
+3. Integration requirement: Yes. Typical setup required values created in the Google Ads/AdWords side for the conversion action, notably a conversion identifier and associated label, which are configured in the Android app when reporting conversions.
+
+4. Scope: Those values are part of this product's own conversion-tracking integration, not merely another unrelated Google product. They identify the specific conversion action being reported to Google's conversion tracking service. Evidence is somewhat legacy/older-product-oriented, but it supports treating this as an Android SDK that requires console-issued identifiers.

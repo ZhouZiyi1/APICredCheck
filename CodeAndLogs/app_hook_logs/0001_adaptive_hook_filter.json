@@ -1,0 +1,32 @@
+{
+  "sdk_id": "0001",
+  "sdk_name": "GoogleFirebaseSDK",
+  "attempt_timeout_seconds": 45.0,
+  "original_count": 0,
+  "safe_count": 0,
+  "rejected_count": 0,
+  "safe_signatures": [],
+  "rejected_signatures": [],
+  "attempts": [
+    {
+      "label": "baseline-passive-only",
+      "subset_size": 0,
+      "subset": [],
+      "status": "failure",
+      "reason": "sdk-call-failure",
+      "last_signal": "failure",
+      "stop_app_after": true
+    },
+    {
+      "label": "final-safe-set",
+      "subset_size": 0,
+      "subset": [],
+      "status": "failure",
+      "reason": "sdk-call-failure",
+      "last_signal": "failure",
+      "stop_app_after": true
+    }
+  ],
+  "final_status": "failure",
+  "final_reason": "sdk-call-failure"
+}

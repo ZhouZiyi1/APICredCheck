@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Azure Mobile Apps had an official Android client SDK as part of Microsoft Azure Mobile Apps / App Service Mobile Apps, with documented Android integration for connecting an Android app to an Azure Mobile Apps backend.
+
+2. **Service model** - This SDK is not mainly an on-device utility library. Its normal purpose is to connect the app to a hosted backend service (Azure Mobile Apps) for data sync, tables, auth integration, and related cloud-backed features. So standard use routinely depends on vendor-hosted or vendor-oriented remote backend services.
+
+3. **Integration requirement** - For normal Android integration, developers generally configure the client with the Mobile App backend URL and use the service as the app’s backend. However, the usual setup does not center on a vendor console-issued app credential such as an API key or App ID embedded in the Android app. Authentication can be added, but that is typically user auth or separately configured identity-provider setup rather than a required SDK-specific client credential for Azure Mobile Apps itself.
+
+4. **Scope** - The required configuration appears to be service endpoint / backend connection information for this product, not a standard console-issued API credential shipped in the app for Azure Mobile Apps SDK. Since the evidence for a mandatory SDK-specific key/App ID on Android is weak, the safer conclusion is that this SDK supports Android but does not require an API credential under the definition given.

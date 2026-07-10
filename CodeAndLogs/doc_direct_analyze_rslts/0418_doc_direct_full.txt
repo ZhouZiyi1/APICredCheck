@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. NAVER provides official Android integration for Naver ID Login via an Android SDK/library and Android setup documentation.
+
+2. Service model  
+This SDK is not a purely on-device utility. Its standard purpose is to authenticate users with NAVER accounts, which requires communicating with NAVER-hosted OAuth/login services as part of normal operation.
+
+3. Integration requirement  
+Yes. Typical Android setup requires the developer to register an application in NAVER Developers and configure vendor-issued OAuth app values in the Android app. The documented integration commonly includes a `client_id` and `client_secret` (and often an app/client name as metadata).
+
+4. Scope  
+These credentials are part of this SDK's own documented login integration, not a separate unrelated product. Package name or signing configuration alone would not satisfy setup; the console-issued OAuth client values are the relevant credentials here.

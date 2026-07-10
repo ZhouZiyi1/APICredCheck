@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. i-mobile provides an Android advertising SDK with documented Android integration for showing ads in Android apps.
+
+2. Service model  
+This SDK is not a purely on-device library. Its standard use is ad delivery/mediation, which depends on i-mobile-hosted ad services to request and serve ads.
+
+3. Integration requirement  
+Yes. Typical Android integration requires developer-assigned identifiers from i-mobile’s publisher/admin side. In i-mobile Android ad setup, developers configure IDs such as `PublisherId`, `MediaId`, and `SpotId` so the SDK can request the correct ad inventory and attribute delivery to the registered app/placement.
+
+4. Scope  
+These identifiers are part of the i-mobile SDK’s own documented ad integration, not just another unrelated product. They function as app/placement credentials for i-mobile’s hosted ad service.

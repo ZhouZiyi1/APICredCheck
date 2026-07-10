@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is specifically an `ironSource Mediation adapter for Tapjoy SDK`, and ironSource publishes Android mediation adapters for supported ad networks, including Tapjoy. Its purpose is Android/iOS mediation integration, so Android support is explicit.
+
+2. Service model  
+This is not a purely on-device library. A mediation adapter bridges the app to Tapjoy’s ad/monetization services, which rely on Tapjoy-hosted backend systems to initialize the network, request inventory, and report monetization events.
+
+3. Integration requirement  
+Yes. Standard Tapjoy network setup for mediated Android integration requires developer-supplied Tapjoy console values, typically the Tapjoy `SDK Key` (and in some setups other Tapjoy app/network identifiers or placement configuration). The key point is that normal adapter use depends on configuring a Tapjoy-issued value so the integrated network SDK can connect to Tapjoy services.
+
+4. Scope  
+The credential is part of the documented integration for this mediated product because the adapter’s standard setup includes entering Tapjoy-issued credentials for the Tapjoy network being mediated through ironSource. This is not merely package-name/signing metadata, and it is not unrelated to the adapter’s intended operation.

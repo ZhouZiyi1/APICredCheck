@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Braze provides an official Android SDK and Android integration documentation.
+
+2. Service model: Braze is not a purely on-device library. Its standard use is to connect the app to Braze-hosted services for analytics, messaging, user profiles, push/in-app messaging delivery, and related engagement features.
+
+3. Integration requirement: Yes. Normal Android setup requires configuring Braze-issued values so the SDK can communicate with Braze’s backend. The core required console-issued credential is the Braze SDK API Key. Braze Android setup also typically includes a Braze endpoint/base URL, but that is service routing rather than the primary credential.
+
+4. Scope: This credential is part of Braze SDK’s own documented Android integration, not only a separate product. Push provider configuration such as Firebase is separate and not the Braze credential being evaluated here.

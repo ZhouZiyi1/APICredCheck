@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Twitter Kit was officially offered as an Android SDK/library by Twitter (later distributed through Fabric for Android), with documented Android integration for login, sharing, and related Twitter features.
+
+2. Service model: This SDK is not purely on-device. Its normal features rely on Twitter-hosted services and APIs, such as authenticating users with Twitter, interacting with Twitter content, and enabling share/login flows tied to Twitter’s backend.
+
+3. Integration requirement: Yes. Typical Android setup required the developer to register an app with Twitter and configure console-issued credentials in the Android app. The standard documented values were the Twitter API key / API secret, commonly referred to in Twitter Kit Android integration as the consumer key and consumer secret.
+
+4. Scope: These credentials are part of Twitter Kit’s own documented integration, not just a separate optional product. They are used so the SDK can identify the app to Twitter services during standard SDK operation.

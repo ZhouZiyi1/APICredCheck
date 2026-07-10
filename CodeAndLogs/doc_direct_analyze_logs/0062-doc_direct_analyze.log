@@ -1,0 +1,19 @@
+2026-05-17 21:14:49 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0062-doc_direct_analyze.log
+2026-05-17 21:14:49 [INFO] Run start: SDK_ID=0062 SDK=Apache Cordova SDK vendor=Apache Software Foundation results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:14:49 [INFO] Querying model='gpt-5.4' SDK='Apache Cordova SDK' vendor='Apache Software Foundation'
+2026-05-17 21:14:54 [INFO] LLM token usage: prompt_tokens=991 completion_tokens=213 total_tokens=1204
+2026-05-17 21:14:54 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0062_doc_direct_full.txt
+2026-05-17 21:14:54 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Apache Cordova officially supports Android as a target platform via its Android platform tooling (`cordova-android`) and documented Android app builds.
+
+2. Service model — Cordova is primarily a client-side/hybrid app framework. It packages HTML/CSS/JavaScript into a native Android wrapper and exposes device capabilities through plugins. Its standard operation does not depend on Apache-hosted backend services.
+
+3. Integration requirement — No vendor-issued API credential is normally required to use Apache Cordova on Android. Typical setup involves installing the framework/platform and optionally plugins, but not registering the app with Apache or configuring an Apache-issued key/secret/App ID.
+
+4. Scope — Any credentials a Cordova app may use are for separate third-party services accessed by the app or by specific plugins, not for Cordova itself. Therefore they do not count as credentials for this product.
+2026-05-17 21:14:54 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0062_doc_direct_rslt.txt
+2026-05-17 21:14:54 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:14:54 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0062-doc_direct_analyze.log

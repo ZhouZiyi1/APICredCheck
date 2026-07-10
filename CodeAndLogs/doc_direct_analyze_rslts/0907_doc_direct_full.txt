@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not find clear evidence that the specific product named **Audiokit SDK** by **Aurelius Prochazka** has an official Android SDK, Android package, or documented Android integration. “AudioKit” is also the name of a different well-known audio framework, which creates ambiguity, but the prompt requires evaluating only this named product/vendor pair. With weak or missing product-specific Android documentation, step 1 is not satisfied.
+
+Steps 2-4 are skipped because Android support is not established for this specific SDK; API credential status is therefore N/A on Android.

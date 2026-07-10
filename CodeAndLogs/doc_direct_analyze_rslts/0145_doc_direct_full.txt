@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+LevelPlay has official Android support. Unity LevelPlay provides an Android SDK and documented Android integration for initializing the mediation SDK and loading/showing ads on Android.
+
+2. Service model  
+LevelPlay is an ad mediation platform, not a purely on-device library. Standard use depends on Unity/LevelPlay-hosted mediation services and configuration so the SDK can initialize, fetch settings, and coordinate ad delivery/revenue reporting.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with a console-issued LevelPlay `appKey` (commonly passed into the SDK init flow). This is a vendor-issued identifier configured in the app as part of normal setup.
+
+4. Scope  
+That `appKey` belongs to LevelPlay’s own documented integration, not just to a separate optional product. While individual ad units/placements and third-party network credentials may also exist, the LevelPlay app key itself is the core product credential for the SDK’s standard Android setup.

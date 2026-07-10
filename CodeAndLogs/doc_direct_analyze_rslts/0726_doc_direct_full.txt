@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - No clear evidence that "ShowcaseView SDK" by Alex Curran has an official Android SDK or documented Android integration. This product is known as an iOS-focused UI library/tutorial overlay component associated with Alex Curran, rather than a cross-platform or Android offering. I do not find a basis to treat it as an officially supported Android SDK.
+
+Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

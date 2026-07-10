@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Subsampling Scale Image View is an Android image-view library designed for displaying large images with tiling, subsampling, zoom, and pan on Android. Its standard integration is as an Android library dependency and Android widget/view.
+
+2. Service model: This product is primarily on-device. It renders and manages large images locally inside the app UI. Its core functionality does not depend on vendor-hosted APIs, cloud services, or a remote backend operated by the SDK provider.
+
+3. Integration requirement: Standard setup does not require registering the app with a vendor console or configuring a vendor-issued identifier/secret. Typical integration is adding the library and using the view/component in Android layouts or code.
+
+4. Scope: Any image source configuration is about local files, assets, resources, or app-provided URIs, not credentials for this SDK's own hosted service. There is no product-specific API key, App ID, token, or config file required for normal Android use.

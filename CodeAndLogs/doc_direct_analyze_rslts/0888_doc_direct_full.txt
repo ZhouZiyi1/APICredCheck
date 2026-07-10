@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Bugsee provides an Android SDK with documented Android integration for session replay, crash reporting, logs, and related diagnostics.
+
+2. Service model: Bugsee is not a purely on-device library. Its standard use is to capture app diagnostics and session data on the device and send that data to Bugsee's hosted backend so issues can be viewed in the Bugsee dashboard. That means routine operation depends on vendor-hosted services.
+
+3. Integration requirement: Yes. Typical Android setup requires initializing the SDK with a Bugsee-issued app-specific token/key obtained from the Bugsee dashboard/console. This is the normal way the SDK associates uploaded sessions/crashes with the correct Bugsee project/app.
+
+4. Scope: That credential is part of Bugsee SDK's own documented integration, not just another separate product. It is used so the Android app can send data to Bugsee's service.

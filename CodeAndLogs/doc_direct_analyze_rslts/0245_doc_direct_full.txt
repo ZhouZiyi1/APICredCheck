@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. The Google Play License Verification Library (LVL) is an Android-specific library provided for apps distributed through Google Play to verify licensing status on Android devices.
+
+2. Service model  
+This product is not purely on-device. In normal use, the app uses LVL together with Google Play’s licensing mechanism, which depends on Google Play services / Play infrastructure to check whether the user is licensed for the app. The library validates signed licensing responses rather than operating as a standalone local utility.
+
+3. Integration requirement  
+Yes. Standard LVL integration requires the developer to obtain the app’s licensing public key from the Google Play Console and include/configure it in the Android app so signed license responses can be verified.
+
+4. Scope  
+That key is part of this product’s documented integration flow for Google Play licensing, not just a separate Google product added independently. Package name or signing alone would not satisfy the requirement; the Play Console-issued licensing key is the relevant configured value.

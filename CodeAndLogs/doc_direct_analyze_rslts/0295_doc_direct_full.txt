@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AMap SDK officially supports Android. AutoNavi provides Android map/location/navigation SDKs and Android integration documentation for AMap products.
+
+2. Service model  
+AMap SDK is not a purely on-device library. Typical use involves vendor-hosted map and location services such as map tiles, geocoding, routing, search/places, and related cloud-backed capabilities. Standard SDK behavior therefore routinely depends on AutoNavi-hosted services.
+
+3. Integration requirement  
+Normal Android integration requires the developer to register an application in the AMap developer console and configure an issued key in the Android app, commonly as the AMap/GAODE Web Service or SDK key exposed in Android setup as an API key entry. This is a standard part of using the SDK on Android.
+
+4. Scope  
+This credential is part of AMap SDK's own documented Android integration, not merely another separate AutoNavi product. Package name and signing configuration may be used for app binding or key restrictions, but those are not themselves the credential; the credential is the console-issued API key.

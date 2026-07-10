@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+LeanCloud has official Android client SDK documentation and Android integration artifacts. Its mobile SDK is intended for Android apps, so Android support is present.
+
+2. Service model  
+LeanCloud is a backend/cloud platform SDK, not a purely on-device library. Typical features such as data storage, user/auth, cloud functions, push, and related app services rely on LeanCloud-hosted backend APIs as part of normal operation.
+
+3. Integration requirement  
+Standard Android setup requires initializing the SDK with console-issued application credentials. LeanCloud integrations commonly use an `App ID` and `App Key` (and often a server URL/domain depending on region/deployment) so the app can connect to the correct LeanCloud backend project.
+
+4. Scope  
+These credentials are part of LeanCloud SDK’s own documented integration and are used to access LeanCloud’s hosted services. They are not merely Android package/signing identifiers and are not credentials for a separate third-party product.

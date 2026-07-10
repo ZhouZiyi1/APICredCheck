@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Airship SDK officially supports Android. Airship provides an Android SDK and standard Android integration documentation for push notifications, in-app messaging, analytics, and related mobile engagement features.
+
+2. Service model  
+This SDK is not primarily an on-device utility library. Its normal use depends on Airship-hosted services for push delivery setup, audience/contact data, automation, message delivery, analytics, and other engagement features.
+
+3. Integration requirement  
+Typical Android setup requires registering the app in Airship and configuring vendor-issued credentials in the app. Airship’s Android integration commonly uses an `appKey` and `appSecret`, often supplied through an Airship config file or equivalent runtime configuration.
+
+4. Scope  
+These credentials are part of Airship SDK’s own documented integration and are used so the SDK can communicate with Airship’s backend services. They are not merely Android package/signing identifiers, nor credentials belonging only to a separate third-party product.

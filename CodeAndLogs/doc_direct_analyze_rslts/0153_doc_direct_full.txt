@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Airbnb Lottie has an official Android library (`lottie-android`) and documented Android integration for rendering Adobe After Effects animations exported as JSON.
+
+2. Service model: This SDK is a client-side animation rendering library. In normal use, it parses and plays animation data locally on the device. It does not depend on Airbnb-hosted APIs or a vendor backend as part of its standard feature set.
+
+3. Integration requirement: Typical Android setup is adding the library dependency and loading animation JSON/assets. There is no usual requirement to register the app with Airbnb or configure a console-issued API key, App ID, client secret, or similar vendor credential.
+
+4. Scope: Any network fetching of animation files would be the app's own content delivery choice, not a required Airbnb Lottie product service. That does not make an Airbnb-issued credential part of this SDK's documented integration.

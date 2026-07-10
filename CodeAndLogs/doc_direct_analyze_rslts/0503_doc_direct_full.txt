@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. This product is an Android mediation adapter: MoPub provided/documented adapters for Android ad networks, and the AdColony adapter exists specifically to connect MoPub mediation with the AdColony Android SDK.
+
+2. Service model: This is not a purely on-device library. Its normal purpose is to request and display ads from AdColony through mediation, which depends on AdColony-hosted ad delivery services.
+
+3. Integration requirement: Yes. Standard setup for the AdColony mediation adapter requires AdColony-issued identifiers, typically an `App ID` and one or more `Zone ID`s, supplied in MoPub custom event / network configuration so the adapter can initialize and request AdColony inventory.
+
+4. Scope: These identifiers are part of the documented integration for this specific adapter, not just an unrelated extra SDK. Even though the values are issued by AdColony rather than MoPub, they are required for normal use of the named product because the adapter is specifically built to mediate AdColony ads on Android.

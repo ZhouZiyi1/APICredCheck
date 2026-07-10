@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. AdMob provides official Android integration via the Google Mobile Ads SDK for Android, which is the standard library used to serve AdMob ads in Android apps.
+
+2. Service model — This SDK routinely relies on vendor-hosted services. Ad requests, ad serving, measurement, and related monetization functions depend on Google/AdMob backend systems, so it is not a purely on-device library.
+
+3. Integration requirement — Yes. Standard AdMob Android setup requires the developer to register the app in the AdMob/Google console and configure a console-issued identifier in the app. The required integration value is the AdMob App ID, typically added in AndroidManifest metadata. Ad units also use ad unit IDs, but the primary app-level credential/config value required for SDK initialization is the App ID.
+
+4. Scope — This credential is part of AdMob’s own documented integration for Android ad serving, not merely a separate Google product added independently. Therefore it counts for this SDK.

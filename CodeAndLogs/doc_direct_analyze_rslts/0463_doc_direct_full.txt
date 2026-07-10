@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Adobe Experience Platform Mobile SDK has official Android artifacts and Android integration docs (`com.adobe.marketing.mobile` / AEP Mobile SDK setup for Android).
+
+2. Service model: This SDK is not just an on-device helper library. Its normal use is to collect/send experience, analytics, identity, edge, and related data to Adobe-hosted Experience Platform / Experience Cloud services. Remote Adobe backend communication is part of standard operation.
+
+3. Integration requirement: Yes. Standard Android setup requires configuring the SDK with an Adobe-issued app/environment identifier from Adobe Experience Platform Tags / Data Collection, commonly passed as `configureWithAppID(...)` or via the generated mobile config. That is a vendor-console-issued value used so the app connects to the correct Adobe-hosted configuration and services.
+
+4. Scope: This credential is part of this SDK's own documented integration, not merely an optional separate Adobe product layered on top. The mobile SDK's baseline initialization on Android depends on Adobe configuration tied to the app/property.

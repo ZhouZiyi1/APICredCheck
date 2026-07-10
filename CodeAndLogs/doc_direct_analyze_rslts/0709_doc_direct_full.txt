@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. The product is specifically an **AdMob mediation adapter for maio SDK**, which indicates an Android mediation integration component intended to connect Google Mobile Ads/AdMob mediation with the maio ad network SDK on Android.
+
+2. **Service model** - This is not a purely on-device library. A mediation adapter exists so the app can request and display ads from the maio network through AdMob mediation, which routinely depends on remote ad-serving infrastructure as part of normal operation.
+
+3. **Integration requirement** - Yes. For normal mediation use, developers typically must configure a network-specific identifier for the mediated network in the AdMob mediation setup. For maio integrations, this is generally the **Media ID** used to identify the maio app/account placement in the mediation configuration.
+
+4. **Scope** - The credential is tied to this product’s documented integration purpose: connecting the maio ad network through the AdMob mediation adapter. This is not merely a package name/signing requirement, and it is not only for some unrelated SDK from the same vendor.

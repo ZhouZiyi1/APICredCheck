@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Heap provides an official Android SDK and documents Android integration for mobile analytics/event capture. Step 1 is therefore yes.
+
+2. Service model  
+Heap is not a purely on-device library. Its standard purpose is to collect analytics/session data in the app and send that data to Heap's hosted analytics backend for processing and reporting. That means normal use routinely depends on vendor-hosted services.
+
+3. Integration requirement  
+Typical Heap Android setup requires initializing the SDK with a Heap-issued project/environment identifier obtained from the Heap console. In Heap documentation this is commonly referred to as an `environment ID` (sometimes presented as the app/project ID used during initialization). This is a vendor-issued integration value required for the SDK to associate uploaded data with the correct Heap project.
+
+4. Scope  
+This identifier is part of Heap SDK's own documented integration flow, not merely another separate product's credential. Package name or signing config alone would not satisfy setup; the Heap-issued ID is the relevant configured value.

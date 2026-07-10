@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google Tag Manager historically had an official Android SDK / library for Android app integration.
+
+2. Service model — Google Tag Manager for mobile apps was used to fetch and apply container configurations from Google's hosted Tag Manager service, rather than being only an on-device utility. Standard use involved the app interacting with Google-hosted container resources.
+
+3. Integration requirement — Yes. Typical mobile Tag Manager setup required creating a container in the Tag Manager console and configuring the app with the container identifier so it could load the correct container. That console-issued identifier is part of the product’s standard integration.
+
+4. Scope — This credential is specific to Google Tag Manager’s own integration (the container used by this product), not merely a package name, signing setting, or a separate Google product’s credential.

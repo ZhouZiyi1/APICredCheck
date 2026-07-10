@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find evidence that Novastone's "MQTT-Client-Framework SDK" is an official Android SDK. The product name and known packaging strongly indicate an Apple-style framework rather than an Android library, and there is no clear Android artifact, Android setup documentation, or official Android integration path associated with this specific product. On that basis, Android support should be treated as not supported.
+
+Steps 2-4 are skipped because they are N/A when step 1 is no on Android.

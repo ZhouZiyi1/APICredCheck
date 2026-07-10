@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. A Fyber mediation adapter for Chartboost is an Android integration artifact: mediation adapters are provided to connect an ad network SDK into an Android mediation stack, and this product is specifically named as an adapter for the Chartboost SDK.
+
+2. **Service model** - This is not a purely on-device utility. In normal use, a mediation adapter bridges the mediation platform to the underlying ad network SDK so the app can request and serve ads from remote ad services. That means standard operation depends on hosted ad infrastructure.
+
+3. **Integration requirement** - For normal Android use, this adapter itself is typically just the connector layer. The credentialed setup is usually for the underlying ad network / mediated platform, not for the adapter artifact as a separate Fyber-hosted service. In Chartboost integrations, developers commonly configure Chartboost-issued app identifiers/signatures for the Chartboost SDK, but that is credentialing for Chartboost, not for this adapter product itself.
+
+4. **Scope** - The prompt requires that the credential belong to this product's documented integration, not merely another separately added product. Based on the product being a mediation adapter, the standard required values belong to the mediated SDK (Chartboost) or the broader mediation platform account setup, not to a distinct vendor-hosted service operated by this adapter product. Evidence for a separate Fyber-issued API credential specifically for the “Fyber mediation adapter for ChartBoost SDK” is weak, so the conservative result is no.

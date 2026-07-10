@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Radius Networks' AltBeacon SDK is an Android beacon library with official Android integration/documentation for detecting and ranging BLE beacons.
+
+2. Service model  
+The SDK's standard function is mostly on-device. It uses the phone's Bluetooth capabilities to scan for and interact with nearby beacons locally. Typical beacon detection/ranging/monitoring does not depend on a Radius Networks hosted backend.
+
+3. Integration requirement  
+Usual Android setup does not require registering the app with Radius Networks or obtaining a console-issued API key, App ID, secret, or similar vendor credential. Integration is done by adding the Android library and configuring Android permissions/components.
+
+4. Scope  
+Any identifiers involved in beacon deployments (for example beacon UUID/major/minor values) are beacon configuration values, not vendor-issued API credentials for AltBeacon SDK access to Radius Networks cloud services. For this SDK itself, evidence points to no required API credential.

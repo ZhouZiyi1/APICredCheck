@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Moloco Ads SDK supports Android. Moloco provides an Android SDK/integration path for loading and showing ads in Android apps, so step 1 is yes.
+
+2. Service model  
+This is an advertising SDK, so standard use depends on Moloco-hosted services. The SDK does not operate purely on-device; it contacts Moloco backend systems to request, deliver, and measure ads.
+
+3. Integration requirement  
+Typical ad SDK setup requires the publisher to register the app in the vendor dashboard and configure a vendor-issued identifier in the Android app. For Moloco Ads SDK, the standard integration uses an app-level identifier/key issued by Moloco, and ad placements also commonly use placement/ad unit identifiers. That means normal Android integration does require a console-issued value.
+
+4. Scope  
+That identifier is part of the Moloco Ads SDK integration itself, not just another separate product. It is used so the SDK can initialize and communicate with Moloco’s ad-serving infrastructure for the registered app.

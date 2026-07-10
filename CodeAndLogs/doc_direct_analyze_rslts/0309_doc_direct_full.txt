@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. `metadata-extractor` is a Java library distributed for JVM use and is commonly integrated into Android projects as a local parsing library. Its function set (reading EXIF/IPTC/XMP and related file metadata) is compatible with Android app use because it operates on local file/input data rather than requiring a platform-specific service.
+
+2. Service model: This SDK is primarily on-device. It parses metadata from image/media files inside the app process. There is no normal dependency on vendor-hosted APIs, cloud processing, or a Drew Noakes backend.
+
+3. Integration requirement: No vendor-issued credential appears to be required for standard Android integration. Typical setup is just adding the library dependency and calling its parsing APIs.
+
+4. Scope: Any permissions, file access handling, or Android package/signing configuration are unrelated to a vendor service credential. There is no indication that this product’s documented use requires an API key, App ID, client secret, or equivalent for Drew Noakes-hosted services.

@@ -1,0 +1,5 @@
+2026-06-11 19:23:54 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0710-doc_direct_analyze.log
+2026-06-11 19:23:54 [INFO] Run start: SDK_ID=0710 SDK=Ono SDK vendor=Mattt results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-06-11 19:23:54 [INFO] Request settings: timeout=90.0s max_retries=3 retry_delay=6.0s skip_existing=True
+2026-06-11 19:23:54 [INFO] Existing valid result found at E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0710_doc_direct_rslt.txt; skipped.
+2026-06-11 19:23:54 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0710-doc_direct_analyze.log

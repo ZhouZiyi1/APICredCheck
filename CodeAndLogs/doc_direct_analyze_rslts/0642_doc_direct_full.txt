@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is an Android mediation adapter: a library used to connect Fyber mediation on Android with the Vungle ad network SDK. Its purpose and distribution are specifically for Android integration.
+
+2. Service model  
+The adapter is not a mostly on-device utility. In normal use it participates in ad serving through mediation and the underlying ad network SDKs, which rely on remote ad services. However, the adapter itself is a bridge component rather than the primary hosted service.
+
+3. Integration requirement  
+For the adapter itself, the usual setup is to add the adapter dependency and wire it into the mediation stack. Documentation for this kind of adapter commonly also requires values such as Vungle app/placement identifiers and Fyber mediation configuration, but those credentials belong to the underlying ad network or the mediation platform, not to the adapter package as a standalone product.
+
+4. Scope  
+Using the scope rule, those console-issued identifiers are not credentials of the "Fyber mediation adapter for Vungle SDK" itself. They are credentials for Vungle and/or Fyber's mediation SDK/platform. Evidence for any adapter-specific credential is weak, so the safest classification is that this adapter itself does not have its own API credential requirement.

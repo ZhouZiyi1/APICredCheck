@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Google provides an official Interactive Media Ads (IMA) SDK for Android with documented Android integration.
+
+2. Service model  
+This SDK is not purely on-device. Its normal purpose is to load and play video ads, which typically involves fetching ad responses from remote ad servers using VAST/VMAP/ad rules or similar ad tags.
+
+3. Integration requirement  
+For the Android SDK itself, Google’s standard IMA integration does not require a separate Google API key, App ID, client secret, or shipped vendor config file. Typical setup centers on supplying an ad tag URL or ad response to the SDK. That value tells the SDK where to request ads, but it is not consistently documented as a console-issued SDK credential in the same way as an API key or App ID.
+
+4. Scope  
+The closest candidate is an ad tag URL or publisher/ad-unit information embedded in that tag, often associated with Google Ad Manager or another ad server. However, that is not a universal Google-IMA-specific credential requirement for Android integration itself, and IMA can also be used with non-Google ad servers. Given that ambiguity, the safer classification is that the SDK does not clearly require a vendor-issued API credential for normal Android integration.

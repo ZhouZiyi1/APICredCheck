@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Glide SDK here refers to Google’s Glide image loading library for Android, which is an official Android library.
+
+2. Service model — Glide is primarily an on-device/client-side image loading, caching, decoding, and display library. While it can fetch images over the network, that is from whatever image URLs the app uses, not from a Glide-specific Google-hosted backend required for the product’s normal operation.
+
+3. Integration requirement — Usual Glide integration does not require registering the app in a Google developer console or configuring a vendor-issued key, App ID, secret, or config file. Developers add the library dependency and use it directly.
+
+4. Scope — Any credentials an app might use for other Google services or for its own image servers are not credentials for Glide itself. For Glide’s documented Android integration, no API credential is required.

@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find evidence that the product named "Kanna SDK" by Atsushi Kiwaki has an official Android SDK, Android package, or Android integration documentation. The name appears associated with a lightweight developer library rather than a vendor-hosted mobile platform, and there is no clear indication of an Android-specific distribution or setup path. Because step 1 is not established, steps 2-4 are skipped as N/A on Android.

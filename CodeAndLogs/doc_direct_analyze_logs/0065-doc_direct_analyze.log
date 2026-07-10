@@ -1,0 +1,19 @@
+2026-05-17 21:15:05 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0065-doc_direct_analyze.log
+2026-05-17 21:15:05 [INFO] Run start: SDK_ID=0065 SDK=ironSource SDK vendor=ironSource results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:15:05 [INFO] Querying model='gpt-5.4' SDK='ironSource SDK' vendor='ironSource'
+2026-05-17 21:15:11 [INFO] LLM token usage: prompt_tokens=989 completion_tokens=229 total_tokens=1218
+2026-05-17 21:15:11 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0065_doc_direct_full.txt
+2026-05-17 21:15:11 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. ironSource SDK has official Android integration documentation and an Android library for adding ads/mediation features in Android apps.
+
+2. **Service model** — This SDK is an advertising/mediation SDK. Its normal use depends on ironSource-hosted services and ad delivery / mediation backend behavior, not just on-device logic. The SDK communicates with vendor-controlled remote services as part of standard operation.
+
+3. **Integration requirement** — Yes. Standard ironSource Android integration requires configuring an app-level identifier issued in the ironSource console so the SDK can initialize for that publisher app and connect to the mediation/ad services. The commonly required credential is the **App Key**.
+
+4. **Scope** — This credential is part of the ironSource SDK’s own documented setup, not merely a separate third-party network requirement. While mediated ad networks may require additional IDs, the ironSource SDK itself typically requires the ironSource **App Key**.
+2026-05-17 21:15:11 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0065_doc_direct_rslt.txt
+2026-05-17 21:15:11 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "App Key"}
+2026-05-17 21:15:11 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0065-doc_direct_analyze.log

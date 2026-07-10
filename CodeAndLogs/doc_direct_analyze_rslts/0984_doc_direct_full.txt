@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+KARTE SDK has official Android integration. Plaid Japan documents KARTE for App / Android SDK usage for event tracking and in-app features, so `supports_android` is true.
+
+2. Service model  
+KARTE is not a pure on-device utility library. Its normal use is to send user/app events to KARTE’s hosted customer data and personalization platform, and to receive behavior-based messaging or related service responses. That means standard operation depends on Plaid Japan’s backend.
+
+3. Integration requirement  
+Typical KARTE SDK setup requires configuring a vendor-issued application identifier so the SDK can associate the app with the correct KARTE project/environment. This is part of normal integration, not an optional adjacent product. The documented credential is generally referred to as an `App Key`.
+
+4. Scope  
+That identifier belongs to KARTE SDK’s own integration flow for connecting the app to KARTE’s services. It is not merely Android package metadata or a separate third-party product credential.

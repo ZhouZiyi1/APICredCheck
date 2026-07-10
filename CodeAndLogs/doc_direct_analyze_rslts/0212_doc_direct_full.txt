@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. LINE provides an Android integration for its ads SDK, so this product is supported on Android.
+
+2. Service model: This SDK is not a purely on-device library. Its normal role is tied to LINE-hosted advertising services such as requesting/serving ads and related reporting or attribution, so it routinely depends on vendor backend systems.
+
+3. Integration requirement: Yes. Standard ads SDK setup typically requires the developer to register the app and/or ad placement in LINE’s ads management system and configure the issued identifier in the Android app. For this product, the relevant credential is best characterized as a placement/ad unit identifier.
+
+4. Scope: That identifier is part of the LINE Ads SDK integration itself, not merely a package-name or signing check, and not only a separate LINE product layered on top.

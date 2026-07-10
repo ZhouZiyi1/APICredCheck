@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. FasterXML Jackson is a Java JSON serialization/deserialization library that is commonly used in Android apps, and FasterXML provides Android-specific support/documentation such as `jackson-module-android` for Android compatibility. That is sufficient to treat it as supporting Android.
+
+2. Service model: Jackson is a client-side data-processing library. Its normal use is parsing and generating JSON on-device inside the app. It does not depend on FasterXML-hosted APIs or a vendor backend for standard functionality.
+
+3. Integration requirement: No vendor registration or console-issued key is normally required. Developers add the Jackson library dependency and use it locally in code.
+
+4. Scope: Any credentials an app might use with its own backend or third-party web APIs are separate from Jackson itself. They are not part of Jackson's documented integration requirements.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No. The product is explicitly named `PaperFold-for-iOS SDK`, and it is known as an iOS UI/component library for paper-fold style transitions/effects rather than a cross-platform or vendor-hosted mobile service. There is no indication of an official Android SDK, Android package, or documented Android integration for this specific product.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android for this product.

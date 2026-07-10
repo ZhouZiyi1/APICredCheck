@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find evidence that `FXImageView SDK` by `Charcoal Design` is an Android SDK or has official Android integration documentation. The product name strongly suggests a UI image-view component, and `FXImageView` is historically associated with iOS/macOS-style UI libraries rather than Android. With no clear vendor documentation showing an Android library, Maven/Gradle integration, or Android setup, Android support is not established.
+
+Because step 1 is **no / not established**, steps 2-4 are **skipped**. On Android, API credential evaluation is therefore **N/A** under the required method.

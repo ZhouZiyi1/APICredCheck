@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Square In-App Payments SDK has official Android integration and Android-specific setup/documentation.
+
+2. Service model: This SDK is not just a local UI helper. In normal use, it is part of Square's payment flow, collecting card details and producing a payment token/nonce for use with Square's payment services. That means it is tied to Square-hosted payment infrastructure rather than being purely on-device.
+
+3. Integration requirement: Yes. Standard Android setup requires configuring a Square-issued application identifier in the app. Square's Android examples and setup use the Square `applicationId` / application ID as part of SDK initialization.
+
+4. Scope: The application ID belongs to this product's documented integration, not merely to some separate Square product. A separate backend access token may also be needed for server-side Payments API calls, but for the Android SDK itself the relevant app-configured credential is the Square Application ID.

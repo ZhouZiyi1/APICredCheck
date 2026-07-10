@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find clear evidence that "Reveal Mobile SDK" from Capitol Broadcasting has an official Android SDK or documented Android integration. Reveal Mobile is primarily known for audience/location data products, but for this specific SDK name and vendor pairing, publicly evident Android developer documentation or an Android package/library is weak or absent.
+
+Because step 1 is not established, steps 2-4 are skipped as N/A on Android per the method. With weak evidence, the result should prefer `false` for Android support.

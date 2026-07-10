@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. A MoPub mediation adapter for the Tapjoy SDK is, by definition, an Android integration path for using Tapjoy through MoPub on Android. MoPub’s mediation adapters were published for Android alongside the underlying network SDK integration.
+
+2. Service model  
+This is not a purely on-device library. Its normal purpose is to broker ad mediation and load/show Tapjoy ad inventory, which depends on Tapjoy’s hosted ad-serving/backend systems.
+
+3. Integration requirement  
+Yes. Typical Tapjoy mediation setup requires developer-console-issued network values to be configured so the adapter can request Tapjoy inventory. The standard credential used in Tapjoy Android integrations is the Tapjoy `SDK Key` (sometimes accompanied by placement identifiers, but the key is the primary console-issued app credential).
+
+4. Scope  
+The credential is in scope for this product’s documented integration because the MoPub mediation adapter for Tapjoy is specifically meant to connect the app to Tapjoy’s services through mediation. This is not just an unrelated credential from another optional product; it is part of the normal Tapjoy network setup required for the adapter to function.

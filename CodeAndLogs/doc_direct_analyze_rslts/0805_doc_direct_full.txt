@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Mitek MiSnap SDK is documented as a mobile capture SDK with Android integration for document/check/image capture workflows, so it qualifies as officially supporting Android.
+
+2. **Service model** - MiSnap’s core role is primarily on-device capture guidance and image acquisition/quality handling inside the mobile app. While captured images may later be sent to other Mitek or customer backend services for verification/processing, MiSnap itself is typically the client-side capture component rather than a vendor-hosted API client by default.
+
+3. **Integration requirement** - Usual MiSnap integration appears to require adding the Android SDK/library and configuring capture behavior, but not necessarily provisioning a vendor-console API key/App ID/secret for MiSnap itself as a standard requirement to access Mitek-hosted services. Some Mitek products may involve licensing or separately provisioned backend services, but evidence for a normal Android MiSnap integration requiring an app-embedded vendor-issued API credential is weak.
+
+4. **Scope** - Based on the product scope here, any downstream server credentials for other Mitek identity verification products should not be counted unless MiSnap itself requires them as part of its documented Android setup. On that basis, prefer **no API credential** for MiSnap SDK itself.

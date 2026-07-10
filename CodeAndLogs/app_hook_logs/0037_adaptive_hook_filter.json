@@ -1,0 +1,23 @@
+{
+  "sdk_id": "0037",
+  "sdk_name": "FirebaseCrashReportingSDK",
+  "attempt_timeout_seconds": 45.0,
+  "original_count": 0,
+  "safe_count": 0,
+  "rejected_count": 0,
+  "safe_signatures": [],
+  "rejected_signatures": [],
+  "attempts": [
+    {
+      "label": "baseline-passive-only",
+      "subset_size": 0,
+      "subset": [],
+      "status": "success",
+      "reason": "sdk-call-success",
+      "last_signal": "success",
+      "stop_app_after": true
+    }
+  ],
+  "final_status": "success",
+  "final_reason": "sdk-call-success"
+}

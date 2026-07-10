@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Java MP4 Parser (`mp4parser` / `isoparser`) is a Java library for reading, writing, and manipulating MP4 container files, and it has been used as an Android-compatible library through normal Gradle/Maven dependency integration. Its function is file/container processing in app code rather than a platform-specific hosted service.
+
+2. Service model: The SDK is primarily on-device. It parses and edits MP4 files locally in the app/process. Its standard use does not depend on Sebastian Annies-hosted APIs, cloud infrastructure, or a vendor backend.
+
+3. Integration requirement: There is no usual setup step requiring the developer to register the app with the vendor or configure a console-issued identifier/secret. Typical integration is just adding the library dependency and calling its APIs.
+
+4. Scope: Any credentials an app might use for its own storage, upload, DRM, or media backend are separate from Java MP4 Parser itself. For this SDK’s documented purpose, there is no product-specific API key, App ID, or similar vendor-issued credential.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Gigya provides an official Android SDK for its customer identity/account management platform, so Android is supported.
+
+2. Service model  
+This SDK is not primarily an on-device utility. Its standard use is to connect the app to Gigya-hosted identity and account services for login, registration, session handling, profile/account APIs, and related customer data flows.
+
+3. Integration requirement  
+Typical Android integration requires initializing the SDK with vendor-issued configuration, most notably a Gigya `API key` tied to the site/application in Gigya's console. That key identifies the developer's Gigya site/app when the mobile app talks to Gigya services.
+
+4. Scope  
+This credential is part of Gigya SDK's own documented integration and is used to access Gigya's hosted backend. It is not merely an Android package/signing identifier, and it is not only for some separate third-party product.

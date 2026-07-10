@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find reliable evidence that Orderella's "PopupDialog SDK" has an official Android SDK or documented Android integration. The product name suggests a UI/dialog component, but there is not enough trustworthy product-specific documentation here to establish Android support for this specific SDK. Because the evidence for an Android library or official Android setup is weak, the safer conclusion is that Android support is not established.
+
+Steps 2-4 are skipped because Android support is not confirmed for this SDK (N/A on Android).

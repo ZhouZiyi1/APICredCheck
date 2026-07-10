@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Leanplum SDK has official Android integration and is documented as an Android/mobile SDK.
+
+2. **Service model** - Leanplum is a mobile engagement / messaging / experimentation platform, so standard use relies on Leanplum-hosted backend services. The SDK is not just an on-device utility; it connects to Leanplum services for campaign delivery, messaging, analytics, and related remote-config style features.
+
+3. **Integration requirement** - Yes. Typical Leanplum Android setup requires configuring app-specific credentials issued by Leanplum so the SDK can identify the app and communicate with Leanplum’s backend. The usual credential names are **App ID** and **Development Key / Production Key**.
+
+4. **Scope** - These credentials belong to Leanplum’s own product integration, not merely to some separate third-party dependency. They are part of the standard Leanplum SDK initialization flow for Android.

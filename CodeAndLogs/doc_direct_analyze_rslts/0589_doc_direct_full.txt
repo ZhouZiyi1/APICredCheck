@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Kount SDK does support Android. Kount documents Android/mobile device data collection and fraud/device fingerprinting integrations for Android apps, so step 1 is satisfied.
+
+2. Service model  
+This SDK is not purely on-device. Its normal purpose is to collect device/session signals and send or associate them with Kount’s fraud/risk services. That means standard use relies on Kount-hosted backend systems rather than only local processing.
+
+3. Integration requirement  
+Typical Kount mobile integration requires a merchant-specific identifier configured in the app, commonly referred to as a Merchant ID (`merchantId`, often alongside session collection setup). That value is issued as part of the merchant’s Kount account/integration and is used so the SDK can associate collected data with the correct Kount service account.
+
+4. Scope  
+This credential is part of Kount SDK integration itself, not just another separate product. Package name or app signing are not the relevant credentials here; the merchant/account identifier is.

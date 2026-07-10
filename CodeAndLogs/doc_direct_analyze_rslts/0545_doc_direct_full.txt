@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AppBrain SDK does support Android. AppBrain’s SDK and ad/monetization integrations are documented for Android apps, and the product is positioned as an Android advertising/app-promotion SDK.
+
+2. Service model  
+This is not a purely on-device library. Its standard use is to connect the app to AppBrain-hosted ad/monetization and promotion services, so remote vendor infrastructure is part of normal operation.
+
+3. Integration requirement  
+Typical AppBrain integration requires the developer to register the app with AppBrain and configure an AppBrain-issued identifier in the Android app. AppBrain documentation has historically used an App ID in manifest metadata / setup, and ad placements may also use vendor-issued placement IDs. That means a console-issued value is part of normal Android integration.
+
+4. Scope  
+That identifier belongs to AppBrain’s own SDK/service integration, not just to some unrelated third-party product added alongside it. The strongest documented credential signal is the AppBrain App ID used to identify the app to AppBrain services.

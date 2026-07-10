@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - No official Android library or Android integration is evident for **DTCoreText SDK**. DTCoreText is known as a native **iOS/macOS Objective-C Core Text** library for rendering HTML/rich text using Apple's Core Text framework. That framework is Apple-platform-specific, and the product is documented and distributed for Apple environments rather than Android. Because step 1 is no, steps 2-4 are **skipped** as not applicable on Android.

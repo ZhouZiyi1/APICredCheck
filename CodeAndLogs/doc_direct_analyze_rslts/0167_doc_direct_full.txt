@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Amplitude provides an official Android SDK and documented Android setup for integrating analytics/event tracking in Android apps.
+
+2. Service model: The SDK is not primarily an on-device utility. Its standard purpose is to collect events and send them to Amplitude's hosted analytics service for ingestion, storage, and reporting. Remote vendor infrastructure is part of normal operation.
+
+3. Integration requirement: Yes. Standard Amplitude Android integration requires configuring an Amplitude project API key when initializing the SDK so events are associated with the correct Amplitude project and accepted by Amplitude's backend.
+
+4. Scope: This credential is part of Amplitude SDK's own documented setup, not just a separate Amplitude product or unrelated service. The required value is the Amplitude project's API key used by this SDK to communicate with Amplitude's hosted service.

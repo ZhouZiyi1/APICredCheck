@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Appsee provided an official Android SDK with documented Android integration for session replay / mobile app analytics.
+
+2. Service model: This product is not a purely on-device library. Its standard purpose is to capture user sessions, analytics, and related telemetry and send that data to Appsee’s hosted service for processing and viewing.
+
+3. Integration requirement: Yes. Typical Android integration requires a vendor-issued app-specific key configured in the app, commonly referred to as an `API Key` or Appsee key, so the SDK can associate uploaded session data with the correct Appsee project/account.
+
+4. Scope: This credential is part of Appsee SDK’s own documented setup, not just another separate product. It is used directly by the Appsee SDK to connect the app with Appsee-hosted services.

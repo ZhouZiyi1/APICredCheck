@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. AppLovin MAX SDK has official Android integration documentation and Android SDK artifacts. It is a mobile ad mediation/monetization SDK intended for Android apps as a standard platform.
+
+2. **Service model** — This SDK routinely relies on AppLovin-hosted services as part of normal operation. MAX is an ad mediation platform; the app SDK communicates with AppLovin services to initialize mediation, fetch configuration, and support ad serving/monetization workflows.
+
+3. **Integration requirement** — Yes. Standard Android integration requires configuring a console-issued app identifier from AppLovin for the SDK initialization. In MAX documentation this is typically the **SDK Key** (used in initialization/configuration). That is a vendor-issued value tied to the developer/app setup and required for normal use.
+
+4. **Scope** — This credential is part of the documented integration for **AppLovin MAX SDK** itself, not merely for some separate optional product. Ad unit IDs may also be used, but the clearest product-level required credential is the AppLovin **SDK Key**.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Giphy SDK does support Android. Giphy provides an official Android SDK for embedding GIF/sticker search and selection in Android apps.
+
+2. Service model  
+This SDK is not primarily on-device. Its standard features depend on Giphy-hosted content and APIs for search, retrieval, and display of GIFs/stickers, so routine use relies on Giphy’s remote service.
+
+3. Integration requirement  
+Typical Android integration requires the developer to configure a Giphy-issued value in the app: an API key. In standard setup, the SDK is initialized with that key so the app can access Giphy’s hosted service.
+
+4. Scope  
+This credential is part of the documented integration for the Giphy SDK itself, not just a separate unrelated product. The API key is used specifically for this SDK’s normal Android operation.

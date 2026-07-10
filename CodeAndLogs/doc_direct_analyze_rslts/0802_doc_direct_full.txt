@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. A “Fyber mediation adapter for AppLovin SDK” is an Android-side mediation adapter/integration component intended to let a mobile app use AppLovin through Fyber mediation on Android. Mediation adapters of this kind are provided as Android libraries and documented for Android app integration.
+
+2. **Service model** - This product is not a purely on-device utility. In normal use, it participates in ad mediation/serving, which relies on remote ad network/backend services. However, the adapter itself mainly bridges Fyber mediation with AppLovin’s SDK rather than exposing a separate standalone Fyber cloud API surface directly to the app.
+
+3. **Integration requirement** - For normal integration, developers typically need ad network / mediation configuration identifiers such as placement, app, or account values in the mediation platform and/or AppLovin-side credentials. But for this specific product, the required credential appears to belong to the underlying Fyber mediation setup or the AppLovin network setup, not a distinct console-issued credential uniquely required by the adapter itself.
+
+4. **Scope** - The scope test is the key point here. This is specifically the **Fyber mediation adapter for AppLovin SDK**, not Fyber mediation generally and not AppLovin SDK generally. The adapter is a connector layer. Any required IDs/keys are attributable to Fyber mediation or AppLovin’s own SDK/network onboarding, rather than to the adapter as its own product-specific API credential. With that scope constraint, evidence favors **no separate API credential for this adapter itself**.

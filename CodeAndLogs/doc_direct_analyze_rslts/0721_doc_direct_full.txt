@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find evidence that "iVersion SDK" from Charcoal Design is an Android SDK. The product name itself is iOS-specific ("iVersion"), and it is commonly described as an iPhone/iPad library for app version checking and update prompts rather than a cross-platform mobile SDK. Based on that, there is not a documented official Android integration for this product.
+
+Because step 1 is no, steps 2-4 are skipped as N/A on Android.

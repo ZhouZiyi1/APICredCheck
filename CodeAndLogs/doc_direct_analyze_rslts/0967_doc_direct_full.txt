@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Jiguang JMessage SDK has official Android integration documentation and Android client libraries. JMessage is positioned as Jiguang's messaging/chat SDK for mobile apps, including Android, so `supports_android` is true.
+
+2. Service model  
+JMessage is not a purely on-device library. Its normal use is to provide instant messaging / chat features through Jiguang-hosted messaging services and backend infrastructure. Standard features such as user messaging, conversations, and related IM capabilities depend on the vendor's remote service.
+
+3. Integration requirement  
+Typical JMessage Android setup requires the developer to create/register an application in Jiguang's console and configure a console-issued identifier in the Android app. For Jiguang products, this is commonly the `AppKey`, which is included in manifest/config setup so the SDK can connect to Jiguang services. That fits the definition of an API credential here because it is vendor-issued and required for the SDK's normal cloud-backed operation.
+
+4. Scope  
+This credential is part of JMessage's own documented integration path, not merely another unrelated Jiguang product. Package name or signing settings alone would not qualify, but the JMessage/Jiguang `AppKey` does because it identifies the app to the vendor-hosted messaging platform.

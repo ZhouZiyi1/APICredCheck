@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find evidence that `GBDeviceInfo SDK` by Luka Mirosevic is an official Android SDK. This library is known as an iOS/macOS Objective-C device information library (`GBDeviceInfo` / `GBDeviceInfo.h` style naming), not an Android package or Android integration. The naming, ecosystem usage, and known distribution pattern point to an Apple-platform client library rather than a cross-platform or Android offering.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android.

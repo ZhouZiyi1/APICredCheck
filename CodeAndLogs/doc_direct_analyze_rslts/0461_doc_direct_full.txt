@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+ARCore SDK officially supports Android. Google provides an Android SDK/library for building AR apps on Android devices, with documented Android integration through the ARCore SDK for Java/Kotlin and related Android setup.
+
+2. Service model  
+Typical ARCore use is primarily on-device. Core features such as motion tracking, environmental understanding, light estimation, hit testing, and anchors run locally on the device through ARCore/Google Play Services for AR rather than through a developer-facing vendor cloud backend that the app must call directly.
+
+3. Integration requirement  
+For normal Android integration of the ARCore SDK itself, the developer does not ordinarily obtain and configure a console-issued API key, App ID, client secret, or similar credential. Standard setup is adding the SDK dependency, declaring AR requirements, and handling device support/runtime behavior.
+
+4. Scope  
+Some optional Google services that can be used alongside AR experiences may have their own credentials, but those are separate product integrations and are not required for the core ARCore SDK integration on Android. Package name, manifest entries, or Play-distributed ARCore support components do not count as API credentials.

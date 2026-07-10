@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Fabric SDK was officially offered for Android, primarily as the Android distribution channel for Fabric/Crashlytics and related kits.
+
+2. **Service model** — Fabric was not a purely on-device library. Its standard use relied on vendor-hosted services such as crash reporting/analytics dashboards operated through Fabric/Crashlytics backends.
+
+3. **Integration requirement** — Yes. Typical Android integration required associating the app with a Fabric/Crashlytics project and including a vendor-issued app configuration value. In common setup, this was the **Fabric API Key** (often placed in AndroidManifest metadata), used so the SDK could connect the app to Fabric’s hosted service.
+
+4. **Scope** — This credential is part of Fabric SDK’s own documented integration for its hosted crash/reporting platform, not merely another separate Google product added alongside it.

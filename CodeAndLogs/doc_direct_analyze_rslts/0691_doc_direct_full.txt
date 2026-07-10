@@ -1,0 +1,17 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. A "mediation adapter for Admob SDK" is an Android integration artifact by definition, and Fyber/FairBid documents Android mediation adapters for supported ad networks. So this product supports Android.
+
+2. Service model  
+This adapter is not a standalone on-device utility. Its purpose is to let Fyber/FairBid mediation interoperate with Google AdMob inventory in an Android app. In normal use it sits between the host mediation SDK and AdMob's ad-serving stack, which does involve remote ad services, but the adapter itself is only a bridge component.
+
+3. Integration requirement  
+For the adapter itself, the usual integration is adding the adapter dependency and configuring the relevant host SDK / ad network settings. Any required identifiers are generally for:
+- Fyber/FairBid core mediation setup (for the mediation SDK/app), or
+- Google AdMob setup (for the ad network being mediated).
+
+There is not strong evidence that this specific adapter, as its own product, requires a separate Fyber-issued API key/App ID/secret that developers must place in the Android app solely for the adapter.
+
+4. Scope  
+That distinction matters here. Credentials for FairBid core or for AdMob do not count as credentials for this adapter product itself. Since the adapter appears to be an integration layer rather than a separately credentialed SDK, the safer conclusion is that this product does not itself require an API credential.

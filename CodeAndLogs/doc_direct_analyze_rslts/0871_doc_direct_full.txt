@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Algolia supports Android with official client libraries and Android integration documentation, including search clients/InstantSearch for Kotlin and Java-based Android apps. Step 1 is yes.
+
+2. Service model  
+Algolia is not primarily an on-device SDK. Its standard use is to query Algolia-hosted search indexes and related hosted search services over the network. The SDK is a client for Algolia’s remote backend.
+
+3. Integration requirement  
+Typical Algolia Android setup requires vendor-issued credentials so the app can call Algolia’s hosted search API. Standard integration uses an `Application ID` plus an `API Key` (often a search-only API key for client-side use).
+
+4. Scope  
+These credentials are part of Algolia Search product integration itself, not a separate third-party product. They identify the Algolia application/index environment and authorize requests to Algolia-hosted services.

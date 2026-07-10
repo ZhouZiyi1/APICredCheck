@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - No clear evidence that Mattt's **Ono SDK** is an official Android SDK or has documented Android integration. The name is strongly associated with a Swift/iOS-oriented library by Mattt rather than a vendor-hosted cross-platform/mobile service product, and there is no well-known Android artifact or Android setup documentation tied to this specific product. Because step 1 is no, Android is not supported for purposes of this evaluation.
+
+Steps 2-4 are skipped because they are N/A when there is no official Android support.

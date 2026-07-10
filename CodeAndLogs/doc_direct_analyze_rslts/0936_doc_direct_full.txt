@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Split.io provides an official Android SDK for feature flags / experimentation integration on Android.
+
+2. **Service model** - This SDK is built to use Split.io’s hosted backend. In normal operation, the client SDK connects to Split.io services to fetch feature flag treatments/configurations and related data, rather than operating purely on-device.
+
+3. **Integration requirement** - Yes. Standard Split SDK integration requires configuring an environment-specific **SDK key** issued by Split.io so the SDK can connect to the correct Split environment and retrieve data.
+
+4. **Scope** - The credential is part of Split.io SDK’s own documented setup, not just another separate product. The SDK key is used specifically for Split’s feature delivery service integration.

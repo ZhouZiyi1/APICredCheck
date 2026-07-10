@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. oneAudience published an Android SDK and Android integration guidance, so this product supports Android.
+
+2. Service model: The SDK is not a pure on-device library. Its standard role is to collect device/network/location or audience-related signals and send them to oneAudience-operated backend systems for processing, so vendor-hosted services are part of normal operation.
+
+3. Integration requirement: I do not find strong evidence that standard Android integration requires a developer to obtain and embed a console-issued API key, App ID, client secret, or similar credential from oneAudience. The available descriptions of the SDK focus on adding the library, permissions, and data-collection behavior rather than registering an app for a vendor-issued credential.
+
+4. Scope: Because the evidence for a oneAudience-specific console credential is weak, this should be treated as no documented API credential requirement for the SDK itself. Any device identifiers, package metadata, or third-party platform setup would not count as this product's API credential.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Alibaba Cloud Object Storage Service (OSS) has an official Android SDK and Android integration documentation. The product is explicitly documented for Android app use.
+
+2. Service model  
+This SDK is not primarily on-device. Its standard purpose is to let the app upload, download, and manage objects in Alibaba Cloud OSS buckets, which are vendor-hosted cloud storage resources. Routine use therefore depends on Alibaba Cloud remote APIs/backend.
+
+3. Integration requirement  
+Yes. Standard OSS Android integration requires a credential provider so requests can be authenticated to Alibaba Cloud OSS. Alibaba Cloud documentation commonly shows using `AccessKeyId` and `AccessKeySecret` directly, or more securely using temporary STS credentials derived from Alibaba Cloud account/RAM configuration. Either way, the integration depends on vendor-issued cloud credentials for OSS access.
+
+4. Scope  
+These credentials belong to OSS integration itself, not a separate unrelated Alibaba product. Bucket access through the OSS Android SDK is authenticated with Alibaba Cloud-issued access credentials as part of normal OSS use.

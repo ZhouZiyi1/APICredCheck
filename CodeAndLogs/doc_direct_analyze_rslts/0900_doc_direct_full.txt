@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Quantcast provides an Android integration for its mobile measurement SDK (commonly documented as the Quantcast Measure SDK for Android), so Android is officially supported.
+
+2. Service model  
+This SDK is not purely on-device. Its standard purpose is audience measurement/analytics for apps, which depends on sending app/user interaction data to Quantcast’s hosted measurement services.
+
+3. Integration requirement  
+Typical Quantcast Android setup requires the developer to configure a Quantcast-issued publisher identifier, commonly referred to as a `p-code`, in the app initialization/integration. That value identifies the app/account to Quantcast’s backend for measurement.
+
+4. Scope  
+The `p-code` is part of the Quantcast SDK’s own documented integration, not just another unrelated product. It is the app/account identifier used for this SDK’s normal operation against Quantcast’s service.

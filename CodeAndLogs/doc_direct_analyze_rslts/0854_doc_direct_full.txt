@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This is an Android mediation adapter: Smaato provides adapter artifacts/integration guidance for using Facebook demand through its mediation stack on Android. The product is specifically an adapter layer for Android app integration.
+
+2. Service model  
+The adapter itself is not a standalone cloud service. Its role is to connect the host app's Smaato mediation setup to Facebook's ad SDK/runtime. In normal use, ad serving depends on the underlying ad networks, but the adapter is a client-side bridge rather than its own vendor-hosted backend product.
+
+3. Integration requirement  
+There is no clear indication that this adapter, by itself, requires a Smaato-issued console credential dedicated to the adapter. Typical setup for mediation adapters is adding the adapter dependency and initializing the relevant mediation/network SDKs. Any app IDs, placement IDs, or similar values are generally for the underlying ad SDKs or the broader mediation platform, not for the adapter artifact itself.
+
+4. Scope  
+Credentials commonly associated with this integration would belong to Facebook Audience Network and/or the main Smaato mediation SDK/account configuration, not to the "Smaato mediation adapter for Facebook SDK" as a distinct product. Under the stated rule, those do not count unless they are documented as credentials for this specific adapter product. Evidence for an adapter-specific credential is weak, so the safer classification is no.

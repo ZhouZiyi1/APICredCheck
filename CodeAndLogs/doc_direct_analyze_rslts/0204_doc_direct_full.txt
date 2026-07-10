@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. ironSource/LevelPlay provides an official Android mediation integration path for AppLovin via an Android adapter artifact and Android setup documentation. So this product supports Android.
+
+2. Service model  
+This adapter is not a purely on-device helper. Its standard purpose is to connect an Android app, through ironSource mediation, to AppLovin’s ad-serving and reporting services. That means normal use depends on remote vendor-hosted ad infrastructure.
+
+3. Integration requirement  
+Yes. Typical setup for the AppLovin network in ironSource mediation requires developer-console values from AppLovin, such as the AppLovin `SDK Key` (and often other network-side values like zone/reporting identifiers). That is a console-issued integration credential used so the mediated AppLovin demand can function.
+
+4. Scope  
+This credential is part of the documented integration for this specific mediation adapter/network connection, not just an unrelated extra SDK. Even though the value originates from AppLovin rather than ironSource, it is still required for the normal Android integration of the “ironSource Mediation adapter for AppLovin SDK.”

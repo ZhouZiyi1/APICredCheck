@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Auth0 provides an official Android SDK (`com.auth0.android`) and documented Android integration for login and token handling.
+
+2. Service model: This SDK is not primarily on-device. Its standard use is to authenticate users against Auth0’s hosted identity platform, using Auth0-hosted authorization and token endpoints tied to an Auth0 tenant.
+
+3. Integration requirement: Yes. Normal Android setup requires creating/registering an application in the Auth0 dashboard and configuring tenant-specific values in the app, typically the Auth0 `domain` and `client ID` (often via `auth0.xml` or equivalent config). Those values are used so the mobile app can call Auth0-hosted auth services.
+
+4. Scope: These values belong to Auth0 SDK’s own documented integration, not a separate product. Android package name or signing alone would not satisfy setup; the dashboard-issued application configuration is part of standard Auth0 integration.

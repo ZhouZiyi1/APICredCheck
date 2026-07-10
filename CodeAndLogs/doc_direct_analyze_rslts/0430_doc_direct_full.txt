@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Smaato SDK has official Android support. Smaato provides an Android advertising SDK for integrating ads into Android apps.
+
+2. Service model  
+This is an ad-serving SDK, so normal operation depends on Smaato-hosted backend services. The SDK requests and renders ads from Smaato’s remote ad platform rather than operating purely on-device.
+
+3. Integration requirement  
+Typical Smaato Android integration requires identifiers created in Smaato’s publisher platform, such as an `Adspace ID` for the ad placement. That identifier is configured in the app so the SDK can request inventory for the correct publisher/placement.
+
+4. Scope  
+This credential is part of Smaato SDK’s own documented ad integration, not just a separate third-party product. The placement/publisher identifier is used by Smaato’s SDK itself to access Smaato-hosted ad services.

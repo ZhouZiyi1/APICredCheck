@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AerServ provided an official Android advertising SDK and Android integration documentation for banner/interstitial/video ads. Step 1 is yes.
+
+2. Service model  
+This is an ad-serving/mediation SDK, so normal operation depends on AerServ-hosted services to fetch and render ad inventory, track delivery, and report monetization. It is not a purely on-device library.
+
+3. Integration requirement  
+Typical AerServ Android integration required values created in the AerServ publisher/dashboard setup, especially a placement-level identifier used when requesting ads. In ad SDK terms, that is a vendor-issued integration identifier required for standard use.
+
+4. Scope  
+That identifier is part of AerServ SDK’s own documented ad-request flow, not just a separate third-party product. Package name or signing are not the operative credential here; the relevant configured value is the AerServ ad placement identifier.

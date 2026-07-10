@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is specifically an Android mediation adapter that connects the MoPub SDK with the ironSource Android SDK, and MoPub documented Android integration for network adapters like this one.
+
+2. Service model  
+This is not a purely on-device library. Its normal purpose is to help a MoPub-mediated app request and serve ads from ironSource, which relies on ironSource’s hosted ad delivery/mediation services.
+
+3. Integration requirement  
+Yes. Standard use of the MoPub adapter for ironSource requires configuring an ironSource-issued app identifier so the ironSource SDK can initialize and communicate with ironSource services. In typical ironSource Android integrations this is the `App Key`.
+
+4. Scope  
+The credential is part of the documented integration for this adapter’s intended use with the ironSource SDK, not just an unrelated extra product. While a MoPub app also uses MoPub-side ad unit identifiers, the adapter-specific third-party credential tied to this integration is the ironSource `App Key`.

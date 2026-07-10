@@ -1,0 +1,15 @@
+2026-05-17 21:14:38 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0060-doc_direct_analyze.log
+2026-05-17 21:14:38 [INFO] Run start: SDK_ID=0060 SDK=Reachability SDK vendor=Apple results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:14:38 [INFO] Querying model='gpt-5.4' SDK='Reachability SDK' vendor='Apple'
+2026-05-17 21:14:42 [INFO] LLM token usage: prompt_tokens=977 completion_tokens=109 total_tokens=1086
+2026-05-17 21:14:42 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0060_doc_direct_full.txt
+2026-05-17 21:14:42 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — No.
+
+Apple’s Reachability SDK/library is historically an Apple-platform networking utility for iOS/macOS environments, based on Apple’s SystemConfiguration reachability APIs. It is not an official Android SDK/product with documented Android integration. Since this product does not have official Android support, steps 2–4 are skipped as not applicable on Android.
+2026-05-17 21:14:42 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0060_doc_direct_rslt.txt
+2026-05-17 21:14:42 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:14:42 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0060-doc_direct_analyze.log

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Adfurikun SDK has official Android integration documentation and Android library support as a mobile advertising/mediation SDK.
+
+2. **Service model** - This SDK is for ad mediation/monetization, so standard operation depends on vendor-hosted ad delivery/mediation services rather than being purely on-device. In normal use, the app communicates with Adfurikun-managed services to load and manage ads.
+
+3. **Integration requirement** - Yes. Typical Android integration requires configuring identifiers issued for the app’s ad setup, specifically an application/media identifier used by Adfurikun so its service can recognize the publisher app and serve ads.
+
+4. **Scope** - The credential appears to belong to Adfurikun SDK’s own integration flow as an ad mediation SDK, not merely to a separate third-party product. This is consistent with ad SDK setup where the vendor issues publisher/app identifiers for the SDK to function.

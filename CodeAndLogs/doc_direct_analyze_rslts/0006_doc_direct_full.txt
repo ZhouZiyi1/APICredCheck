@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Firebase Cloud Messaging (FCM) has an official Android SDK/library and documented Android integration as part of Firebase for Android.
+
+2. **Service model** — FCM is not a purely on-device library. Its normal function depends on Firebase/Google-hosted messaging infrastructure so the app can register for tokens and receive cloud-delivered messages. Standard use relies on the vendor’s remote backend.
+
+3. **Integration requirement** — Yes. Typical Android setup requires registering the app in the Firebase console and adding the generated **`google-services.json`** file to the app. That file contains project/app identifiers and API configuration used for Firebase services, including FCM. This matches the prompt’s definition of a shipped config file whose standard purpose is to supply vendor-issued values so the app can communicate with the vendor-hosted service.
+
+4. **Scope** — This credential/configuration is part of FCM’s documented Firebase integration on Android, not merely a separate optional product. While FCM may also involve server-side credentials for sending messages, for normal Android SDK integration the app-side console-issued configuration file is the relevant credential artifact.

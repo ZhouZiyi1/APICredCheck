@@ -1,0 +1,19 @@
+2026-05-17 21:13:23 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0047-doc_direct_analyze.log
+2026-05-17 21:13:23 [INFO] Run start: SDK_ID=0047 SDK=Google Mobile Ads SDK (Admob) vendor=Google results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:13:23 [INFO] Querying model='gpt-5.4' SDK='Google Mobile Ads SDK (Admob)' vendor='Google'
+2026-05-17 21:13:29 [INFO] LLM token usage: prompt_tokens=992 completion_tokens=233 total_tokens=1225
+2026-05-17 21:13:29 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0047_doc_direct_full.txt
+2026-05-17 21:13:29 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google Mobile Ads SDK (AdMob) has an official Android SDK and documented Android integration via Google’s Android developer documentation.
+
+2. **Service model** — This SDK routinely relies on Google-hosted ad services as part of its standard function. It loads and serves ads from Google’s ad backend, so it is not a purely on-device library.
+
+3. **Integration requirement** — Yes. Standard Android integration requires configuring an **AdMob App ID** in the Android app manifest. Developers also use **ad unit IDs** to request ads. Of these, the clearest console-issued app-level integration credential required by the SDK setup is the **App ID**.
+
+4. **Scope** — This credential is part of the documented integration for this specific product (Google Mobile Ads SDK / AdMob), not merely another Google product. The AdMob App ID is specifically used to initialize and identify the app for the ads SDK.
+2026-05-17 21:13:29 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0047_doc_direct_rslt.txt
+2026-05-17 21:13:29 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "AdMob App ID"}
+2026-05-17 21:13:29 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0047-doc_direct_analyze.log

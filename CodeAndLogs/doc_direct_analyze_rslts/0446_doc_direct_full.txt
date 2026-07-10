@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`Android-Rate SDK` appears to be an Android-specific library by Shintaro Katafuchi. The name itself is Android-targeted, and this product is known as a client-side Android library for prompting users to rate an app. That is sufficient evidence of official Android integration.
+
+2. Service model  
+This kind of SDK is typically an on-device UI/helper library. Its normal function is to decide when to show a rating prompt and then deep-link the user to Google Play or the app store listing. That does not require routine use of a vendor-hosted backend or remote API operated by Shintaro Katafuchi.
+
+3. Integration requirement  
+There is no standard indication that developers must register with the vendor or obtain a console-issued key, App ID, token, or config file to use the SDK. Typical setup for rating-prompt libraries is dependency installation plus local configuration in code.
+
+4. Scope  
+Any package name or Play Store URL used to open the app listing is part of normal app metadata/routing, not a vendor-issued API credential for this SDK. There is no evidence that `Android-Rate SDK` requires credentials for vendor services as part of its documented Android integration.

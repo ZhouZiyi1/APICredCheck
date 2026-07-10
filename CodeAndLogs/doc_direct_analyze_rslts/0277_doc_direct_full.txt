@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. OpenCV has official Android support, including Android SDK distributions and documented integration for Android apps.
+
+2. Service model: OpenCV is primarily an on-device computer vision and image processing library. Typical use on Android runs locally in the app/process and does not depend on OpenCV-operated cloud APIs or hosted backend services.
+
+3. Integration requirement: Standard OpenCV Android integration does not require registering the app with OpenCV or obtaining a console-issued API key, App ID, token, or similar credential. Setup is normally adding the SDK/library and calling local APIs.
+
+4. Scope: Any network services a developer might combine with OpenCV would be separate products, not part of the normal OpenCV SDK integration itself. Package name or signing configuration for Android does not change this.

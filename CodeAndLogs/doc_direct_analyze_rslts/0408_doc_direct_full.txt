@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. VKontakte provides an official Android SDK/library for integrating VK features such as authorization and related platform interactions in Android apps.
+
+2. Service model: This SDK is not purely on-device. Its normal use depends on VKontakte-hosted services, especially for user authorization and platform/API interactions tied to VK accounts and VK backend services.
+
+3. Integration requirement: Yes. Standard Android integration requires the developer to register an application with VKontakte and configure the issued application identifier in the Android app. This is typically the VK application ID used by the SDK to identify the calling app to VK services.
+
+4. Scope: The required identifier belongs to this SDK’s own documented integration flow, not just to some separate third-party product. Package name and signing may also matter for app registration, but those are not themselves the credential. The credential-like value is the VK App ID.

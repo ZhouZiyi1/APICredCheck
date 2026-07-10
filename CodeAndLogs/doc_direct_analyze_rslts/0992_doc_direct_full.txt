@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. `aFileChooser` is an Android library/project by Paul Burke for choosing files through Android’s storage/content mechanisms. It is documented and distributed as an Android integration, so Android support is present.
+
+2. Service model: This SDK is a client-side utility/library. Its purpose is to help Android apps launch file-picking flows and resolve file/content URIs on-device through Android APIs. It does not appear to be built around vendor-hosted services or a remote backend operated by Paul Burke.
+
+3. Integration requirement: There is no usual setup indicating developers must register an app with the vendor or obtain a console-issued identifier/secret. Typical integration is adding the library to the Android project and using its classes/intents, not configuring a vendor-issued key.
+
+4. Scope: Any permissions or Android manifest/package setup are standard Android app configuration, not an API credential for this product. There is no evidence that `aFileChooser` itself requires a product-specific App ID, API key, client secret, or vendor config file.

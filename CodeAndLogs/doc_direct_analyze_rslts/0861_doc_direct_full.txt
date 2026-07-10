@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I could not find reliable evidence that "Jastor SDK" by "Elad Ossadon" has an official Android SDK, Android package, Android integration guide, or Android-specific documentation. The available signal for this product appears too weak to confirm supported Android integration.
+
+Because step 1 is **no / unconfirmed**, steps 2-4 are **skipped** per instructions. On Android, API credential evaluation is therefore **N/A**.

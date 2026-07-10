@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Vungle SDK is an official mobile advertising SDK with documented Android integration.
+
+2. Service model — It relies on Vungle-hosted ad services as part of normal operation. The SDK is not just on-device; it connects to Vungle’s backend to initialize, request, and serve ads.
+
+3. Integration requirement — Yes. Standard Android integration requires configuring a Vungle-issued application identifier during SDK initialization. This is commonly referred to as the Vungle App ID.
+
+4. Scope — This credential is part of the Vungle SDK’s own documented setup for serving ads, not merely a separate optional product. Ad unit / placement IDs may also be used, but the core console-issued app-level credential is the App ID.

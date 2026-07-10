@@ -1,0 +1,119 @@
+[*] Log file: app_hook_logs\0005-app_hook.log
+[*] Started at: 2026-06-10T19:50:19
+
+=== Instrumenting 0005 AdmobSDK ===
+[*] Pair config: results_dir=apk_analyze_rslts, hook_results_dir=app_hook_rslts, logs_dir=app_hook_logs, install_attacker=True, spawn_attacker=True, start_frida_server=True
+[*] Attacker APK: apks\0005-AdmobSDK-attacker.apk
+[+] Loaded 5 hook method signature(s).
+    Lcom/google/android/gms/ads/internal/util/zzm;->zzaz(Landroid/content/Context;)Ljava/lang/String;
+    Lcom/google/android/gms/ads/internal/util/zzm;->zzd(Landroid/os/Bundle;)Ljava/lang/String;
+    Lcom/google/android/gms/ads/BaseAdView;->setAdUnitId(Ljava/lang/String;)V
+    Lcom/google/android/gms/ads/AdView;->setAdUnitId(Ljava/lang/String;)V
+    Lcom/google/android/gms/internal/ads/zzze;->setAdUnitId(Ljava/lang/String;)V
+[*] Scanning APK strings for embedded key material...
+[+] Found 1 candidate key references.
+[+] Runtime replacement values loaded from demo APK:
+    package: com.admob.demo
+    cert SHA-1: E1E849B19182D16A212E66E11C9152BA8AEBA41A
+    cert SHA-256: 9B6D3A65DE5F2E5035AEB5070B6C0E04786F4F178022986B34E45BAAB878B60F
+    primary API key: AIzaSy*********************************
+    AdMob app id: ca-app********************************
+    AdMob ad unit id: ca-app********************************
+[*] Spawning attacker app with Frida and loading script.
+[+] adb device connected: e8bbd65c
+[+] frida-server is already running.
+[*] Adaptive hook filtering enabled.
+[*] Strategy: baseline without target hooks, then add candidates one by one; a candidate that turns a success into failure/crash, or crashes by itself, is excluded.
+
+=== Adaptive attempt: baseline-passive-only ===
+[*] Hook subset size: 0
+Performing Streamed Install
+Success
+[+] Package is installed: com.admob.attacker
+[*] Starting one-shot Frida attempt with runtime value replacement enabled.
+[*] Force-stopped com.admob.attacker; waiting 2.0s for process cleanup.
+[*] Trying Frida spawn target: com.admob.attacker
+[!] spawn failed for com.admob.attacker: process not found
+[!] Frida spawn failed or timed out, falling back to adb launch + attach.
+[*] Launching app with adb: adb shell am start -W -n com.admob.attacker/com.admob.attacker.MyActivity
+[+] adb launch succeeded: com.admob.attacker/.MyActivity
+[*] Attaching to pid 19994 for com.admob.attacker.
+[frida] {"className": "android.util.Log", "methodName": "i", "kind": "hook_loaded", "ts": 1781092232002, "process": "com.admob.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "d", "kind": "hook_loaded", "ts": 1781092232004, "process": "com.admob.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "w", "kind": "hook_loaded", "ts": 1781092232006, "process": "com.admob.attacker"}
+[frida] {"className": "android.util.Log", "methodName": "e", "kind": "hook_loaded", "ts": 1781092232007, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092232009, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092232010, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092232013, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092232014, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232016, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232017, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232018, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232019, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232019, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232020, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232022, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092232023, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092232024, "process": "com.admob.attacker"}
+[+] One-shot monitoring com.admob.attacker for up to 45.0s with 0 hook signature(s).
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092233027, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092233027, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092233027, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092233028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092233029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092233029, "process": "com.admob.attacker"}
+[app-signal] status=unknown level=I tag=APICREDTEST message=APICREDTEST_MAIN_AUTO_CLICK_LOAD_AD
+[app-signal] status=start level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_START
+[frida] {"source": "AdMob.BaseBundle.getString", "replacementKind": "admob_app_id", "key": "com.google.android.gms.ads.APPLICATION_ID", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092234180, "process": "com.admob.attacker"}
+[frida] {"source": "com.google.android.gms.ads.AdView.setAdUnitId", "replacementKind": "admob_ad_unit_id", "key": "adUnitId", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092234432, "process": "com.admob.attacker"}
+[frida] {"source": "AdMob.BaseBundle.getString", "replacementKind": "admob_app_id", "key": "com.google.android.gms.ads.APPLICATION_ID", "from": "ca-app********************************", "to": "ca-app********************************", "kind": "runtime_value_replaced", "ts": 1781092234457, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092235028, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092235030, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092235032, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092235033, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235034, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235035, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235036, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235036, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235037, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235038, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235038, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092235039, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092235040, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "getString", "kind": "hook_loaded", "ts": 1781092239027, "process": "com.admob.attacker"}
+[frida] {"className": "android.os.BaseBundle", "methodName": "putString", "kind": "hook_loaded", "ts": 1781092239027, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzaz", "kind": "hook_loaded", "ts": 1781092239028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzm", "methodName": "zzd", "kind": "hook_loaded", "ts": 1781092239028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.BaseAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.AdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.InterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239028, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherAdView", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.doubleclick.PublisherInterstitialAd", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.internal.util.zzag", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239029, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzze", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239030, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.internal.ads.zzzg", "methodName": "setAdUnitId", "kind": "hook_loaded", "ts": 1781092239030, "process": "com.admob.attacker"}
+[frida] {"className": "com.google.android.gms.ads.MobileAds", "methodName": "initialize", "kind": "hook_loaded", "ts": 1781092239030, "process": "com.admob.attacker"}
+[app-signal] status=success level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_SUCCESS: API returned: banner ad loaded for unit ca-app********************************[*] One-shot attempt result: status=success, reason=sdk-call-success, last_signal=success
+[+] SDK call success detected; keeping Frida session attached.
+[app-signal] 06-10 19:50:39.645 19994 19994 I APICREDTEST: APICREDTEST_SDK_CALL_SUCCESS: API returned: banner ad loaded for unit ca-app********************************[app-signal] status=complete level=I tag=APICREDTEST message=APICREDTEST_SDK_CALL_COMPLETE
+
+[+] SDK call success detected; keeping Frida session attached.
+
+[!] Frida session detached: reason=application-requested, crash=None
+[*] Successful attempt completed; leaving app running.
+[+] Baseline run already reached SDK success; no target hook signatures are needed.
+[+] Adaptive filtering found a successful hook set.
+[+] Adaptive hook trace written: app_hook_logs\0005_adaptive_hook_filter.json
+[+] App hook result written: app_hook_rslts\0005_app_hook_rslt.md
+[+] Full hook script written: app_hook_rslts\0005_app_hook_full.js
+[+] Fill-in hook script written: app_hook_rslts\0005_app_hook_template.js
+[+] Safe signatures: 0; rejected signatures: 0
+[*] Adaptive final run disabled; run app_hooker.py again to use the persisted safe hook list.
+[*] Finished at: 2026-06-10T19:50:39

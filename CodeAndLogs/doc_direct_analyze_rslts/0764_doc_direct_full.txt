@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Admost AMR SDK is documented as an Android mobile ads/mediation SDK, with Android integration artifacts and setup guidance for Android apps.
+
+2. Service model: This is not a pure on-device library. A mediation/monetization SDK normally depends on the vendor's hosted backend to identify the publisher app, fetch mediation configuration, and support ad delivery/measurement workflows.
+
+3. Integration requirement: Yes. Standard integration for Admost AMR SDK requires a console-issued app-level identifier from Admost to initialize the SDK in the Android app. That is an API credential under the definition here because it is vendor-issued and used so the SDK can talk to Admost-operated services as part of normal operation.
+
+4. Scope: The credential is part of Admost AMR SDK's own integration, not merely a separate third-party network's setup. Additional network IDs may exist in mediation scenarios, but the core Admost-issued value is the relevant credential for this product.

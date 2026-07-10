@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Tencent Game Multimedia Engine (GME) is documented as a cross-platform real-time voice/chat SDK for games, with Android among its supported client platforms.
+
+2. **Service model** - This SDK is not a purely on-device library. Its standard use is real-time voice / audio communication for games, which typically relies on Tencent’s hosted real-time media infrastructure and backend services rather than only local device functionality.
+
+3. **Integration requirement** - Yes. Typical GME integration requires developers to create/configure the application in Tencent’s console and use a console-issued identifier in the Android app. The commonly documented credential for Tencent GME is an **App ID** (sometimes paired in setup flows with auth material generated server-side, but the core console-issued app credential is the App ID).
+
+4. **Scope** - This credential is specific to GME/Tencent Cloud real-time media service integration, not merely an Android package name or signing setting, and not only for some separate Tencent product.

@@ -1,0 +1,6 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+`AFViewShaker SDK` by Philip Vasilchenko appears to be an iOS UI utility, commonly distributed as Objective-C source / CocoaPods for shaking `UIView` instances. The available naming, platform conventions (`AF...`, `UIView`), and known distribution context indicate Apple-platform integration rather than Android. I found no indication of an official Android SDK, Android package, Maven/Gradle artifact, or Android integration documentation for this specific product.
+
+Because step 1 is no, steps 2-4 are skipped. API credential evaluation is N/A on Android.

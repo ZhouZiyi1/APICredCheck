@@ -1,0 +1,15 @@
+2026-05-17 21:12:29 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0038-doc_direct_analyze.log
+2026-05-17 21:12:29 [INFO] Run start: SDK_ID=0038 SDK=SDWebImage SDK vendor=Olivier Poitrey results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:12:29 [INFO] Querying model='gpt-5.4' SDK='SDWebImage SDK' vendor='Olivier Poitrey'
+2026-05-17 21:12:33 [INFO] LLM token usage: prompt_tokens=983 completion_tokens=131 total_tokens=1114
+2026-05-17 21:12:33 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0038_doc_direct_full.txt
+2026-05-17 21:12:33 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — No. SDWebImage is an image downloading/caching library primarily for Apple platforms (iOS, macOS, tvOS, watchOS, visionOS) maintained as an Objective-C/Swift ecosystem project. Its standard documentation and package distribution are for Apple platforms, not Android. There is no official Android SDK/integration for SDWebImage itself.
+
+Because step 1 is no, steps 2–4 are skipped (N/A on Android).
+2026-05-17 21:12:33 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0038_doc_direct_rslt.txt
+2026-05-17 21:12:33 [INFO] === Concise Summary ===
+{"supports_android": false, "has_api_credential": "*", "credential_name": null}
+2026-05-17 21:12:33 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0038-doc_direct_analyze.log

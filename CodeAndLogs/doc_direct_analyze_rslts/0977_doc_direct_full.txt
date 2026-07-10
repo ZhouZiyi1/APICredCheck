@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. DeltaDNA provides an Android SDK / Android integration for its analytics platform, so Android is officially supported.
+
+2. **Service model** - This SDK is not primarily on-device. DeltaDNA is a game analytics and engagement platform whose normal use involves sending event data from the app to DeltaDNA-hosted backend services for analytics, segmentation, and related remote features.
+
+3. **Integration requirement** - Yes. Standard DeltaDNA integration requires configuring vendor-issued application identifiers/credentials so the SDK knows which DeltaDNA environment and game/app it should send data to. The documented setup commonly uses environment and API-style keys rather than being a pure local library.
+
+4. **Scope** - These configured values are part of DeltaDNA SDK integration itself, not merely another separate product. They identify the app to DeltaDNA’s own hosted analytics service, which is the core service this SDK is built to use.

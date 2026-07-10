@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Qualtrics provides an official Android mobile SDK for its in-app feedback / intercept functionality, with documented Android integration and initialization steps. So Android support is present.
+
+2. Service model  
+This SDK is not a purely on-device library. Its normal purpose is to fetch and evaluate Qualtrics intercepts and present Qualtrics-hosted survey or feedback experiences tied to a Qualtrics account/project. Standard operation therefore depends on Qualtrics-hosted services.
+
+3. Integration requirement  
+Typical Android setup requires configuring Qualtrics-issued identifiers during SDK initialization. Qualtrics documentation commonly refers to values such as `brandId`, `projectId`, and `interceptId` (or equivalent project/intercept identifiers) obtained from the Qualtrics setup flow. These are vendor-provided integration identifiers required for the SDK to connect the app to the correct Qualtrics project/intercept.
+
+4. Scope  
+These identifiers are part of the Qualtrics SDK's own documented integration flow, not merely credentials for some separate third-party service. While they are identifiers rather than a secret token, they still fit the prompt's definition of a console-issued value that must be configured so the SDK can use Qualtrics-hosted services.

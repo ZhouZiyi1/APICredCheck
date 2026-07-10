@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. GameAnalytics provides an official Android SDK/integration as part of its mobile game analytics offering.
+
+2. Service model: This SDK is not just an on-device helper. Its standard purpose is to send gameplay, progression, monetization, and error analytics data to GameAnalytics' hosted backend for processing and reporting.
+
+3. Integration requirement: Yes. Normal Android setup requires developer-supplied console-issued values so the SDK can send data to the correct GameAnalytics project. The standard credentials are a `game key` and `game secret`.
+
+4. Scope: These credentials are specific to GameAnalytics SDK integration itself, not merely Android package/signing metadata and not credentials for a separate third-party product.

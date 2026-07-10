@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AdBuddiz SDK has official Android integration documentation and an Android library/API. Typical setup references adding the AdBuddiz Android SDK to an Android app and initializing it from Android code, so Android support is clearly present.
+
+2. Service model  
+This is a mobile advertising SDK. Its normal function depends on AdBuddiz-hosted ad delivery and related backend services, not purely on-device logic. The SDK must contact the vendor's service to fetch and serve ads.
+
+3. Integration requirement  
+Standard Android integration requires the developer to configure a vendor-issued application identifier, commonly referred to in AdBuddiz docs/API as a `Publisher Key`, via SDK initialization. That value is used so the app can use AdBuddiz's ad service.
+
+4. Scope  
+The credential is part of AdBuddiz SDK's own documented Android setup, not a separate third-party product. Package name or signing alone would not satisfy this requirement; the configured AdBuddiz publisher key is the relevant credential.

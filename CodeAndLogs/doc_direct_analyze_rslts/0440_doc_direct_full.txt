@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Datadog has an official Android/mobile SDK for Android apps, with documented Android integration for logs, RUM, traces, crash reporting, and related telemetry. So Android is supported.
+
+2. Service model  
+This SDK is not a purely on-device utility. Its standard purpose is to collect app telemetry and send it to Datadog’s hosted observability platform for ingestion and analysis. That means routine use depends on Datadog’s remote backend.
+
+3. Integration requirement  
+Typical Android setup requires configuring a Datadog-issued `client token` in the app during SDK initialization so the app can send data to Datadog. Some features, especially RUM, also use an application ID, but the clearest standard credential required for the SDK’s backend ingestion is the client token.
+
+4. Scope  
+This credential is part of Datadog SDK’s own documented mobile integration, not just another separate product. The client token is specifically used so this SDK can reach Datadog-hosted services.

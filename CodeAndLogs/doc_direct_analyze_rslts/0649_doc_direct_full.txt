@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Skubit SDK appears to be an Android-specific in-app billing / payment SDK, with documented Android integration as its primary use case.
+
+2. Service model  
+This product is not just an on-device helper library. Its normal function depends on Skubit's billing service/backend to create and manage purchase transactions for the app.
+
+3. Integration requirement  
+Evidence suggests developers typically need to register as a Skubit seller/developer and integrate app-specific billing configuration. For billing SDKs in this category, that commonly includes a console-issued application/public key used by the app during purchase handling or verification. I do not have strong enough evidence here for a more specific credential label than that.
+
+4. Scope  
+The credential appears tied to Skubit's own billing platform integration, not merely to some unrelated third-party service. Evidence is somewhat weak, but the product is Android-supported and likely requires a vendor-issued app/billing key as part of standard setup.

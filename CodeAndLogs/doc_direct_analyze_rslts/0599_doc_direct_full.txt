@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Button SDK has official Android support. Button documented an Android SDK for integrating its commerce/deep-linking and attribution features into Android apps.
+
+2. Service model  
+This SDK is not just an on-device helper. Its normal use depends on Button-hosted services for things like partner linking, attribution, and related commerce flows. That means the app typically communicates with Button’s backend as part of standard SDK behavior.
+
+3. Integration requirement  
+Typical Button Android integration requires initializing the SDK with a vendor-issued app identifier from Button. In Button documentation this is commonly referred to as an App ID or Application ID used when configuring the SDK.
+
+4. Scope  
+That identifier is part of Button SDK’s own integration, not merely a separate third-party service added alongside it. It is used so the Android app can operate against Button’s hosted platform.

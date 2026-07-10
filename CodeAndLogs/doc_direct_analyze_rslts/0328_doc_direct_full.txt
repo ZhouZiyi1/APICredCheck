@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find this product to be an official Android SDK. Karl Stenerud's "KSCrash" / "KS Crash" is known as a crash-reporting library for Apple platforms (primarily iOS/macOS), not as a documented Android library. Because step 1 is no, steps 2-4 are skipped and are N/A on Android.

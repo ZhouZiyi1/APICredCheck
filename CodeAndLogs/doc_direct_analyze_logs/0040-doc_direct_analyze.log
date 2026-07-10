@@ -1,0 +1,19 @@
+2026-05-17 21:12:39 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0040-doc_direct_analyze.log
+2026-05-17 21:12:39 [INFO] Run start: SDK_ID=0040 SDK=Google Guava SDK vendor=Google results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:12:39 [INFO] Querying model='gpt-5.4' SDK='Google Guava SDK' vendor='Google'
+2026-05-17 21:12:45 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=231 total_tokens=1209
+2026-05-17 21:12:45 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0040_doc_direct_full.txt
+2026-05-17 21:12:45 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google Guava is a general-purpose Java library, and there is an Android-compatible variant/documented Android usage historically via the `guava-android` artifact. So it does have official Android integration support.
+
+2. Service model — Guava is a pure client-side utility library. It provides collections, caching utilities, strings, concurrency helpers, hashing, and similar programming utilities. Its normal use is on-device/in-process and does not depend on Google-hosted services.
+
+3. Integration requirement — No. Typical Guava setup is just adding the library dependency. There is no standard requirement to register an app in a Google developer console or configure an API key, App ID, client secret, or similar value for Guava itself.
+
+4. Scope — Any Google Cloud, Maps, Firebase, or OAuth credentials would belong to separate Google products, not to Guava. For Guava itself, no vendor-issued API credential is part of documented integration.
+2026-05-17 21:12:45 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0040_doc_direct_rslt.txt
+2026-05-17 21:12:45 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:12:45 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0040-doc_direct_analyze.log

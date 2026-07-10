@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - `APParallaxHeader SDK` by `Apping` appears to be an iOS UI component/library for parallax header behavior, commonly distributed for Apple platforms rather than as an Android SDK. I do not find clear evidence of an official Android library or Android integration documentation for this specific product name. Because step 1 is not satisfied, Android support should be treated as unsupported.
+
+Steps 2-4 are skipped because they are N/A when there is no official Android support.

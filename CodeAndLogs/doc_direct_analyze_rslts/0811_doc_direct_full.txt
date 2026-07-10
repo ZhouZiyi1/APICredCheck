@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Tencent GVoice SDK has official Android integration. It is a game voice SDK from Tencent with Android client libraries and Android-specific setup/API usage in its documentation, so `supports_android` is true.
+
+2. Service model  
+GVoice is not just an on-device utility library. Its normal features, such as real-time voice chat / voice messaging for games, depend on Tencent-hosted voice services. That means the SDK is designed to connect the app to Tencent backend infrastructure as part of standard use.
+
+3. Integration requirement  
+Typical GVoice integration requires the developer to register the application with Tencent's service platform and initialize the SDK with vendor-issued application credentials. In common GVoice setup, this is an `AppID` and `AppKey` (sometimes alongside user identifiers or auth-related values), which are used so the SDK can access Tencent's voice service.
+
+4. Scope  
+These credentials are part of GVoice's own documented integration, not merely another Tencent product layered on top. Package name or signing config alone would not satisfy the requirement; the vendor-issued app credential is the relevant integration requirement here.

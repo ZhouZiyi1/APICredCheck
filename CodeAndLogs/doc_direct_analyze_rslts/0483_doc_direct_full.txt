@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. `ksoap2` is an Android/Java SOAP client library from Simpligility, historically published as `ksoap2-android`, with documented use in Android apps for calling SOAP web services.
+
+2. Service model: This SDK is mostly a client-side transport/parsing library. Its role is to serialize SOAP requests, send them to whatever SOAP endpoint the developer chooses, and parse responses. It is not a gateway to Simpligility-hosted services or a vendor backend that the SDK is built around.
+
+3. Integration requirement: Usual integration does not require registering the app with Simpligility or obtaining any console-issued key, App ID, token, or config file from the vendor. Developers add the library and configure their target SOAP service details themselves.
+
+4. Scope: Any authentication used with a SOAP service would belong to that external SOAP service, not to `ksoap2` itself. That does not qualify as an API credential for this SDK.

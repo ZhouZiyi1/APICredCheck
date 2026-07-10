@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**  
+Sift provides an official Android/mobile SDK for device fingerprinting and fraud/risk data collection in Android apps, so Android support exists.
+
+2. **Service model**  
+This SDK is not just an on-device utility. Its standard purpose is to collect device/app signals and send them to Sift’s hosted fraud/risk service for analysis, so normal use relies on Sift’s backend.
+
+3. **Integration requirement**  
+Typical Android integration requires initializing the SDK with a Sift-issued account/application identifier so collected events and fingerprints are associated with the correct Sift tenant. That is a vendor-issued integration value used to talk to Sift’s hosted service.
+
+4. **Scope**  
+That identifier is part of the Sift SDK’s own documented setup, not merely a package name, signing value, or a separate third-party product credential. Evidence for an Android console-issued identifier is reasonably strong; the commonly referenced credential is Sift’s **Account ID**.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+AdPOPcorn SDK has official Android integration. IGAWorks/AdPOPcorn documentation and integration examples for publishers include Android SDK setup with Android project configuration, so `supports_android` is yes.
+
+2. Service model  
+AdPOPcorn is an advertising/offerwall monetization SDK, not a pure on-device library. Its normal operation depends on AdPOPcorn-hosted ad delivery, campaign, and reporting services. That means the SDK routinely talks to the vendor backend as part of standard use.
+
+3. Integration requirement  
+For ad SDKs of this type, the standard integration requires registering the app with the vendor and configuring vendor-issued identifiers so the SDK can request ads for the correct publisher/app account. AdPOPcorn Android integrations are documented with app-level identifiers such as an app key / app ID style value. That is an API credential under the definition here because it is vendor-issued and used for this product’s hosted service.
+
+4. Scope  
+This credential is part of AdPOPcorn SDK integration itself, not merely a separate product layered on top. The identifier is used so AdPOPcorn services recognize the app/publisher when serving ads.

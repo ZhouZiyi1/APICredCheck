@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. The AdMob mediation adapter for Chartboost has official Android integration as part of Google Mobile Ads mediation on Android, with an Android adapter artifact and setup instructions for Android apps.
+
+2. Service model: This is not a purely on-device library. Its standard purpose is to connect the app, through mediation, to Chartboost’s ad-serving backend and related hosted ad services. The adapter exists specifically so Android apps using Google Mobile Ads can request/fill Chartboost inventory.
+
+3. Integration requirement: Yes. Standard setup for the Chartboost mediation adapter requires developer-configured Chartboost credentials obtained from Chartboost’s dashboard/console. In typical integration documentation, these are the Chartboost App ID and App Signature (sometimes entered in AdMob mediation settings and/or used for SDK initialization/config).
+
+4. Scope: Those credentials are part of the documented integration for this specific mediation adapter, not merely an unrelated optional product. Without the Chartboost app credentials, the adapter cannot properly connect the app to Chartboost demand in normal use.

@@ -1,0 +1,19 @@
+2026-05-17 21:17:09 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0087-doc_direct_analyze.log
+2026-05-17 21:17:09 [INFO] Run start: SDK_ID=0087 SDK=SafetyNet SDK vendor=Google results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:17:09 [INFO] Querying model='gpt-5.4' SDK='SafetyNet SDK' vendor='Google'
+2026-05-17 21:17:15 [INFO] LLM token usage: prompt_tokens=988 completion_tokens=236 total_tokens=1224
+2026-05-17 21:17:15 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0087_doc_direct_full.txt
+2026-05-17 21:17:15 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google SafetyNet had official Android APIs, exposed through Google Play services on Android, for features such as SafetyNet Attestation and related device/app integrity checks.
+
+2. Service model — This SDK is not purely on-device in normal use. SafetyNet Attestation relies on Google-hosted backend verification/services as part of its standard operation, with the app sending attestation requests and receiving results tied to Google’s service.
+
+3. Integration requirement — Yes. Standard SafetyNet Attestation integration required obtaining and configuring an API key from Google so the app could call the SafetyNet service. This is a vendor-issued credential used for the product’s normal Android integration.
+
+4. Scope — The API key is part of SafetyNet Attestation’s documented setup for this product on Android, not merely a separate unrelated Google product credential. While Android app restrictions such as package name/SHA may also be configured, those restrictions are not themselves the credential; the credential is the API key.
+2026-05-17 21:17:15 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0087_doc_direct_rslt.txt
+2026-05-17 21:17:15 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "API key"}
+2026-05-17 21:17:15 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0087-doc_direct_analyze.log

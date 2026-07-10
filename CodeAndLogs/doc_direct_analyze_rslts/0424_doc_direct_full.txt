@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+LINE provides an official Android SDK and Android integration documentation for LINE Login and related LINE platform features. So Android is supported.
+
+2. Service model  
+The SDK is not just an on-device utility. Its standard use is to connect the app to LINE-hosted platform services such as user authentication, profile access, and sharing/login flows tied to the user's LINE account.
+
+3. Integration requirement  
+Typical Android setup requires registering the app/channel in the LINE Developers console and configuring a console-issued identifier in the app. The standard value used in Android integration is the `Channel ID` (often paired with callback configuration, but the key credential-like value is the Channel ID).
+
+4. Scope  
+This credential is part of the documented integration for the LINE SDK itself, not merely a separate optional product. Package name or signing settings alone are not the credential; the relevant console-issued value is the LINE Channel ID.

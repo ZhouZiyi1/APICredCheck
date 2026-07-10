@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Sinch Voice SDK is offered for Android as part of Sinch’s mobile calling/voice client SDKs, with official Android integration documentation and Android library support.
+
+2. **Service model** - This SDK is not primarily an on-device utility. Its normal purpose is voice calling over Sinch’s platform, which relies on Sinch-hosted backend services for call setup/signaling and related voice service functionality.
+
+3. **Integration requirement** - Yes. Standard integration for Sinch Voice SDK requires vendor-issued application credentials so the app can connect to Sinch services. Sinch documentation commonly refers to an **Application Key / App Key** (often alongside other app authentication values), and this is part of the product’s normal setup rather than an optional adjacent service.
+
+4. **Scope** - The credential is part of this SDK’s own documented voice integration, not merely another Sinch product. Because the Voice SDK is built to use Sinch’s hosted calling infrastructure, the app-level credential belongs to this product’s setup. Evidence for the exact label can vary across Sinch documentation versions, but an app key/application key is a standard Sinch-issued credential for this SDK.

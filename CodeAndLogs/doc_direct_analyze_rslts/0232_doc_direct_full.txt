@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Digital Turbine FairBid SDK has official Android integration documentation and an Android SDK/library for app monetization and mediation.
+
+2. Service model: FairBid is not a purely on-device library. Its normal use is ad mediation/monetization, which depends on Digital Turbine-hosted backend/services to identify the publisher app, manage mediation settings, and serve/coordinate ad demand.
+
+3. Integration requirement: Typical FairBid Android setup requires initializing the SDK with a console-issued app identifier from the FairBid dashboard/portal. This is a vendor-provided integration value used as part of standard SDK startup, so it qualifies as an API credential under the requested definition.
+
+4. Scope: The required identifier belongs to FairBid itself, not just to separately added mediated networks. Other ad networks may require their own credentials too, but FairBid’s own app ID is part of this product’s documented integration.

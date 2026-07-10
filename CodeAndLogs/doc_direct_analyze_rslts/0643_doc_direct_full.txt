@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find this product to have an official Android SDK or Android integration. `InAppSettingsKit` is known as a UIKit-era library from FutureTap for presenting an app's Settings bundle inside an iOS app, which is an Apple-platform concept tied to iOS Settings infrastructure rather than Android. The product name, documented purpose, and platform association all point to iOS-only support, with no corresponding Android library or Android setup documentation.
+
+Because step 1 is no, steps 2-4 are skipped. N/A on Android.

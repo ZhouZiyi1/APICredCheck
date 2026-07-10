@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. EventBus by Greenrobot is a well-known Android/Java publish-subscribe library with official Android integration and usage documentation for Android apps.
+
+2. **Service model** — It is primarily an **on-device** library. EventBus handles in-app communication between components within the app process; it does not depend on Greenrobot-hosted APIs or a vendor backend for its standard operation.
+
+3. **Integration requirement** — Normal Android setup does **not** require registering the app with Greenrobot or obtaining any console-issued identifier, API key, App ID, secret, token, or config file. Typical integration is just adding the library dependency and using annotations / registration in code.
+
+4. **Scope** — Any package name, signing config, or other app setup is unrelated to a vendor-hosted EventBus service. EventBus itself is a client-side SDK/library, not a cloud-backed product requiring vendor credentials.

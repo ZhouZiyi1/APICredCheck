@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Android Auto has official Android integration for apps that surface experiences in compatible cars, via Android’s car app framework / Android Auto app documentation and Android libraries for car-compatible apps.
+
+2. Service model — This product is primarily a platform/UI integration between an Android app and the Android Auto host in the car or on the phone. Standard Android Auto functionality is not a vendor-hosted cloud SDK in the way maps, ads, or backend platforms are. It mainly uses Android app components, templates, media/messaging/navigation app categories, and host validation on-device.
+
+3. Integration requirement — Usual Android Auto setup does not require the developer to obtain a console-issued API key, App ID, client secret, or equivalent credential from Google specifically for Android Auto. Integration is done through app configuration, manifest declarations, supported app category requirements, and the Android/car app libraries.
+
+4. Scope — Some apps used within Android Auto may separately use other Google products that do require credentials, such as Google Maps Platform APIs, Firebase, or Sign-In configuration. Those credentials belong to those separate products, not to Android Auto itself. Package name, signing, Play Console distribution, or app review requirements do not count as an API credential under this definition.

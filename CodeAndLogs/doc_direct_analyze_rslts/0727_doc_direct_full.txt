@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find evidence that "HTMLReader SDK" by Nolan Waite has an official Android SDK or documented Android integration. The available identity of HTMLReader is as an HTML parsing/reading library associated with Apple-platform development rather than a vendor-documented Android product. Because step 1 is not satisfied, Android support is not established for this named SDK.
+
+Steps 2-4 are skipped because they are N/A when Android support is not supported/documented for the named product.

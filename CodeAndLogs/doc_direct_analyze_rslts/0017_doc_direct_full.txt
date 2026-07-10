@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Facebook Core SDK is part of Meta/Facebook's Android SDK offering and has official Android integration.
+
+2. **Service model** — This SDK is not just an on-device utility. In normal use it connects the app to Facebook/Meta platform services, such as app events, deep links, and other Facebook platform interactions.
+
+3. **Integration requirement** — Yes. Standard Android integration for Facebook Core SDK requires the developer to create/register a Facebook app in Meta's developer console and configure the app's **Facebook App ID** in the Android app. This is a vendor-issued identifier used so the SDK can communicate with Facebook services for that registered app.
+
+4. **Scope** — The App ID is part of the documented setup for the Facebook Core SDK itself, not merely another separate Meta product. Therefore it counts as this SDK's API credential.

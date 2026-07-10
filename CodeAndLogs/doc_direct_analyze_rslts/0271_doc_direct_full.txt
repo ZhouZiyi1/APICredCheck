@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+PubNative SDK has official Android integration documentation and an Android library/SDK for in-app advertising and monetization. Android support is established.
+
+2. Service model  
+This is an advertising SDK, so standard operation depends on PubNative-hosted ad serving infrastructure. The SDK is not primarily an on-device utility; it routinely contacts the vendor backend to request and render ads, track impressions/clicks, and manage monetization flows.
+
+3. Integration requirement  
+Typical PubNative Android integration requires configuring vendor-issued identifiers from the PubNative publisher/admin console. In PubNative integrations, the core app-level credential is commonly an `App Token` (sometimes accompanied by placement/zone identifiers for specific ad units). Because the SDK needs this console-issued value to connect the app to PubNative's ad-serving account, this qualifies as an API credential under the stated definition.
+
+4. Scope  
+The credential is part of PubNative SDK's own documented setup for serving PubNative ads on Android, not merely a separate third-party product. Package name or signing alone would not satisfy this; the console-issued app identifier is part of the SDK's direct integration.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Cheetah Mobile Ads SDK did have an official Android integration. It was distributed as an Android ads SDK for embedding Cheetah Mobile ad formats in Android apps, so step 1 is yes.
+
+2. Service model  
+This is an advertising SDK, so normal operation depends on Cheetah Mobile-hosted ad services. The SDK is not primarily an on-device utility; it needs to contact the vendor backend to request ads, track impressions/clicks, and handle monetization flows.
+
+3. Integration requirement  
+For ad SDKs of this type, the normal integration requires identifiers issued from the vendor side, typically an app/publisher identifier and ad placement identifier. Cheetah Mobile Ads SDK documentation and integration patterns for this product family indicate setup around console-issued app/placement values rather than being usable with no vendor-issued identifier. Public documentation is dated and somewhat sparse now, but the evidence supports that a developer had to configure vendor-issued IDs for standard Android use.
+
+4. Scope  
+Those identifiers are part of the Cheetah Mobile Ads SDK integration itself because they identify the publisher app and ad placements to Cheetah Mobile's ad-serving system. They are not merely Android package metadata or credentials for a separate third-party product.

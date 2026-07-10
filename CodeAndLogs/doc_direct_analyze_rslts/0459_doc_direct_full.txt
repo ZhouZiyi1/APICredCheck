@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Tencent provides an official Android player SDK for VOD playback built around `TXVodPlayer` / Tencent Cloud Player integration on Android, so this product supports Android.
+
+2. Service model: The SDK is primarily a client-side media playback library, but it is a Tencent Cloud product rather than a pure standalone utility. In standard Tencent distribution, the player SDK is commonly tied to Tencent Cloud licensing/entitlement for use of the SDK, even if actual media playback is local/stream-based.
+
+3. Integration requirement: Yes. Usual Android integration for Tencent’s player SDK family requires configuring a Tencent-issued player license in the app, typically expressed as a `License URL` plus `License Key` (sometimes described as player license information from Tencent Cloud console). That is a vendor-issued configuration value required for standard use of the SDK itself.
+
+4. Scope: This credential belongs to the player SDK integration itself, not merely to some separate Tencent Cloud service the app might optionally add. While Tencent Cloud VOD content workflows may also involve other identifiers, the player license is the product-specific integration credential.

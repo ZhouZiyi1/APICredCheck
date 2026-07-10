@@ -1,0 +1,19 @@
+2026-05-17 21:15:49 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0073-doc_direct_analyze.log
+2026-05-17 21:15:49 [INFO] Run start: SDK_ID=0073 SDK=Flutter SDK vendor=Flutter.io results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:15:49 [INFO] Querying model='gpt-5.4' SDK='Flutter SDK' vendor='Flutter.io'
+2026-05-17 21:15:55 [INFO] LLM token usage: prompt_tokens=988 completion_tokens=207 total_tokens=1195
+2026-05-17 21:15:55 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0073_doc_direct_full.txt
+2026-05-17 21:15:55 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Flutter is a cross-platform SDK/framework that explicitly supports Android app development via its Android embedding and build tooling.
+
+2. Service model — Flutter is primarily an on-device UI/application framework. Its standard use is to build app interfaces and logic that run locally on the device. It is not, by itself, a vendor-hosted backend service product.
+
+3. Integration requirement — Typical Flutter SDK setup does not require registering the app with Flutter.io or obtaining a console-issued key/secret/App ID to use the SDK on Android. You install the SDK/tooling and build apps locally.
+
+4. Scope — While a Flutter app may add other services or plugins that require their own credentials, those belong to those separate products, not to the core Flutter SDK itself. Therefore, for the named product alone, no API credential is normally required.
+2026-05-17 21:15:55 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0073_doc_direct_rslt.txt
+2026-05-17 21:15:55 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 21:15:55 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0073-doc_direct_analyze.log

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Salesforce's MobilePush SDK is the Android/iOS SDK for Marketing Cloud Engagement push messaging, with official Android integration documentation and Android library support.
+
+2. Service model: It routinely depends on Salesforce-hosted backend services as part of normal operation. Its core functions, such as device registration, push token management, contact/subscriber association, inbox/messages, and analytics/event reporting, are built around communication with Salesforce Marketing Cloud services rather than being purely on-device.
+
+3. Integration requirement: Yes. Standard setup requires configuring vendor-issued application identifiers from Salesforce Marketing Cloud. The Android integration commonly uses the Marketing Cloud app configuration values, especially the `applicationId` (along with other server-related values such as access token and sender ID in some setups), to register the app instance with Salesforce services.
+
+4. Scope: This credential is part of the MobilePush SDK's own documented setup, not merely a separate optional product. The SDK's normal integration requires Marketing Cloud app configuration obtained from Salesforce/Marketing Cloud administration for MobilePush itself.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. This product is specifically an `ironSource Mediation adapter for Fyber SDK`, and ironSource/LevelPlay adapter integrations include Android adapter artifacts and Android setup guidance for mediated networks. That is sufficient evidence of official Android support.
+
+2. Service model  
+This adapter is not a pure on-device utility. Its normal purpose is to let an Android app request and serve ads from Fyber through ironSource mediation, which depends on Fyber-hosted ad delivery services.
+
+3. Integration requirement  
+Yes. Standard mediated-network setup for Fyber requires configuring Fyber-issued identifiers in the mediation/network setup so the adapter can request inventory for the correct app/placement. In practice this is typically an app-level identifier plus placement/spot identifiers rather than no credential at all.
+
+4. Scope  
+These identifiers belong to the documented integration of this adapter with Fyber demand, not merely to some separate unrelated product. They are part of the normal setup needed for this adapter to access Fyber ad services on Android.

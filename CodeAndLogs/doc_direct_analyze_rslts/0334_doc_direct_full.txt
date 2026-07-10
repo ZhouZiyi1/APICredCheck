@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Meta's Conceal SDK is an Android library with documented Android integration and Android-specific usage. It is presented as a client-side encryption library for Android apps.
+
+2. Service model  
+Conceal is primarily an on-device cryptography SDK. Its normal purpose is to encrypt and decrypt data locally within the app, using native crypto primitives. It is not built around Meta-hosted APIs or a vendor backend service that the app must contact during standard use.
+
+3. Integration requirement  
+There is no usual setup step requiring the developer to register the app in a Meta console or configure a console-issued identifier/secret for Conceal itself. Typical integration is adding the library dependency and using its local encryption APIs.
+
+4. Scope  
+Any credentials an app might use elsewhere in the Meta ecosystem would belong to other Meta products, not to Conceal's documented integration. For Conceal itself, package name or signing setup does not constitute an API credential under this definition.

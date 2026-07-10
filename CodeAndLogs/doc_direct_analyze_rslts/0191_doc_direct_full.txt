@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. The AdMob mediation adapter for Vungle SDK is an official Android integration component used with the Google Mobile Ads SDK to mediate Vungle demand in Android apps.
+
+2. Service model: This is not a purely on-device library. In normal use, it participates in AdMob-mediated ad serving, which depends on vendor-hosted ad services and remote configuration.
+
+3. Integration requirement: Yes. Standard Android setup for AdMob-based mediation requires configuring an AdMob-issued identifier in the app, most notably the `AdMob App ID` in the Android manifest. Mediation setup also typically uses AdMob ad unit IDs, but the App ID is the clearest SDK-level credential.
+
+4. Scope: The credential is part of this product's documented integration path because this adapter is used through the AdMob / Google Mobile Ads mediation stack on Android. Vungle-side IDs may also be configured, but those belong to the mediated network rather than AdMob itself. The AdMob App ID is therefore in-scope for this product.

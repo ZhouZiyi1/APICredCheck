@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - OCMock is a mocking framework for Objective-C used in Apple-platform testing, not a mobile app runtime SDK with Android integration. Its documented use is for Objective-C/XCTest-style environments, and it is associated with iOS/macOS development rather than an Android library or Android setup flow. I do not find evidence of an official Android SDK, Android package, or Android integration documentation for this product.
+
+Because step 1 is **no**, steps 2-4 are skipped as not applicable on Android.

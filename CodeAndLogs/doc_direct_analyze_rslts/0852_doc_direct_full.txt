@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - `RBBAnimation SDK` by Robert Böhnke is an animation library known for iOS/macOS usage rather than an officially documented Android SDK. I do not find evidence of an official Android library or Android integration guidance for this specific product name. Because step 1 is no, Android is not supported for purposes of this evaluation.
+
+Steps 2-4 are skipped because they are N/A when there is no official Android support.

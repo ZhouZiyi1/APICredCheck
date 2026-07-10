@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google AdX for apps is typically accessed through the official **Google Mobile Ads SDK** on Android, with Ad Manager / Ad Exchange demand served through that Android integration. So there is documented Android support.
+
+2. **Service model** — This is a hosted advertising product. In normal use, the SDK contacts Google's ad-serving infrastructure to request and display ads. It is not primarily an on-device-only library.
+
+3. **Integration requirement** — Yes. Standard Android integration for Google’s mobile ads stack requires configuring a console-issued identifier in the Android app manifest: the **App ID** from AdMob/Google Mobile Ads setup. In actual ad serving, developers also use **ad unit IDs**, but those are placement identifiers rather than the primary app-level SDK credential. The app-level required configured value is the App ID.
+
+4. **Scope** — The credential is part of this product’s documented mobile ads integration on Android, not merely a separate unrelated Google product. Although AdX inventory may be managed through Google’s broader ads stack, the Android SDK integration itself commonly requires the Google Mobile Ads **App ID**.

@@ -1,0 +1,19 @@
+2026-05-17 21:18:07 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0097-doc_direct_analyze.log
+2026-05-17 21:18:07 [INFO] Run start: SDK_ID=0097 SDK=Google Plus SDK vendor=Google results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 21:18:07 [INFO] Querying model='gpt-5.4' SDK='Google Plus SDK' vendor='Google'
+2026-05-17 21:18:16 [INFO] LLM token usage: prompt_tokens=977 completion_tokens=250 total_tokens=1227
+2026-05-17 21:18:16 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0097_doc_direct_full.txt
+2026-05-17 21:18:16 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Google offered Google+ Sign-In / Google+ integration for Android via Google Play services and related Android documentation during the product’s lifetime, so there was an official Android integration path.
+
+2. **Service model** — This SDK was not purely on-device. Typical use involved Google account/profile/social features backed by Google-hosted services.
+
+3. **Integration requirement** — For normal Android integration, developers typically had to configure OAuth-related app registration in the Google Developers Console, commonly via a **Web client ID** / OAuth 2.0 client configuration, often delivered through `google-services.json` or console setup tied to Google Sign-In/Plus APIs. That is a console-issued identifier configured in the app for the product’s hosted services.
+
+4. **Scope** — This credential is part of the documented setup for Google+ / Google Sign-In style integration on Android, not merely a separate unrelated Google product. Evidence is somewhat historical because Google+ is deprecated, but the usual integration did require console-issued OAuth client configuration.
+2026-05-17 21:18:16 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0097_doc_direct_rslt.txt
+2026-05-17 21:18:16 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "OAuth client ID"}
+2026-05-17 21:18:16 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0097-doc_direct_analyze.log

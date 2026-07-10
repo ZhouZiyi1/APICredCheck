@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. "AppRater SDK" by CodeChimp is documented/distributed as an Android app-rating helper library for prompting users to rate an app, so it has official Android integration.
+
+2. Service model: This appears to be mostly on-device. Typical AppRater behavior is to track launches/usage locally and show a prompt that sends the user to the app's store listing. That does not require routine use of a CodeChimp-hosted backend or vendor remote API as part of the SDK's standard feature set.
+
+3. Integration requirement: No clear evidence that normal Android setup requires registering with CodeChimp or obtaining a console-issued identifier/secret such as an API key, App ID, or token. Usual integration for this kind of SDK is adding the library and configuring local behavior only.
+
+4. Scope: Any app package/store URL used by the SDK is app-specific metadata, not a vendor-issued API credential for CodeChimp services. With no clear vendor-hosted service dependency for this product, there is no qualifying API credential.

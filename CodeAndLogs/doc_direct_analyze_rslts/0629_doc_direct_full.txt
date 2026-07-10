@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not identify a known official Android SDK, Android package, or Android integration documentation for a product specifically named "Swelen SDK" from vendor "Swelen" in available knowledge. Because the product itself is not clearly established as having an Android library or documented Android setup, Android support is not supported by reliable evidence.
+
+Steps 2-4 are skipped because step 1 is not satisfied; API credential evaluation is therefore N/A on Android.

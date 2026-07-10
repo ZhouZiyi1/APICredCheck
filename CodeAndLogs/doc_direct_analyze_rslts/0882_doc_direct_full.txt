@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - I do not find reliable evidence that the specific product **“Quick SDK” by “Quick Team”** has an official Android SDK or documented Android integration. The product/vendor naming is too generic, and without identifiable official Android documentation for this exact SDK, Android support is not established.
+
+Because step 1 is **no / unverified**, steps 2-4 are **skipped** as instructed. On Android, API credential evaluation is therefore **N/A** for this product based on the available evidence.

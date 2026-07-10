@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Microsoft App Center provides an official Android SDK and documented Android integration for services such as Analytics, Crashes, and Distribute.
+
+2. Service model — App Center is not just an on-device utility library. Its standard features send telemetry, crash reports, distribution/update data, and related app information to Microsoft-hosted App Center backend services.
+
+3. Integration requirement — Typical Android setup requires creating/registering the app in the App Center portal and adding the console-issued app identifier string in code when starting the SDK. In App Center documentation, this is the `App Secret`.
+
+4. Scope — This credential is part of App Center SDK’s own documented setup for connecting the app to App Center services, not a separate Microsoft product. Package name or signing config alone would not satisfy this requirement.

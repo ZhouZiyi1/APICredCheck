@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Tealium provides an official Android SDK/library for mobile app data collection and customer data workflows, so Android integration is supported.
+
+2. **Service model** - The Tealium SDK is designed to send analytics/event and customer data from the app into Tealium’s hosted customer data platform services. While some processing can happen on-device, standard use routinely connects to Tealium-hosted infrastructure for data collection, tagging, remote configuration, and related platform features.
+
+3. **Integration requirement** - Yes. Typical Tealium Android setup requires vendor-issued account/configuration identifiers so the SDK knows which Tealium account/profile/environment to use. The standard integration is configured with values such as **account**, **profile**, and **environment**, which are provisioned as part of the Tealium platform setup.
+
+4. **Scope** - These identifiers are part of Tealium SDK’s own documented integration and are used to connect the SDK to Tealium’s platform, not merely to a separate third-party product. They function as the app’s configured project/account identifiers for this product.

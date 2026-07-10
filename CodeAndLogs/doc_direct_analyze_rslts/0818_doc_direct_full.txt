@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find evidence that "Amazon Transparent Ad Marketplace" is an official Android client SDK or Android library. Transparent Ad Marketplace is known as Amazon's server-side / programmatic advertising marketplace offering for publishers and supply partners, not as a mobile app SDK with documented Android integration. Amazon does have Android ad SDK offerings in other contexts, but those should not be conflated with this specific product name.
+
+Because step 1 is no, steps 2-4 are skipped. This product is treated as N/A on Android.

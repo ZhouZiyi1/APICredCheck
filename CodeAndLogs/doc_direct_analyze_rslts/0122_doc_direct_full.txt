@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. `cocos2d-x` is an official cross-platform game development SDK/engine from Chukong with documented Android build and deployment support, so Android is supported.
+
+2. Service model — This product is primarily an on-device game engine and framework. Its standard role is rendering, input handling, audio, scenes, physics integration, and cross-platform app/game packaging. Typical use does not depend on Chukong-hosted runtime APIs or a required vendor cloud backend.
+
+3. Integration requirement — No standard Android integration requirement appears to involve registering the app with Chukong to obtain a console-issued key, App ID, secret, or config file for normal `cocos2d-x` engine use. Building and shipping a game with the engine does not inherently require vendor API credentials.
+
+4. Scope — Third-party services that a `cocos2d-x` game might optionally add later (ads, analytics, login, etc.) can require their own credentials, but those belong to those separate products, not to the core `cocos2d-x SDK` integration itself.

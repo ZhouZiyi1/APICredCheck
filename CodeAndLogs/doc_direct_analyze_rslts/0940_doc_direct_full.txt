@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Jiguang JAnalytics is an Android analytics SDK with official Android integration/documentation and Android package setup.
+
+2. **Service model** - It is not a purely on-device library. As an analytics SDK, its standard purpose is to collect app event/usage data and send it to Jiguang’s hosted analytics backend for processing and reporting.
+
+3. **Integration requirement** - Yes. Standard Jiguang/JAnalytics integration requires app registration in Jiguang’s console and configuration of vendor-issued application identifiers in the Android app so the SDK can associate uploaded analytics data with the correct app/backend project. The commonly referenced credential is the `AppKey`.
+
+4. **Scope** - This credential is part of JAnalytics/Jiguang platform integration for this SDK’s normal operation, not merely an unrelated add-on product. Package name or signing info alone would not satisfy this requirement; the console-issued app identifier is the relevant credential.

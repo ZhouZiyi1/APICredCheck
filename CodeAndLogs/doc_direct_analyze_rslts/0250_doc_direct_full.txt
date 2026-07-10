@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not identify clear evidence of an official Android SDK or documented Android integration for Karma Mobility's "JWT SDK." The name suggests a token/helper library rather than a broadly documented Android product, and in the absence of vendor documentation showing an Android package, setup guide, or repository for Android, Android support is not established. Evidence is weak, so I default to `supports_android = false`.
+
+Steps 2-4 are skipped because Android support is not established; API credential evaluation is therefore N/A on Android.

@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I do not find evidence that "HtmlCleaner SDK" by Scott Wilson is an official Android SDK or has documented Android integration. HtmlCleaner is generally known as a Java HTML cleaning/parsing library used on the JVM, not as a vendor-hosted mobile platform SDK with Android-specific setup, packaging, or integration guidance. Because the requirement here is official Android library or documented Android integration, the evidence is too weak to treat it as supported on Android.
+
+Steps 2-4 are skipped because Android support is not established (N/A on Android).

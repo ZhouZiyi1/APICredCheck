@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Jayway JsonPath is a Java JSON-path processing library, and Android apps can use Java libraries if they are Android-compatible. It is a parsing/query utility rather than a platform-specific cloud SDK, and there is no indication that Android integration depends on any separate vendor-hosted Android service.
+
+2. **Service model** - This SDK works mostly on-device. JsonPath evaluates path expressions against JSON data already present in the app or fetched by the app through its own networking stack. Its core function is local parsing/querying, not calling Jayway-hosted APIs.
+
+3. **Integration requirement** - No vendor console registration or console-issued identifier appears to be part of normal integration. Typical setup is adding the library dependency and using its API in code.
+
+4. **Scope** - Any credentials an app might use alongside JsonPath would belong to the app's own backend or some separate API being called, not to Jayway JsonPath itself. Package name, signing, or dependency coordinates do not constitute an API credential.

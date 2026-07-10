@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Radar SDK officially supports Android. Radar provides an Android SDK with documented installation and initialization for Android apps.
+
+2. Service model  
+Radar is not a purely on-device library. Its standard use is to collect location / visit / geofence events and send them to Radar Labs' hosted backend for tracking, geofencing, places, trips, and related location services. Remote vendor services are part of the normal product behavior.
+
+3. Integration requirement  
+Radar's standard Android setup requires initializing the SDK with a vendor-issued key from the Radar dashboard. Typical integration uses a publishable project key/API key in app code so the SDK can authenticate requests to Radar's services.
+
+4. Scope  
+This credential belongs to Radar SDK itself, not a separate third-party dependency. The key is part of Radar's documented product integration and is required for the SDK to communicate with Radar-hosted services.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+mParticle SDK officially supports Android. mParticle provides an Android SDK for integrating analytics / customer data platform features into Android apps.
+
+2. Service model  
+This SDK is not a pure on-device utility. Its standard role is to collect app/user events and send them to mParticle’s hosted customer data platform and related backend services. Normal operation therefore relies on vendor-hosted services.
+
+3. Integration requirement  
+Typical Android integration requires configuring mParticle-issued credentials in the SDK initialization. The Android setup commonly uses an API key and API secret (sometimes referred to together as credentials) obtained from the mParticle workspace / console.
+
+4. Scope  
+These credentials are part of mParticle SDK’s own documented integration, not just a separate third-party add-on. They identify the app/workspace to mParticle’s backend so the SDK can send data to mParticle services.

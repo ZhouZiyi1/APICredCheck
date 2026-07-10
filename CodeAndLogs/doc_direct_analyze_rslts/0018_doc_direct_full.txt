@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google provides an official Places SDK for Android with documented Android integration.
+
+2. Service model — This SDK is not primarily on-device. It is used to access Google’s Places data/services (such as place details, autocomplete, etc.), which are vendor-hosted and accessed as part of normal SDK operation.
+
+3. Integration requirement — Yes. Standard setup for the Places SDK for Android requires enabling the relevant Google Maps Platform/Places service in Google Cloud and supplying an API key in the app configuration.
+
+4. Scope — The credential is part of this product’s own documented integration on Android, because the Places SDK uses Google-hosted Places APIs and requires a Google-issued key for access. This is not merely package-name/signing metadata or a separate unrelated product credential.

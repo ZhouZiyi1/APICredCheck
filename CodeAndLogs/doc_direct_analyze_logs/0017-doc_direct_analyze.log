@@ -1,0 +1,19 @@
+2026-05-17 20:18:45 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0017-doc_direct_analyze.log
+2026-05-17 20:18:45 [INFO] Run start: SDK_ID=0017 SDK=Facebook Core SDK vendor=Meta results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 20:18:45 [INFO] Querying model='gpt-5.4' SDK='Facebook Core SDK' vendor='Meta'
+2026-05-17 20:18:51 [INFO] LLM token usage: prompt_tokens=988 completion_tokens=216 total_tokens=1204
+2026-05-17 20:18:51 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0017_doc_direct_full.txt
+2026-05-17 20:18:51 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. **Android support** — Yes. Facebook Core SDK is part of Meta/Facebook's Android SDK offering and has official Android integration.
+
+2. **Service model** — This SDK is not just an on-device utility. In normal use it connects the app to Facebook/Meta platform services, such as app events, deep links, and other Facebook platform interactions.
+
+3. **Integration requirement** — Yes. Standard Android integration for Facebook Core SDK requires the developer to create/register a Facebook app in Meta's developer console and configure the app's **Facebook App ID** in the Android app. This is a vendor-issued identifier used so the SDK can communicate with Facebook services for that registered app.
+
+4. **Scope** — The App ID is part of the documented setup for the Facebook Core SDK itself, not merely another separate Meta product. Therefore it counts as this SDK's API credential.
+2026-05-17 20:18:51 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0017_doc_direct_rslt.txt
+2026-05-17 20:18:51 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": true, "credential_name": "Facebook App ID"}
+2026-05-17 20:18:51 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0017-doc_direct_analyze.log

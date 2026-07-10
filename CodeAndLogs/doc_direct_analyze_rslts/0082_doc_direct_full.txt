@@ -1,0 +1,8 @@
+SECTION 1: Detailed Analysis
+1. Android support: Yes. Firebase Dynamic Links SDK has official Android support and documented Android integration.
+
+2. Service model: It is a cloud-backed Firebase product. Dynamic links are created and resolved through Firebase-hosted services rather than being purely on-device.
+
+3. Integration requirement: Usual setup requires configuring the app with Firebase project information, typically via the Firebase Android config file (`google-services.json`) associated with a Firebase project/App registration.
+
+4. Scope: This credential/config belongs to Firebase Dynamic Links’ documented Firebase integration, not merely to an unrelated Firebase product.

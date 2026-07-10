@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Mapsforge provides an Android map rendering library and is known as an offline/open-source mapping SDK for Android. It has official Android integration artifacts/documentation oriented around embedding map display and rendering in Android apps.
+
+2. **Service model** - Mostly on-device. Mapsforge is primarily a client-side/offline map rendering toolkit that works with local map files rather than a vendor-hosted backend. Standard usage is rendering maps on the device, not calling Mapsforge-operated cloud APIs.
+
+3. **Integration requirement** - No clear evidence that normal Android integration requires registering the app with Mapsforge or obtaining a console-issued key, token, App ID, or secret. Typical setup appears to involve adding the library and supplying map data/files, not vendor-issued credentials.
+
+4. **Scope** - Any external tile servers, routing services, or geocoding services a developer might combine with Mapsforge would be separate products/services, not a built-in Mapsforge-hosted service requirement. So those credentials would not count for this SDK itself.
+
+Evidence appears consistent that Mapsforge SDK supports Android but does not require an API credential for standard Android use.

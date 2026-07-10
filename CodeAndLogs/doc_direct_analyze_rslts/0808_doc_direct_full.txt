@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: I could not find evidence that "NIDropDown SDK" by Nitor Infotech is an official Android SDK or has documented Android integration. The name is associated with a dropdown UI component/library pattern rather than a vendor-hosted mobile service, and there is no clear indication of an Android package, Android setup guide, or Android-specific distribution for this product. Based on that, Android support is not established.
+
+Steps 2-4 are skipped because they are N/A when Android support is not supported/documented.

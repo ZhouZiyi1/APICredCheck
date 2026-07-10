@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. "Contacts SDK" by Tamir Shomer is an Android contacts library, documented for integration in Android apps to read/write device contacts. This indicates official Android support.
+
+2. Service model: The SDK appears to work primarily on-device against the Android contacts provider on the handset. Its normal purpose is local contact access and management, not communication with a vendor-hosted backend or remote API operated by Tamir Shomer.
+
+3. Integration requirement: There is no usual setup indicating the developer must register the app with the vendor or obtain a console-issued key, App ID, secret, or config file. Typical integration is adding the Android dependency and requesting Android contact permissions.
+
+4. Scope: Android permissions or manifest/package configuration do not count as API credentials. There is no evidence that this SDK requires a product-specific vendor credential for standard Android use.

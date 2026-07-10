@@ -1,0 +1,11 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - `MaterialRangeBar SDK` appears to be an Android UI widget/library for selecting a numeric range, distributed as an Android library rather than a cross-platform or server-backed service. The product name and typical integration pattern strongly indicate official Android support.
+
+2. **Service model** - This kind of SDK is a pure on-device UI component. Its normal use is rendering and handling range selection inside the app, with no evident dependency on AppyVet-hosted APIs or backend services.
+
+3. **Integration requirement** - There is no sign that developers must register the app with AppyVet or configure a console-issued key, App ID, token, or vendor config file for standard Android use. Typical setup for a range bar widget is adding the dependency and using the view/component locally.
+
+4. **Scope** - Any unrelated credentials a developer might use elsewhere in the app would not belong to this SDK itself. For `MaterialRangeBar SDK`, the integration appears self-contained and local to the app.
+
+Evidence is somewhat limited from the product naming alone, but based on the SDK’s apparent nature as an Android UI control, the safest conclusion is: Android is supported, and no API credential is required.

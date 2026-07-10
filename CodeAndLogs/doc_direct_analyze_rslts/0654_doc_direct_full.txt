@@ -1,0 +1,3 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: `CRToast SDK` by Collin Ruffenach is an iOS toast/notification presentation library, commonly distributed for CocoaPods and documented for UIKit on Apple platforms. There is no official Android SDK or Android integration documentation for this product. Because step 1 is no, steps 2-4 are skipped as not applicable on Android.

@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Google Firebase SDK has official Android support via Firebase for Android libraries and documented Android setup.
+
+2. Service model — Firebase is not a pure on-device library. Its standard use connects the app to Google-hosted Firebase services such as Analytics, Cloud Messaging, Crashlytics, Remote Config, Authentication, Firestore, Realtime Database, Storage, etc. So routine operation relies on vendor-hosted backend services.
+
+3. Integration requirement — Yes. Standard Android integration requires registering the app in the Firebase console / Google console and adding the generated `google-services.json` file to the app. That file supplies Firebase project/app identifiers and API-related configuration used by the SDK to connect to Firebase services.
+
+4. Scope — This credential/configuration is part of Firebase’s own documented setup for Android, not merely a separate optional Google product. While individual Firebase products may add more setup, the baseline Firebase Android integration itself normally requires the Firebase config file.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Agora Voice SDK has official Android support. Agora documents Android integration for its real-time voice/audio SDK as part of its native/mobile SDK offerings.
+
+2. Service model  
+This SDK is not a purely on-device library. Its normal purpose is real-time voice communication over Agora’s hosted real-time communications infrastructure, so standard use depends on vendor-operated backend/network services.
+
+3. Integration requirement  
+Typical Android integration requires a developer to create an Agora project and configure an Agora-issued identifier in the app. The standard credential used in setup is the `App ID` (sometimes paired with tokens for secured channel access, but the core console-issued integration value is the App ID).
+
+4. Scope  
+That credential is part of this product’s own documented integration, not a separate optional service. The Agora Voice SDK uses the Agora project/App ID to connect the app to Agora’s RTC service.

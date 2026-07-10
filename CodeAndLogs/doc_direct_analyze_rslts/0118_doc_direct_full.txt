@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. Butter Knife is an Android view-binding library by Jake Wharton, distributed as an Android/Java dependency and integrated directly into Android app code. It was specifically built for Android development.
+
+2. Service model: Butter Knife works entirely on-device at build/runtime as a code-generation/view-binding helper. Its normal use is local to the app and does not depend on vendor-hosted APIs, cloud services, or a backend operated by Jake Wharton.
+
+3. Integration requirement: No. Typical Butter Knife setup only requires adding the library/plugin/dependency and annotations in Android code. There is no standard developer-console registration, API key, App ID, client secret, or config file issued by the vendor.
+
+4. Scope: Any Android package name, signing config, or Gradle setup is just normal Android project configuration, not a credential for Butter Knife itself. No separate vendor service is involved.

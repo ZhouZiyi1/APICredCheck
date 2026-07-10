@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Appodeal SDK has an official Android SDK and documented Android integration for monetization/ad mediation in Android apps.
+
+2. Service model  
+This is not a purely on-device library. Appodeal SDK is built to connect the app to Appodeal-hosted ad mediation/monetization services and ad network orchestration, so normal operation relies on vendor-backed remote services.
+
+3. Integration requirement  
+Yes. Standard Android setup requires the developer to obtain an Appodeal-issued application credential from the Appodeal dashboard and pass it when initializing the SDK. In Appodeal documentation and sample initialization, this is the `appKey`.
+
+4. Scope  
+This credential is part of Appodeal SDK’s own documented integration flow, not just a separate third-party product. Package name or signing settings are not the relevant credential here; the console-issued Appodeal app key is.

@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Bugsnag has an official Android SDK (`bugsnag-android`) with documented Android setup and usage. So Android is supported.
+
+2. Service model  
+Bugsnag is an error/crash monitoring product. In normal use, the Android SDK captures crashes/errors on-device and sends them to Bugsnag's hosted backend for storage, processing, and display in the Bugsnag dashboard. Its standard value depends on communication with Bugsnag's remote service.
+
+3. Integration requirement  
+Typical Android setup requires configuring a Bugsnag-issued project/application identifier in the app. Bugsnag documentation commonly refers to this as an `API key`, passed in code or configuration so reports are associated with the correct Bugsnag project.
+
+4. Scope  
+This API key is part of Bugsnag SDK's own documented integration and is used for Bugsnag's hosted error-reporting service. It is not merely an Android package name, signing value, or a credential for some separate product.

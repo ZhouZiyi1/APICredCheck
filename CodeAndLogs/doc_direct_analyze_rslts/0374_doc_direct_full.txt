@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: Yes. TopOn provides an official Android advertising/mediation SDK and Android integration documentation/libraries for app monetization.
+
+2. Service model: This SDK is not a purely on-device library. Its standard use is ad mediation/monetization, which depends on TopOn-hosted services and network configuration to load and optimize ads.
+
+3. Integration requirement: Yes. Normal Android setup requires registering the app in TopOn and configuring console-issued identifiers in the app. TopOn Android integration commonly uses an `App ID` and `App Key` during SDK initialization / manifest configuration.
+
+4. Scope: These credentials belong to TopOn SDK itself, not just to separate third-party ad networks. Third-party network credentials may also be needed depending on mediation partners, but TopOn's own app credentials are part of TopOn's documented base integration.

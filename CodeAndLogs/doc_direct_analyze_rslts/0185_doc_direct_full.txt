@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. Jiguang JPush SDK is an official push notification SDK with documented Android integration.
+
+2. Service model — JPush is not a purely on-device library. Its standard purpose is to connect the app/device to Jiguang's hosted push messaging service so notifications can be registered, delivered, and managed through Jiguang infrastructure.
+
+3. Integration requirement — Yes. Normal Android integration requires registering the app in Jiguang's developer console and configuring the issued `AppKey` in the Android app (commonly via manifest/meta-data or equivalent setup). This is a vendor-issued identifier used so the app can access the JPush service.
+
+4. Scope — The credential is part of JPush's own documented setup, not merely another Jiguang product or a generic Android identifier. Package name or signing config alone would not satisfy this requirement; the JPush `AppKey` is the relevant integration credential.

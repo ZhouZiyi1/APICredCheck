@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support**: Yes. ApsaraVideo Player SDK is documented as having an Android SDK/integration path, so Android is officially supported.
+
+2. **Service model**: This SDK is primarily a client-side media playback library. In a typical Android app, it handles decoding/rendering and plays media from URLs/streams supplied by the app. It does not inherently require the app to call an Alibaba Cloud-hosted backend just to perform basic playback.
+
+3. **Integration requirement**: For normal Android integration, the usual setup is adding the Android player library and initializing the player in-app. The product itself does not appear to require a developer-console-issued API key/App ID/secret to enable standard playback. Alibaba Cloud credentials may be involved only when the app separately uses Alibaba video cloud services such as VOD authorization, STS, or other cloud-side media workflows, but those are separate service integrations rather than a baseline requirement of the player SDK itself.
+
+4. **Scope**: Optional playback authorization tokens, VOD play credentials, or other Alibaba Cloud account credentials belong to adjacent Alibaba Cloud media services, not to the core Android Player SDK integration requirement. Evidence for a mandatory player-specific console credential is weak, so the safer classification is no API credential for the SDK itself.

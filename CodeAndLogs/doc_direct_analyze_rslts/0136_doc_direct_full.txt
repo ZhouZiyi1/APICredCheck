@@ -1,0 +1,5 @@
+SECTION 1: Detailed Analysis
+
+1. Android support: No official Android SDK or Android integration appears to exist for Kingfisher SDK. Kingfisher is known as a Swift image downloading/caching library for Apple platforms, with documentation centered on iOS, macOS, tvOS, visionOS, and watchOS rather than Android. Because there is no documented Android library for this product, Android is not supported.
+
+Steps 2–4 are skipped because they are not applicable on Android.

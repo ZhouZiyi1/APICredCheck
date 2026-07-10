@@ -1,0 +1,13 @@
+SECTION 1: Detailed Analysis
+
+1. Android support  
+Yes. Zoom Meeting SDK has official Android support with documented Android integration and an Android SDK/library.
+
+2. Service model  
+This SDK is not primarily an on-device utility. Its standard purpose is to let the app join/start Zoom meetings using Zoom-hosted meeting infrastructure and related backend services. That means normal use routinely depends on Zoom's remote services.
+
+3. Integration requirement  
+Yes. Standard Zoom Meeting SDK integration requires developer-issued credentials from Zoom's developer/app console for a Meeting SDK app. Historically this is exposed as an SDK Key and SDK Secret, and newer flows commonly use those to generate an SDK JWT/signature for initialization/authentication. In either form, the integration requires vendor-issued app credentials.
+
+4. Scope  
+These credentials belong to the Zoom Meeting SDK integration itself, not merely to some separate optional Zoom product. They are part of the documented setup for using the Meeting SDK on Android.

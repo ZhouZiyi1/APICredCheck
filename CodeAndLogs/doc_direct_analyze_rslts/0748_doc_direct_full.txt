@@ -1,0 +1,9 @@
+SECTION 1: Detailed Analysis
+
+1. **Android support** - Yes. Snowplow Tracker SDK has an official Android tracker library and documented Android setup for event tracking in Android apps.
+
+2. **Service model** - The SDK is a client-side event tracker. Its standard role is to collect events in the app and send them to a Snowplow collector endpoint or pipeline chosen by the implementer. This is not primarily an on-device-only utility, but the remote endpoint is generally infrastructure configured by the customer rather than a mandatory vendor-managed consumer cloud console flow for basic SDK activation.
+
+3. **Integration requirement** - Usual Android setup requires configuring endpoint details such as the collector URL / network endpoint and tracker namespace or app identifiers, but these are not typically vendor-console-issued API credentials. The SDK does not appear to require obtaining an API key, client secret, or vendor-issued app credential from Snowplow merely to initialize the Android tracker.
+
+4. **Scope** - The needed values are configuration for the tracking endpoint and tracker behavior, not a Snowplow-issued credential for this SDK's own hosted service. If a customer uses separate Snowplow-hosted infrastructure or other products, those operational details are outside the narrow question unless the SDK itself requires a console-issued credential as standard integration, which it does not appear to.

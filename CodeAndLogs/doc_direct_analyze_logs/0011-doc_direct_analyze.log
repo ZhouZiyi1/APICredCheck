@@ -1,0 +1,19 @@
+2026-05-17 20:18:10 [INFO] Log file: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0011-doc_direct_analyze.log
+2026-05-17 20:18:10 [INFO] Run start: SDK_ID=0011 SDK=OKHttp SDK vendor=Block Inc results_dir=E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts model=gpt-5.4
+2026-05-17 20:18:10 [INFO] Querying model='gpt-5.4' SDK='OKHttp SDK' vendor='Block Inc'
+2026-05-17 20:18:15 [INFO] LLM token usage: prompt_tokens=978 completion_tokens=201 total_tokens=1179
+2026-05-17 20:18:15 [INFO] Detailed answer saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0011_doc_direct_full.txt
+2026-05-17 20:18:15 [INFO] === Detailed ===
+SECTION 1: Detailed Analysis
+
+1. Android support — Yes. OkHttp is an official Java/Kotlin HTTP client widely used on Android and documented for Android use.
+
+2. Service model — This is a client-side networking library. It provides HTTP request/response handling, connection pooling, caching, WebSocket support, etc. It does not depend on a Block-hosted backend or vendor-operated cloud service to function.
+
+3. Integration requirement — Normal Android integration does not require registering the app with Block or obtaining any console-issued identifier/secret. Developers just add the library dependency and use it to call whatever endpoints they choose.
+
+4. Scope — Any API keys or tokens used in an app with OkHttp would belong to the third-party service the app is calling, not to OkHttp itself. Therefore they do not count as an API credential for this SDK.
+2026-05-17 20:18:15 [INFO] JSON summary saved to E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_rslts\0011_doc_direct_rslt.txt
+2026-05-17 20:18:15 [INFO] === Concise Summary ===
+{"supports_android": true, "has_api_credential": false, "credential_name": null}
+2026-05-17 20:18:15 [INFO] SDK log saved to: E:\AcademicWorkplace\ApiKey\APICredCheck\doc_direct_analyze_logs\0011-doc_direct_analyze.log
