@@ -15,11 +15,11 @@
 - Cert SHA-256: 9B6D3A65DE5F2E5035AEB5070B6C0E04786F4F178022986B34E45BAAB878B60F
 - Primary API key: unknown
 - Additional API keys: 0
-- Facebook app id: 943508208515143
-- Facebook client token: 3f95e9**************************
-- Facebook app access token: 943508******************************************
-- Facebook login protocol scheme: fb943508208515143
-- Facebook content-provider authority: com.facebook.app.FacebookContentProvider943508208515143
+- Facebook app id: 222222222222222
+- Facebook client token: bbbbbb**************************
+- Facebook app access token: 222222******************************************
+- Facebook login protocol scheme: fb222222222222222
+- Facebook content-provider authority: com.facebook.app.FacebookContentProvider222222222222222
 - GMS identity clone: disabled
 
 ## Generated Hook Scripts

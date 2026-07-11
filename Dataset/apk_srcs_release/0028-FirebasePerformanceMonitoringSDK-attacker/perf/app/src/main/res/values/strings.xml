@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">0028FirebasePerfAttacker</string>
+    <string name="generate_random_text">Record File Metric</string>
+    <string name="text_read_error">Error reading text file</string>
+</resources>

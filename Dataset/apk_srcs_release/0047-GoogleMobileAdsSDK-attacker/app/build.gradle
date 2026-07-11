@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace = 'com.google.mobileads.attacker'
+    compileSdkVersion(35)
+    defaultConfig {
+        applicationId "com.google.mobileads.attacker"
+        minSdkVersion(23)
+        targetSdkVersion(35)
+        versionCode(1)
+        versionName = "1.0"
+        multiDexEnabled = true
+    }
+    signingConfigs {
+        release {
+            storeFile rootProject.file('../attacker.jks')
+            storePassword 'lawgeek'
+            keyAlias 'key0'
+            keyPassword 'lawgeek'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.release
+            minifyEnabled = false
+            proguardFiles(getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro')
+        }
+    }
+}
+
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.outputs.forEach { output ->
+            output.outputFileName.set('0047-GoogleMobileAdsSDK-attacker.apk')
+        }
+    }
+}
+
+dependencies {
+    implementation('androidx.appcompat:appcompat:1.2.0')
+    implementation('androidx.constraintlayout:constraintlayout:2.2.1')
+    implementation('com.google.android.gms:play-services-ads:25.2.0')
+    implementation('com.google.android.material:material:1.13.0')
+    implementation('com.google.android.ump:user-messaging-platform:4.0.0')
+}

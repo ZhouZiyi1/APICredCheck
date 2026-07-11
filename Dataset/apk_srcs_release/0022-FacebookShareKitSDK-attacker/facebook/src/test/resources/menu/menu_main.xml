@@ -1,0 +1,17 @@
+<!--
+    Copyright (c) Meta Platforms, Inc. and affiliates.
+    All rights reserved.
+
+    This source code is licensed under the license found in the
+    LICENSE file in the root directory of this source tree.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>

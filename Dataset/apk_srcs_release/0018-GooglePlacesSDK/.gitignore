@@ -1,0 +1,20 @@
+# Build output
+build/
+.gradle/
+.kotlin/
+
+# IDE files
+.idea/
+*.iml
+
+# Local machine-specific configs
+**/local.properties
+**/secrets.properties
+
+# OS junk
+.DS_Store
+.java-version
+
+# This covers new IDEs, like Antigravity
+.vscode/
+**/bin/

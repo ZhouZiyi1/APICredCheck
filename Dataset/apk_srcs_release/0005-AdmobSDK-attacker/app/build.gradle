@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.admob.attacker"
+    compileSdkVersion 35
+    defaultConfig {
+        applicationId "com.admob.attacker"
+        minSdkVersion 17
+        targetSdkVersion 35
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile rootProject.file('../attacker.jks')
+            storePassword 'lawgeek'
+            keyAlias 'key0'
+            keyPassword 'lawgeek'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = '0005-AdmobSDK-attacker.apk'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+}

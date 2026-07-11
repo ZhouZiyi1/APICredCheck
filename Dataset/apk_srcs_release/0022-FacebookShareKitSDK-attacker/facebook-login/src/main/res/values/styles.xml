@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) Meta Platforms, Inc. and affiliates.
+    All rights reserved.
+
+    This source code is licensed under the license found in the
+    LICENSE file in the root directory of this source tree.
+-->
+
+<resources>
+    <style name="tooltip_bubble_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.25</item>
+        <item name="android:shadowColor">#40000000</item>
+    </style>
+
+    <style name="com_facebook_loginview_default_style" parent="com_facebook_button" />
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">0032GoogleUserMsgAttacker</string>
+    <!-- Hello world string [CHAR LIMIT=30] -->
+    <string name="hello_world">Hello world!</string>
+    <string name="status_ready">Ready to call Google User Messaging Platform API.</string>
+    <string name="load_ad_button">Call Google User Messaging Platform API</string>
+    <!-- Label for 'Settings' option [CHAR LIMIT=30] -->
+    <string name="action_settings">Settings</string>
+
+</resources>

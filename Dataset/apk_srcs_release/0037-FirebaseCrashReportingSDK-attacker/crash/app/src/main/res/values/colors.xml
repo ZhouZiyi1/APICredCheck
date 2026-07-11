@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="crash_status_background">#1A039BE5</color>
+    <color name="crash_status_caught">#2E7D32</color>
+    <color name="crash_status_fatal">#C62828</color>
+    <color name="crash_status_neutral">#424242</color>
+</resources>

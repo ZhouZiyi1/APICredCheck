@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169880000000",
+    "project_id": "tagman00000000-00000",
+    "storage_bucket": "tagman00000000-00000.000000000000000.000"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169800000000:0000000:0000000000000000000000",
+        "android_client_info": {
+          "package_name": "com.google.tagmanager.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSy000000000000000000000000000000000"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">0036GoogleTagMngDemo</string>
+    <!-- Container public ID from Tag Manager mobile container, e.g. GTM-XXXXXX -->
+    <string name="gtm_container_id">GTM-0000000</string>
+
+    <string name="main_title">Google Tag Manager Demo</string>
+    <string name="main_subtitle">Log events via Firebase Analytics; GTM container handles triggers and tags</string>
+    <string name="btn_log_custom_event">Log custom event share_image</string>
+    <string name="btn_set_user_property">Set user property favorite_food</string>
+    <string name="btn_log_screen_view">Log screen view SCREEN_VIEW</string>
+    <string name="btn_log_purchase">Log purchase event PURCHASE</string>
+    <string name="btn_set_user_id">Set User ID</string>
+    <string name="btn_open_gtm_container">View GTM container info</string>
+    <string name="log_label">Activity log</string>
+    <string name="btn_clear_log">Clear</string>
+
+    <string name="log_startup_1">App started. GTM loads automatically via play-services-tagmanager and the default container in assets.</string>
+    <string name="log_startup_2">Send events through Firebase Analytics; the GTM container processes them.</string>
+    <string name="api_call_start">API call started: %1$s</string>
+    <string name="api_call_success">API returned: %1$s completed.</string>
+    <string name="api_call_failure">API call failed.</string>
+    <string name="api_call_failed_invalid_key">API key is invalid. API call failed.</string>
+
+    <string name="log_share_image">Called logEvent(\"share_image\") with params image_name, full_text</string>
+    <string name="toast_share_image">share_image event logged</string>
+
+    <string name="log_user_property">Called setUserProperty(\"favorite_food\", \"%1$s\")</string>
+    <string name="toast_user_property">User property favorite_food = %1$s</string>
+
+    <string name="log_screen_view">Called SCREEN_VIEW: demo_main / MainActivity</string>
+    <string name="toast_screen_view">Screen view logged</string>
+
+    <string name="log_purchase">Called PURCHASE event (sample e-commerce)</string>
+    <string name="toast_purchase">Purchase event logged</string>
+
+    <string name="log_set_user_id">Called setUserId(\"%1$s\")</string>
+    <string name="toast_user_id">User ID = %1$s</string>
+
+    <string name="log_gtm_container_id">GTM container ID: %1$s</string>
+    <string name="log_gtm_default_path">Default container: assets/containers/%1$s.json</string>
+    <string name="log_gtm_auto_load">SDK loads on startup; checks for updates about every 12 hours when online.</string>
+    <string name="log_gtm_preview">Preview: generate a preview link in GTM; package name com.google.tagmanager.demo</string>
+    <string name="toast_gtm_managed">GTM is managed by the SDK</string>
+
+    <string name="log_gtm_id_missing">Set gtm_container_id in strings.xml first (GTM-XXXXXX)</string>
+    <string name="toast_gtm_id_missing">Configure GTM container ID first</string>
+</resources>

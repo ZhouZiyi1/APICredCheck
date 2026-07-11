@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.google.usermessaging.demo"
+    compileSdkVersion 35
+    defaultConfig {
+        applicationId "com.google.usermessaging.demo"
+        minSdkVersion 17
+        targetSdkVersion 35
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile rootProject.file('../lawgeek.jks')
+            storePassword 'lawgeek'
+            keyAlias 'key0'
+            keyPassword 'lawgeek'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = '0032-GoogleUserMessagingPlatformSDK-demo.apk'
+        }
+    }
+}
+
+tasks.register('copyReleaseApkToRoot', Copy) {
+    from("$buildDir/outputs/apk/release")
+    include('0032-GoogleUserMessagingPlatformSDK-demo.apk')
+    into(rootProject.file('../../apks'))
+}
+
+afterEvaluate {
+    tasks.named('assembleRelease') {
+        finalizedBy(tasks.named('copyReleaseApkToRoot'))
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+}

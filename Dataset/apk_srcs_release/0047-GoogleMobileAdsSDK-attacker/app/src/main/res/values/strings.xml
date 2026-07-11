@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_inspector" translatable="false">Ad Inspector</string>
+    <string name="app_name">0047GoogleMobileAdsAttacker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="more_menu" translatable="false">More</string>
+    <string name="privacy_settings" translatable="false">Privacy Settings</string>
+
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <string name="banner_ad_unit_id">ca-app-pub-1111111111111111/1111111111</string>
+    <string name="banner_controls">Banner Controls</string>
+    <string name="load_banner">Load Banner</string>
+    <string name="show_banner">Show</string>
+    <string name="hide_banner">Hide</string>
+    <string name="pause_banner">Pause</string>
+    <string name="resume_banner">Resume</string>
+    <string name="destroy_banner">Destroy</string>
+    <string name="banner_status_ready">Ready. Tap Load Banner.</string>
+
+</resources>

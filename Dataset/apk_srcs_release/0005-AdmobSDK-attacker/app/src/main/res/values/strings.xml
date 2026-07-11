@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App name '0005AdmobAttacker'  [CHAR LIMIT=30] -->
+    <string name="app_name">0005AdmobAttacker</string>
+    <!-- Hello world string [CHAR LIMIT=30] -->
+    <string name="hello_world">Hello world!</string>
+    <string name="status_ready">Ready to call AdMob API.</string>
+    <string name="load_ad_button">Call AdMob API</string>
+    <!-- Label for 'Settings' option [CHAR LIMIT=30] -->
+    <string name="action_settings">Settings</string>
+
+</resources>

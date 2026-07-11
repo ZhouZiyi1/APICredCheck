@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">0037FirebaseCrashAttacker</string>
+    <string name="main_title">0037FirebaseCrashAttacker</string>
+    <string name="crash_button_label">Cause Crash</string>
+    <string name="catch_crash_checkbox_label">Catch Crash</string>
+    <string name="crash_status_idle">Ready. With \"Catch Crash\" enabled, crashes are reported to Crashlytics without closing the app.</string>
+    <string name="crash_status_startup_nonfatal">On launch: sample non-fatal exception sent to Crashlytics.\n\nCatch Crash is ON — tap Cause Crash to test; you will see on-screen feedback and the app stays open.</string>
+    <string name="crash_status_catch_mode_on">Catch mode ON — the app will stay open and show feedback when a crash is reported.</string>
+    <string name="crash_status_catch_mode_off">Catch mode OFF — the next crash will close the app and be reported as a fatal crash.</string>
+    <string name="crash_status_caught">Caught crash #%1$d at %2$s\nNullPointerException reported to Crashlytics as non-fatal. Check Firebase Console → Crashlytics.</string>
+    <string name="crash_status_uncaught">Fatal crash in 1s — the app will close. Crashlytics will record this as a crash.</string>
+    <string name="api_call_failure">API call failed.</string>
+    <string name="api_call_failed_invalid_key">API key is invalid. API call failed.</string>
+</resources>

@@ -7,3 +7,6 @@ This directory contains two summarized result spreadsheets for APICredCheck.
 
 - `validation_rslt.xlsx`: validation results for the top 50 SDKs.
   This file summarizes the full experimental results for the top-50 SDK study, including SDK Screening outcomes, Legitimate App Analysis results, Runtime Validation results, and manual inspection results.
+
+For the released source projects and APK examples, see `../Dataset/README.md`.
+Those released dataset artifacts are sanitized and do not contain real, currently effective API credentials.

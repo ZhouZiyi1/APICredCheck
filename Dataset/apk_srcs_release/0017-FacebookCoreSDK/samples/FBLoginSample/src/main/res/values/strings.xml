@@ -1,0 +1,22 @@
+<resources>
+    <!-- Configurations of the app -->
+    <string name="app_name">CefaLoginDemo</string>
+    <string name="facebook_app_id">0000000000000000</string>
+    <!-- The client token is available in Settings > Advanced > Security section of the app dashboard. -->
+    <string name="facebook_client_token">00000000000000000000000000000000</string>
+    <string name="fb_login_protocol_scheme">fb00000000000000000000000000000000</string> <!-- keep the fb prefix and remove braces-->
+
+    <!-- Other string resources -->
+    <string name="posts_feed">Posts</string>
+    <string name="logout">Logout</string>
+    <string name="enter_text">Compose a post</string>
+    <string name="profile">Profile</string>
+    <string name="permissions">Permissions</string>
+    <string name="email_permission">Email Permission</string>
+    <string name="user_posts_permission">User Posts Permission</string>
+    <string name="make_post_permission">Make Post Permission</string>
+    <string name="app_permission">Entire App Permission</string>
+    <string name="no_fb_review">Permissions Granted without FB Review</string>
+    <string name="fb_review">Permissions Requiring FB Review</string>
+    <string name="no_email_perm">Email permission not granted</string>
+</resources>

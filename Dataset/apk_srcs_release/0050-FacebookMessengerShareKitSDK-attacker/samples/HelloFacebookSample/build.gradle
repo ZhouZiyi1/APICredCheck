@@ -1,0 +1,60 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+apply plugin: 'com.android.application'
+
+dependencies {
+    // Facebook Dependencies
+    implementation project(':facebook-login')
+    implementation project(':facebook-share')
+}
+
+android {
+    buildToolsVersion = libs.versions.buildToolsVersion.get()
+    namespace = "com.cefa.share.demo"
+    compileSdk = libs.versions.compileSdk.get().toInteger()
+
+    defaultConfig {
+        applicationId 'com.cefa.share.demo'
+        minSdk = libs.versions.minSdk.get().toInteger()
+        targetSdkVersion(31)
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi', 'armeabi-v7a', 'x86'
+            universalApk true
+        }
+    }
+}
+
+repositories {
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}

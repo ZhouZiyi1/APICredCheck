@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169880111111",
+    "project_id": "tagman11111111-11111",
+    "storage_bucket": "tagman11111111-11111.111111111111111.111"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169811111111:1111111:1111111111111111111111",
+        "android_client_info": {
+          "package_name": "com.google.tagmanager.attacker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSy111111111111111111111111111111111"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

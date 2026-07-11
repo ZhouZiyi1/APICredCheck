@@ -1,0 +1,76 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-05-18 19:35:59",
+    "containerVersion": {
+        "path": "accounts/0000000000/containers/000000000/versions/1",
+        "accountId": "0000000000",
+        "containerId": "000000000",
+        "containerVersionId": "1",
+        "name": "Empty Container",
+        "container": {
+            "path": "accounts/0000000000/containers/000000000",
+            "accountId": "0000000000",
+            "containerId": "000000000",
+            "name": "com.google.tagmanager.demo",
+            "publicId": "GTM-0000000",
+            "usageContext": [
+                "ANDROID_SDK_5"
+            ],
+            "fingerprint": "0000000000000",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/0000000000/containers/000000000/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-0000000"
+            ]
+        },
+        "builtInVariable": [
+            {
+                "accountId": "0000000000",
+                "containerId": "000000000",
+                "type": "APP_ID",
+                "name": "App ID"
+            },
+            {
+                "accountId": "0000000000",
+                "containerId": "000000000",
+                "type": "APP_NAME",
+                "name": "App Name"
+            },
+            {
+                "accountId": "0000000000",
+                "containerId": "000000000",
+                "type": "APP_VERSION_CODE",
+                "name": "App Version Code"
+            },
+            {
+                "accountId": "0000000000",
+                "containerId": "000000000",
+                "type": "APP_VERSION_NAME",
+                "name": "App Version Name"
+            },
+            {
+                "accountId": "0000000000",
+                "containerId": "000000000",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            }
+        ],
+        "fingerprint": "0000000000000",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/0000000000/containers/000000000/versions/1?apiLink=version"
+    }
+}

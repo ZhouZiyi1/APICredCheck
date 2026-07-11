@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "249481111111",
+    "firebase_url": "https://1111111111111-11111.1111111111.111",
+    "project_id": "onesig1111111-11111",
+    "storage_bucket": "onesig1111111-11111.1111111.111"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249411111111:1111111:1111111111111111",
+        "android_client_info": {
+          "package_name": "com.onesignal.attacker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSy111_11111111111111111111111111111"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

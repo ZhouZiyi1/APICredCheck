@@ -10,6 +10,8 @@ All commands below assume that the current working directory is `CodeAndLogs/`.
 ## Input and Output Directories
 
 - `apks/`: default input directory for legitimate and attacker APK files.
+  This release directory includes one sample APK pair; the full released APK example set is under `../Dataset/apks/`.
+  The released APKs do not contain real effective API credentials and are provided as examples rather than as binaries that can directly reproduce successful SDK API calls.
 - `doc_direct_analyze_logs/`: logs from SDK Screening.
 - `doc_direct_analyze_rslts/`: structured outputs from SDK Screening.
 - `apk_analyze_logs/`: logs from Legitimate App Analysis.
@@ -69,17 +71,21 @@ The main configuration sections are:
 ## 3. Prepare APK Inputs
 
 APICredCheck expects paired APKs for SDKs that need legitimate app analysis and runtime validation.
-Each pair contains:
+For a full rerun of the original experiment design, each pair should contain:
 
 - a legitimate APK, built with a valid API credential requested from the SDK provider;
 - a corresponding attacker APK, built with a different package name, a different signing certificate, and an invalid credential.
 
 For artifact release, real credentials are removed from app source code.
 Legitimate app source code uses **all-zero credential placeholders**, and attacker app source code uses **all-one credential placeholders**.
-To rerun the experiments, request your own API credentials, insert them into the legitimate app projects, rebuild the APKs, and keep the attacker app credential invalid.
+The compiled APKs released under `apks/` and `../Dataset/apks/` also do not contain real, currently effective API credentials.
+In particular, the released legitimate APKs are not expected to successfully invoke SDK APIs that require valid provider-issued credentials.
+To rerun the experiments, request your own API credentials, insert them into the legitimate app projects, rebuild the legitimate APKs, and keep the attacker app credential invalid.
 
 Place the APKs in the directory configured by `ApkAna_APK_DIR` and `AppHook_APK_DIR`.
 By default, this directory is `apks/`.
+The default `CodeAndLogs/apks/` directory contains only one sample APK pair.
+To use the full released APK set as example inputs, point `ApkAna_APK_DIR` and `AppHook_APK_DIR` to `../Dataset/apks/` or copy the desired APK pairs into `CodeAndLogs/apks/`.
 
 APK filenames should follow the naming convention such as:
 
@@ -89,6 +95,9 @@ APK filenames should follow the naming convention such as:
 ```
 
 Here, the four-digit prefix is the SDK rank or ID, `demo` denotes the legitimate APK, and `attacker` denotes the attacker APK.
+The released `CodeAndLogs/apks/` directory contains only one pair as an example input.
+The full released APK example set is provided under `../Dataset/apks/`.
+Those released APKs are sanitized examples; successful SDK API calls require rebuilding the legitimate apps with your own valid credentials.
 
 ## 4. Run SDK Screening
 
